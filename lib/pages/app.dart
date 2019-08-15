@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
-import 'home/home.dart';
 import 'widget/widget.dart';
+import 'material/material.dart';
+import 'cupertino/cupertino.dart';
 import 'favorites/favorites.dart';
-import 'mine/mine.dart';
 import 'about/about.dart';
+import 'widget/button.dart';
 
 class App extends StatefulWidget {
   App({Key key}) : super(key: key);
@@ -16,10 +17,10 @@ class App extends StatefulWidget {
 class _AppState extends State<App> {
   int _selectedIndex = 0;
   static List<Widget> _widgetOptions = <Widget>[
-    HomePage(),
     WidgetPage(),
+    MaterialPage(),
+    CupertinoPage(),
     FavouritesPage(),
-    MinePage(),
   ];
 
   void _changeItem(int index){
@@ -48,20 +49,23 @@ class _AppState extends State<App> {
           onTap: _changeItem,
           items: [
             BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              title: Text('首页')),
-            BottomNavigationBarItem(
               icon: Icon(Icons.widgets),
-              title: Text('组件')),
+              title: Text('Widget')),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.android),
+              title: Text('Material')),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.phone_iphone),
+              title: Text('Cupertino')),
             BottomNavigationBarItem(
               icon: Icon(Icons.favorite),
-              title: Text('收藏')),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.person),
-              title: Text('我的'))
+              title: Text('Favorites')),
             ],
         ),
       ),
+      // routes: <String,WidgetBuilder>{
+      //   '/btn':(BuildContext context) => new ButtonPage(),
+      // },
     );
   }
 }
