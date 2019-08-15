@@ -5,7 +5,6 @@ import 'material/material.dart';
 import 'cupertino/cupertino.dart';
 import 'favorites/favorites.dart';
 import 'about/about.dart';
-import 'widget/button.dart';
 
 class App extends StatefulWidget {
   App({Key key}) : super(key: key);
@@ -63,9 +62,6 @@ class _AppState extends State<App> {
             ],
         ),
       ),
-      // routes: <String,WidgetBuilder>{
-      //   '/btn':(BuildContext context) => new ButtonPage(),
-      // },
     );
   }
 }
