@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_show/utils/color.dart';
 
 class WidgetCell extends StatelessWidget {
+  String title = "title";
+  String introduction = "introduction";
+  WidgetCell({Key key, this.title,this.introduction}) : super(key: key);
   Color _randomColor = ColorUtils.randomColor();
 
   @override
@@ -32,10 +35,11 @@ class WidgetCell extends StatelessWidget {
               margin: EdgeInsets.fromLTRB(20, 10, 10, 5),
               alignment: AlignmentDirectional.centerStart,
               child: Text(
-                "标题奥术大师大",
+                "${title}",
                 style: TextStyle(
                   fontSize: 25,
                   fontWeight: FontWeight.bold,
+                  color: Colors.black54,
                 ),
               ),
             ),
@@ -43,7 +47,7 @@ class WidgetCell extends StatelessWidget {
               margin: EdgeInsets.fromLTRB(10, 0, 0, 10),
               alignment: AlignmentDirectional.centerStart,
               child: Text(
-                "简介奥术大师大所大大大所大所大所大所大所大所大所多大所大所大所大所大所大所大所多大所大所大所大所大所大所大所多所大所大所大所大所大所大所多所大所大所大所大所大所多",
+                "${introduction}",
                 style: TextStyle(
                   color: Colors.white,
                 ),

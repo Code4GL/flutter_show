@@ -34,7 +34,7 @@ class _AppState extends State<App> {
       title: 'Flutter Show',
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Home'),
+          title: Text('Widget'),
         ),
         drawer:Drawer(
           child:AboutPage(),

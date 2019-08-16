@@ -4,7 +4,8 @@ import 'dart:convert' show json;
 import '../../components//widget/widget_cell.dart';
 
 class WidgetPage extends StatelessWidget {
-  // This widget is the root of your application.
+  String title = "title";
+  String introduction = "introduction";
   @override
   Widget build(BuildContext context) {
     return FutureBuilder(
@@ -12,19 +13,11 @@ class WidgetPage extends StatelessWidget {
           .loadString("assets/data/widget/widgetList.json"),
       builder: (context, snapshot) {
         if (snapshot.hasData) {
-          List<dynamic> data = json.decode(snapshot.data.toString());
+          List<dynamic> data = json.decode(snapshot.data);
           return new ListView.builder(
             itemCount: data.length,
             itemBuilder: (BuildContext context, int index) {
-              return new Card(
-                child: new Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children: <Widget>[
-                    new Text("title: ${data[index]["title"]}"),
-                    new Text("Introduction: ${data[index]["Introduction"]}"),
-                  ],
-                ),
-              );
+              return WidgetCell(title:"${data[index]['title']}",introduction:"${data[index]['introduction']}");
             },
           );
         }

@@ -1,14 +1,58 @@
 [
     {
         "title":"Accessibility",
-        "Introduction":"Make your app accessible."
+        "introduction":"Make your app accessible."
     },
     {
         "title":"Animation and Motion",
-        "Introduction":"Bring animations to your app."
+        "introduction":"Bring animations to your app."
     },
     {
         "title":"Assets, Images, and Icons",
-        "Introduction":"Manage assets, display images, and show icons."
+        "introduction":"Manage assets, display images, and show icons."
+    },
+    {
+        "title":"Async",
+        "introduction":"Async patterns to your Flutter application."
+    },
+    {
+        "title":"Basics",
+        "introduction":"Widgets you absolutely need to know before building your first Flutter app."
+    },
+    {
+        "title":"Cupertino (iOS-style widgets)",
+        "introduction":"Beautiful and high-fidelity widgets for current iOS design language."
+    },
+    {
+        "title":"Input",
+        "introduction":"Take user input in addition to input widgets in Material Components and Cupertino."
+    },
+    {
+        "title":"Interaction Models",
+        "introduction":"Respond to touch events and route users to different views."
+    },
+    {
+        "title":"Layout",
+        "introduction":"Arrange other widgets columns, rows, grids, and many other layouts."
+    },
+    {
+        "title":"Material Components",
+        "introduction":"Visual, behavioral, and motion-rich widgets implementing the Material Design guidelines."
+    },
+    {
+        "title":"Painting and effects",
+        "introduction":"These widgets apply visual effects to the children without changing their layout, size, or position."
+    },
+    {
+        "title":"Scrolling",
+        "introduction":"Scroll multiple widgets as children of the parent."
+    },
+    {
+        "title":"Styling",
+        "introduction":"Manage the theme of your app, makes your app responsive to screen sizes, or add padding."
+    },
+    {
+        "title":"Text",
+        "introduction":"Display and style text."
     }
 ]
