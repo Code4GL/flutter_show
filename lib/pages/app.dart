@@ -6,6 +6,9 @@ import 'cupertino/cupertino.dart';
 import 'favorites/favorites.dart';
 import 'about/about.dart';
 
+import 'widget/detail/accessibility.dart';
+import 'widget/detail/animation.dart';
+
 class App extends StatefulWidget {
   App({Key key}) : super(key: key);
 
@@ -62,6 +65,10 @@ class _AppState extends State<App> {
             ],
         ),
       ),
+      routes: <String, WidgetBuilder> {
+        "Widget/Accessibility": (BuildContext context) => new AccessibilityPage(),
+        "Widget/Animation": (BuildContext context) => new AnimationPage(),
+      },
     );
   }
 }

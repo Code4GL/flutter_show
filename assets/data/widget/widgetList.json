@@ -1,58 +1,72 @@
 [
     {
         "title":"Accessibility",
-        "introduction":"Make your app accessible."
+        "introduction":"Make your app accessible.",
+        "routeName":"Widget/Accessibility"
     },
     {
         "title":"Animation and Motion",
-        "introduction":"Bring animations to your app."
+        "introduction":"Bring animations to your app.",
+        "routeName":"Widget/Animation"
     },
     {
         "title":"Assets, Images, and Icons",
-        "introduction":"Manage assets, display images, and show icons."
+        "introduction":"Manage assets, display images, and show icons.",
+        "routeName":"Widget/Assets"
     },
     {
         "title":"Async",
-        "introduction":"Async patterns to your Flutter application."
+        "introduction":"Async patterns to your Flutter application.",
+        "routeName":"Widget/Async"
     },
     {
         "title":"Basics",
-        "introduction":"Widgets you absolutely need to know before building your first Flutter app."
+        "introduction":"Widgets you absolutely need to know before building your first Flutter app.",
+        "routeName":"Widget/Basics"
     },
     {
         "title":"Cupertino (iOS-style widgets)",
-        "introduction":"Beautiful and high-fidelity widgets for current iOS design language."
+        "introduction":"Beautiful and high-fidelity widgets for current iOS design language.",
+        "routeName":"Widget/Widget"
     },
     {
         "title":"Input",
-        "introduction":"Take user input in addition to input widgets in Material Components and Cupertino."
+        "introduction":"Take user input in addition to input widgets in Material Components and Cupertino.",
+        "routeName":"Widget/Input"
     },
     {
         "title":"Interaction Models",
-        "introduction":"Respond to touch events and route users to different views."
+        "introduction":"Respond to touch events and route users to different views.",
+        "routeName":"Widget/Interaction"
     },
     {
         "title":"Layout",
-        "introduction":"Arrange other widgets columns, rows, grids, and many other layouts."
+        "introduction":"Arrange other widgets columns, rows, grids, and many other layouts.",
+        "routeName":"Widget/Layout"
     },
     {
         "title":"Material Components",
-        "introduction":"Visual, behavioral, and motion-rich widgets implementing the Material Design guidelines."
+        "introduction":"Visual, behavioral, and motion-rich widgets implementing the Material Design guidelines.",
+        "routeName":"Widget/Material"
     },
     {
         "title":"Painting and effects",
-        "introduction":"These widgets apply visual effects to the children without changing their layout, size, or position."
+        "introduction":"These widgets apply visual effects to the children without changing their layout, size, or position.",
+        "routeName":"Widget/Painting"
     },
     {
         "title":"Scrolling",
-        "introduction":"Scroll multiple widgets as children of the parent."
+        "introduction":"Scroll multiple widgets as children of the parent.",
+        "routeName":"Widget/Scrolling"
     },
     {
         "title":"Styling",
-        "introduction":"Manage the theme of your app, makes your app responsive to screen sizes, or add padding."
+        "introduction":"Manage the theme of your app, makes your app responsive to screen sizes, or add padding.",
+        "routeName":"Widget/Styling"
     },
     {
         "title":"Text",
-        "introduction":"Display and style text."
+        "introduction":"Display and style text.",
+        "routeName":"Widget/Text"
     }
 ]

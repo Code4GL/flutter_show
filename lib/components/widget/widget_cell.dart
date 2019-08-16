@@ -2,16 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter_show/utils/color.dart';
 
 class WidgetCell extends StatelessWidget {
-  String title = "title";
-  String introduction = "introduction";
-  WidgetCell({Key key, this.title,this.introduction}) : super(key: key);
-  Color _randomColor = ColorUtils.randomColor();
+
+  WidgetCell({Key key, this.title, this.introduction,this.routeName}) : super(key: key);
+  final String title;
+  final String introduction;
+  final String routeName;
+  final Color _randomColor = ColorUtils.randomColor();
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        print(_randomColor);
+        Navigator.of(context).pushNamed('$routeName');
       },
       child: Container(
         margin: EdgeInsets.fromLTRB(10, 10, 10, 0),
@@ -35,7 +37,7 @@ class WidgetCell extends StatelessWidget {
               margin: EdgeInsets.fromLTRB(20, 10, 10, 5),
               alignment: AlignmentDirectional.centerStart,
               child: Text(
-                "${title}",
+                "$title",
                 style: TextStyle(
                   fontSize: 25,
                   fontWeight: FontWeight.bold,
@@ -47,7 +49,7 @@ class WidgetCell extends StatelessWidget {
               margin: EdgeInsets.fromLTRB(10, 0, 0, 10),
               alignment: AlignmentDirectional.centerStart,
               child: Text(
-                "${introduction}",
+                "$introduction",
                 style: TextStyle(
                   color: Colors.white,
                 ),
