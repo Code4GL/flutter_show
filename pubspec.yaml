@@ -72,3 +72,5 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
   assets:
     - assets/images/flutter-mark-square-100.png
+
+    - assets/data/widget/widgetList.json
