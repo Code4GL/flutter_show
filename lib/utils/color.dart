@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
-class ColorUtils {
+class ColorUtil {
 
   /// 随机颜色生成
   static Color randomColor() {

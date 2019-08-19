@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dart:convert' show json;
 
-import '../../components/widget/widget_cell.dart';
+import '../../components/color_cell.dart';
 
 class WidgetPage extends StatelessWidget {
 
@@ -20,7 +20,7 @@ class WidgetPage extends StatelessWidget {
           return ListView.builder(
             itemCount: data.length,
             itemBuilder: (BuildContext context, int index) {
-              return WidgetCell(
+              return ColorCell(
                 title: "${data[index]['title']}",
                 introduction: "${data[index]['introduction']}",
                 routeName: "${data[index]['routeName']}",

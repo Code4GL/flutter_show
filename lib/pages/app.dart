@@ -6,8 +6,8 @@ import 'cupertino/cupertino.dart';
 import 'favorites/favorites.dart';
 import 'about/about.dart';
 
-import 'widget/detail/accessibility.dart';
-import 'widget/detail/animation.dart';
+import 'widget/accessibility/accessibility.dart';
+import 'widget/animation/animation.dart';
 
 class App extends StatefulWidget {
   App({Key key}) : super(key: key);

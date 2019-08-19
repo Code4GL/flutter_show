@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_show/utils/color.dart';
 
-class WidgetCell extends StatelessWidget {
+class ColorCell extends StatelessWidget {
 
-  WidgetCell({Key key, this.title, this.introduction,this.routeName}) : super(key: key);
+  ColorCell({Key key, this.title, this.introduction,this.routeName}) : super(key: key);
   final String title;
   final String introduction;
   final String routeName;
-  final Color _randomColor = ColorUtils.randomColor();
+  final Color _randomColor = ColorUtil.randomColor();
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class WidgetCell extends StatelessWidget {
         Navigator.of(context).pushNamed('$routeName');
       },
       child: Container(
-        margin: EdgeInsets.fromLTRB(10, 10, 10, 0),
+        margin: EdgeInsets.fromLTRB(10, 5, 10, 5),
         alignment: AlignmentDirectional.centerStart,
         decoration: BoxDecoration(
           color: _randomColor,
@@ -25,16 +25,16 @@ class WidgetCell extends StatelessWidget {
           ),
           boxShadow: [
             BoxShadow(
-                color: _randomColor,
-                offset: Offset(0, 0),
-                blurRadius: 20,
-                spreadRadius: 0),
+              color: _randomColor,
+              offset: Offset(0, 0),
+              blurRadius: 20,
+              spreadRadius: 0),
           ],
         ),
         child: Column(
           children: <Widget>[
             Container(
-              margin: EdgeInsets.fromLTRB(20, 10, 10, 5),
+              margin: EdgeInsets.fromLTRB(10, 5, 0, 0),
               alignment: AlignmentDirectional.centerStart,
               child: Text(
                 "$title",
@@ -46,7 +46,7 @@ class WidgetCell extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.fromLTRB(10, 0, 0, 10),
+              margin: EdgeInsets.fromLTRB(10, 0, 0, 5),
               alignment: AlignmentDirectional.centerStart,
               child: Text(
                 "$introduction",
