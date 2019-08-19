@@ -71,6 +71,7 @@ flutter:
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
   assets:
-    - assets/images/flutter-mark-square-100.png
+    - assets/images/catalog-widget-placeholder.png
 
-    - assets/data/widget/widgetList.json
+    - assets/data/widget/widget_list.json
+    - assets/data/widget/accessibility.json
