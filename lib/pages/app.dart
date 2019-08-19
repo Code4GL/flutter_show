@@ -36,9 +36,6 @@ class _AppState extends State<App> {
     return MaterialApp(
       title: 'Flutter Show',
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Widget'),
-        ),
         drawer:Drawer(
           child:AboutPage(),
         ),
