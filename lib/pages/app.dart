@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_show/generated/i18n.dart';
 
 import 'widget/widget.dart';
 import 'material/material.dart';
@@ -28,7 +30,7 @@ class _AppState extends State<App> {
     FavouritesPage(),
   ];
 
-  void _changeItem(int index){
+  void _changeItem(int index) {
     setState(() {
       _selectedIndex = index;
     });
@@ -36,11 +38,12 @@ class _AppState extends State<App> {
 
   @override
   Widget build(BuildContext context) {
+    I18n.locale = Locale("zh");
     return MaterialApp(
       title: 'Flutter Show',
       home: Scaffold(
-        drawer:Drawer(
-          child:AboutPage(),
+        drawer: Drawer(
+          child: AboutPage(),
         ),
         body: Center(
           child: _widgetOptions.elementAt(_selectedIndex),
@@ -51,25 +54,30 @@ class _AppState extends State<App> {
           onTap: _changeItem,
           items: [
             BottomNavigationBarItem(
-              icon: Icon(Icons.widgets),
-              title: Text('Widget')),
+                icon: Icon(Icons.widgets), title: Text('Widget')),
             BottomNavigationBarItem(
-              icon: Icon(Icons.android),
-              title: Text('Material')),
+                icon: Icon(Icons.android), title: Text('Material')),
             BottomNavigationBarItem(
-              icon: Icon(Icons.phone_iphone),
-              title: Text('Cupertino')),
+                icon: Icon(Icons.phone_iphone), title: Text('Cupertino')),
             BottomNavigationBarItem(
-              icon: Icon(Icons.favorite),
-              title: Text('Favorites')),
-            ],
+                icon: Icon(Icons.favorite), title: Text('Favorites')),
+          ],
         ),
       ),
-      routes: <String, WidgetBuilder> {
-        "Widget/Accessibility": (BuildContext context) => new AccessibilityPage(),
-        "Widget/Accessibility/ExcludeSemantics": (BuildContext context) => new ExcludeSemanticsPage(),
-        "Widget/Accessibility/MergeSemantics": (BuildContext context) => new MergeSemanticsPage(),
-        "Widget/Accessibility/Semantics": (BuildContext context) => new SemanticsPage(),
+      localizationsDelegates: [
+        I18n.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+      ],
+      routes: <String, WidgetBuilder>{
+        "Widget/Accessibility": (BuildContext context) =>
+            new AccessibilityPage(),
+        "Widget/Accessibility/ExcludeSemantics": (BuildContext context) =>
+            new ExcludeSemanticsPage(),
+        "Widget/Accessibility/MergeSemantics": (BuildContext context) =>
+            new MergeSemanticsPage(),
+        "Widget/Accessibility/Semantics": (BuildContext context) =>
+            new SemanticsPage(),
         "Widget/Animation": (BuildContext context) => new AnimationPage(),
       },
     );

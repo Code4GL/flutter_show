@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_show/generated/i18n.dart';
 
 
 class ExcludeSemanticsPage extends StatelessWidget {
@@ -10,7 +11,7 @@ class ExcludeSemanticsPage extends StatelessWidget {
         title: Text('ExcludeSemanticsPage'),
       ),
       body: Center(
-        child: Text('ExcludeSemanticsPage'),
+        child: Text(I18n.of(context).title),
       ),
     );
   }

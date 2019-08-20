@@ -1,0 +1,20 @@
+[
+    {
+        "title": "ExcludeSemantics",
+        "introduction": "一个小部件，它会删除其后代的所有语义。 这可以用于隐藏否则将被报告的子窗口小部件，但这只会令人困惑。 例如，Material Components Chip小部件隐藏了头像，因为它与芯片标签是多余的。",
+        "routeName": "Widget/Accessibility/ExcludeSemantics",
+        "imagePath": "assets/images/flutter.png"
+    },
+    {
+        "title": "MergeSemantics",
+        "introduction": "一个小部件，它合并其后代的语义。",
+        "routeName": "Widget/Accessibility/MergeSemantics",
+        "imagePath": "assets/images/flutter.png"
+    },
+    {
+        "title": "Semantics",
+        "introduction": "一个小部件，用小部件含义的描述来注释小部件树。 由可访问性工具，搜索引擎和其他语义分析软件使用，以确定应用程序的含义。",
+        "routeName": "Widget/Accessibility/Semantics",
+        "imagePath": "assets/images/flutter.png"
+    }
+]
