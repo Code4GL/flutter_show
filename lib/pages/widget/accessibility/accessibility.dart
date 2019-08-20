@@ -8,6 +8,7 @@ class AccessibilityPage extends StatefulWidget {
   final String title = "title";
   final String introduction = "introduction";
   final String routeName = "routeName";
+  final String imagePath = "imagePath";
 
   @override
   AccessibilityPageState createState() => AccessibilityPageState();
@@ -33,6 +34,7 @@ class AccessibilityPageState extends State<AccessibilityPage> {
                     title: "${data[index]['title']}",
                     introduction: "${data[index]['introduction']}",
                     routeName: "${data[index]['routeName']}",
+                    imagePath:"${data[index]['imagePath']}"
                   );
                 },
               );

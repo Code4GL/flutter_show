@@ -20,13 +20,13 @@ class ColorCell extends StatelessWidget {
         decoration: BoxDecoration(
           color: randomColor,
           borderRadius: BorderRadius.all(
-            Radius.circular(15),
+            Radius.circular(10),
           ),
           boxShadow: [
             BoxShadow(
               color: randomColor,
               offset: Offset(0, 0),
-              blurRadius: 20,
+              blurRadius: 10,
               spreadRadius: 0),
           ],
         ),

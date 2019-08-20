@@ -72,6 +72,7 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
   assets:
     - assets/images/catalog-widget-placeholder.png
+    - assets/images/flutter.png
 
     - assets/data/widget/widget_list.json
     - assets/data/widget/accessibility.json
