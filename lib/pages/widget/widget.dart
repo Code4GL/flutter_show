@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:convert' show json;
 import 'package:flutter_show/generated/i18n.dart';
 
+import 'package:flutter_show/components/language_change.dart';
 import 'package:flutter_show/utils/color.dart';
 import '../../components/color_cell.dart';
 
@@ -22,16 +23,7 @@ class WidgetPageState extends State<WidgetPage> {
         appBar: AppBar(
           title: Text('Widget'),
           actions: <Widget>[
-            IconButton(
-              icon: Icon(Icons.translate),
-              onPressed: () {
-                if(I18n.of(context).flag == "zh"){
-                  I18n.onLocaleChanged(Locale("en"));
-                }else{
-                  I18n.onLocaleChanged(Locale("zh"));
-                }
-              },
-            )
+            LanguageChange(),
           ],
         ),
         body: FutureBuilder(
