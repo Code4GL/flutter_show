@@ -78,6 +78,8 @@ flutter:
 
     - assets/data/en/widget/widget_list.json
     - assets/data/en/widget/accessibility.json
+    - assets/data/en/widget/animation.json
 
     - assets/data/zh/widget/widget_list.json
     - assets/data/zh/widget/accessibility.json
+    - assets/data/zh/widget/animation.json

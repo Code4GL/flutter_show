@@ -1,0 +1,142 @@
+[
+    {
+        "title":"AnimatedBuilder",
+        "introduction":"A general-purpose widget for building animations. AnimatedBuilder is useful for more complex widgets that wish to include an animation as part of a larger build function. To use AnimatedBuilder, simply construct the widget and pass it a builder function.",
+        "routeName":"Widget/Animation/AnimatedBuilder",
+        "imagePath":"assets/images/flutter.png",
+        "docPath":"https://api.flutter.dev/flutter/widgets/AnimatedBuilder-class.html"
+    },
+    {
+        "title":"AnimatedContainer",
+        "introduction":"A container that gradually changes its values over a period of time.",
+        "routeName":"Widget/Animation/AnimatedContainer",
+        "imagePath":"assets/images/flutter.png",
+        "docPath":"https://api.flutter.dev/flutter/widgets/AnimatedContainer-class.html"
+    },
+    {
+        "title":"AnimatedCrossFade",
+        "introduction":"A widget that cross-fades between two given children and animates itself between their sizes.",
+        "routeName":"Widget/Animation/AnimatedCrossFade",
+        "imagePath":"assets/images/flutter.png",
+        "docPath":"https://api.flutter.dev/flutter/widgets/AnimatedCrossFade-class.html"
+    },
+    {
+        "title":"AnimatedDefaultTextStyle",
+        "introduction":"Animated version of DefaultTextStyle which automatically transitions the default text style (the text style to apply to descendant Text widgets without explicit style) over a given duration whenever the given style changes.",
+        "routeName":"Widget/Animation/AnimatedDefaultTextStyle",
+        "imagePath":"assets/images/flutter.png",
+        "docPath":"https://api.flutter.dev/flutter/widgets/AnimatedDefaultTextStyle-class.html"
+    },
+    {
+        "title":"AnimatedListState",
+        "introduction":"The state for a scrolling container that animates items when they are inserted or removed.",
+        "routeName":"Widget/Animation/AnimatedListState",
+        "imagePath":"assets/images/flutter.png",
+        "docPath":"https://api.flutter.dev/flutter/widgets/AnimatedListState-class.html"
+    },
+    {
+        "title":"AnimatedModalBarrier",
+        "introduction":"A widget that prevents the user from interacting with widgets behind itself.",
+        "routeName":"Widget/Animation/AnimatedModalBarrier",
+        "imagePath":"assets/images/flutter.png",
+        "docPath":"https://api.flutter.dev/flutter/widgets/AnimatedModalBarrier-class.html"
+    },
+    {
+        "title":"AnimatedOpacity",
+        "introduction":"Animated version of Opacity which automatically transitions the child's opacity over a given duration whenever the given opacity changes.",
+        "routeName":"Widget/Animation/AnimatedOpacity",
+        "imagePath":"assets/images/flutter.png",
+        "docPath":"https://api.flutter.dev/flutter/widgets/AnimatedOpacity-class.html"
+    },
+    {
+        "title":"AnimatedPhysicalModel",
+        "introduction":"Animated version of PhysicalModel.",
+        "routeName":"Widget/Animation/AnimatedPhysicalModel",
+        "imagePath":"assets/images/flutter.png",
+        "docPath":"https://api.flutter.dev/flutter/widgets/AnimatedPhysicalModel-class.html"
+    },
+    {
+        "title":"AnimatedPositioned",
+        "introduction":"Animated version of Positioned which automatically transitions the child's position over a given duration whenever the given position changes.",
+        "routeName":"Widget/Animation/AnimatedPositioned",
+        "imagePath":"assets/images/flutter.png",
+        "docPath":"https://api.flutter.dev/flutter/widgets/AnimatedPositioned-class.html"
+    },
+    {
+        "title":"AnimatedSize",
+        "introduction":"Animated widget that automatically transitions its size over a given duration whenever the given child's size changes.",
+        "routeName":"Widget/Animation/AnimatedSize",
+        "imagePath":"assets/images/flutter.png",
+        "docPath":"https://api.flutter.dev/flutter/widgets/AnimatedSize-class.html"
+    },
+    {
+        "title":"AnimatedWidget",
+        "introduction":"A widget that rebuilds when the given Listenable changes value.",
+        "routeName":"Widget/Animation/AnimatedWidget",
+        "imagePath":"assets/images/flutter.png",
+        "docPath":"https://api.flutter.dev/flutter/widgets/AnimatedWidget-class.html"
+    },
+    {
+        "title":"AnimatedWidgetBaseState",
+        "introduction":"A base class for widgets with implicit animations.",
+        "routeName":"Widget/Animation/AnimatedWidgetBaseState",
+        "imagePath":"assets/images/flutter.png",
+        "docPath":"https://api.flutter.dev/flutter/widgets/AnimatedWidgetBaseState-class.html"
+    },
+    {
+        "title":"DecoratedBoxTransition",
+        "introduction":"Animated version of a DecoratedBox that animates the different properties of its Decoration.",
+        "routeName":"Widget/Animation/DecoratedBoxTransition",
+        "imagePath":"assets/images/flutter.png",
+        "docPath":"https://api.flutter.dev/flutter/widgets/DecoratedBoxTransition-class.html"
+    },
+    {
+        "title":"FadeTransition",
+        "introduction":"Animates the opacity of a widget.",
+        "routeName":"Widget/Animation/FadeTransition",
+        "imagePath":"assets/images/flutter.png",
+        "docPath":"https://api.flutter.dev/flutter/widgets/FadeTransition-class.html"
+    },
+    {
+        "title":"Hero",
+        "introduction":"A widget that marks its child as being a candidate for hero animations.",
+        "routeName":"Widget/Animation/Hero",
+        "imagePath":"assets/images/flutter.png",
+        "docPath":"https://api.flutter.dev/flutter/widgets/Hero-class.html"
+    },
+    {
+        "title":"PositionedTransition",
+        "introduction":"Animated version of Positioned which takes a specific Animation to transition the child's position from a start position to and end position over the lifetime of the animation.",
+        "routeName":"Widget/Animation/PositionedTransition",
+        "imagePath":"assets/images/flutter.png",
+        "docPath":"https://api.flutter.dev/flutter/widgets/PositionedTransition-class.html"
+    },
+    {
+        "title":"RotationTransition",
+        "introduction":"Animates the rotation of a widget.",
+        "routeName":"Widget/Animation/AnimatedContainer",
+        "imagePath":"assets/images/flutter.png",
+        "docPath":"https://api.flutter.dev/flutter/widgets/RotationTransition-class.html"
+    },
+    {
+        "title":"ScaleTransition",
+        "introduction":"Animates the scale of transformed widget.",
+        "routeName":"Widget/Animation/RotationTransition",
+        "imagePath":"assets/images/flutter.png",
+        "docPath":"https://api.flutter.dev/flutter/widgets/ScaleTransition-class.html"
+    },
+    {
+        "title":"SizeTransition",
+        "introduction":"Animates its own size and clips and aligns the child.",
+        "routeName":"Widget/Animation/SizeTransition",
+        "imagePath":"assets/images/flutter.png",
+        "docPath":"https://api.flutter.dev/flutter/widgets/SizeTransition-class.html"
+    },
+    {
+        "title":"SlideTransition",
+        "introduction":"Animates the position of a widget relative to its normal position.",
+        "routeName":"Widget/Animation/SlideTransition",
+        "imagePath":"assets/images/flutter.png",
+        "docPath":"https://api.flutter.dev/flutter/widgets/SlideTransition-class.html"
+    }
+]
