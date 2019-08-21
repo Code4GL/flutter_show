@@ -7,6 +7,7 @@ import 'material/material.dart';
 import 'cupertino/cupertino.dart';
 import 'favorites/favorites.dart';
 import 'about/about.dart';
+import 'package:flutter_show/components/webview.dart';
 
 import 'widget/accessibility/accessibility.dart';
 import 'widget/accessibility/detail/exclude_semantics.dart';
@@ -80,6 +81,8 @@ class _AppState extends State<App> {
         GlobalWidgetsLocalizations.delegate,
       ],
       routes: <String, WidgetBuilder>{
+        "WebView":(BuildContext context) =>
+            new WebViewPage(),
         "Widget/Accessibility": (BuildContext context) =>
             new AccessibilityPage(),
         "Widget/Accessibility/ExcludeSemantics": (BuildContext context) =>

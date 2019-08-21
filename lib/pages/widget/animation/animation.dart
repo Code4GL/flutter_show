@@ -29,7 +29,8 @@ class AnimationPage extends StatelessWidget {
                     title: "${data[index]['title']}",
                     introduction: "${data[index]['introduction']}",
                     routeName: "${data[index]['routeName']}",
-                    imagePath:"${data[index]['imagePath']}"
+                    imagePath:"${data[index]['imagePath']}",
+                    docPath:"${data[index]['docPath']}"
                   );
                 },
               );

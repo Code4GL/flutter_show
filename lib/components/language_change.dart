@@ -7,7 +7,6 @@ class LanguageChange extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String runtimeType = I18n.of(context).runtimeType.toString();
-    print(runtimeType);
     return IconButton(
       icon: Icon(Icons.translate),
       onPressed: () {
