@@ -12,6 +12,7 @@ class AnimationPage extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: Text('AnimationPage'),
+          centerTitle:true,
           actions: <Widget>[
             LanguageChange(),
           ],

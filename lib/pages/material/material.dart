@@ -6,6 +6,7 @@ class MaterialPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('MaterialPage'),
+        centerTitle:true,
       ),
       body: Center(
         child: Text('MaterialPage'),

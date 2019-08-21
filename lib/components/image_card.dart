@@ -4,7 +4,12 @@ import 'package:flutter_show/components/webview.dart';
 
 class ImageCard extends StatelessWidget {
   ImageCard(
-      {Key key, this.title, this.introduction, this.routeName, this.imagePath,this.docPath})
+      {Key key,
+      this.title,
+      this.introduction,
+      this.routeName,
+      this.imagePath,
+      this.docPath})
       : super(key: key);
   final String title;
   final String introduction;
@@ -17,8 +22,8 @@ class ImageCard extends StatelessWidget {
     return GestureDetector(
       onTap: () {
         Navigator.push(context,
-            new MaterialPageRoute(builder: (BuildContext context) {
-          return new WebViewPage(title:"$title",docPath: "$docPath");
+            MaterialPageRoute(builder: (BuildContext context) {
+          return WebViewPage(title: "$title", url: "$docPath");
         }));
       },
       child: Card(

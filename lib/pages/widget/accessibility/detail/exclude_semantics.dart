@@ -9,6 +9,7 @@ class ExcludeSemanticsPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('ExcludeSemanticsPage'),
+        centerTitle:true,
       ),
       body: Center(
         child: Text(I18n.of(context).title),

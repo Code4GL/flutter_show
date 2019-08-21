@@ -22,6 +22,7 @@ class AccessibilityPageState extends State<AccessibilityPage> {
     return Scaffold(
         appBar: AppBar(
           title: Text('AccessibilityPage'),
+          centerTitle:true,
           actions: <Widget>[
             LanguageChange(),
           ],

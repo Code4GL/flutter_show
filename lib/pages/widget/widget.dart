@@ -22,6 +22,7 @@ class WidgetPageState extends State<WidgetPage> {
     return Scaffold(
         appBar: AppBar(
           title: Text('Widget'),
+          centerTitle:true,
           actions: <Widget>[
             LanguageChange(),
           ],

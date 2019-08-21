@@ -7,6 +7,7 @@ class CupertinoPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('CupertinoPage'),
+        centerTitle:true,
       ),
       body: Center(
         child: Text('CupertinoPage'),

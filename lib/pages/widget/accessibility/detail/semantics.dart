@@ -7,6 +7,7 @@ class SemanticsPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('SemanticsPage'),
+        centerTitle:true,
       ),
       body: Center(
         child: Text('SemanticsPage'),

@@ -6,6 +6,7 @@ class ButtonPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('ButtonPage'),
+        centerTitle:true,
       ),
       body: Center(
         child: RaisedButton(

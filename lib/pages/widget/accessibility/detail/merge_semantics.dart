@@ -7,6 +7,7 @@ class MergeSemanticsPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('MergeSemanticsPage'),
+        centerTitle:true,
       ),
       body: Center(
         child: Text('MergeSemanticsPage'),
