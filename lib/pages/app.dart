@@ -29,6 +29,17 @@ class _AppState extends State<App> {
     CupertinoPage(),
     FavouritesPage(),
   ];
+  @override
+  void initState() {
+    super.initState();
+    I18n.onLocaleChanged = onLocaleChange;
+  }
+
+  void onLocaleChange(Locale locale) {
+    setState(() {
+      I18n.locale = locale;
+    });
+  }
 
   void _changeItem(int index) {
     setState(() {
@@ -38,7 +49,6 @@ class _AppState extends State<App> {
 
   @override
   Widget build(BuildContext context) {
-    I18n.locale = Locale("zh");
     return MaterialApp(
       title: 'Flutter Show',
       home: Scaffold(

@@ -21,10 +21,24 @@ class WidgetPageState extends State<WidgetPage> {
     return Scaffold(
         appBar: AppBar(
           title: Text('Widget'),
+          actions: <Widget>[
+            IconButton(
+              icon: Icon(Icons.translate),
+              onPressed: () {
+                if(I18n.of(context).flag == "zh"){
+                  I18n.onLocaleChanged(Locale("en"));
+                }else{
+                  I18n.onLocaleChanged(Locale("zh"));
+                }
+              },
+            )
+          ],
         ),
         body: FutureBuilder(
-          future: DefaultAssetBundle.of(context)
-              .loadString(I18n.of(context).flag == "en" ? "assets/data/en/widget/widget_list.json" :"assets/data/zh/widget/widget_list.json"),
+          future: DefaultAssetBundle.of(context).loadString(
+              I18n.of(context).flag == "en"
+                  ? "assets/data/en/widget/widget_list.json"
+                  : "assets/data/zh/widget/widget_list.json"),
           builder: (context, snapshot) {
             if (snapshot.hasData) {
               List<dynamic> data = json.decode(snapshot.data);
@@ -52,7 +66,6 @@ class WidgetPageState extends State<WidgetPage> {
           child: Icon(Icons.refresh),
           backgroundColor: ColorUtil.randomColor(),
           tooltip: "refresh color",
-        )
-    );
+        ));
   }
 }
