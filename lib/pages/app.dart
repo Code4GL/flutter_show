@@ -81,8 +81,6 @@ class _AppState extends State<App> {
         GlobalWidgetsLocalizations.delegate,
       ],
       routes: <String, WidgetBuilder>{
-        "WebView":(BuildContext context) =>
-            new WebViewPage(),
         "Widget/Accessibility": (BuildContext context) =>
             new AccessibilityPage(),
         "Widget/Accessibility/ExcludeSemantics": (BuildContext context) =>

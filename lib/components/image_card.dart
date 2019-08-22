@@ -23,7 +23,7 @@ class ImageCard extends StatelessWidget {
       onTap: () {
         Navigator.push(context,
             MaterialPageRoute(builder: (BuildContext context) {
-          return WebViewPage(title: "$title", url: "$docPath");
+          return WebViewPage(this.title, this.docPath);
         }));
       },
       child: Card(
