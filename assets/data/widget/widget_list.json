@@ -1,0 +1,100 @@
+[
+    {
+        "title":"Accessibility",
+        "introductionEN":"Make your app accessible.",
+        "introductionCN":"让您的应用可访问。",
+        "routeName":"Widget/Accessibility",
+        "fileName":"accessibility"
+    },
+    {
+        "title":"Animation and Motion",
+        "introductionEN":"Bring animations to your app.",
+        "introductionCN":"为您的应用添加动画。",
+        "routeName":"Widget/Animation",
+        "fileName":"animation"
+    },
+    {
+        "title":"Assets, Images, and Icons",
+        "introductionEN":"Manage assets, display images, and show icons.",
+        "introductionCN":"管理资产，显示图像和显示图标。",
+        "routeName":"Widget/Assets",
+        "fileName":"assets"
+    },
+    {
+        "title":"Async",
+        "introductionEN":"Async patterns to your Flutter application.",
+        "introductionCN":"Flutter应用程序的异步模式。",
+        "routeName":"Widget/Async",
+        "fileName":"async"
+    },
+    {
+        "title":"Basics",
+        "introductionEN":"Widgets you absolutely need to know before building your first Flutter app.",
+        "introductionCN":"在构建第一个Flutter应用程序之前，您首先需要知道的小部件。",
+        "routeName":"Widget/Basics",
+        "fileName":"basics"
+    },
+    {
+        "title":"Cupertino (iOS-style widgets)",
+        "introductionEN":"Beautiful and high-fidelity widgets for current iOS design language.",
+        "introductionCN":"适用于当前iOS设计语言的美观且高保真的小部件。",
+        "routeName":"Widget/Widget",
+        "fileName":"cupertino"
+    },
+    {
+        "title":"Input",
+        "introductionEN":"Take user input in addition to input widgets in Material Components and Cupertino.",
+        "introductionCN":"除了Material Components和Cupertino中的输入小部件之外，还可以输入用户输入。",
+        "routeName":"Widget/Input",
+        "fileName":"input"
+    },
+    {
+        "title":"Interaction Models",
+        "introductionEN":"Respond to touch events and route users to different views.",
+        "introductionCN":"响应触摸事件并将用户路由到不同的视图。",
+        "routeName":"Widget/Interaction",
+        "fileName":"interaction"
+    },
+    {
+        "title":"Layout",
+        "introductionEN":"Arrange other widgets columns, rows, grids, and many other layouts.",
+        "introductionCN":"排列其他小部件列，行，网格和许多其他布局。",
+        "routeName":"Widget/Layout",
+        "fileName":"layout"
+    },
+    {
+        "title":"Material Components",
+        "introductionEN":"Visual, behavioral, and motion-rich widgets implementing the Material Design guidelines.",
+        "introductionCN":"实现Material Design准则的视觉，行为和动作丰富的小部件。",
+        "routeName":"Widget/Material",
+        "fileName":"material"
+    },
+    {
+        "title":"Painting and effects",
+        "introductionEN":"These widgets apply visual effects to the children without changing their layout, size, or position.",
+        "introductionCN":"这些小部件将视觉效果应用于儿童，而不会改变其布局，大小或位置。",
+        "routeName":"Widget/Painting",
+        "fileName":"painting"
+    },
+    {
+        "title":"Scrolling",
+        "introductionEN":"Scroll multiple widgets as children of the parent.",
+        "introductionCN":"滚动多个小部件作为父级的子级。",
+        "routeName":"Widget/Scrolling",
+        "fileName":"scrolling"
+    },
+    {
+        "title":"Styling",
+        "introductionEN":"Manage the theme of your app, makes your app responsive to screen sizes, or add padding.",
+        "introductionCN":"管理应用的主题，使您的应用响应屏幕尺寸或添加填充。",
+        "routeName":"Widget/Styling",
+        "fileName":"styling"
+    },
+    {
+        "title":"Text",
+        "introductionEN":"Display and style text.",
+        "introductionCN":"显示和样式文本。",
+        "routeName":"Widget/Text",
+        "fileName":"text"
+    }
+]

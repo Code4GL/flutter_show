@@ -1,0 +1,34 @@
+[
+    {
+        "title":"AssetBundle",
+        "introductionEN":"Asset bundles contain resources, such as images and strings, that can be used by an application. Access to these resources is asynchronous so that they can be transparently loaded over a network (e.g., from a NetworkAssetBundle) or from the local file system without blocking the application's user interface.",
+        "introductionCN":"资产包包含可由应用程序使用的资源，例如图像和字符串。 对这些资源的访问是异步的，因此可以通过网络（例如，从NetworkAssetBundle）或从本地文件系统透明地加载它们，而不会阻塞应用程序的用户界面。",
+        "routeName":"",
+        "imagePath":"assets/images/flutter.png",
+        "docPath":"https://api.flutter.dev/flutter/services/AssetBundle-class.html"
+    },
+    {
+        "title":"Icon",
+        "introductionEN":"A Material Design icon.",
+        "introductionCN":"材料设计图标。",
+        "routeName":"",
+        "imagePath":"assets/images/flutter.png",
+        "docPath":"https://api.flutter.dev/flutter/widgets/Icon-class.html"
+    },
+    {
+        "title":"Image",
+        "introductionEN":"A widget that displays an image.",
+        "introductionCN":"显示图像的小部件。",
+        "routeName":"",
+        "imagePath":"assets/images/flutter.png",
+        "docPath":"https://api.flutter.dev/flutter/widgets/Image-class.html"
+    },
+    {
+        "title":"RawImage",
+        "introductionEN":"A widget that displays a dart:ui.Image directly.",
+        "introductionCN":"一个直接显示dart：ui.Image的小部件。",
+        "routeName":"",
+        "imagePath":"assets/images/flutter.png",
+        "docPath":"https://api.flutter.dev/flutter/widgets/RawImage-class.html"
+    }
+]

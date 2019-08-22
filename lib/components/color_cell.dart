@@ -1,18 +1,21 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter_show/generated/i18n.dart';
 import 'package:flutter_show/pages/widget/secondary_widget.dart';
 
 class ColorCell extends StatelessWidget {
   ColorCell(
       {Key key,
       this.title,
-      this.introduction,
+      this.introductionEN,
+      this.introductionCN,
       this.routeName,
       this.randomColor,
       this.fileName})
       : super(key: key);
   final String title;
-  final String introduction;
+  final String introductionEN;
+  final String introductionCN;
   final String routeName;
   final Color randomColor;
   final String fileName;
@@ -61,7 +64,7 @@ class ColorCell extends StatelessWidget {
               margin: EdgeInsets.fromLTRB(10, 0, 0, 5),
               alignment: AlignmentDirectional.centerStart,
               child: Text(
-                "$introduction",
+                I18n.of(context).runtimeType.toString() == "_I18n_zh_CN"?"$introductionCN":"$introductionEN",
                 style: TextStyle(
                   color: Colors.white,
                 ),

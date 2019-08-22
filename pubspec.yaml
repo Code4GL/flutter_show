@@ -77,10 +77,7 @@ flutter:
     - assets/images/catalog-widget-placeholder.png
     - assets/images/flutter.png
 
-    - assets/data/en/widget/widget_list.json
-    - assets/data/en/widget/accessibility.json
-    - assets/data/en/widget/animation.json
-
-    - assets/data/zh/widget/widget_list.json
-    - assets/data/zh/widget/accessibility.json
-    - assets/data/zh/widget/animation.json
+    - assets/data/widget/widget_list.json
+    - assets/data/widget/accessibility.json
+    - assets/data/widget/animation.json
+    - assets/data/widget/assets.json
