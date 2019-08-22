@@ -1,18 +1,31 @@
 import 'package:flutter/material.dart';
 
-class ColorCell extends StatelessWidget {
+import 'package:flutter_show/pages/widget/secondary_widget.dart';
 
-  ColorCell({Key key, this.title, this.introduction,this.routeName,this.randomColor}) : super(key: key);
+class ColorCell extends StatelessWidget {
+  ColorCell(
+      {Key key,
+      this.title,
+      this.introduction,
+      this.routeName,
+      this.randomColor,
+      this.fileName})
+      : super(key: key);
   final String title;
   final String introduction;
   final String routeName;
   final Color randomColor;
+  final String fileName;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.of(context).pushNamed('$routeName');
+        Navigator.push(context,
+            MaterialPageRoute(builder: (BuildContext context) {
+          return SecondaryWidgetPage(
+              title: this.title, fileName: this.fileName);
+        }));
       },
       child: Container(
         margin: EdgeInsets.fromLTRB(10, 5, 10, 5),
@@ -24,10 +37,10 @@ class ColorCell extends StatelessWidget {
           ),
           boxShadow: [
             BoxShadow(
-              color: randomColor,
-              offset: Offset(0, 0),
-              blurRadius: 10,
-              spreadRadius: 0),
+                color: randomColor,
+                offset: Offset(0, 0),
+                blurRadius: 10,
+                spreadRadius: 0),
           ],
         ),
         child: Column(

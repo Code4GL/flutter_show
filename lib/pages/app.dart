@@ -7,13 +7,6 @@ import 'material/material.dart';
 import 'cupertino/cupertino.dart';
 import 'favorites/favorites.dart';
 import 'about/about.dart';
-import 'package:flutter_show/components/webview.dart';
-
-import 'widget/accessibility/accessibility.dart';
-import 'widget/accessibility/detail/exclude_semantics.dart';
-import 'widget/accessibility/detail/merge_semantics.dart';
-import 'widget/accessibility/detail/semantics.dart';
-import 'widget/animation/animation.dart';
 
 class App extends StatefulWidget {
   App({Key key}) : super(key: key);
@@ -80,17 +73,6 @@ class _AppState extends State<App> {
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
       ],
-      routes: <String, WidgetBuilder>{
-        "Widget/Accessibility": (BuildContext context) =>
-            new AccessibilityPage(),
-        "Widget/Accessibility/ExcludeSemantics": (BuildContext context) =>
-            new ExcludeSemanticsPage(),
-        "Widget/Accessibility/MergeSemantics": (BuildContext context) =>
-            new MergeSemanticsPage(),
-        "Widget/Accessibility/Semantics": (BuildContext context) =>
-            new SemanticsPage(),
-        "Widget/Animation": (BuildContext context) => new AnimationPage(),
-      },
     );
   }
 }

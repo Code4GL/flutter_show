@@ -8,9 +8,6 @@ import '../../components/color_cell.dart';
 
 class WidgetPage extends StatefulWidget {
   WidgetPage({Key key}) : super(key: key);
-  final String title = "title";
-  final String introduction = "introduction";
-  final String routeName = "routeName";
 
   @override
   WidgetPageState createState() => WidgetPageState();
@@ -22,7 +19,7 @@ class WidgetPageState extends State<WidgetPage> {
     return Scaffold(
         appBar: AppBar(
           title: Text('Widget'),
-          centerTitle:true,
+          centerTitle: true,
           actions: <Widget>[
             LanguageChange(),
           ],
@@ -39,11 +36,11 @@ class WidgetPageState extends State<WidgetPage> {
                 itemCount: data.length,
                 itemBuilder: (BuildContext context, int index) {
                   return ColorCell(
-                    title: "${data[index]['title']}",
-                    introduction: "${data[index]['introduction']}",
-                    routeName: "${data[index]['routeName']}",
-                    randomColor: ColorUtil.randomColor(),
-                  );
+                      title: "${data[index]['title']}",
+                      introduction: "${data[index]['introduction']}",
+                      routeName: "${data[index]['routeName']}",
+                      randomColor: ColorUtil.randomColor(),
+                      fileName: "${data[index]['fileName']}");
                 },
               );
             }
