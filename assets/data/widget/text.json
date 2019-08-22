@@ -1,10 +1,26 @@
 [
     {
-        "title":"",
-        "introductionEN":"",
-        "introductionCN":"",
+        "title":"DefaultTextStyle",
+        "introductionEN":"The text style to apply to descendant Text widgets without explicit style.",
+        "introductionCN":"要应用于后代Text小部件而没有显式样式的文本样式。",
         "routeName":"",
-        "imagePath":"assets/images/flutter.png",
-        "docPath":"https://api.flutter.dev/flutter/widgets/AnimatedBuilder-class.html"
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/widgets/DefaultTextStyle-class.html"
+    },
+    {
+        "title":"RichText",
+        "introductionEN":"The RichText widget displays text that uses multiple different styles. The text to display is described using a tree of TextSpan objects, each of which has an associated style that is used for that subtree. The text might break across multiple lines or might all be displayed on the same line depending on the layout constraints.",
+        "introductionCN":"RichText小部件显示使用多种不同样式的文本。 要显示的文本使用TextSpan对象树来描述，每个对象都有一个用于该子树的关联样式。 文本可能会跨越多行，也可能全部显示在同一行上，具体取决于布局约束。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/widgets/RichText-class.html"
+    },
+    {
+        "title":"Text",
+        "introductionEN":"A run of text with a single style.",
+        "introductionCN":"一个单一样式的文本",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/widgets/Text-class.html"
     }
 ]

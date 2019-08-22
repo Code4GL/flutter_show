@@ -47,7 +47,7 @@ class ImageCard extends StatelessWidget {
                             topRight: Radius.circular(10)),
                         image: DecorationImage(
                           image: AssetImage(
-                            '$imagePath',
+                            '$imagePath' == '' ? 'assets/images/flutter.png' : '$imagePath',
                           ),
                           fit: BoxFit.cover,
                         ))),

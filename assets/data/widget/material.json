@@ -1,10 +1,314 @@
 [
     {
-        "title":"",
-        "introductionEN":"",
-        "introductionCN":"",
+        "title":"Appbar",
+        "introductionEN":"A Material Design app bar. An app bar consists of a toolbar and potentially other widgets, such as a TabBar and a FlexibleSpaceBar.",
+        "introductionCN":"Material Design应用栏。应用栏由工具栏和可能的其他小部件组成，例如TabBar和FlexibleSpaceBar。",
         "routeName":"",
-        "imagePath":"assets/images/flutter.png",
-        "docPath":"https://api.flutter.dev/flutter/widgets/AnimatedBuilder-class.html"
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/Appbar-class.html"
+    },
+    {
+        "title":"BottomNavigationBar",
+        "introductionEN":"Bottom navigation bars make it easy to explore and switch between top-level views in a single tap. The BottomNavigationBar widget implements this component.",
+        "introductionCN":"底部导航栏使您可以轻松浏览并在单击中切换顶级视图。 BottomNavigationBar小部件实现此组件。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/BottomNavigationBar-class.html"
+    },
+    {
+        "title":"Drawer",
+        "introductionEN":"A Material Design panel that slides in horizontally from the edge of a Scaffold to show navigation links in an application.",
+        "introductionCN":"“材质设计”面板，从“脚手架”边缘水平滑动，以显示应用程序中的导航链接。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/Drawer-class.html"
+    },
+    {
+        "title":"MaterialApp",
+        "introductionEN":"A convenience widget that wraps a number of widgets that are commonly required for applications implementing Material Design.",
+        "introductionCN":"一个便利小部件，它包含了许多小部件，这些小部件通常是实现Material Design的应用程序所必需的。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/MaterialApp-class.html"
+    },
+    {
+        "title":"Scaffold",
+        "introductionEN":"Implements the basic Material Design visual layout structure. This class provides APIs for showing drawers, snack bars, and bottom sheets.",
+        "introductionCN":"实现基本的Material Design可视化布局结构。此类提供用于显示抽屉，小吃店和底部工作表的API。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/Scaffold-class.html"
+    },
+    {
+        "title":"SliverAppBar",
+        "introductionEN":"A material design app bar that integrates with a CustomScrollView.",
+        "introductionCN":"与CustomScrollView集成的材质设计应用栏。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/SliverAppBar-class.html"
+    },
+    {
+        "title":"TabBar",
+        "introductionEN":"A Material Design widget that displays a horizontal row of tabs.",
+        "introductionCN":"“材质设计”窗口小部件，显示水平的选项卡行。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/TabBar-class.html"
+    },
+    {
+        "title":"TabBarView",
+        "introductionEN":"A page view that displays the widget which corresponds to the currently selected tab. Typically used in conjunction with a TabBar.",
+        "introductionCN":"显示与当前所选选项卡对应的窗口小部件的页面视图。通常与TabBar一起使用。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/TabBarView-class.html"
+    },
+    {
+        "title":"WidgetsApp",
+        "introductionEN":"A convenience class that wraps a number of widgets that are commonly required for an application.",
+        "introductionCN":"一个便利类，它包含了应用程序通常需要的许多小部件。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/widgets/WidgetsApp-class.html"
+    },
+    {
+        "title":"ButtonBar",
+        "introductionEN":"A horizontal arrangement of buttons.",
+        "introductionCN":"按钮的水平排列。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/ButtonBar-class.html"
+    },
+    {
+        "title":"DropdownButton",
+        "introductionEN":"Shows the currently selected item and an arrow that opens a menu for selecting another item.",
+        "introductionCN":"显示当前选定的项目和打开菜单以选择其他项目的箭头。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/DropdownButton-class.html"
+    },
+    {
+        "title":"FlatButton",
+        "introductionEN":"A flat button is a section printed on a Material Components widget that reacts to touches by filling with color.",
+        "introductionCN":"平面按钮是打印在“材质组件”窗口小部件上的一个部分，通过填充颜色来对触摸作出反应。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/FlatButton-class.html"
+    },
+    {
+        "title":"FloatingActionButton",
+        "introductionEN":"A floating action button is a circular icon button that hovers over content to promote a primary action in the application. Floating action buttons are most commonly used in the Scaffold.floatingActionButton field.",
+        "introductionCN":"浮动操作按钮是一个圆形图标按钮，悬停在内容上以提升应用程序中的主要操作。浮动操作按钮最常用于Scaffold.floatingActionButton字段中。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/FloatingActionButton-class.html"
+    },
+    {
+        "title":"IconButton",
+        "introductionEN":"An icon button is a picture printed on a Material widget that reacts to touches by filling with color (ink).",
+        "introductionCN":"图标按钮是打印在“材质”小部件上的图片，通过填充颜色（墨水）对触摸作出反应。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/IconButton-class.html"
+    },
+    {
+        "title":"PopupMenuButton",
+        "introductionEN":"Displays a menu when pressed and calls onSelected when the menu is dismissed because an item was selected.",
+        "introductionCN":"按下时显示菜单，当菜单因选择项目而被解除时调用onSelected。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/PopupMenuButton-class.html"
+    },
+    {
+        "title":"RaisedButton",
+        "introductionEN":"A Material Design raised button. A raised button consists of a rectangular piece of material that hovers over the interface.",
+        "introductionCN":"材料设计凸起按钮。凸起的按钮由悬挂在界面上的矩形材料块组成。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/RaisedButton-class.html"
+    },
+    {
+        "title":"Checkbox",
+        "introductionEN":"Checkboxes allow the user to select multiple options from a set. The Checkbox widget implements this component.",
+        "introductionCN":"复选框允许用户从一组中选择多个选项。 Checkbox小部件实现此组件。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/AppBar-class.html"
+    },
+    {
+        "title":"Date & Time Pickers",
+        "introductionEN":"Date pickers use a dialog window to select a single date on mobile. Time pickers use a dialog to select a single time (in the hours:minutes format) on mobile.",
+        "introductionCN":"日期选择器使用对话窗口在移动设备上选择单个日期。时间选择器使用对话框在移动设备上选择单个时间（以小时：分钟格式）。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/showDatePicker.html"
+    },
+    {
+        "title":"Radio",
+        "introductionEN":"Radio buttons allow the user to select one option from a set. Use radio buttons for exclusive selection if you think that the user needs to see all available options side-by-side.",
+        "introductionCN":"单选按钮允许用户从一组中选择一个选项。如果您认为用户需要并排查看所有可用选项，请使用单选按钮进行独占选择。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/Radio-class.html"
+    },
+    {
+        "title":"Slider",
+        "introductionEN":"Sliders let users select from a range of values by moving the slider thumb.",
+        "introductionCN":"滑块允许用户通过移动滑块来选择一系列值。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/Slider-class.html"
+    },
+    {
+        "title":"Switch",
+        "introductionEN":"On/off switches toggle the state of a single settings option. The Switch widget implements this component.",
+        "introductionCN":"开/关切换可切换单个设置选项的状态。 Switch小部件实现此组件。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/Switch-class.html"
+    },
+    {
+        "title":"TextField",
+        "introductionEN":"Touching a text field places the cursor and displays the keyboard. The TextField widget implements this component.",
+        "introductionCN":"触摸文本字段会放置光标并显示键盘。 TextField小部件实现此组件。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/TextField-class.html"
+    },
+    {
+        "title":"AlertDialog",
+        "introductionEN":"Alerts are urgent interruptions requiring acknowledgement that inform the user about a situation. The AlertDialog widget implements this component.",
+        "introductionCN":"警报是紧急中断，需要确认通知用户情况。 AlertDialog小部件实现此组件。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/AlertDialog-class.html"
+    },
+    {
+        "title":"BottomSheet",
+        "introductionEN":"Bottom sheets slide up from the bottom of the screen to reveal more content. You can call showBottomSheet() to implement a persistent bottom sheet or showModalBottomSheet() to implement a modal bottom sheet.",
+        "introductionCN":"底部工作表从屏幕底部向上滑动以显示更多内容。您可以调用showBottomSheet（）来实现持久底部工作表或showModalBottomSheet（）来实现模式底部工作表。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/BottomSheet-class.html"
+    },
+    {
+        "title":"ExpansionPanel",
+        "introductionEN":"Expansion panels contain creation flows and allow lightweight editing of an element. The ExpansionPanel widget implements this component.",
+        "introductionCN":"扩展面板包含创建流程，允许轻量编辑元素。 ExpansionPanel小部件实现此组件。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/ExpansionPanel-class.html"
+    },
+    {
+        "title":"SimpleDialog",
+        "introductionEN":"Simple dialogs can provide additional details or actions about a list item. For example they can display avatars icons clarifying subtext or orthogonal actions (such as adding an account).",
+        "introductionCN":"简单对话框可以提供有关列表项的其他详细信息或操作。例如，他们可以显示澄清子文本或正交动作的头像图标（例如添加帐户）。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/SimpleDialog-class.html"
+    },
+    {
+        "title":"SnackBar",
+        "introductionEN":"A lightweight message with an optional action which briefly displays at the bottom of the screen.",
+        "introductionCN":"带有可选操作的轻量级消息，短暂显示在屏幕底部。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/SnackBar-class.html"
+    },
+    {
+        "title":"Card",
+        "introductionEN":"A Material Design card. A card has slightly rounded corners and a shadow.",
+        "introductionCN":"材料设计卡。卡片有圆角和阴影。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/Card-class.html"
+    },
+    {
+        "title":"Chip",
+        "introductionEN":"A Material Design chip. Chips represent complex entities in small blocks, such as a contact.",
+        "introductionCN":"材料设计芯片。芯片表示小块中的复杂实体，例如联系人。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/Chip-class.html"
+    },
+    {
+        "title":"CircularProgressIndicator",
+        "introductionEN":"A material design circular progress indicator, which spins to indicate that the application is busy.",
+        "introductionCN":"材料设计循环进度指示器，旋转以指示应用程序正忙。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/CircularProgressIndicator-class.html"
+    },
+    {
+        "title":"DataTable",
+        "introductionEN":"Data tables display sets of raw data. They usually appear in desktop enterprise products. The DataTable widget implements this component.",
+        "introductionCN":"数据表显示原始数据集。它们通常出现在桌面企业产品中。 DataTable小部件实现此组件。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/DataTable-class.html"
+    },
+    {
+        "title":"GridView",
+        "introductionEN":"A grid list consists of a repeated pattern of cells arrayed in a vertical and horizontal layout. The GridView widget implements this component.",
+        "introductionCN":"网格列表由以垂直和水平布局排列的重复单元格图案组成。 GridView小部件实现此组件。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/GridView-class.html"
+    },
+    {
+        "title":"Icon",
+        "introductionEN":"A Material Design icon.",
+        "introductionCN":"材料设计图标。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/Icon-class.html"
+    },
+    {
+        "title":"Image",
+        "introductionEN":"A widget that displays an image.",
+        "introductionCN":"显示图像的小部件。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/Image-class.html"
+    },
+    {
+        "title":"LinearProgressIndicator",
+        "introductionEN":"A material design linear progress indicator, also known as a progress bar.",
+        "introductionCN":"材料设计线性进度指示器，也称为进度条。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/LinearProgressIndicator-class.html"
+    },
+    {
+        "title":"Tooltip",
+        "introductionEN":"Tooltips provide text labels that help explain the function of a button or other user interface action. Wrap the button in a Tooltip widget to show a label when the widget long pressed (or when the user takes some other appropriate action).",
+        "introductionCN":"工具提示提供文本标签，有助于解释按钮或其他用户界面操作的功能。在工具提示小部件中包裹按钮，以在长按小部件时（或当用户采取其他适当的操作时）显示标签。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/Tooltip-class.html"
+    },
+    {
+        "title":"Divider",
+        "introductionEN":"A one logical pixel thick horizontal line, with padding on either side.",
+        "introductionCN":"一条逻辑像素粗的水平线，两边都有填充。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/Divider-class.html"
+    },
+    {
+        "title":"ListTile",
+        "introductionEN":"A single fixed-height row that typically contains some text as well as a leading or trailing icon.",
+        "introductionCN":"单个固定高度的行，通常包含一些文本以及前导或尾随图标。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/ListTile-class.html"
+    },
+    {
+        "title":"Stepper",
+        "introductionEN":"A Material Design stepper widget that displays progress through a sequence of steps.",
+        "introductionCN":"Material Design步进小部件，通过一系列步骤显示进度。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/material/Stepper-class.html"
     }
 ]

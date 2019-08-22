@@ -1,10 +1,82 @@
 [
     {
-        "title":"",
-        "introductionEN":"",
-        "introductionCN":"",
+        "title":"BackdropFilter",
+        "introductionEN":"A widget that applies a filter to the existing painted content and then paints child. This effect is relatively expensive, especially if the filter is non-local, such as a blur.",
+        "introductionCN":"一个小部件，它将过滤器应用于现有的绘制内容，然后绘制子项。这种效果相对昂贵，特别是如果滤镜是非局部的，例如模糊。",
         "routeName":"",
-        "imagePath":"assets/images/flutter.png",
-        "docPath":"https://api.flutter.dev/flutter/widgets/AnimatedBuilder-class.html"
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/widgets/BackdropFilter-class.html"
+    },
+    {
+        "title":"ClipOval",
+        "introductionEN":"A widget that clips its child using an oval.",
+        "introductionCN":"使用椭圆剪辑其子项的小部件。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/widgets/ClipOval-class.html"
+    },
+    {
+        "title":"ClipPath",
+        "introductionEN":"A widget that clips its child using a path.",
+        "introductionCN":"使用路径剪辑其子项的窗口小部件。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/widgets/ClipPath-class.html"
+    },
+    {
+        "title":"ClipRect",
+        "introductionEN":"A widget that clips its child using a rectangle.",
+        "introductionCN":"使用矩形剪辑其子项的小部件。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/widgets/ClipRect-class.html"
+    },
+    {
+        "title":"CustomPaint",
+        "introductionEN":"A widget that provides a canvas on which to draw during the paint phase.",
+        "introductionCN":"一个小部件，提供在绘制阶段绘制的画布。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/widgets/CustomPaint-class.html"
+    },
+    {
+        "title":"DecoratedBox",
+        "introductionEN":"A widget that paints a Decoration either before or after its child paints.",
+        "introductionCN":"在儿童绘画之前或之后绘制装饰的小部件。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/widgets/DecoratedBox-class.html"
+    },
+    {
+        "title":"FractionalTranslation",
+        "introductionEN":"A widget that applies a translation expressed as a fraction of the box's size before painting its child.",
+        "introductionCN":"在绘制其子项之前应用表达为框大小的一小部分的翻译的小部件。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/widgets/FractionalTranslation-class.html"
+    },
+    {
+        "title":"Opacity",
+        "introductionEN":"A widget that makes its child partially transparent.",
+        "introductionCN":"使子项部分透明的小部件。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/widgets/Opacity-class.html"
+    },
+    {
+        "title":"RotatedBox",
+        "introductionEN":"A widget that rotates its child by a integral number of quarter turns.",
+        "introductionCN":"一个小部件，可以将其子项旋转整数个四分之一圈。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/widgets/RotatedBox-class.html"
+    },
+    {
+        "title":"Transform",
+        "introductionEN":"A widget that applies a transformation before painting its child.",
+        "introductionCN":"在绘制其子项之前应用转换的窗口小部件。",
+        "routeName":"",
+        "imagePath":"",
+        "docPath":"https://api.flutter.dev/flutter/widgets/Transform-class.html"
     }
 ]

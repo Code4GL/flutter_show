@@ -81,3 +81,14 @@ flutter:
     - assets/data/widget/accessibility.json
     - assets/data/widget/animation.json
     - assets/data/widget/assets.json
+    - assets/data/widget/async.json
+    - assets/data/widget/basics.json
+    - assets/data/widget/cupertino.json
+    - assets/data/widget/input.json
+    - assets/data/widget/interaction.json
+    - assets/data/widget/layout.json
+    - assets/data/widget/material.json
+    - assets/data/widget/painting.json
+    - assets/data/widget/scrolling.json
+    - assets/data/widget/styling.json
+    - assets/data/widget/text.json
