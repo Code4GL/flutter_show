@@ -11,34 +11,36 @@ class SecondaryWidgetPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(title),
-        centerTitle: true,
-        actions: <Widget>[
-          LanguageChange(),
-        ],
-      ),
-      body: FutureBuilder(
-        future: DefaultAssetBundle.of(context).loadString("assets/data/widget/$fileName.json"),
-        builder: (context, snapshot) {
-          if (snapshot.hasData) {
-            List<dynamic> data = json.decode(snapshot.data);
-            return ListView.builder(
-              itemCount: data.length,
-              itemBuilder: (BuildContext context, int index) {
-                return ImageCard(
-                    title: "${data[index]['title']}",
-                    introductionEN: "${data[index]['introductionEN']}",
-                    introductionCN: "${data[index]['introductionCN']}",
-                    routeName: "${data[index]['routeName']}",
-                    imagePath: "${data[index]['imagePath']}",
-                    docPath: "${data[index]['docPath']}");
-              },
-            );
-          }
-          return CircularProgressIndicator();
-        },
-      ),
-    );
+        appBar: AppBar(
+          title: Text(title),
+          centerTitle: true,
+          actions: <Widget>[
+            LanguageChange(),
+          ],
+        ),
+        body: Center(
+          child: FutureBuilder(
+            future: DefaultAssetBundle.of(context)
+                .loadString("assets/data/widget/$fileName.json"),
+            builder: (context, snapshot) {
+              if (snapshot.hasData) {
+                List<dynamic> data = json.decode(snapshot.data);
+                return ListView.builder(
+                  itemCount: data.length,
+                  itemBuilder: (BuildContext context, int index) {
+                    return ImageCard(
+                        title: "${data[index]['title']}",
+                        introductionEN: "${data[index]['introductionEN']}",
+                        introductionCN: "${data[index]['introductionCN']}",
+                        routeName: "${data[index]['routeName']}",
+                        imagePath: "${data[index]['imagePath']}",
+                        docPath: "${data[index]['docPath']}");
+                  },
+                );
+              }
+              return CircularProgressIndicator();
+            },
+          ),
+        ));
   }
 }

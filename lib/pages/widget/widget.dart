@@ -23,26 +23,29 @@ class WidgetPageState extends State<WidgetPage> {
             LanguageChange(),
           ],
         ),
-        body: FutureBuilder(
-          future: DefaultAssetBundle.of(context).loadString("assets/data/widget/widget_list.json"),
-          builder: (context, snapshot) {
-            if (snapshot.hasData) {
-              List<dynamic> data = json.decode(snapshot.data);
-              return ListView.builder(
-                itemCount: data.length,
-                itemBuilder: (BuildContext context, int index) {
-                  return ColorCell(
-                      title: "${data[index]['title']}",
-                      introductionEN: "${data[index]['introductionEN']}",
-                      introductionCN: "${data[index]['introductionCN']}",
-                      routeName: "${data[index]['routeName']}",
-                      randomColor: ColorUtil.randomColor(),
-                      fileName: "${data[index]['fileName']}");
-                },
-              );
-            }
-            return CircularProgressIndicator();
-          },
+        body: Center(
+          child: FutureBuilder(
+            future: DefaultAssetBundle.of(context)
+                .loadString("assets/data/widget/widget_list.json"),
+            builder: (context, snapshot) {
+              if (snapshot.hasData) {
+                List<dynamic> data = json.decode(snapshot.data);
+                return ListView.builder(
+                  itemCount: data.length,
+                  itemBuilder: (BuildContext context, int index) {
+                    return ColorCell(
+                        title: "${data[index]['title']}",
+                        introductionEN: "${data[index]['introductionEN']}",
+                        introductionCN: "${data[index]['introductionCN']}",
+                        routeName: "${data[index]['routeName']}",
+                        randomColor: ColorUtil.randomColor(),
+                        fileName: "${data[index]['fileName']}");
+                  },
+                );
+              }
+              return CircularProgressIndicator();
+            },
+          ),
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
