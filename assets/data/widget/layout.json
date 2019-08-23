@@ -228,7 +228,7 @@
         "introductionEN":"This class is useful if you want to overlap several children in a simple way, for example having some text and an image, overlaid with a gradient and a button attached to the bottom.",
         "introductionCN":"如果要以简单的方式重叠多个子项，此类很有用，例如，具有一些文本和图像，覆盖有渐变和附加到底部的按钮。",
         "routeName":"",
-        "imagePath":"",
+        "imagePath":"assets/images/layout/stack.png",
         "docPath":"https://api.flutter.dev/flutter/widgets/Stack-class.html"
     },
     {
@@ -236,7 +236,7 @@
         "introductionEN":"A widget that uses the table layout algorithm for its children.",
         "introductionCN":"一个小部件，它为其子节点使用表格布局算法。",
         "routeName":"",
-        "imagePath":"assets/images/layout/stack.png",
+        "imagePath":"",
         "docPath":"https://api.flutter.dev/flutter/widgets/Table-class.html"
     },
     {

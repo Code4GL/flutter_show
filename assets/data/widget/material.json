@@ -36,7 +36,7 @@
         "introductionEN":"Implements the basic Material Design visual layout structure. This class provides APIs for showing drawers, snack bars, and bottom sheets.",
         "introductionCN":"实现基本的Material Design可视化布局结构。此类提供用于显示抽屉，小吃店和底部工作表的API。",
         "routeName":"",
-        "imagePath":"",
+        "imagePath":"assets/images/basics/layout-structure-regions-mobile.png",
         "docPath":"https://api.flutter.dev/flutter/material/Scaffold-class.html"
     },
     {
@@ -44,7 +44,7 @@
         "introductionEN":"A material design app bar that integrates with a CustomScrollView.",
         "introductionCN":"与CustomScrollView集成的材质设计应用栏。",
         "routeName":"",
-        "imagePath":"",
+        "imagePath":"assets/images/material/material-app-bar.png",
         "docPath":"https://api.flutter.dev/flutter/material/SliverAppBar-class.html"
     },
     {
@@ -60,7 +60,7 @@
         "introductionEN":"A page view that displays the widget which corresponds to the currently selected tab. Typically used in conjunction with a TabBar.",
         "introductionCN":"显示与当前所选选项卡对应的窗口小部件的页面视图。通常与TabBar一起使用。",
         "routeName":"",
-        "imagePath":"",
+        "imagePath":"assets/images/material/material-tab-bar.png",
         "docPath":"https://api.flutter.dev/flutter/material/TabBarView-class.html"
     },
     {
@@ -260,7 +260,7 @@
         "introductionEN":"A Material Design icon.",
         "introductionCN":"材料设计图标。",
         "routeName":"",
-        "imagePath":"",
+        "imagePath":"assets/images/assets/icon.png",
         "docPath":"https://api.flutter.dev/flutter/material/Icon-class.html"
     },
     {
@@ -268,7 +268,7 @@
         "introductionEN":"A widget that displays an image.",
         "introductionCN":"显示图像的小部件。",
         "routeName":"",
-        "imagePath":"",
+        "imagePath":"assets/images/assets/image.png",
         "docPath":"https://api.flutter.dev/flutter/material/Image-class.html"
     },
     {
