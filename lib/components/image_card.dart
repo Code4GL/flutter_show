@@ -37,7 +37,7 @@ class ImageCard extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Stack(
-              alignment: Alignment(0, 0.8),
+              alignment: Alignment(0, 0.9),
               children: <Widget>[
                 Container(
                     height: 120,
@@ -47,9 +47,13 @@ class ImageCard extends StatelessWidget {
                             topRight: Radius.circular(10)),
                         image: DecorationImage(
                           image: AssetImage(
-                            '$imagePath' == '' ? 'assets/images/flutter.png' : '$imagePath',
+                            '$imagePath' == ''
+                                ? 'assets/images/flutter.png'
+                                : '$imagePath',
                           ),
-                          fit: BoxFit.cover,
+                          fit: '$imagePath' == ''
+                              ? BoxFit.cover
+                              : BoxFit.contain,
                         ))),
                 Container(
                   margin: EdgeInsets.fromLTRB(10, 0, 0, 0),
@@ -58,7 +62,8 @@ class ImageCard extends StatelessWidget {
                     "$title",
                     style: TextStyle(
                       fontSize: 20,
-                      color: Colors.white,
+                      fontWeight: FontWeight.w800,
+                      color: Colors.black45,
                     ),
                   ),
                 ),
@@ -68,7 +73,9 @@ class ImageCard extends StatelessWidget {
               margin: EdgeInsets.fromLTRB(10, 10, 10, 10),
               alignment: AlignmentDirectional.centerStart,
               child: Text(
-                I18n.of(context).runtimeType.toString() == "_I18n_zh_CN"?"$introductionCN":"$introductionEN",
+                I18n.of(context).runtimeType.toString() == "_I18n_zh_CN"
+                    ? "$introductionCN"
+                    : "$introductionEN",
               ),
             ),
           ],

@@ -12,7 +12,7 @@
         "introductionEN":"A grid list consists of a repeated pattern of cells arrayed in a vertical and horizontal layout. The GridView widget implements this component.",
         "introductionCN":"网格列表由以垂直和水平布局排列的重复单元格图案组成。 GridView小部件实现此组件。",
         "routeName":"",
-        "imagePath":"",
+        "imagePath":"assets/images/layout/components-grid-lists.png",
         "docPath":"https://api.flutter.dev/flutter/widgets/GridView-class.html"
     },
     {
@@ -20,7 +20,7 @@
         "introductionEN":"A scrollable, linear list of widgets. ListView is the most commonly used scrolling widget. It displays its children one after another in the scroll direction. In the cross axis, the children are required to fill the ListView.",
         "introductionCN":"可滚动的线性小部件列表。 ListView是最常用的滚动小部件。它在滚动方向上一个接一个地显示它的子项。在横轴中，子项需要填充ListView。",
         "routeName":"",
-        "imagePath":"",
+        "imagePath":"assets/images/layout/material-list-tile.png",
         "docPath":"https://api.flutter.dev/flutter/widgets/ListView-class.html"
     },
     {
@@ -52,7 +52,7 @@
         "introductionEN":"A Material Design pull-to-refresh wrapper for scrollables.",
         "introductionCN":"用于滚动的Material Design pull-to-refresh包装器。",
         "routeName":"",
-        "imagePath":"",
+        "imagePath":"assets/images/scrolling/patterns-swipe-to-refresh.png",
         "docPath":"https://api.flutter.dev/flutter/widgets/RefreshIndicator-class.html"
     },
     {

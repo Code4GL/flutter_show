@@ -4,7 +4,7 @@
         "introductionEN":"A Material Design app bar. An app bar consists of a toolbar and potentially other widgets, such as a TabBar and a FlexibleSpaceBar.",
         "introductionCN":"Material Design应用栏。应用栏由工具栏和可能的其他小部件组成，例如TabBar和FlexibleSpaceBar。",
         "routeName":"",
-        "imagePath":"",
+        "imagePath":"assets/images/basics/material-app-bar.png",
         "docPath":"https://api.flutter.dev/flutter/material/AppBar-class.html"
     },
     {
@@ -12,7 +12,7 @@
         "introductionEN":"Layout a list of child widgets in the vertical direction.",
         "introductionCN":"在垂直方向上布置子窗口小部件列表。",
         "routeName":"",
-        "imagePath":"",
+        "imagePath":"assets/images/basics/column.png",
         "docPath":"https://api.flutter.dev/flutter/widgets/Column-class.html"
     },
     {
@@ -20,7 +20,7 @@
         "introductionEN":"A convenience widget that combines common painting, positioning, and sizing widgets.",
         "introductionCN":"一个便利的小部件，结合了常见的绘画，定位和大小调整小部件。",
         "routeName":"",
-        "imagePath":"",
+        "imagePath":"assets/images/basics/container.png",
         "docPath":"https://api.flutter.dev/flutter/widgets/Container-class.html"
     },
     {
@@ -60,7 +60,7 @@
         "introductionEN":"A Material Design raised button. A raised button consists of a rectangular piece of material that hovers over the interface.",
         "introductionCN":"材料设计凸起按钮。凸起的按钮由悬挂在界面上的矩形材料块组成。",
         "routeName":"",
-        "imagePath":"",
+        "imagePath":"assets/images/basics/material-raised-button.png",
         "docPath":"https://api.flutter.dev/flutter/material/RaisedButton-class.htm"
     },
     {
@@ -68,7 +68,7 @@
         "introductionEN":"Layout a list of child widgets in the horizontal direction.",
         "introductionCN":"在水平方向上布置子窗口小部件列表。",
         "routeName":"",
-        "imagePath":"",
+        "imagePath":"assets/images/basics/row.png",
         "docPath":"https://api.flutter.dev/flutter/widgets/Row-class.html"
     },
     {
@@ -76,7 +76,7 @@
         "introductionEN":"Implements the basic Material Design visual layout structure. This class provides APIs for showing drawers, snack bars, and bottom sheets.",
         "introductionCN":"实现基本的Material Design可视化布局结构。此类提供用于显示抽屉，小吃店和底部工作表的API。",
         "routeName":"",
-        "imagePath":"",
+        "imagePath":"assets/images/basics/layout-structure-regions-mobile.png",
         "docPath":"https://api.flutter.dev/flutter/material/Scaffold-class.html"
     },
     {
@@ -84,7 +84,7 @@
         "introductionEN":"A run of text with a single style.",
         "introductionCN":"一个单一样式的文本。",
         "routeName":"",
-        "imagePath":"",
+        "imagePath":"assets/images/basics/text.png",
         "docPath":"https://api.flutter.dev/flutter/widgets/Text-class.html"
     }
 ]
