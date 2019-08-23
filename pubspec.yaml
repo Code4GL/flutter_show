@@ -155,6 +155,13 @@ flutter:
     - assets/images/material/material-widgets-app.png
     - assets/images/material/materialdesign-introduction.png
 
+    - assets/images/painting/clip-oval.png
+    - assets/images/painting/clip-rect.png
+    - assets/images/painting/custom-paint.png
+    - assets/images/painting/decorated-box.png
+    - assets/images/painting/opacity.png
+    - assets/images/painting/transform.png
+
     - assets/images/scrolling/patterns-swipe-to-refresh.png
 
     - assets/data/widget/widget_list.json

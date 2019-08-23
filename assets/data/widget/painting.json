@@ -12,7 +12,7 @@
         "introductionEN":"A widget that clips its child using an oval.",
         "introductionCN":"使用椭圆剪辑其子项的小部件。",
         "routeName":"",
-        "imagePath":"",
+        "imagePath":"assets/images/painting/clip-oval.png",
         "docPath":"https://api.flutter.dev/flutter/widgets/ClipOval-class.html"
     },
     {
@@ -28,7 +28,7 @@
         "introductionEN":"A widget that clips its child using a rectangle.",
         "introductionCN":"使用矩形剪辑其子项的小部件。",
         "routeName":"",
-        "imagePath":"",
+        "imagePath":"assets/images/painting/clip-rect.png",
         "docPath":"https://api.flutter.dev/flutter/widgets/ClipRect-class.html"
     },
     {
@@ -36,7 +36,7 @@
         "introductionEN":"A widget that provides a canvas on which to draw during the paint phase.",
         "introductionCN":"一个小部件，提供在绘制阶段绘制的画布。",
         "routeName":"",
-        "imagePath":"",
+        "imagePath":"assets/images/painting/custom-paint.png",
         "docPath":"https://api.flutter.dev/flutter/widgets/CustomPaint-class.html"
     },
     {
@@ -44,7 +44,7 @@
         "introductionEN":"A widget that paints a Decoration either before or after its child paints.",
         "introductionCN":"在儿童绘画之前或之后绘制装饰的小部件。",
         "routeName":"",
-        "imagePath":"",
+        "imagePath":"assets/images/painting/decorated-box.png",
         "docPath":"https://api.flutter.dev/flutter/widgets/DecoratedBox-class.html"
     },
     {
@@ -60,7 +60,7 @@
         "introductionEN":"A widget that makes its child partially transparent.",
         "introductionCN":"使子项部分透明的小部件。",
         "routeName":"",
-        "imagePath":"",
+        "imagePath":"assets/images/painting/opacity.png",
         "docPath":"https://api.flutter.dev/flutter/widgets/Opacity-class.html"
     },
     {
@@ -76,7 +76,7 @@
         "introductionEN":"A widget that applies a transformation before painting its child.",
         "introductionCN":"在绘制其子项之前应用转换的窗口小部件。",
         "routeName":"",
-        "imagePath":"",
+        "imagePath":"assets/images/painting/transform.png",
         "docPath":"https://api.flutter.dev/flutter/widgets/Transform-class.html"
     }
 ]
