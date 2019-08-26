@@ -43,8 +43,14 @@ class _AppState extends State<App> {
 
   @override
   Widget build(BuildContext context) {
+    Color themeColor = Colors.blue;
     return MaterialApp(
       title: 'Flutter Show',
+      theme: ThemeData(
+        brightness:Brightness.light,
+        primaryColor:themeColor,
+        accentColor:themeColor,
+      ),
       home: Scaffold(
         drawer: Drawer(
           child: AboutPage(),

@@ -56,7 +56,7 @@ class ColorCell extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 25,
                   fontWeight: FontWeight.bold,
-                  color: Colors.black54,
+                  color: randomColor.computeLuminance() < 0.3 ? Colors.white : Colors.black,
                 ),
               ),
             ),
@@ -66,7 +66,7 @@ class ColorCell extends StatelessWidget {
               child: Text(
                 I18n.of(context).runtimeType.toString() == "_I18n_zh_CN"?"$introductionCN":"$introductionEN",
                 style: TextStyle(
-                  color: Colors.white,
+                  color: randomColor.computeLuminance() < 0.3 ? Colors.white : Colors.black54,
                 ),
               ),
             ),
