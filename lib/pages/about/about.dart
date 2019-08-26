@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_show/components/webview.dart';
+import 'package:flutter_show/pages/about/theme_setting.dart';
 
 class AboutPage extends StatelessWidget {
   // This widget is the root of your application.
@@ -18,6 +19,7 @@ class AboutPage extends StatelessWidget {
           ),
           otherAccountsPictures: <Widget>[
             IconButton(
+              iconSize: 10,
               icon: Image(
                 image: AssetImage('assets/images/github.png'),
               ),
@@ -56,10 +58,18 @@ class AboutPage extends StatelessWidget {
           ),
         ),
         ListTile(
-          leading: Icon(Icons.change_history),
-          title: Text('Change history'),
+          leading: Image(
+            width: 25,
+                image: AssetImage('assets/images/themespace.png'),
+              ),
+          title: Text('主题',
+          style: TextStyle(
+                      fontWeight: FontWeight.bold)),
           onTap: () {
-            Navigator.pop(context);
+            Navigator.push(context,
+                    MaterialPageRoute(builder: (BuildContext context) {
+                  return ThemeSettingPage();
+                }));
           },
         ),
       ]),

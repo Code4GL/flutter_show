@@ -43,7 +43,7 @@ class ColorCell extends StatelessWidget {
                 color: randomColor,
                 offset: Offset(0, 0),
                 blurRadius: 10,
-                spreadRadius: 0),
+                spreadRadius: 4),
           ],
         ),
         child: Column(
@@ -56,7 +56,7 @@ class ColorCell extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 25,
                   fontWeight: FontWeight.bold,
-                  color: randomColor.computeLuminance() < 0.3 ? Colors.white : Colors.black,
+                  color: randomColor.computeLuminance() < 0.1 ? Colors.white70 : Colors.black54,
                 ),
               ),
             ),
@@ -66,7 +66,7 @@ class ColorCell extends StatelessWidget {
               child: Text(
                 I18n.of(context).runtimeType.toString() == "_I18n_zh_CN"?"$introductionCN":"$introductionEN",
                 style: TextStyle(
-                  color: randomColor.computeLuminance() < 0.3 ? Colors.white : Colors.black54,
+                  color: randomColor.computeLuminance() < 0.1 ? Colors.white54 : Colors.black45,
                 ),
               ),
             ),

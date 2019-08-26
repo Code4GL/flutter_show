@@ -77,6 +77,8 @@ flutter:
     - assets/images/flutter.png
     - assets/images/github.png
     - assets/images/userImage.png
+    - assets/images/themespace.png
+    
     - assets/images/assets/icon.png
     - assets/images/assets/image.png
 
