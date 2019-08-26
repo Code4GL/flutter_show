@@ -11,6 +11,11 @@ class MaterialPage extends StatelessWidget {
         appBar: AppBar(
           title: Text("Material"),
           centerTitle: true,
+          leading: IconButton(
+              icon: Icon(Icons.dehaze),
+              onPressed: () {
+                Scaffold.of(context).openDrawer();
+              }),
           actions: <Widget>[
             LanguageChange(),
           ],

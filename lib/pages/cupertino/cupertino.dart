@@ -11,6 +11,11 @@ class CupertinoPage extends StatelessWidget {
         appBar: AppBar(
           title: Text("Cupertino"),
           centerTitle: true,
+          leading: IconButton(
+              icon: Icon(Icons.dehaze),
+              onPressed: () {
+                Scaffold.of(context).openDrawer();
+              }),
           actions: <Widget>[
             LanguageChange(),
           ],

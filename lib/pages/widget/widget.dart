@@ -19,6 +19,11 @@ class WidgetPageState extends State<WidgetPage> {
         appBar: AppBar(
           title: Text('Widget'),
           centerTitle: true,
+          leading: IconButton(
+              icon: Icon(Icons.dehaze),
+              onPressed: () {
+                Scaffold.of(context).openDrawer();
+              }),
           actions: <Widget>[
             LanguageChange(),
           ],
