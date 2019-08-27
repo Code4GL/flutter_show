@@ -36,14 +36,14 @@ class ColorCell extends StatelessWidget {
         decoration: BoxDecoration(
           color: randomColor,
           borderRadius: BorderRadius.all(
-            Radius.circular(10),
+            Radius.circular(15),
           ),
           boxShadow: [
             BoxShadow(
                 color: randomColor,
                 offset: Offset(0, 0),
                 blurRadius: 10,
-                spreadRadius: 4),
+                spreadRadius: 0),
           ],
         ),
         child: Column(
