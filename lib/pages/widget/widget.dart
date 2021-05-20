@@ -3,7 +3,7 @@ import 'dart:convert' show json;
 
 import 'package:flutter_show/components/language_change.dart';
 import 'package:flutter_show/utils/color.dart';
-import '../../components/color_cell.dart';
+import 'package:flutter_show/components/color_cell.dart';
 
 class WidgetPage extends StatefulWidget {
   WidgetPage({Key key}) : super(key: key);
@@ -54,9 +54,7 @@ class WidgetPageState extends State<WidgetPage> {
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {
-            setState(() {
-              int n = null;
-            });
+            setState(() {});
           },
           child: Icon(Icons.refresh),
           backgroundColor: ColorUtil.randomColor(),

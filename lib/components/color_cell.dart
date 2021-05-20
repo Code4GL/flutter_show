@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'package:flutter_show/generated/i18n.dart';
+import 'package:provider/provider.dart';
+import 'package:flutter_show/provider/language_provider.dart';
 import 'package:flutter_show/pages/widget/secondary_widget.dart';
 
 class ColorCell extends StatelessWidget {
@@ -56,17 +56,26 @@ class ColorCell extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 25,
                   fontWeight: FontWeight.bold,
-                  color: randomColor.computeLuminance() < 0.1 ? Colors.white70 : Colors.black54,
+                  color: randomColor.computeLuminance() < 0.1
+                      ? Colors.white70
+                      : Colors.black54,
                 ),
               ),
             ),
             Container(
               margin: EdgeInsets.fromLTRB(10, 0, 0, 5),
               alignment: AlignmentDirectional.centerStart,
-              child: Text(
-                I18n.of(context).runtimeType.toString() == "_I18n_zh_CN"?"$introductionCN":"$introductionEN",
-                style: TextStyle(
-                  color: randomColor.computeLuminance() < 0.1 ? Colors.white54 : Colors.black45,
+              child: Consumer<LanguageProvider>(
+                builder: (context, LanguageProvider languageProvider, _) =>
+                    Text(
+                  languageProvider.lang == "zh"
+                      ? "$introductionCN"
+                      : "$introductionEN",
+                  style: TextStyle(
+                    color: randomColor.computeLuminance() < 0.1
+                        ? Colors.white54
+                        : Colors.black45,
+                  ),
                 ),
               ),
             ),

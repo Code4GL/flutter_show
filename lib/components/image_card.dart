@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-
-import 'package:flutter_show/generated/i18n.dart';
-import 'package:flutter_show/components/webview.dart';
+import 'package:provider/provider.dart';
+import 'package:flutter_show/provider/language_provider.dart';
 
 class ImageCard extends StatelessWidget {
   ImageCard(
@@ -24,10 +23,10 @@ class ImageCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(context,
-            MaterialPageRoute(builder: (BuildContext context) {
-          return WebViewPage(this.title, this.docPath);
-        }));
+        // Navigator.push(context,
+        //     MaterialPageRoute(builder: (BuildContext context) {
+        //   return WebViewPage(this.title, this.docPath);
+        // }));
       },
       child: Card(
         margin: EdgeInsets.fromLTRB(10, 5, 10, 5),
@@ -72,10 +71,13 @@ class ImageCard extends StatelessWidget {
             Container(
               margin: EdgeInsets.fromLTRB(10, 10, 10, 10),
               alignment: AlignmentDirectional.centerStart,
-              child: Text(
-                I18n.of(context).runtimeType.toString() == "_I18n_zh_CN"
-                    ? "$introductionCN"
-                    : "$introductionEN",
+              child: Consumer<LanguageProvider>(
+                builder: (context, LanguageProvider languageProvider, _) =>
+                    Text(
+                  languageProvider.lang == "zh"
+                      ? "$introductionCN"
+                      : "$introductionEN",
+                ),
               ),
             ),
           ],

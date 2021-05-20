@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'package:flutter_show/components/webview.dart';
+// import 'package:flutter_show/components/webview.dart';
 import 'package:flutter_show/pages/about/theme_setting.dart';
 
 class AboutPage extends StatelessWidget {
@@ -24,11 +24,11 @@ class AboutPage extends StatelessWidget {
                 image: AssetImage('assets/images/github.png'),
               ),
               onPressed: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (BuildContext context) {
-                  return WebViewPage(
-                      'flutter_show', 'https://github.com/Code4GL/flutter_show');
-                }));
+                // Navigator.push(context,
+                //     MaterialPageRoute(builder: (BuildContext context) {
+                //   return WebViewPage(
+                //       'flutter_show', 'https://github.com/Code4GL/flutter_show');
+                // }));
               },
             ),
           ],

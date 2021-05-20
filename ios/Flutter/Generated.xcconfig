@@ -1,10 +1,13 @@
 // This is a generated file; do not edit or check into version control.
-FLUTTER_ROOT=/Users/guanli/soft/flutter
-FLUTTER_APPLICATION_PATH=/Users/guanli/study/Flutter/flutter_show
-FLUTTER_TARGET=/Users/guanli/study/Flutter/flutter_show/lib/main.dart
+FLUTTER_ROOT=/Users/code4gl/development/flutter
+FLUTTER_APPLICATION_PATH=/Users/code4gl/code4gl/flutter_show
+FLUTTER_TARGET=/Users/code4gl/code4gl/flutter_show/lib/main.dart
 FLUTTER_BUILD_DIR=build
 SYMROOT=${SOURCE_ROOT}/../build/ios
-FLUTTER_FRAMEWORK_DIR=/Users/guanli/soft/flutter/bin/cache/artifacts/engine/ios
 FLUTTER_BUILD_NAME=1.0.0
 FLUTTER_BUILD_NUMBER=1
+DART_DEFINES=flutter.inspector.structuredErrors%3Dtrue
+DART_OBFUSCATION=false
 TRACK_WIDGET_CREATION=true
+TREE_SHAKE_ICONS=false
+PACKAGE_CONFIG=/Users/code4gl/code4gl/flutter_show/.dart_tool/package_config.json

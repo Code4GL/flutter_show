@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:flutter_show/generated/i18n.dart';
 
 import 'widget/widget.dart';
 import 'material/material.dart';
@@ -8,31 +6,24 @@ import 'cupertino/cupertino.dart';
 import 'favorites/favorites.dart';
 import 'about/about.dart';
 
-class App extends StatefulWidget {
-  App({Key key}) : super(key: key);
+class Home extends StatefulWidget {
+  Home({Key key}) : super(key: key);
 
   @override
-  _AppState createState() => _AppState();
+  _HomeState createState() => _HomeState();
 }
 
-class _AppState extends State<App> {
+class _HomeState extends State<Home> {
   int _selectedIndex = 0;
   static List<Widget> _widgetOptions = <Widget>[
     WidgetPage(),
-    MaterialPage(),
+    MyMaterialPage(),
     CupertinoPage(),
     FavouritesPage(),
   ];
   @override
   void initState() {
     super.initState();
-    I18n.onLocaleChanged = onLocaleChange;
-  }
-
-  void onLocaleChange(Locale locale) {
-    setState(() {
-      I18n.locale = locale;
-    });
   }
 
   void _changeItem(int index) {
@@ -47,9 +38,9 @@ class _AppState extends State<App> {
     return MaterialApp(
       title: 'Flutter Show',
       theme: ThemeData(
-        brightness:Brightness.light,
-        primaryColor:themeColor,
-        accentColor:themeColor,
+        brightness: Brightness.light,
+        primaryColor: themeColor,
+        accentColor: themeColor,
       ),
       home: Scaffold(
         drawer: Drawer(
@@ -64,21 +55,24 @@ class _AppState extends State<App> {
           onTap: _changeItem,
           items: [
             BottomNavigationBarItem(
-                icon: Icon(Icons.widgets), title: Text('Widget')),
+              icon: Icon(Icons.widgets),
+              label: 'Widget',
+            ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.android), title: Text('Material')),
+              icon: Icon(Icons.android),
+              label: 'Material',
+            ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.phone_iphone), title: Text('Cupertino')),
+              icon: Icon(Icons.phone_iphone),
+              label: 'Cupertino',
+            ),
             BottomNavigationBarItem(
-                icon: Icon(Icons.favorite), title: Text('Favorites')),
+              icon: Icon(Icons.favorite),
+              label: 'Favorites',
+            ),
           ],
         ),
       ),
-      localizationsDelegates: [
-        I18n.delegate,
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-      ],
     );
   }
 }

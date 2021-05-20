@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'dart:convert' show json;
-
 import 'package:flutter_show/components/language_change.dart';
 import 'package:flutter_show/components/image_card.dart';
 
-class MaterialPage extends StatelessWidget {
+class MyMaterialPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
