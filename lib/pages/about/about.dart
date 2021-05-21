@@ -11,9 +11,11 @@ class AboutPage extends StatelessWidget {
       child: Column(children: <Widget>[
         UserAccountsDrawerHeader(
           decoration: BoxDecoration(
-              image: DecorationImage(
-                  fit: BoxFit.cover,
-                  image: AssetImage('assets/images/flutter.png'))),
+            image: DecorationImage(
+              fit: BoxFit.cover,
+              image: AssetImage('assets/images/flutter.png'),
+            ),
+          ),
           currentAccountPicture: CircleAvatar(
             backgroundImage: AssetImage("assets/images/userImage.png"),
           ),
@@ -39,9 +41,11 @@ class AboutPage extends StatelessWidget {
                 color: Colors.white,
                 size: 20,
               ),
-              Text("  一修",
-                  style: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.bold)),
+              Text(
+                "一修",
+                style:
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              ),
             ],
           ),
           accountEmail: Row(
@@ -51,25 +55,28 @@ class AboutPage extends StatelessWidget {
                 color: Colors.white,
                 size: 20,
               ),
-              Text("  guanli1991@163.com",
-                  style: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.bold)),
+              Text(
+                "guanli1991@163.com",
+                style:
+                    TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+              ),
             ],
           ),
         ),
         ListTile(
           leading: Image(
             width: 25,
-                image: AssetImage('assets/images/themespace.png'),
-              ),
-          title: Text('主题',
-          style: TextStyle(
-                      fontWeight: FontWeight.bold)),
+            image: AssetImage('assets/images/themespace.png'),
+          ),
+          title: Text(
+            '主题',
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
           onTap: () {
             Navigator.push(context,
-                    MaterialPageRoute(builder: (BuildContext context) {
-                  return ThemeSettingPage();
-                }));
+                MaterialPageRoute(builder: (BuildContext context) {
+              return ThemeSettingPage();
+            }));
           },
         ),
       ]),

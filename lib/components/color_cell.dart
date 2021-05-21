@@ -4,15 +4,15 @@ import 'package:flutter_show/provider/language_provider.dart';
 import 'package:flutter_show/pages/widget/secondary_widget.dart';
 
 class ColorCell extends StatelessWidget {
-  ColorCell(
-      {Key key,
-      this.title,
-      this.introductionEN,
-      this.introductionCN,
-      this.routeName,
-      this.randomColor,
-      this.fileName})
-      : super(key: key);
+  ColorCell({
+    Key key,
+    this.title,
+    this.introductionEN,
+    this.introductionCN,
+    this.routeName,
+    this.randomColor,
+    this.fileName,
+  }) : super(key: key);
   final String title;
   final String introductionEN;
   final String introductionCN;
@@ -24,11 +24,17 @@ class ColorCell extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.push(context,
-            MaterialPageRoute(builder: (BuildContext context) {
-          return SecondaryWidgetPage(
-              title: this.title, fileName: this.fileName);
-        }));
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (BuildContext context) {
+              return SecondaryWidgetPage(
+                title: this.title,
+                fileName: this.fileName,
+              );
+            },
+          ),
+        );
       },
       child: Container(
         margin: EdgeInsets.fromLTRB(10, 5, 10, 5),
@@ -40,10 +46,11 @@ class ColorCell extends StatelessWidget {
           ),
           boxShadow: [
             BoxShadow(
-                color: randomColor,
-                offset: Offset(0, 0),
-                blurRadius: 10,
-                spreadRadius: 0),
+              color: randomColor,
+              offset: Offset(0, 0),
+              blurRadius: 10,
+              spreadRadius: 0,
+            ),
           ],
         ),
         child: Column(

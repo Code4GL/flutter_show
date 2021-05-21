@@ -39,12 +39,13 @@ class WidgetPageState extends State<WidgetPage> {
                   itemCount: data.length,
                   itemBuilder: (BuildContext context, int index) {
                     return ColorCell(
-                        title: "${data[index]['title']}",
-                        introductionEN: "${data[index]['introductionEN']}",
-                        introductionCN: "${data[index]['introductionCN']}",
-                        routeName: "${data[index]['routeName']}",
-                        randomColor: ColorUtil.randomColor(),
-                        fileName: "${data[index]['fileName']}");
+                      title: "${data[index]['title']}",
+                      introductionEN: "${data[index]['introductionEN']}",
+                      introductionCN: "${data[index]['introductionCN']}",
+                      routeName: "${data[index]['routeName']}",
+                      randomColor: ColorUtil.randomColor(),
+                      fileName: "${data[index]['fileName']}",
+                    );
                   },
                 );
               }

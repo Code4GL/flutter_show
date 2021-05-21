@@ -7,7 +7,9 @@ class ThemeSettingPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('主题设置'),
       ),
-      body: Center(child: Text('主题设置'),),
+      body: Center(
+        child: Text('主题设置'),
+      ),
     );
   }
 }

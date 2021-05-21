@@ -29,12 +29,13 @@ class SecondaryWidgetPage extends StatelessWidget {
                   itemCount: data.length,
                   itemBuilder: (BuildContext context, int index) {
                     return ImageCard(
-                        title: "${data[index]['title']}",
-                        introductionEN: "${data[index]['introductionEN']}",
-                        introductionCN: "${data[index]['introductionCN']}",
-                        routeName: "${data[index]['routeName']}",
-                        imagePath: "${data[index]['imagePath']}",
-                        docPath: "${data[index]['docPath']}");
+                      title: "${data[index]['title']}",
+                      introductionEN: "${data[index]['introductionEN']}",
+                      introductionCN: "${data[index]['introductionCN']}",
+                      routeName: "${data[index]['routeName']}",
+                      imagePath: "${data[index]['imagePath']}",
+                      docPath: "${data[index]['docPath']}",
+                    );
                   },
                 );
               }
