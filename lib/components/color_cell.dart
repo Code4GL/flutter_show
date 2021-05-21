@@ -42,13 +42,13 @@ class ColorCell extends StatelessWidget {
         decoration: BoxDecoration(
           color: randomColor,
           borderRadius: BorderRadius.all(
-            Radius.circular(15),
+            Radius.circular(10),
           ),
           boxShadow: [
             BoxShadow(
               color: randomColor,
               offset: Offset(0, 0),
-              blurRadius: 10,
+              blurRadius: 5,
               spreadRadius: 0,
             ),
           ],
@@ -80,8 +80,8 @@ class ColorCell extends StatelessWidget {
                       : "$introductionEN",
                   style: TextStyle(
                     color: randomColor.computeLuminance() < 0.1
-                        ? Colors.white54
-                        : Colors.black45,
+                        ? Colors.white70
+                        : Colors.black54,
                   ),
                 ),
               ),

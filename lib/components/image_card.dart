@@ -30,7 +30,7 @@ class ImageCard extends StatelessWidget {
       },
       child: Card(
         margin: EdgeInsets.fromLTRB(10, 5, 10, 5),
-        elevation: 10, //设置阴影
+        elevation: 3, //设置阴影
         shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.all(Radius.circular(10))), //设置圆角
         child: Column(
@@ -62,7 +62,7 @@ class ImageCard extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.w800,
-                      color: Colors.black45,
+                      color: Colors.black54,
                     ),
                   ),
                 ),
@@ -77,6 +77,9 @@ class ImageCard extends StatelessWidget {
                   languageProvider.lang == "zh"
                       ? "$introductionCN"
                       : "$introductionEN",
+                  style: TextStyle(
+                    color: Colors.black38,
+                  ),
                 ),
               ),
             ),

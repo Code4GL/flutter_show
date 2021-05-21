@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_show/provider/theme_provider.dart';
 import 'package:flutter_show/provider/language_provider.dart';
+
 import 'pages/home.dart';
 
 void main() {
@@ -8,6 +10,7 @@ void main() {
     MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => LanguageProvider()),
+        ChangeNotifierProvider(create: (_) => ThemeProvider()),
       ],
       child: App(),
     ),

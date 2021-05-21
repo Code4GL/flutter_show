@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_show/provider/theme_provider.dart';
 
 import 'widget/widget.dart';
 import 'material/material.dart';
 import 'cupertino/cupertino.dart';
 import 'favorites/favorites.dart';
 import 'about/about.dart';
+import 'package:provider/provider.dart';
 
 class Home extends StatefulWidget {
   Home({Key key}) : super(key: key);
@@ -34,13 +36,11 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    Color themeColor = Colors.blue;
     return MaterialApp(
       title: 'Flutter Show',
       theme: ThemeData(
         brightness: Brightness.light,
-        primaryColor: themeColor,
-        accentColor: themeColor,
+        primaryColor: context.watch<ThemeProvider>().theme,
       ),
       home: Scaffold(
         drawer: Drawer(
