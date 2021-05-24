@@ -1,26 +1,32 @@
 [
     {
-        "title":"ExcludeSemantics",
-        "introductionEN":"A widget that drops all the semantics of its descendants. This can be used to hide subwidgets that would otherwise be reported but that would only be confusing. For example, the Material Components Chip widget hides the avatar since it is redundant with the chip label.",
+        "title": "ExcludeSemantics",
+        "introductionEN": "A widget that drops all the semantics of its descendants. This can be used to hide subwidgets that would otherwise be reported but that would only be confusing. For example, the Material Components Chip widget hides the avatar since it is redundant with the chip label.",
         "introductionCN": "一个小部件，它会删除其后代的所有语义。 这可以用于隐藏否则将被报告的子窗口小部件，但这只会令人困惑。 例如，Material Components Chip小部件隐藏了头像，因为它与芯片标签是多余的。",
-        "routeName":"Widget/Accessibility/ExcludeSemantics",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/widgets/ExcludeSemantics-class.html"
+        "routeName": "Widget/Accessibility/ExcludeSemantics",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/ExcludeSemantics-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>RenderObjectWidget>SingleChildRenderObjectWidget>ExcludeSemantics",
+        "constructors": "ExcludeSemantics({Key? key, bool excluding = true, Widget? child})"
     },
     {
-        "title":"MergeSemantics",
-        "introductionEN":"A widget that merges the semantics of its descendants.",
+        "title": "MergeSemantics",
+        "introductionEN": "A widget that merges the semantics of its descendants.",
         "introductionCN": "一个小部件，它合并其后代的语义。",
-        "routeName":"Widget/Accessibility/MergeSemantics",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/widgets/MergeSemantics-class.html"
+        "routeName": "Widget/Accessibility/MergeSemantics",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/MergeSemantics-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>RenderObjectWidget>SingleChildRenderObjectWidget>MergeSemantics",
+        "constructors": "MergeSemantics({Key? key, Widget? child})"
     },
     {
-        "title":"Semantics",
-        "introductionEN":"A widget that annotates the widget tree with a description of the meaning of the widgets. Used by accessibility tools, search engines, and other semantic analysis software to determine the meaning of the application.",
+        "title": "Semantics",
+        "introductionEN": "A widget that annotates the widget tree with a description of the meaning of the widgets. Used by accessibility tools, search engines, and other semantic analysis software to determine the meaning of the application.",
         "introductionCN": "一个小部件，用小部件含义的描述来注释小部件树。 由可访问性工具，搜索引擎和其他语义分析软件使用，以确定应用程序的含义。",
-        "routeName":"Widget/Accessibility/Semantics",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/widgets/Semantics-class.html"
+        "routeName": "Widget/Accessibility/Semantics",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/Semantics-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>RenderObjectWidget>SingleChildRenderObjectWidget>Semantics",
+        "constructors": "Semantics({Key? key, Widget? child, bool container = false, bool explicitChildNodes = false, bool excludeSemantics = false, bool? enabled, bool? checked, bool? selected, bool? toggled, bool? button, bool? slider, bool? keyboardKey, bool? link, bool? header, bool? textField, bool? readOnly, bool? focusable, bool? focused, bool? inMutuallyExclusiveGroup, bool? obscured, bool? multiline, bool? scopesRoute, bool? namesRoute, bool? hidden, bool? image, bool? liveRegion, int? maxValueLength, int? currentValueLength, String? label, String? value, String? increasedValue, String? decreasedValue, String? hint, String? onTapHint, String? onLongPressHint, TextDirection? textDirection, SemanticsSortKey? sortKey, SemanticsTag? tagForChildren, VoidCallback? onTap, VoidCallback? onLongPress, VoidCallback? onScrollLeft, VoidCallback? onScrollRight, VoidCallback? onScrollUp, VoidCallback? onScrollDown, VoidCallback? onIncrease, VoidCallback? onDecrease, VoidCallback? onCopy, VoidCallback? onCut, VoidCallback? onPaste, VoidCallback? onDismiss, MoveCursorHandler? onMoveCursorForwardByCharacter, MoveCursorHandler? onMoveCursorBackwardByCharacter, SetSelectionHandler? onSetSelection, SetTextHandler? onSetText, VoidCallback? onDidGainAccessibilityFocus, VoidCallback? onDidLoseAccessibilityFocus, Map<CustomSemanticsAction, VoidCallback>? customSemanticsActions})"
     }
 ]
