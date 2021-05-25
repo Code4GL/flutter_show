@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_show/provider/common_provider.dart';
 import 'package:flutter_show/provider/theme_provider.dart';
 
 import 'widget/widget.dart';
@@ -38,6 +39,8 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Show',
+      showSemanticsDebugger:
+          context.watch<CommonProvider>().showSemanticsDebugger,
       theme: ThemeData(
         brightness: Brightness.light,
         primaryColor: context.watch<ThemeProvider>().theme,

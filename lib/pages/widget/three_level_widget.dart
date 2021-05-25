@@ -48,7 +48,7 @@ class ThreeLevelWidgetPage extends StatelessWidget {
         ],
       ),
       body: SingleChildScrollView(
-        padding: EdgeInsets.fromLTRB(5, 0, 5, 0),
+        padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -77,16 +77,23 @@ class ThreeLevelWidgetPage extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Consumer<LanguageProvider>(
-                  builder: (context, LanguageProvider languageProvider, _) =>
-                      Text(
-                    languageProvider.lang == "zh" ? '继承关系' : 'Inheritance',
-                    style: TextStyle(
-                      fontSize: 15,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.deepPurpleAccent,
+                Container(
+                  padding: EdgeInsets.only(top: 10),
+                  child: Consumer<LanguageProvider>(
+                    builder: (context, LanguageProvider languageProvider, _) =>
+                        Text(
+                      languageProvider.lang == "zh" ? '继承关系' : 'Inheritance',
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
+                ),
+                Divider(
+                  thickness: 1,
+                  height: 10,
+                  color: Colors.orange[100],
                 ),
                 Text(
                   inheritance,
@@ -101,16 +108,23 @@ class ThreeLevelWidgetPage extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Consumer<LanguageProvider>(
-                  builder: (context, LanguageProvider languageProvider, _) =>
-                      Text(
-                    languageProvider.lang == "zh" ? '构造函数' : 'Constructors',
-                    style: TextStyle(
-                      fontSize: 15,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.deepPurpleAccent,
+                Container(
+                  padding: EdgeInsets.only(top: 10),
+                  child: Consumer<LanguageProvider>(
+                    builder: (context, LanguageProvider languageProvider, _) =>
+                        Text(
+                      languageProvider.lang == "zh" ? '构造函数' : 'Constructors',
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
+                ),
+                Divider(
+                  thickness: 1,
+                  height: 10,
+                  color: Colors.orange[100],
                 ),
                 Text(
                   constructors,
@@ -122,13 +136,16 @@ class ThreeLevelWidgetPage extends StatelessWidget {
               ],
             ),
             // 示例
-            Consumer<LanguageProvider>(
-              builder: (context, LanguageProvider languageProvider, _) => Text(
-                languageProvider.lang == "zh" ? '示例' : 'Example',
-                style: TextStyle(
-                  fontSize: 15,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.deepPurpleAccent,
+            Container(
+              padding: EdgeInsets.only(top: 10, bottom: 10),
+              child: Consumer<LanguageProvider>(
+                builder: (context, LanguageProvider languageProvider, _) =>
+                    Text(
+                  languageProvider.lang == "zh" ? '示例' : 'Example',
+                  style: TextStyle(
+                    fontSize: 15,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
             ),
