@@ -54,7 +54,7 @@ class ThreeLevelWidgetPage extends StatelessWidget {
           children: [
             // 类名
             Container(
-              height: 50,
+              height: 40,
               alignment: Alignment.centerLeft,
               child: Text(
                 title,
@@ -92,7 +92,7 @@ class ThreeLevelWidgetPage extends StatelessWidget {
                 ),
                 Divider(
                   thickness: 1,
-                  height: 10,
+                  height: 5,
                   color: Colors.orange[100],
                 ),
                 Text(
@@ -123,7 +123,7 @@ class ThreeLevelWidgetPage extends StatelessWidget {
                 ),
                 Divider(
                   thickness: 1,
-                  height: 10,
+                  height: 5,
                   color: Colors.orange[100],
                 ),
                 Text(
@@ -137,7 +137,7 @@ class ThreeLevelWidgetPage extends StatelessWidget {
             ),
             // 示例
             Container(
-              padding: EdgeInsets.only(top: 10, bottom: 10),
+              padding: EdgeInsets.only(top: 10),
               child: Consumer<LanguageProvider>(
                 builder: (context, LanguageProvider languageProvider, _) =>
                     Text(
@@ -149,7 +149,13 @@ class ThreeLevelWidgetPage extends StatelessWidget {
                 ),
               ),
             ),
+            Divider(
+              thickness: 1,
+              height: 5,
+              color: Colors.orange[100],
+            ),
             Container(
+              padding: EdgeInsets.only(top: 5, bottom: 50),
               child: _routes[routeName],
             ),
           ],

@@ -36,7 +36,7 @@ class _ExcludeSemanticsPageState extends State<ExcludeSemanticsPage> {
                 ),
               ),
               Text(
-                '在开发App时，辅助视力障碍人群的使用的功能，叫“语义化”。在使用“语义化”时，有些模块仅仅是用于展示、优化体验的非必须模块。此时，在视力障碍人群使用时为了避免给他们带来过多的无用干扰信息，我们可以使用ExcludeSemantics将其排除。',
+                '在开发App时，辅助视力障碍人群的使用的功能，叫“语义化”。在使用“语义化”时，有些模块仅仅是用于展示、优化体验的非必须模块。此时，在视力障碍人群使用时为了避免给他们带来过多的无用干扰信息，我们可以使用ExcludeSemantics将其排除。在MaterialApp中添加showSemanticsDebugger: true来查看语义视图。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -87,16 +87,17 @@ class _ExcludeSemanticsPageState extends State<ExcludeSemanticsPage> {
                       ],
                     ),
                   ),
-                  Switch(
-                    activeColor: MyStyle.componentColor,
-                    value: _excluding,
-                    onChanged: (bool value) {
-                      setState(
-                        () {
+                  Container(
+                    height: 30,
+                    child: Switch(
+                      activeColor: MyStyle.componentColor,
+                      value: _excluding,
+                      onChanged: (bool value) {
+                        setState(() {
                           _excluding = value;
-                        },
-                      );
-                    },
+                        });
+                      },
+                    ),
                   ),
                 ],
               ),
