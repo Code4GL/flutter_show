@@ -1,34 +1,42 @@
 [
     {
-        "title":"AssetBundle",
-        "introductionEN":"Asset bundles contain resources, such as images and strings, that can be used by an application. Access to these resources is asynchronous so that they can be transparently loaded over a network (e.g., from a NetworkAssetBundle) or from the local file system without blocking the application's user interface.",
-        "introductionCN":"资产包包含可由应用程序使用的资源，例如图像和字符串。 对这些资源的访问是异步的，因此可以通过网络（例如，从NetworkAssetBundle）或从本地文件系统透明地加载它们，而不会阻塞应用程序的用户界面。",
-        "routeName":"",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/services/AssetBundle-class.html"
+        "title": "AssetBundle",
+        "introductionEN": "Asset bundles contain resources, such as images and strings, that can be used by an application. Access to these resources is asynchronous so that they can be transparently loaded over a network (e.g., from a NetworkAssetBundle) or from the local file system without blocking the application's user interface.",
+        "introductionCN": "资产包包含可由应用程序使用的资源，例如图像和字符串。 对这些资源的访问是异步的，因此可以通过网络（例如，从NetworkAssetBundle）或从本地文件系统透明地加载它们，而不会阻塞应用程序的用户界面。",
+        "routeName": "Widget/Assets/AssetBundle",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/services/AssetBundle-class.html",
+        "inheritance": "无",
+        "constructors": "AssetBundle()"
     },
     {
-        "title":"Icon",
-        "introductionEN":"A Material Design icon.",
-        "introductionCN":"材料设计图标。",
-        "routeName":"",
-        "imagePath":"assets/images/assets/icon.png",
-        "docPath":"https://api.flutter.dev/flutter/widgets/Icon-class.html"
+        "title": "Icon",
+        "introductionEN": "A Material Design icon.",
+        "introductionCN": "材料设计图标。",
+        "routeName": "Widget/Assets/Icon",
+        "imagePath": "assets/images/assets/icon.png",
+        "docPath": "https://api.flutter.dev/flutter/widgets/Icon-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatelessWidget>Icon",
+        "constructors": "Icon(IconData? icon, {Key? key, double? size, Color? color, String? semanticLabel, TextDirection? textDirection})"
     },
     {
-        "title":"Image",
-        "introductionEN":"A widget that displays an image.",
-        "introductionCN":"显示图像的小部件。",
-        "routeName":"",
-        "imagePath":"assets/images/assets/image.png",
-        "docPath":"https://api.flutter.dev/flutter/widgets/Image-class.html"
+        "title": "Image",
+        "introductionEN": "A widget that displays an image.",
+        "introductionCN": "显示图像的小部件。",
+        "routeName": "Widget/Assets/Image",
+        "imagePath": "assets/images/assets/image.png",
+        "docPath": "https://api.flutter.dev/flutter/widgets/Image-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>Image",
+        "constructors": "Image({Key? key, required ImageProvider<Object> image, ImageFrameBuilder? frameBuilder, ImageLoadingBuilder? loadingBuilder, ImageErrorWidgetBuilder? errorBuilder, String? semanticLabel, bool excludeFromSemantics = false, double? width, double? height, Color? color, BlendMode? colorBlendMode, BoxFit? fit, AlignmentGeometry alignment = Alignment.center, ImageRepeat repeat = ImageRepeat.noRepeat, Rect? centerSlice, bool matchTextDirection = false, bool gaplessPlayback = false, bool isAntiAlias = false, FilterQuality filterQuality = FilterQuality.low})"
     },
     {
-        "title":"RawImage",
-        "introductionEN":"A widget that displays a dart:ui.Image directly.",
-        "introductionCN":"一个直接显示dart：ui.Image的小部件。",
-        "routeName":"",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/widgets/RawImage-class.html"
+        "title": "RawImage",
+        "introductionEN": "A widget that displays a dart:ui.Image directly.",
+        "introductionCN": "一个直接显示dart：ui.Image的小部件。",
+        "routeName": "Widget/Assets/RawImage",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/RawImage-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>RenderObjectWidget>LeafRenderObjectWidget>RawImage",
+        "constructors": "RawImage({Key? key, Image? image, String? debugImageLabel, double? width, double? height, double scale = 1.0, Color? color, BlendMode? colorBlendMode, BoxFit? fit, AlignmentGeometry alignment = Alignment.center, ImageRepeat repeat = ImageRepeat.noRepeat, Rect? centerSlice, bool matchTextDirection = false, bool invertColors = false, FilterQuality filterQuality = FilterQuality.low, bool isAntiAlias = false})"
     }
 ]

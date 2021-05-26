@@ -29,7 +29,7 @@ class _ExcludeSemanticsPageState extends State<ExcludeSemanticsPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                '使用场景',
+                '温馨提示',
                 style: TextStyle(
                   color: MyStyle.titleColor,
                   fontWeight: MyStyle.titleFontWeight,
@@ -63,29 +63,27 @@ class _ExcludeSemanticsPageState extends State<ExcludeSemanticsPage> {
                   fontWeight: MyStyle.titleFontWeight,
                 ),
               ),
-              Flex(
-                direction: Axis.horizontal,
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  Expanded(
-                    child: Row(
-                      children: [
-                        Text(
-                          'excluding:',
-                          style: TextStyle(
-                            color: MyStyle.paramKeyColor,
-                            fontSize: MyStyle.paramKeyFontSize,
-                            fontWeight: MyStyle.titleFontWeight,
-                          ),
+                  Row(
+                    children: [
+                      Text(
+                        'excluding:',
+                        style: TextStyle(
+                          color: MyStyle.paramKeyColor,
+                          fontSize: MyStyle.paramKeyFontSize,
+                          fontWeight: MyStyle.titleFontWeight,
                         ),
-                        Text(
-                          '$_excluding',
-                          style: TextStyle(
-                            color: MyStyle.paramValueColor,
-                            fontSize: MyStyle.paramValueFontSize,
-                          ),
+                      ),
+                      Text(
+                        '$_excluding',
+                        style: TextStyle(
+                          color: MyStyle.paramValueColor,
+                          fontSize: MyStyle.paramValueFontSize,
                         ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
                   Container(
                     height: 30,
@@ -126,6 +124,7 @@ class _ExcludeSemanticsPageState extends State<ExcludeSemanticsPage> {
         // 展示区域
         Container(
           height: 100,
+          margin: EdgeInsets.only(top: 10),
           decoration: BoxDecoration(
             color: Colors.white,
             boxShadow: [

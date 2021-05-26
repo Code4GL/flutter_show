@@ -3,15 +3,13 @@ import 'package:flutter_show/common/my_style.dart';
 import 'package:flutter_show/provider/common_provider.dart';
 import 'package:provider/provider.dart';
 
-class SemanticsPage extends StatefulWidget {
+class ImagePage extends StatefulWidget {
   @override
-  _SemanticsPageState createState() => _SemanticsPageState();
+  _ImagePageState createState() => _ImagePageState();
 }
 
-class _SemanticsPageState extends State<SemanticsPage> {
-  String _label = 'Semantics Widget Label'; // 文本描述
-  bool _enabled = true; // 是否启用
-  bool _readOnly = true; // 是否只读
+class _ImagePageState extends State<ImagePage> {
+  bool _excluding = true; // 是否排除
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +36,7 @@ class _SemanticsPageState extends State<SemanticsPage> {
                 ),
               ),
               Text(
-                '在开发App时，辅助视力障碍人群的使用的功能，叫“语义化”。在使用“语义化”时，可以使用Semantics对Widget的语义进行描述。在MaterialApp中添加showSemanticsDebugger: true来查看语义视图。',
+                'Image有一个必选的image参数，它对应一个ImageProvider。ImageProvider是一个抽象类，主要定义了图片数据获取的接口load()，从不同的数据源获取图片需要实现不同的ImageProvider，如AssetsImage，NetworkImage，FileImage，MemoryImage等均为ImageProvider的子类。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -65,14 +63,14 @@ class _SemanticsPageState extends State<SemanticsPage> {
                   fontWeight: MyStyle.titleFontWeight,
                 ),
               ),
-              Row(
+              Flex(
+                direction: Axis.horizontal,
                 children: <Widget>[
-                  Container(
-                    height: 30,
+                  Expanded(
                     child: Row(
                       children: [
                         Text(
-                          'label:',
+                          'excluding:',
                           style: TextStyle(
                             color: MyStyle.paramKeyColor,
                             fontSize: MyStyle.paramKeyFontSize,
@@ -80,7 +78,7 @@ class _SemanticsPageState extends State<SemanticsPage> {
                           ),
                         ),
                         Text(
-                          '$_label',
+                          '$_excluding',
                           style: TextStyle(
                             color: MyStyle.paramValueColor,
                             fontSize: MyStyle.paramValueFontSize,
@@ -89,74 +87,14 @@ class _SemanticsPageState extends State<SemanticsPage> {
                       ],
                     ),
                   ),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Row(
-                    children: [
-                      Text(
-                        'enabled:',
-                        style: TextStyle(
-                          color: MyStyle.paramKeyColor,
-                          fontSize: MyStyle.paramKeyFontSize,
-                          fontWeight: MyStyle.titleFontWeight,
-                        ),
-                      ),
-                      Text(
-                        '$_enabled',
-                        style: TextStyle(
-                          color: MyStyle.paramValueColor,
-                          fontSize: MyStyle.paramValueFontSize,
-                        ),
-                      ),
-                    ],
-                  ),
                   Container(
                     height: 30,
                     child: Switch(
                       activeColor: MyStyle.componentColor,
-                      value: _enabled,
+                      value: _excluding,
                       onChanged: (bool value) {
                         setState(() {
-                          _enabled = value;
-                        });
-                      },
-                    ),
-                  ),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Row(
-                    children: [
-                      Text(
-                        'readOnly:',
-                        style: TextStyle(
-                          color: MyStyle.paramKeyColor,
-                          fontSize: MyStyle.paramKeyFontSize,
-                          fontWeight: MyStyle.titleFontWeight,
-                        ),
-                      ),
-                      Text(
-                        '$_readOnly',
-                        style: TextStyle(
-                          color: MyStyle.paramValueColor,
-                          fontSize: MyStyle.paramValueFontSize,
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    height: 30,
-                    child: Switch(
-                      activeColor: MyStyle.componentColor,
-                      value: _readOnly,
-                      onChanged: (bool value) {
-                        setState(() {
-                          _readOnly = value;
+                          _excluding = value;
                         });
                       },
                     ),
@@ -187,8 +125,7 @@ class _SemanticsPageState extends State<SemanticsPage> {
         ),
         // 展示区域
         Container(
-          height: 100,
-          margin: EdgeInsets.only(top: 10),
+          height: 300,
           decoration: BoxDecoration(
             color: Colors.white,
             boxShadow: [
@@ -201,11 +138,14 @@ class _SemanticsPageState extends State<SemanticsPage> {
             borderRadius: MyStyle.borderRadius,
           ),
           child: Center(
-            child: Semantics(
-              label: _label,
-              enabled: _enabled,
-              readOnly: _readOnly,
-              child: Text("This is a Semantics Widget!"),
+            child: Image(
+              height: 200,
+              width: 100,
+              color: Colors.red,
+              colorBlendMode: BlendMode.lighten,
+              fit: BoxFit.fitHeight,
+              repeat: ImageRepeat.repeat,
+              image: AssetImage('assets/images/flutter.png'),
             ),
           ),
         ),

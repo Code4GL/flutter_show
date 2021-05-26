@@ -27,7 +27,7 @@ class _MergeSemanticsPageState extends State<MergeSemanticsPage> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                '使用场景',
+                '温馨提示',
                 style: TextStyle(
                   color: MyStyle.titleColor,
                   fontWeight: MyStyle.titleFontWeight,
@@ -65,6 +65,7 @@ class _MergeSemanticsPageState extends State<MergeSemanticsPage> {
         // 展示区域
         Container(
           height: 100,
+          margin: EdgeInsets.only(top: 10),
           decoration: BoxDecoration(
             color: Colors.white,
             boxShadow: [

@@ -7,6 +7,10 @@ import 'package:provider/provider.dart';
 import 'accessibility/exclude_semantics.dart';
 import 'accessibility/merge_semantics.dart';
 import 'accessibility/semantics.dart';
+import 'assets_widget/asset_bundle.dart';
+import 'assets_widget/icon.dart';
+import 'assets_widget/image.dart';
+import 'assets_widget/raw_image.dart';
 
 class ThreeLevelWidgetPage extends StatelessWidget {
   ThreeLevelWidgetPage({
@@ -32,9 +36,15 @@ class ThreeLevelWidgetPage extends StatelessWidget {
 
   // routeName路由映射
   final _routes = {
+    // Accessibility
     'Widget/Accessibility/ExcludeSemantics': ExcludeSemanticsPage(),
     'Widget/Accessibility/MergeSemantics': MergeSemanticsPage(),
     'Widget/Accessibility/Semantics': SemanticsPage(),
+    // Assets
+    'Widget/Assets/AssetBundle': AssetBundlePage(),
+    'Widget/Assets/Icon': IconPage(),
+    'Widget/Assets/Image': ImagePage(),
+    'Widget/Assets/RawImage': RawImagePage(),
   };
 
   @override
