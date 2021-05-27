@@ -1,18 +1,22 @@
 [
     {
-        "title":"FutureBuilder",
-        "introductionEN":"Widget that builds itself based on the latest snapshot of interaction with a Future.",
-        "introductionCN":"基于与Future交互的最新快照构建自己的小部件。",
-        "routeName":"",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/widgets/FutureBuilder-class.html"
+        "title": "FutureBuilder",
+        "introductionEN": "Widget that builds itself based on the latest snapshot of interaction with a Future.",
+        "introductionCN": "基于与Future交互的最新快照构建自己的小部件。",
+        "routeName": "Widget/Async/FutureBuilder",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/FutureBuilder-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>FutureBuilder",
+        "constructors": "FutureBuilder({Key? key, Future<T>? future, T? initialData, required AsyncWidgetBuilder<T> builder})"
     },
     {
-        "title":"StreamBuilder",
-        "introductionEN":"Widget that builds itself based on the latest snapshot of interaction with a Stream.",
-        "introductionCN":"基于与Stream交互的最新快照构建自身的小组件。",
-        "routeName":"",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/widgets/StreamBuilder-class.html"
+        "title": "StreamBuilder",
+        "introductionEN": "Widget that builds itself based on the latest snapshot of interaction with a Stream.",
+        "introductionCN": "基于与Stream交互的最新快照构建自身的小组件。",
+        "routeName": "Widget/Async/StreamBuilder",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/StreamBuilder-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>StreamBuilderBase<T, AsyncSnapshot<T>>>StreamBuilder",
+        "constructors": "StreamBuilder({Key? key, T? initialData, Stream<T>? stream, required AsyncWidgetBuilder<T> builder})"
     }
 ]

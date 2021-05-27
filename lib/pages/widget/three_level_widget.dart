@@ -11,6 +11,8 @@ import 'assets_widget/asset_bundle.dart';
 import 'assets_widget/icon.dart';
 import 'assets_widget/image.dart';
 import 'assets_widget/raw_image.dart';
+import 'async/future_builder.dart';
+import 'async/stream_builder.dart';
 
 class ThreeLevelWidgetPage extends StatelessWidget {
   ThreeLevelWidgetPage({
@@ -45,6 +47,9 @@ class ThreeLevelWidgetPage extends StatelessWidget {
     'Widget/Assets/Icon': IconPage(),
     'Widget/Assets/Image': ImagePage(),
     'Widget/Assets/RawImage': RawImagePage(),
+    // Assets
+    'Widget/Async/FutureBuilder': FutureBuilderPage(),
+    'Widget/Async/StreamBuilder': StreamBuilderPage(),
   };
 
   @override
