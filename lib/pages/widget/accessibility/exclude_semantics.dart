@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_show/common/my_style.dart';
+import 'package:flutter_show/components/boolean_param.dart';
 import 'package:flutter_show/provider/common_provider.dart';
 import 'package:provider/provider.dart';
 
@@ -63,41 +64,15 @@ class _ExcludeSemanticsPageState extends State<ExcludeSemanticsPage> {
                   fontWeight: MyStyle.titleFontWeight,
                 ),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Row(
-                    children: [
-                      Text(
-                        'excluding:',
-                        style: TextStyle(
-                          color: MyStyle.paramKeyColor,
-                          fontSize: MyStyle.paramKeyFontSize,
-                          fontWeight: MyStyle.titleFontWeight,
-                        ),
-                      ),
-                      Text(
-                        '$_excluding',
-                        style: TextStyle(
-                          color: MyStyle.paramValueColor,
-                          fontSize: MyStyle.paramValueFontSize,
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    height: 30,
-                    child: Switch(
-                      activeColor: MyStyle.componentColor,
-                      value: _excluding,
-                      onChanged: (bool value) {
-                        setState(() {
-                          _excluding = value;
-                        });
-                      },
-                    ),
-                  ),
-                ],
+              BooleanParam(
+                paramKey: 'excluding:',
+                paramValue: '$_excluding',
+                value: _excluding,
+                onChangedCb: (bool value) {
+                  setState(() {
+                    _excluding = value;
+                  });
+                },
               ),
             ],
           ),

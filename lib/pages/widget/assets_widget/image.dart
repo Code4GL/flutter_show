@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_show/common/my_style.dart';
-import 'package:flutter_show/provider/common_provider.dart';
-import 'package:provider/provider.dart';
+import 'package:flutter_show/components/radio_param.dart';
 
 class ImagePage extends StatefulWidget {
   @override
@@ -9,7 +8,12 @@ class ImagePage extends StatefulWidget {
 }
 
 class _ImagePageState extends State<ImagePage> {
-  bool _excluding = true; // 是否排除
+  double _height = 200.0; // 图片高度
+  double _width = 200.0; // 图片宽度
+  Color _color = Colors.blue; // 图片混合颜色，与colorBlendMode属性一同使用
+  BlendMode _colorBlendMode = BlendMode.dst; // 图片颜色混合方式
+  BoxFit _fit = BoxFit.scaleDown; // 图片布局分配方式
+  ImageRepeat _repeat = ImageRepeat.noRepeat; // 图片填充方式
 
   @override
   Widget build(BuildContext context) {
@@ -63,69 +67,216 @@ class _ImagePageState extends State<ImagePage> {
                   fontWeight: MyStyle.titleFontWeight,
                 ),
               ),
-              Flex(
-                direction: Axis.horizontal,
-                children: <Widget>[
-                  Expanded(
-                    child: Row(
-                      children: [
-                        Text(
-                          'excluding:',
-                          style: TextStyle(
-                            color: MyStyle.paramKeyColor,
-                            fontSize: MyStyle.paramKeyFontSize,
-                            fontWeight: MyStyle.titleFontWeight,
-                          ),
-                        ),
-                        Text(
-                          '$_excluding',
-                          style: TextStyle(
-                            color: MyStyle.paramValueColor,
-                            fontSize: MyStyle.paramValueFontSize,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  Container(
-                    height: 30,
-                    child: Switch(
-                      activeColor: MyStyle.componentColor,
-                      value: _excluding,
-                      onChanged: (bool value) {
-                        setState(() {
-                          _excluding = value;
-                        });
-                      },
-                    ),
-                  ),
+              RadioParam(
+                paramKey: 'height:',
+                paramValue: '$_height',
+                groupValue: _height,
+                items: [
+                  {
+                    'name': '200.0',
+                    'value': 200.0,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _height = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': '300.0',
+                    'value': 300.0,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _height = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': '400.0',
+                    'value': 400.0,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _height = value;
+                      });
+                    },
+                  },
+                ],
+              ),
+              RadioParam(
+                paramKey: 'width:',
+                paramValue: '$_width',
+                groupValue: _width,
+                items: [
+                  {
+                    'name': '200.0',
+                    'value': 200.0,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _width = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': '300.0',
+                    'value': 300.0,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _width = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': '400.0',
+                    'value': 400.0,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _width = value;
+                      });
+                    },
+                  },
+                ],
+              ),
+              RadioParam(
+                paramKey: 'color:',
+                paramValue: '#${_color.value.toRadixString(16).toUpperCase()}',
+                groupValue: _color,
+                items: [
+                  {
+                    'name': 'blue',
+                    'value': Colors.blue,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _color = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'red',
+                    'value': Colors.red,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _color = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'purple',
+                    'value': Colors.purple,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _color = value;
+                      });
+                    },
+                  },
+                ],
+              ),
+              RadioParam(
+                paramKey: 'colorBlendMode:',
+                paramValue: '$_colorBlendMode',
+                groupValue: _colorBlendMode,
+                items: [
+                  {
+                    'name': 'dst',
+                    'value': BlendMode.dst,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _colorBlendMode = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'src',
+                    'value': BlendMode.src,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _colorBlendMode = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'color',
+                    'value': BlendMode.color,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _colorBlendMode = value;
+                      });
+                    },
+                  },
+                ],
+              ),
+              RadioParam(
+                paramKey: 'fit:',
+                paramValue: '',
+                groupValue: _fit,
+                items: [
+                  {
+                    'name': 'scaleDown',
+                    'value': BoxFit.scaleDown,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _fit = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'fitHeight',
+                    'value': BoxFit.fitHeight,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _fit = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'fitWidth',
+                    'value': BoxFit.fitWidth,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _fit = value;
+                      });
+                    },
+                  },
+                ],
+              ),
+              RadioParam(
+                paramKey: 'repeat:',
+                paramValue: '',
+                groupValue: _repeat,
+                items: [
+                  {
+                    'name': 'noRepeat',
+                    'value': ImageRepeat.noRepeat,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _repeat = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'repeat',
+                    'value': ImageRepeat.repeat,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _repeat = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'repeatY',
+                    'value': ImageRepeat.repeatY,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _repeat = value;
+                      });
+                    },
+                  },
                 ],
               ),
             ],
           ),
         ),
-        // 运行按钮
-        Container(
-          alignment: Alignment.centerRight,
-          child: ElevatedButton(
-            onPressed: () {
-              CommonProvider commonProvider = context.read<CommonProvider>();
-              commonProvider
-                  .changeSemantics(!commonProvider.showSemanticsDebugger);
-            },
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(Icons.play_arrow),
-                Text('Run'),
-              ],
-            ),
-          ),
-        ),
         // 展示区域
         Container(
-          height: 300,
+          margin: EdgeInsets.only(top: 10),
           decoration: BoxDecoration(
             color: Colors.white,
             boxShadow: [
@@ -139,12 +290,12 @@ class _ImagePageState extends State<ImagePage> {
           ),
           child: Center(
             child: Image(
-              height: 200,
-              width: 100,
-              color: Colors.red,
-              colorBlendMode: BlendMode.lighten,
-              fit: BoxFit.fitHeight,
-              repeat: ImageRepeat.repeat,
+              height: _height,
+              width: _width,
+              color: _color,
+              colorBlendMode: _colorBlendMode,
+              fit: _fit,
+              repeat: _repeat,
               image: AssetImage('assets/images/flutter.png'),
             ),
           ),

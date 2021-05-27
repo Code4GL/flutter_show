@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_show/common/my_style.dart';
+import 'package:flutter_show/components/boolean_param.dart';
 import 'package:flutter_show/provider/common_provider.dart';
 import 'package:provider/provider.dart';
 
@@ -91,77 +92,25 @@ class _SemanticsPageState extends State<SemanticsPage> {
                   ),
                 ],
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Row(
-                    children: [
-                      Text(
-                        'enabled:',
-                        style: TextStyle(
-                          color: MyStyle.paramKeyColor,
-                          fontSize: MyStyle.paramKeyFontSize,
-                          fontWeight: MyStyle.titleFontWeight,
-                        ),
-                      ),
-                      Text(
-                        '$_enabled',
-                        style: TextStyle(
-                          color: MyStyle.paramValueColor,
-                          fontSize: MyStyle.paramValueFontSize,
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    height: 30,
-                    child: Switch(
-                      activeColor: MyStyle.componentColor,
-                      value: _enabled,
-                      onChanged: (bool value) {
-                        setState(() {
-                          _enabled = value;
-                        });
-                      },
-                    ),
-                  ),
-                ],
+              BooleanParam(
+                paramKey: 'enabled:',
+                paramValue: '$_enabled',
+                value: _enabled,
+                onChangedCb: (bool value) {
+                  setState(() {
+                    _enabled = value;
+                  });
+                },
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Row(
-                    children: [
-                      Text(
-                        'readOnly:',
-                        style: TextStyle(
-                          color: MyStyle.paramKeyColor,
-                          fontSize: MyStyle.paramKeyFontSize,
-                          fontWeight: MyStyle.titleFontWeight,
-                        ),
-                      ),
-                      Text(
-                        '$_readOnly',
-                        style: TextStyle(
-                          color: MyStyle.paramValueColor,
-                          fontSize: MyStyle.paramValueFontSize,
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    height: 30,
-                    child: Switch(
-                      activeColor: MyStyle.componentColor,
-                      value: _readOnly,
-                      onChanged: (bool value) {
-                        setState(() {
-                          _readOnly = value;
-                        });
-                      },
-                    ),
-                  ),
-                ],
+              BooleanParam(
+                paramKey: 'readOnly:',
+                paramValue: '$_readOnly',
+                value: _readOnly,
+                onChangedCb: (bool value) {
+                  setState(() {
+                    _readOnly = value;
+                  });
+                },
               ),
             ],
           ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_show/common/my_style.dart';
+import 'package:flutter_show/components/radio_param.dart';
 
 class IconPage extends StatefulWidget {
   @override
@@ -7,7 +8,7 @@ class IconPage extends StatefulWidget {
 }
 
 class _IconPageState extends State<IconPage> {
-  double _size = 30.0; // 大小
+  double _size = 20.0; // 大小
   Color _color = Colors.blue; // 颜色
 
   @override
@@ -62,216 +63,72 @@ class _IconPageState extends State<IconPage> {
                   fontWeight: MyStyle.titleFontWeight,
                 ),
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Row(
-                    children: [
-                      Text(
-                        'size:',
-                        style: TextStyle(
-                          color: MyStyle.paramKeyColor,
-                          fontSize: MyStyle.paramKeyFontSize,
-                          fontWeight: MyStyle.titleFontWeight,
-                        ),
-                      ),
-                      Text(
-                        '$_size',
-                        style: TextStyle(
-                          color: MyStyle.paramValueColor,
-                          fontSize: MyStyle.paramValueFontSize,
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    height: 30,
-                    child: Row(
-                      children: [
-                        Row(
-                          children: [
-                            Container(
-                              width: 25,
-                              margin: EdgeInsets.only(left: 5),
-                              child: Radio(
-                                value: 20.0,
-                                groupValue: _size,
-                                activeColor: MyStyle.componentColor,
-                                onChanged: (value) {
-                                  setState(() {
-                                    _size = value;
-                                  });
-                                },
-                              ),
-                            ),
-                            Text(
-                              '20.0',
-                              style: TextStyle(
-                                fontSize: 12,
-                                color: MyStyle.paramValueColor,
-                              ),
-                            )
-                          ],
-                        ),
-                        Row(
-                          children: [
-                            Container(
-                              width: 25,
-                              margin: EdgeInsets.only(left: 5),
-                              child: Radio(
-                                value: 30.0,
-                                groupValue: _size,
-                                activeColor: MyStyle.componentColor,
-                                onChanged: (value) {
-                                  setState(() {
-                                    _size = value;
-                                  });
-                                },
-                              ),
-                            ),
-                            Text(
-                              '30.0',
-                              style: TextStyle(
-                                fontSize: 12,
-                                color: MyStyle.paramValueColor,
-                              ),
-                            )
-                          ],
-                        ),
-                        Row(
-                          children: [
-                            Container(
-                              width: 25,
-                              margin: EdgeInsets.only(left: 5),
-                              child: Radio(
-                                value: 40.0,
-                                groupValue: _size,
-                                activeColor: MyStyle.componentColor,
-                                onChanged: (value) {
-                                  setState(() {
-                                    _size = value;
-                                  });
-                                },
-                              ),
-                            ),
-                            Text(
-                              '40.0',
-                              style: TextStyle(
-                                fontSize: 12,
-                                color: MyStyle.paramValueColor,
-                              ),
-                            )
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
+              RadioParam(
+                paramKey: 'size:',
+                paramValue: '$_size',
+                groupValue: _size,
+                items: [
+                  {
+                    'name': '20.0',
+                    'value': 20.0,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _size = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': '30.0',
+                    'value': 30.0,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _size = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': '40.0',
+                    'value': 40.0,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _size = value;
+                      });
+                    },
+                  },
                 ],
               ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
-                  Row(
-                    children: [
-                      Text(
-                        'color:',
-                        style: TextStyle(
-                          color: MyStyle.paramKeyColor,
-                          fontSize: MyStyle.paramKeyFontSize,
-                          fontWeight: MyStyle.titleFontWeight,
-                        ),
-                      ),
-                      Text(
-                        '#${_color.value.toRadixString(16).toUpperCase()}',
-                        style: TextStyle(
-                          color: MyStyle.paramValueColor,
-                          fontSize: MyStyle.paramValueFontSize,
-                        ),
-                      ),
-                    ],
-                  ),
-                  Container(
-                    height: 30,
-                    child: Row(
-                      children: [
-                        Row(
-                          children: [
-                            Container(
-                              width: 25,
-                              margin: EdgeInsets.only(left: 5),
-                              child: Radio(
-                                value: Colors.blue,
-                                groupValue: _color,
-                                activeColor: MyStyle.componentColor,
-                                onChanged: (value) {
-                                  setState(() {
-                                    _color = value;
-                                  });
-                                },
-                              ),
-                            ),
-                            Text(
-                              'blue',
-                              style: TextStyle(
-                                fontSize: 12,
-                                color: MyStyle.paramValueColor,
-                              ),
-                            )
-                          ],
-                        ),
-                        Row(
-                          children: [
-                            Container(
-                              width: 25,
-                              margin: EdgeInsets.only(left: 5),
-                              child: Radio(
-                                value: Colors.pink,
-                                groupValue: _color,
-                                activeColor: MyStyle.componentColor,
-                                onChanged: (value) {
-                                  setState(() {
-                                    _color = value;
-                                  });
-                                },
-                              ),
-                            ),
-                            Text(
-                              'pink',
-                              style: TextStyle(
-                                fontSize: 12,
-                                color: MyStyle.paramValueColor,
-                              ),
-                            )
-                          ],
-                        ),
-                        Row(
-                          children: [
-                            Container(
-                              width: 25,
-                              margin: EdgeInsets.only(left: 5),
-                              child: Radio(
-                                value: Colors.purple,
-                                groupValue: _color,
-                                activeColor: MyStyle.componentColor,
-                                onChanged: (value) {
-                                  setState(() {
-                                    _color = value;
-                                  });
-                                },
-                              ),
-                            ),
-                            Text(
-                              'purple',
-                              style: TextStyle(
-                                fontSize: 12,
-                                color: MyStyle.paramValueColor,
-                              ),
-                            )
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
+              RadioParam(
+                paramKey: 'color:',
+                paramValue: '#${_color.value.toRadixString(16).toUpperCase()}',
+                groupValue: _color,
+                items: [
+                  {
+                    'name': 'blue',
+                    'value': Colors.blue,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _color = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'pink',
+                    'value': Colors.pink,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _color = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'purple',
+                    'value': Colors.purple,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _color = value;
+                      });
+                    },
+                  },
                 ],
               ),
             ],
