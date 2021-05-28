@@ -1,26 +1,32 @@
 [
     {
-        "title":"MediaQuery",
-        "introductionEN":"Establishes a subtree in which media queries resolve to the given data.",
-        "introductionCN":"建立媒体查询解析给定数据的子树。",
-        "routeName":"",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/widgets/MediaQuery-class.html"
+        "title": "MediaQuery",
+        "introductionEN": "Establishes a subtree in which media queries resolve to the given data.",
+        "introductionCN": "建立媒体查询解析给定数据的子树。",
+        "routeName": "Widget/Styling/MediaQuery",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/MediaQuery-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>ProxyWidget>InheritedWidget>MediaQuery",
+        "constructors": "MediaQuery({Key? key, required MediaQueryData data, required Widget child})"
     },
     {
-        "title":"Padding",
-        "introductionEN":"A widget that insets its child by the given padding.",
-        "introductionCN":"一个小部件，它通过给定的填充来保护其子级。",
-        "routeName":"",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/widgets/Padding-class.html"
+        "title": "Padding",
+        "introductionEN": "A widget that insets its child by the given padding.",
+        "introductionCN": "一个小部件，它通过给定的填充来保护其子级。",
+        "routeName": "Widget/Styling/Padding",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/Padding-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>RenderObjectWidget>SingleChildRenderObjectWidget>Padding",
+        "constructors": "Padding({Key? key, required EdgeInsetsGeometry padding, Widget? child})"
     },
     {
-        "title":"Theme",
-        "introductionEN":"Applies a theme to descendant widgets. A theme describes the colors and typographic choices of an application.",
-        "introductionCN":"将主题应用于后代窗口小部件。主题描述了应用程序的颜色和印刷选择。",
-        "routeName":"",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/widgets/Theme-class.html"
+        "title": "Theme",
+        "introductionEN": "Applies a theme to descendant widgets. A theme describes the colors and typographic choices of an application.",
+        "introductionCN": "将主题应用于后代窗口小部件。主题描述了应用程序的颜色和印刷选择。",
+        "routeName": "Widget/Styling/Theme",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/Theme-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatelessWidget>Theme",
+        "constructors": "Theme({Key? key, required ThemeData data, required Widget child})"
     }
 ]

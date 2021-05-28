@@ -17,6 +17,9 @@ import 'input/autocomplete.dart';
 import 'input/form.dart';
 import 'input/form_field.dart';
 import 'input/raw_keyboard_listener.dart';
+import 'styling/media_query.dart';
+import 'styling/padding.dart';
+import 'styling/theme.dart';
 
 class ThreeLevelWidgetPage extends StatelessWidget {
   ThreeLevelWidgetPage({
@@ -59,6 +62,10 @@ class ThreeLevelWidgetPage extends StatelessWidget {
     'Widget/Input/Form': FormPage(),
     'Widget/Input/FormField': FormFieldPage(),
     'Widget/Input/RawKeyboardListener': RawKeyboardListenerPage(),
+    // Styling
+    'Widget/Styling/MediaQuery': MediaQueryPage(),
+    'Widget/Styling/Padding': PaddingPage(),
+    'Widget/Styling/Theme': ThemePage(),
   };
 
   @override
