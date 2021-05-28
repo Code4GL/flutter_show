@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_show/common/my_style.dart';
-import 'package:flutter_show/provider/common_provider.dart';
-import 'package:provider/provider.dart';
 
-class MergeSemanticsPage extends StatefulWidget {
+class RichTextPage extends StatefulWidget {
   @override
-  _MergeSemanticsPageState createState() => _MergeSemanticsPageState();
+  _RichTextPageState createState() => _RichTextPageState();
 }
 
-class _MergeSemanticsPageState extends State<MergeSemanticsPage> {
+class _RichTextPageState extends State<RichTextPage> {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -34,32 +32,13 @@ class _MergeSemanticsPageState extends State<MergeSemanticsPage> {
                 ),
               ),
               Text(
-                '在开发App时，辅助视力障碍人群的使用的功能，叫“语义化”。在使用“语义化”时，有时一个功能是由多个Widget构成，同时又没必要展示各个子Widget的语义，则可以使用MergeSemantic将他们的语义合并。在MaterialApp中添加showSemanticsDebugger: true来查看语义视图。',
+                '如果想在一句话或者一段文字里面显示不同样式的文字，Text组件无法满足我们的需求，这个时候需要使用RichText。RichText 组件的text属性是TextSpan，TextSpan中的style样式需要设置属性，不设置无法显示文字，一般设置应用程序的默认字体样式DefaultTextStyle.of(context).style。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
                 ),
               )
             ],
-          ),
-        ),
-        // 运行按钮
-        Container(
-          alignment: Alignment.centerRight,
-          child: ElevatedButton(
-            onPressed: () {
-              CommonProvider commonProvider = context.read<CommonProvider>();
-              commonProvider
-                  .changeSemantics(!commonProvider.showSemanticsDebugger);
-            },
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(Icons.play_arrow),
-                Text('Run'),
-              ],
-            ),
           ),
         ),
         // 展示区域
@@ -77,14 +56,16 @@ class _MergeSemanticsPageState extends State<MergeSemanticsPage> {
             borderRadius: MyStyle.borderRadius,
           ),
           child: Center(
-            child: MergeSemantics(
-              child: Row(
-                children: <Widget>[
-                  Checkbox(
-                    value: true,
-                    onChanged: (bool value) {},
-                  ),
-                  Text('This is a MergeSemantics Widget!'),
+            child: RichText(
+              text: TextSpan(
+                text: 'Hello ',
+                style: DefaultTextStyle.of(context).style,
+                children: const <TextSpan>[
+                  TextSpan(
+                      text: 'bold',
+                      style: TextStyle(fontWeight: FontWeight.bold)),
+                  TextSpan(
+                      text: ' world!', style: TextStyle(color: Colors.red)),
                 ],
               ),
             ),

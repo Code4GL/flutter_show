@@ -1,14 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_show/common/my_style.dart';
-import 'package:flutter_show/provider/common_provider.dart';
-import 'package:provider/provider.dart';
 
-class MergeSemanticsPage extends StatefulWidget {
+class DefaultTextStylePage extends StatefulWidget {
   @override
-  _MergeSemanticsPageState createState() => _MergeSemanticsPageState();
+  _DefaultTextStylePageState createState() => _DefaultTextStylePageState();
 }
 
-class _MergeSemanticsPageState extends State<MergeSemanticsPage> {
+class _DefaultTextStylePageState extends State<DefaultTextStylePage> {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -34,32 +32,13 @@ class _MergeSemanticsPageState extends State<MergeSemanticsPage> {
                 ),
               ),
               Text(
-                '在开发App时，辅助视力障碍人群的使用的功能，叫“语义化”。在使用“语义化”时，有时一个功能是由多个Widget构成，同时又没必要展示各个子Widget的语义，则可以使用MergeSemantic将他们的语义合并。在MaterialApp中添加showSemanticsDebugger: true来查看语义视图。',
+                'DefaultTextStyle是一个特殊的Widget,它并不直接显示文本，而是可以指定一种文本风格，那么它的子孙节点中的Text都可以继承它的文本风格。当没有为Text指定style值时，Text会上溯widget tree，寻找距离自己最近的DefaultTextStyle并继承它指定的文本风格。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
                 ),
               )
             ],
-          ),
-        ),
-        // 运行按钮
-        Container(
-          alignment: Alignment.centerRight,
-          child: ElevatedButton(
-            onPressed: () {
-              CommonProvider commonProvider = context.read<CommonProvider>();
-              commonProvider
-                  .changeSemantics(!commonProvider.showSemanticsDebugger);
-            },
-            child: Row(
-              mainAxisSize: MainAxisSize.min,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Icon(Icons.play_arrow),
-                Text('Run'),
-              ],
-            ),
           ),
         ),
         // 展示区域
@@ -77,17 +56,7 @@ class _MergeSemanticsPageState extends State<MergeSemanticsPage> {
             borderRadius: MyStyle.borderRadius,
           ),
           child: Center(
-            child: MergeSemantics(
-              child: Row(
-                children: <Widget>[
-                  Checkbox(
-                    value: true,
-                    onChanged: (bool value) {},
-                  ),
-                  Text('This is a MergeSemantics Widget!'),
-                ],
-              ),
-            ),
+            child: Text('This is an unstyled Text!'),
           ),
         ),
       ],

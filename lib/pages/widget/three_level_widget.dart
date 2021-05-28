@@ -20,6 +20,9 @@ import 'input/raw_keyboard_listener.dart';
 import 'styling/media_query.dart';
 import 'styling/padding.dart';
 import 'styling/theme.dart';
+import 'text/default_text_style.dart';
+import 'text/rich_text.dart';
+import 'text/text.dart';
 
 class ThreeLevelWidgetPage extends StatelessWidget {
   ThreeLevelWidgetPage({
@@ -66,6 +69,10 @@ class ThreeLevelWidgetPage extends StatelessWidget {
     'Widget/Styling/MediaQuery': MediaQueryPage(),
     'Widget/Styling/Padding': PaddingPage(),
     'Widget/Styling/Theme': ThemePage(),
+    // Text
+    'Widget/Text/DefaultTextStyle': DefaultTextStylePage(),
+    'Widget/Text/RichText': RichTextPage(),
+    'Widget/Text/Text': TextPage(),
   };
 
   @override

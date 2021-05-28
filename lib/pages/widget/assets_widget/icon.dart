@@ -136,7 +136,6 @@ class _IconPageState extends State<IconPage> {
         ),
         // 展示区域
         Container(
-          height: 100,
           margin: EdgeInsets.only(top: 10),
           decoration: BoxDecoration(
             color: Colors.white,
