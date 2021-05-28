@@ -55,7 +55,23 @@ class _AppbarPageState extends State<AppbarPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: Column(
+              children: [
+                AppBar(
+                  title: Text('单独使用的AppBar'),
+                  leading:
+                      IconButton(icon: Icon(Icons.search), onPressed: () {}),
+                  actions: [
+                    IconButton(icon: Icon(Icons.share), onPressed: () {}),
+                  ],
+                ),
+                Image(
+                  image: AssetImage('assets/images/app_bar.png'),
+                ),
+              ],
+            ),
+          ),
         ),
       ],
     );

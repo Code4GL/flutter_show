@@ -75,6 +75,7 @@ flutter:
     - assets/images/github.png
     - assets/images/userImage.png
     - assets/images/themespace.png
+    - assets/images/app_bar.png
 
     - assets/images/assets/icon.png
     - assets/images/assets/image.png

@@ -63,7 +63,7 @@ class _FormPageState extends State<FormPage> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   TextFormField(
-                    decoration: const InputDecoration(
+                    decoration: InputDecoration(
                       hintText: 'Enter your email',
                     ),
                     validator: (String value) {
@@ -74,7 +74,7 @@ class _FormPageState extends State<FormPage> {
                     },
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(vertical: 16.0),
+                    padding: EdgeInsets.symmetric(vertical: 16.0),
                     child: ElevatedButton(
                       onPressed: () {
                         // Validate will return true if the form is valid, or false if
@@ -83,7 +83,7 @@ class _FormPageState extends State<FormPage> {
                           // Process data.
                         }
                       },
-                      child: const Text('Submit'),
+                      child: Text('Submit'),
                     ),
                   ),
                 ],

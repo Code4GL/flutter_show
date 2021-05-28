@@ -60,7 +60,7 @@ class _RichTextPageState extends State<RichTextPage> {
               text: TextSpan(
                 text: 'Hello ',
                 style: DefaultTextStyle.of(context).style,
-                children: const <TextSpan>[
+                children: <TextSpan>[
                   TextSpan(
                       text: 'bold',
                       style: TextStyle(fontWeight: FontWeight.bold)),

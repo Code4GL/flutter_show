@@ -67,7 +67,7 @@ class _AutocompletePageState extends State<AutocompletePage> {
               displayStringForOption: _displayStringForOption,
               optionsBuilder: (TextEditingValue textEditingValue) {
                 if (textEditingValue.text == '') {
-                  return const Iterable<User>.empty();
+                  return Iterable<User>.empty();
                 }
                 return _userOptions.where((User option) {
                   return option

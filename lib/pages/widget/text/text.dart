@@ -60,7 +60,7 @@ class _TextPageState extends State<TextPage> {
               'Hello, Jone! How are you?',
               textAlign: TextAlign.center,
               overflow: TextOverflow.ellipsis,
-              style: const TextStyle(fontWeight: FontWeight.bold),
+              style: TextStyle(fontWeight: FontWeight.bold),
             ),
           ),
         ),

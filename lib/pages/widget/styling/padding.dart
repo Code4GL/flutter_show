@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_show/common/my_style.dart';
+import 'package:flutter_show/components/radio_param.dart';
 
 class PaddingPage extends StatefulWidget {
   @override
@@ -7,6 +8,7 @@ class PaddingPage extends StatefulWidget {
 }
 
 class _PaddingPageState extends State<PaddingPage> {
+  EdgeInsetsGeometry _padding = EdgeInsets.zero;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -41,6 +43,61 @@ class _PaddingPageState extends State<PaddingPage> {
             ],
           ),
         ),
+        // 参数配置
+        Container(
+          width: double.infinity,
+          padding: EdgeInsets.all(5),
+          decoration: BoxDecoration(
+            color: MyStyle.paramBgColor,
+            borderRadius: MyStyle.borderRadius,
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                '参数配置',
+                style: TextStyle(
+                  color: MyStyle.titleColor,
+                  fontWeight: MyStyle.titleFontWeight,
+                ),
+              ),
+              RadioParam(
+                paramKey: 'padding:',
+                paramValue: '$_padding',
+                groupValue: _padding,
+                items: [
+                  {
+                    'name': 'zero',
+                    'value': EdgeInsets.zero,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _padding = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': '10',
+                    'value': EdgeInsets.all(10),
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _padding = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': '20',
+                    'value': EdgeInsets.all(20),
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _padding = value;
+                      });
+                    },
+                  },
+                ],
+              ),
+            ],
+          ),
+        ),
         // 展示区域
         Container(
           margin: EdgeInsets.only(top: 10),
@@ -57,7 +114,7 @@ class _PaddingPageState extends State<PaddingPage> {
           ),
           child: Center(
             child: Padding(
-              padding: EdgeInsets.all(16.0),
+              padding: _padding,
               child: Text('Hello World!'),
             ),
           ),
