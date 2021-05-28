@@ -1,90 +1,112 @@
 [
     {
-        "title":"Appbar",
-        "introductionEN":"A Material Design app bar. An app bar consists of a toolbar and potentially other widgets, such as a TabBar and a FlexibleSpaceBar.",
-        "introductionCN":"Material Design应用栏。应用栏由工具栏和可能的其他小部件组成，例如TabBar和FlexibleSpaceBar。",
-        "routeName":"",
-        "imagePath":"assets/images/basics/material-app-bar.png",
-        "docPath":"https://api.flutter.dev/flutter/material/AppBar-class.html"
+        "title": "Appbar",
+        "introductionEN": "A Material Design app bar. An app bar consists of a toolbar and potentially other widgets, such as a TabBar and a FlexibleSpaceBar.",
+        "introductionCN": "Material Design应用栏。应用栏由工具栏和可能的其他小部件组成，例如TabBar和FlexibleSpaceBar。",
+        "routeName": "Widget/Basic/Appbar",
+        "imagePath": "assets/images/basics/material-app-bar.png",
+        "docPath": "https://api.flutter.dev/flutter/material/AppBar-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>AppBar",
+        "constructors": "AppBar({Key? key, Widget? leading, bool automaticallyImplyLeading, Widget? title, List<Widget>? actions, Widget? flexibleSpace, PreferredSizeWidget? bottom, double? elevation, Color? shadowColor, ShapeBorder? shape, Color? backgroundColor, Color? foregroundColor, Brightness? brightness, IconThemeData? iconTheme, IconThemeData? actionsIconTheme, TextTheme? textTheme, bool primary, bool? centerTitle, bool excludeHeaderSemantics, double? titleSpacing, double toolbarOpacity, double bottomOpacity, double? toolbarHeight, double? leadingWidth, bool? backwardsCompatibility, TextStyle? toolbarTextStyle, TextStyle? titleTextStyle, SystemUiOverlayStyle? systemOverlayStyle})"
     },
     {
-        "title":"Column",
-        "introductionEN":"Layout a list of child widgets in the vertical direction.",
-        "introductionCN":"在垂直方向上布置子窗口小部件列表。",
-        "routeName":"",
-        "imagePath":"assets/images/basics/column.png",
-        "docPath":"https://api.flutter.dev/flutter/widgets/Column-class.html"
+        "title": "Column",
+        "introductionEN": "Layout a list of child widgets in the vertical direction.",
+        "introductionCN": "在垂直方向上布置子窗口小部件列表。",
+        "routeName": "Widget/Basic/Column",
+        "imagePath": "assets/images/basics/column.png",
+        "docPath": "https://api.flutter.dev/flutter/widgets/Column-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>RenderObjectWidget>MultiChildRenderObjectWidget>Flex>Column",
+        "constructors": "Column({Key? key, MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start, MainAxisSize mainAxisSize = MainAxisSize.max, CrossAxisAlignment crossAxisAlignment = CrossAxisAlignment.center, TextDirection? textDirection, VerticalDirection verticalDirection = VerticalDirection.down, TextBaseline? textBaseline, List<Widget> children = const <Widget>[]})"
     },
     {
-        "title":"Container",
-        "introductionEN":"A convenience widget that combines common painting, positioning, and sizing widgets.",
-        "introductionCN":"一个便利的小部件，结合了常见的绘画，定位和大小调整小部件。",
-        "routeName":"",
-        "imagePath":"assets/images/basics/container.png",
-        "docPath":"https://api.flutter.dev/flutter/widgets/Container-class.html"
+        "title": "Container",
+        "introductionEN": "A convenience widget that combines common painting, positioning, and sizing widgets.",
+        "introductionCN": "一个便利的小部件，结合了常见的绘画，定位和大小调整小部件。",
+        "routeName": "Widget/Basic/Container",
+        "imagePath": "assets/images/basics/container.png",
+        "docPath": "https://api.flutter.dev/flutter/widgets/Container-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatelessWidget>Container",
+        "constructors": "Container({Key? key, AlignmentGeometry? alignment, EdgeInsetsGeometry? padding, Color? color, Decoration? decoration, Decoration? foregroundDecoration, double? width, double? height, BoxConstraints? constraints, EdgeInsetsGeometry? margin, Matrix4? transform, AlignmentGeometry? transformAlignment, Widget? child, Clip clipBehavior})"
     },
     {
-        "title":"FlutterLogo",
-        "introductionEN":"The Flutter logo, in widget form. This widget respects the IconTheme.",
-        "introductionCN":"Flutter徽标，以小部件形式。这个小部件尊重IconTheme。",
-        "routeName":"",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/widgets/FlutterLogo-class.html"
+        "title": "ElevatedButton",
+        "introductionEN": "A Material Design elevated button. A filled button whose material elevates when pressed.",
+        "introductionCN": "材料设计提升按钮。填充按钮，其材料在按下时会升高。",
+        "routeName": "Widget/Basic/ElevatedButton",
+        "imagePath": "assets/images/basics/material-raised-button.png",
+        "docPath": "https://api.flutter.dev/flutter/material/ElevatedButton-class.htm",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>ButtonStyleButton>ElevatedButton",
+        "constructors": "ElevatedButton({Key? key, required VoidCallback? onPressed, VoidCallback? onLongPress, ButtonStyle? style, FocusNode? focusNode, bool autofocus = false, Clip clipBehavior = Clip.none, required Widget? child})"
     },
     {
-        "title":"Icon",
-        "introductionEN":"A Material Design icon.",
-        "introductionCN":"材料设计图标。",
-        "routeName":"",
-        "imagePath":"assets/images/assets/icon.png",
-        "docPath":"https://api.flutter.dev/flutter/material/Icon-class.html"
+        "title": "FlutterLogo",
+        "introductionEN": "The Flutter logo, in widget form. This widget respects the IconTheme.",
+        "introductionCN": "Flutter徽标，以小部件形式。这个小部件尊重IconTheme。",
+        "routeName": "Widget/Basic/FlutterLogo",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/FlutterLogo-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatelessWidget>FlutterLogo",
+        "constructors": "FlutterLogo({Key? key, double? size, Color textColor, FlutterLogoStyle style, Duration duration, Curve curve})"
     },
     {
-        "title":"Image",
-        "introductionEN":"A widget that displays an image.",
-        "introductionCN":"显示图像的小部件。",
-        "routeName":"",
-        "imagePath":"assets/images/assets/image.png",
-        "docPath":"https://api.flutter.dev/flutter/widgets/Image-class.html"
+        "title": "Icon",
+        "introductionEN": "A Material Design icon.",
+        "introductionCN": "材料设计图标。",
+        "routeName": "Widget/Basic/Icon",
+        "imagePath": "assets/images/assets/icon.png",
+        "docPath": "https://api.flutter.dev/flutter/material/Icon-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatelessWidget>Icon",
+        "constructors": "Icon(IconData? icon, {Key? key, double? size, Color? color, String? semanticLabel, TextDirection? textDirection})"
     },
     {
-        "title":"Placeholder",
-        "introductionEN":"A widget that draws a box that represents where other widgets will one day be added.",
-        "introductionCN":"一个小部件，它绘制一个框，表示有一天会添加其他小部件的位置。",
-        "routeName":"",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/widgets/Placeholder-class.html"
+        "title": "Image",
+        "introductionEN": "A widget that displays an image.",
+        "introductionCN": "显示图像的小部件。",
+        "routeName": "Widget/Basic/Image",
+        "imagePath": "assets/images/assets/image.png",
+        "docPath": "https://api.flutter.dev/flutter/widgets/Image-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>Image",
+        "constructors": "Image({Key? key, required ImageProvider<Object> image, ImageFrameBuilder? frameBuilder, ImageLoadingBuilder? loadingBuilder, ImageErrorWidgetBuilder? errorBuilder, String? semanticLabel, bool excludeFromSemantics = false, double? width, double? height, Color? color, BlendMode? colorBlendMode, BoxFit? fit, AlignmentGeometry alignment = Alignment.center, ImageRepeat repeat = ImageRepeat.noRepeat, Rect? centerSlice, bool matchTextDirection = false, bool gaplessPlayback = false, bool isAntiAlias = false, FilterQuality filterQuality = FilterQuality.low})"
     },
     {
-        "title":"RaisedButton",
-        "introductionEN":"A Material Design raised button. A raised button consists of a rectangular piece of material that hovers over the interface.",
-        "introductionCN":"材料设计凸起按钮。凸起的按钮由悬挂在界面上的矩形材料块组成。",
-        "routeName":"",
-        "imagePath":"assets/images/basics/material-raised-button.png",
-        "docPath":"https://api.flutter.dev/flutter/material/RaisedButton-class.htm"
+        "title": "Placeholder",
+        "introductionEN": "A widget that draws a box that represents where other widgets will one day be added.",
+        "introductionCN": "一个小部件，它绘制一个框，表示有一天会添加其他小部件的位置。",
+        "routeName": "Widget/Basic/Placeholder",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/Placeholder-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatelessWidget>Placeholder",
+        "constructors": "Placeholder({Key? key, Color color, double strokeWidth, double fallbackWidth, double fallbackHeight})"
     },
     {
-        "title":"Row",
-        "introductionEN":"Layout a list of child widgets in the horizontal direction.",
-        "introductionCN":"在水平方向上布置子窗口小部件列表。",
-        "routeName":"",
-        "imagePath":"assets/images/basics/row.png",
-        "docPath":"https://api.flutter.dev/flutter/widgets/Row-class.html"
+        "title": "Row",
+        "introductionEN": "Layout a list of child widgets in the horizontal direction.",
+        "introductionCN": "在水平方向上布置子窗口小部件列表。",
+        "routeName": "Widget/Basic/Row",
+        "imagePath": "assets/images/basics/row.png",
+        "docPath": "https://api.flutter.dev/flutter/widgets/Row-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>RenderObjectWidget>MultiChildRenderObjectWidget>Flex>Row",
+        "constructors": "Row({Key? key, MainAxisAlignment mainAxisAlignment = MainAxisAlignment.start, MainAxisSize mainAxisSize = MainAxisSize.max, CrossAxisAlignment crossAxisAlignment = CrossAxisAlignment.center, TextDirection? textDirection, VerticalDirection verticalDirection = VerticalDirection.down, TextBaseline? textBaseline, List<Widget> children = const <Widget>[]})"
     },
     {
-        "title":"Scaffold",
-        "introductionEN":"Implements the basic Material Design visual layout structure. This class provides APIs for showing drawers, snack bars, and bottom sheets.",
-        "introductionCN":"实现基本的Material Design可视化布局结构。此类提供用于显示抽屉，小吃店和底部工作表的API。",
-        "routeName":"",
-        "imagePath":"assets/images/basics/layout-structure-regions-mobile.png",
-        "docPath":"https://api.flutter.dev/flutter/material/Scaffold-class.html"
+        "title": "Scaffold",
+        "introductionEN": "Implements the basic Material Design visual layout structure. This class provides APIs for showing drawers, snack bars, and bottom sheets.",
+        "introductionCN": "实现基本的Material Design可视化布局结构。此类提供用于显示抽屉，小吃店和底部工作表的API。",
+        "routeName": "Widget/Basic/Scaffold",
+        "imagePath": "assets/images/basics/layout-structure-regions-mobile.png",
+        "docPath": "https://api.flutter.dev/flutter/material/Scaffold-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>Scaffold",
+        "constructors": "Scaffold({Key? key, PreferredSizeWidget? appBar, Widget? body, Widget? floatingActionButton, FloatingActionButtonLocation? floatingActionButtonLocation, FloatingActionButtonAnimator? floatingActionButtonAnimator, List<Widget>? persistentFooterButtons, Widget? drawer, DrawerCallback? onDrawerChanged, Widget? endDrawer, DrawerCallback? onEndDrawerChanged, Widget? bottomNavigationBar, Widget? bottomSheet, Color? backgroundColor, bool? resizeToAvoidBottomInset, bool primary, DragStartBehavior drawerDragStartBehavior, bool extendBody, bool extendBodyBehindAppBar, Color? drawerScrimColor, double? drawerEdgeDragWidth, bool drawerEnableOpenDragGesture, bool endDrawerEnableOpenDragGesture, String? restorationId})"
     },
     {
-        "title":"Text",
-        "introductionEN":"A run of text with a single style.",
-        "introductionCN":"一个单一样式的文本。",
-        "routeName":"",
-        "imagePath":"assets/images/basics/text.png",
-        "docPath":"https://api.flutter.dev/flutter/widgets/Text-class.html"
+        "title": "Text",
+        "introductionEN": "A run of text with a single style.",
+        "introductionCN": "一个单一样式的文本。",
+        "routeName": "Widget/Basic/Text",
+        "imagePath": "assets/images/basics/text.png",
+        "docPath": "https://api.flutter.dev/flutter/widgets/Text-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatelessWidget>Text",
+        "constructors": "Text(String data, {Key? key, TextStyle? style, StrutStyle? strutStyle, TextAlign? textAlign, TextDirection? textDirection, Locale? locale, bool? softWrap, TextOverflow? overflow, double? textScaleFactor, int? maxLines, String? semanticsLabel, TextWidthBasis? textWidthBasis, TextHeightBehavior? textHeightBehavior})"
     }
 ]

@@ -13,6 +13,14 @@ import 'assets_widget/image.dart';
 import 'assets_widget/raw_image.dart';
 import 'async/future_builder.dart';
 import 'async/stream_builder.dart';
+import 'basic/appbar.dart';
+import 'basic/column.dart';
+import 'basic/container.dart';
+import 'basic/elevated_button.dart';
+import 'basic/flutter_logo.dart';
+import 'basic/placeholder.dart';
+import 'basic/row.dart';
+import 'basic/scaffold.dart';
 import 'input/autocomplete.dart';
 import 'input/form.dart';
 import 'input/form_field.dart';
@@ -60,6 +68,18 @@ class ThreeLevelWidgetPage extends StatelessWidget {
     // Async
     'Widget/Async/FutureBuilder': FutureBuilderPage(),
     'Widget/Async/StreamBuilder': StreamBuilderPage(),
+    // Basic
+    'Widget/Basic/Appbar': AppbarPage(),
+    'Widget/Basic/Column': ColumnPage(),
+    'Widget/Basic/Container': ContainerPage(),
+    'Widget/Basic/ElevatedButton': ElevatedButtonPage(),
+    'Widget/Basic/FlutterLogo': FlutterLogoPage(),
+    'Widget/Basic/Icon': IconPage(),
+    'Widget/Basic/Image': ImagePage(),
+    'Widget/Basic/Placeholder': PlaceholderPage(),
+    'Widget/Basic/Row': RowPage(),
+    'Widget/Basic/Scaffold': ScaffoldPage(),
+    'Widget/Basic/Text': TextPage(),
     // Input
     'Widget/Input/Autocomplete': AutocompletePage(),
     'Widget/Input/Form': FormPage(),

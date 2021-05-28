@@ -1,5 +1,15 @@
 [
     {
+        "title": "AnimatedAlign",
+        "introductionEN": "Animated version of Align which automatically transitions the child's position over a given duration whenever the given alignment changes.",
+        "introductionCN": "Align的动画版本，只要给定的对齐方式发生变化，它就会在给定的持续时间内自动转换孩子的位置。",
+        "routeName": "Widget/Animation/AnimatedAlign",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/AnimatedAlign-class.html",
+        "inheritance": "",
+        "constructors": ""
+    },
+    {
         "title": "AnimatedBuilder",
         "introductionEN": "A general-purpose widget for building animations. AnimatedBuilder is useful for more complex widgets that wish to include an animation as part of a larger build function. To use AnimatedBuilder, simply construct the widget and pass it a builder function.",
         "introductionCN": "用于构建动画的通用小部件。 AnimatedBuilder对于希望将动画作为更大构建函数的一部分包含在内的更复杂的小部件非常有用。 要使用AnimatedBuilder，只需构造窗口小部件并将其传递给构建器函数。",

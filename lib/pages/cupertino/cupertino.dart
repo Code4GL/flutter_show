@@ -36,6 +36,8 @@ class CupertinoPage extends StatelessWidget {
                       routeName: "${data[index]['routeName']}",
                       imagePath: "${data[index]['imagePath']}",
                       docPath: "${data[index]['docPath']}",
+                      inheritance: "${data[index]['inheritance']}",
+                      constructors: "${data[index]['constructors']}",
                     );
                   },
                 );
