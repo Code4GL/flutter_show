@@ -32,7 +32,7 @@ class _ContainerPageState extends State<ContainerPage> {
                 ),
               ),
               Text(
-                '',
+                'Container是一个组合类容器，它本身不对应具体的RenderObject，它是DecoratedBox、ConstrainedBox、Transform、Padding、Align等组件组合的一个多功能容器，所以我们只需通过一个Container组件可以实现同时需要装饰、变换、限制的场景。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -55,7 +55,23 @@ class _ContainerPageState extends State<ContainerPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: Container(
+              constraints: BoxConstraints.expand(
+                height: Theme.of(context).textTheme.headline4.fontSize * 1.1 +
+                    200.0,
+              ),
+              padding: EdgeInsets.all(8.0),
+              color: Colors.blue[600],
+              alignment: Alignment.center,
+              child: Text('Hello World',
+                  style: Theme.of(context)
+                      .textTheme
+                      .headline4
+                      .copyWith(color: Colors.white)),
+              transform: Matrix4.rotationZ(0.1),
+            ),
+          ),
         ),
       ],
     );

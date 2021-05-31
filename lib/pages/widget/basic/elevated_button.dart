@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_show/common/my_style.dart';
+import 'package:flutter_show/components/radio_param.dart';
 
 class ElevatedButtonPage extends StatefulWidget {
   @override
@@ -7,6 +8,8 @@ class ElevatedButtonPage extends StatefulWidget {
 }
 
 class _ElevatedButtonPageState extends State<ElevatedButtonPage> {
+  static Function press = () => {};
+  Function _onPressed;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -32,12 +35,58 @@ class _ElevatedButtonPageState extends State<ElevatedButtonPage> {
                 ),
               ),
               Text(
-                '',
+                '代替RaiseButton的新按钮，自定义样式由ButtonStyle统一管理。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
                 ),
               )
+            ],
+          ),
+        ),
+        // 参数配置
+        Container(
+          width: double.infinity,
+          padding: EdgeInsets.all(5),
+          decoration: BoxDecoration(
+            color: MyStyle.paramBgColor,
+            borderRadius: MyStyle.borderRadius,
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                '参数配置',
+                style: TextStyle(
+                  color: MyStyle.titleColor,
+                  fontWeight: MyStyle.titleFontWeight,
+                ),
+              ),
+              RadioParam(
+                paramKey: 'onPressed:',
+                paramValue: '',
+                groupValue: _onPressed,
+                items: [
+                  {
+                    'name': 'null',
+                    'value': null,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _onPressed = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'function',
+                    'value': press,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _onPressed = value;
+                      });
+                    },
+                  },
+                ],
+              ),
             ],
           ),
         ),
@@ -55,7 +104,12 @@ class _ElevatedButtonPageState extends State<ElevatedButtonPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: ElevatedButton(
+              child: Text('ElevatedButton'),
+              onPressed: _onPressed,
+            ),
+          ),
         ),
       ],
     );

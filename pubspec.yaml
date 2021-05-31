@@ -75,7 +75,6 @@ flutter:
     - assets/images/github.png
     - assets/images/userImage.png
     - assets/images/themespace.png
-    - assets/images/app_bar.png
 
     - assets/images/assets/icon.png
     - assets/images/assets/image.png
@@ -87,6 +86,7 @@ flutter:
     - assets/images/basics/material-raised-button.png
     - assets/images/basics/row.png
     - assets/images/basics/text.png
+    - assets/images/basics/app_bar.png
 
     - assets/images/cupertino/cupertino-action-sheet.png
     - assets/images/cupertino/cupertino-activity-indicator.png

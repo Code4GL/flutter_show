@@ -55,7 +55,14 @@ class _FlutterLogoPageState extends State<FlutterLogoPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: FlutterLogo(
+              size: 100.0,
+              curve: Curves.easeInExpo,
+              textColor: Colors.red,
+              style: FlutterLogoStyle.stacked,
+            ),
+          ),
         ),
       ],
     );

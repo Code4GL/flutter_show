@@ -237,7 +237,6 @@ class _TextPageState extends State<TextPage> {
               textAlign: _textAlign,
               softWrap: _softWrap,
               textScaleFactor: _textScaleFactor,
-              style: TextStyle(fontWeight: FontWeight.bold),
             ),
           ),
         ),
