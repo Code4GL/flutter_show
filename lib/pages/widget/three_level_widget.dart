@@ -25,6 +25,17 @@ import 'input/autocomplete.dart';
 import 'input/form.dart';
 import 'input/form_field.dart';
 import 'input/raw_keyboard_listener.dart';
+import 'interaction/absorb_pointer.dart';
+import 'interaction/dismissible.dart';
+import 'interaction/drag_target.dart';
+import 'interaction/draggable.dart';
+import 'interaction/draggable_scrollable_sheet.dart';
+import 'interaction/gesture_detector.dart';
+import 'interaction/hero.dart';
+import 'interaction/ignore_pointer.dart';
+import 'interaction/long_press_draggable.dart';
+import 'interaction/navigator.dart';
+import 'interaction/scrollable.dart';
 import 'styling/media_query.dart';
 import 'styling/padding.dart';
 import 'styling/theme.dart';
@@ -85,6 +96,19 @@ class ThreeLevelWidgetPage extends StatelessWidget {
     'Widget/Input/Form': FormPage(),
     'Widget/Input/FormField': FormFieldPage(),
     'Widget/Input/RawKeyboardListener': RawKeyboardListenerPage(),
+    // Interaction
+    'Widget/Interaction/AbsorbPointer': AbsorbPointerPage(),
+    'Widget/Interaction/Dismissible': DismissiblePage(),
+    'Widget/Interaction/DragTarget': DragTargetPage(),
+    'Widget/Interaction/Draggable': DraggablePage(),
+    'Widget/Interaction/DraggableScrollableSheet':
+        DraggableScrollableSheetPage(),
+    'Widget/Interaction/GestureDetector': GestureDetectorPage(),
+    'Widget/Interaction/IgnorePointer': IgnorePointerPage(),
+    'Widget/Interaction/LongPressDraggable': LongPressDraggablePage(),
+    'Widget/Interaction/Scrollable': ScrollablePage(),
+    'Widget/Interaction/Hero': HeroPage(),
+    'Widget/Interaction/Navigator': NavigatorPage(),
     // Styling
     'Widget/Styling/MediaQuery': MediaQueryPage(),
     'Widget/Styling/Padding': PaddingPage(),

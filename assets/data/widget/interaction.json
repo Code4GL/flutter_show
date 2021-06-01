@@ -1,82 +1,112 @@
 [
     {
-        "title":"AbsorbPointer",
-        "introductionEN":"A widget that absorbs pointers during hit testing. When absorbing is true, this widget prevents its subtree from receiving pointer events by terminating hit testing at itself. It still consumes space during layout and paints its child as usual. It just prevents its children from being the target of located events, because it returns true from RenderBox.hitTest.",
-        "introductionCN":"在命中测试期间吸收指针的小部件。 当吸收为真时，此小部件通过终止命中测试来阻止其子树接收指针事件。 它仍然会在布局过程中消耗空间并像往常一样对孩子进行绘画。 它只是阻止它的子节点成为定位事件的目标，因为它从RenderBox.hitTest返回true。",
-        "routeName":"",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/widgets/AbsorbPointer-class.html"
+        "title": "AbsorbPointer",
+        "introductionEN": "A widget that absorbs pointers during hit testing. When absorbing is true, this widget prevents its subtree from receiving pointer events by terminating hit testing at itself. It still consumes space during layout and paints its child as usual. It just prevents its children from being the target of located events, because it returns true from RenderBox.hitTest.",
+        "introductionCN": "在命中测试期间吸收指针的小部件。 当吸收为真时，此小部件通过终止命中测试来阻止其子树接收指针事件。 它仍然会在布局过程中消耗空间并像往常一样对孩子进行绘画。 它只是阻止它的子节点成为定位事件的目标，因为它从RenderBox.hitTest返回true。",
+        "routeName": "Widget/Interaction/AbsorbPointer",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/AbsorbPointer-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>RenderObjectWidget>SingleChildRenderObjectWidget>AbsorbPointer",
+        "constructors": "AbsorbPointer({Key? key, bool absorbing, Widget? child, bool? ignoringSemantics})"
     },
     {
-        "title":"Dismissible",
-        "introductionEN":"A widget that can be dismissed by dragging in the indicated direction. Dragging or flinging this widget in the DismissDirection causes the child to slide out of view. Following the slide animation, if resizeDuration is non-null, the Dismissible widget animates its height (or width, whichever is perpendicular to the dismiss direction) to zero over the resizeDuration.",
-        "introductionCN":"可以通过在指示的方向上拖动来解除的小部件。 在DismissDirection中拖动或投掷此窗口小部件会导致子窗体滑出视图。 在幻灯片动画之后，如果resizeDuration为非null，则“允许”窗口小部件会在resizeDuration上将其高度（或宽度，与垂直方向垂直的任何一个）设置为零。",
-        "routeName":"",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/widgets/Dismissible-class.html"
+        "title": "Dismissible",
+        "introductionEN": "A widget that can be dismissed by dragging in the indicated direction. Dragging or flinging this widget in the DismissDirection causes the child to slide out of view. Following the slide animation, if resizeDuration is non-null, the Dismissible widget animates its height (or width, whichever is perpendicular to the dismiss direction) to zero over the resizeDuration.",
+        "introductionCN": "可以通过在指示的方向上拖动来解除的小部件。 在DismissDirection中拖动或投掷此窗口小部件会导致子窗体滑出视图。 在幻灯片动画之后，如果resizeDuration为非null，则“允许”窗口小部件会在resizeDuration上将其高度（或宽度，与垂直方向垂直的任何一个）设置为零。",
+        "routeName": "Widget/Interaction/Dismissible",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/Dismissible-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>Dismissible",
+        "constructors": "Dismissible({required Key key, required Widget child, Widget? background, Widget? secondaryBackground, ConfirmDismissCallback? confirmDismiss, VoidCallback? onResize, DismissDirectionCallback? onDismissed, DismissDirection direction, Duration? resizeDuration, Map<DismissDirection, double> dismissThresholds, Duration movementDuration, double crossAxisEndOffset, DragStartBehavior dragStartBehavior, HitTestBehavior behavior})"
     },
     {
-        "title":"DragTarget",
-        "introductionEN":"A widget that receives data when a Draggable widget is dropped. When a draggable is dragged on top of a drag target, the drag target is asked whether it will accept the data the draggable is carrying. If the user does drop the draggable on top of the drag target (and the drag target has indicated that it will accept the draggable's data), then the drag target is asked to accept the draggable's data.",
-        "introductionCN":"删除Draggable小部件时接收数据的小部件。 当拖动目标拖动拖动目标时，会询问拖动目标是否接受拖动目标所携带的数据。 如果用户确实将拖动目标放在拖动目标的顶部（并且拖动目标已指示它将接受可拖动的数据），则要求拖动目标接受可拖动的数据。",
-        "routeName":"",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/widgets/DragTarget-class.html"
+        "title": "DragTarget",
+        "introductionEN": "A widget that receives data when a Draggable widget is dropped. When a draggable is dragged on top of a drag target, the drag target is asked whether it will accept the data the draggable is carrying. If the user does drop the draggable on top of the drag target (and the drag target has indicated that it will accept the draggable's data), then the drag target is asked to accept the draggable's data.",
+        "introductionCN": "删除Draggable小部件时接收数据的小部件。 当拖动目标拖动拖动目标时，会询问拖动目标是否接受拖动目标所携带的数据。 如果用户确实将拖动目标放在拖动目标的顶部（并且拖动目标已指示它将接受可拖动的数据），则要求拖动目标接受可拖动的数据。",
+        "routeName": "Widget/Interaction/DragTarget",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/DragTarget-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>DragTarget",
+        "constructors": "DragTarget({Key? key, required DragTargetBuilder<T> builder, DragTargetWillAccept<T>? onWillAccept, DragTargetAccept<T>? onAccept, DragTargetAcceptWithDetails<T>? onAcceptWithDetails, DragTargetLeave<T>? onLeave, DragTargetMove<T>? onMove, HitTestBehavior hitTestBehavior})"
     },
     {
-        "title":"Draggable",
-        "introductionEN":"A widget that can be dragged from to a DragTarget. When a draggable widget recognizes the start of a drag gesture, it displays a feedback widget that tracks the user's finger across the screen. If the user lifts their finger while on top of a DragTarget, that target is given the opportunity to accept the data carried by the draggable.",
-        "introductionCN":"可以拖动到DragTarget的小部件。 当可拖动小部件识别出拖动手势的开始时，它会显示一个反馈小部件，用于在屏幕上跟踪用户的手指。 如果用户在DragTarget顶部抬起手指，则该目标有机会接受可拖动的数据。",
-        "routeName":"",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/widgets/Draggable-class.html"
+        "title": "Draggable",
+        "introductionEN": "A widget that can be dragged from to a DragTarget. When a draggable widget recognizes the start of a drag gesture, it displays a feedback widget that tracks the user's finger across the screen. If the user lifts their finger while on top of a DragTarget, that target is given the opportunity to accept the data carried by the draggable.",
+        "introductionCN": "可以拖动到DragTarget的小部件。 当可拖动小部件识别出拖动手势的开始时，它会显示一个反馈小部件，用于在屏幕上跟踪用户的手指。 如果用户在DragTarget顶部抬起手指，则该目标有机会接受可拖动的数据。",
+        "routeName": "Widget/Interaction/Draggable",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/Draggable-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>Draggable",
+        "constructors": "Draggable({Key? key, required Widget child, required Widget feedback, T? data, Axis? axis, Widget? childWhenDragging, Offset feedbackOffset, @Deprecated('Use dragAnchorStrategy instead. ' 'This feature was deprecated after v2.1.0-10.0.pre.') DragAnchor dragAnchor, DragAnchorStrategy? dragAnchorStrategy, Axis? affinity, int? maxSimultaneousDrags, VoidCallback? onDragStarted, DragUpdateCallback? onDragUpdate, DraggableCanceledCallback? onDraggableCanceled, DragEndCallback? onDragEnd, VoidCallback? onDragCompleted, bool ignoringFeedbackSemantics, bool rootOverlay, HitTestBehavior hitTestBehavior})"
     },
     {
-        "title":"GestureDetector",
-        "introductionEN":"A widget that detects gestures. Attempts to recognize gestures that correspond to its non-null callbacks. If this widget has a child, it defers to that child for its sizing behavior. If it does not have a child, it grows to fit the parent instead.",
-        "introductionCN":"检测手势的小部件。尝试识别与其非null回调相对应的手势。如果此窗口小部件具有子项，则它会根据其大小调整行为推迟该子项。如果它没有孩子，它会变得适合父母。",
-        "routeName":"",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/widgets/GestureDetector-class.html"
+        "title": "DraggableScrollableSheet",
+        "introductionEN": "A container for a Scrollable that responds to drag gestures by resizing the scrollable until a limit is reached, and then scrolling.",
+        "introductionCN": "一个Scrollable的容器，它通过调整可滚动对象的大小直到达到限制，然后滚动来响应拖动手势。",
+        "routeName": "Widget/Interaction/DraggableScrollableSheet",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/DraggableScrollableSheet-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>DraggableScrollableSheet",
+        "constructors": "DraggableScrollableSheet({Key? key, double initialChildSize, double minChildSize, double maxChildSize, bool expand, required ScrollableWidgetBuilder builder})"
     },
     {
-        "title":"IgnorePointer",
-        "introductionEN":"A widget that is invisible during hit testing. When ignoring is true, this widget (and its subtree) is invisible to hit testing. It still consumes space during layout and paints its child as usual. It just cannot be the target of located events, because it returns false from RenderBox.hitTest.",
-        "introductionCN":"在命中测试期间不可见的小部件。 如果忽略为true，则此窗口小部件（及其子树）对于命中测试是不可见的。 它仍然会在布局过程中消耗空间并像往常一样对孩子进行绘画。 它只是不能成为定位事件的目标，因为它从RenderBox.hitTest返回false。",
-        "routeName":"",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/widgets/IgnorePointer-class.html"
+        "title": "GestureDetector",
+        "introductionEN": "A widget that detects gestures. Attempts to recognize gestures that correspond to its non-null callbacks. If this widget has a child, it defers to that child for its sizing behavior. If it does not have a child, it grows to fit the parent instead.",
+        "introductionCN": "检测手势的小部件。尝试识别与其非null回调相对应的手势。如果此窗口小部件具有子项，则它会根据其大小调整行为推迟该子项。如果它没有孩子，它会变得适合父母。",
+        "routeName": "Widget/Interaction/GestureDetector",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/GestureDetector-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatelessWidget>GestureDetector",
+        "constructors": "GestureDetector({Key? key, Widget? child, GestureTapDownCallback? onTapDown, GestureTapUpCallback? onTapUp, GestureTapCallback? onTap, GestureTapCancelCallback? onTapCancel, GestureTapCallback? onSecondaryTap, GestureTapDownCallback? onSecondaryTapDown, GestureTapUpCallback? onSecondaryTapUp, GestureTapCancelCallback? onSecondaryTapCancel, GestureTapDownCallback? onTertiaryTapDown, GestureTapUpCallback? onTertiaryTapUp, GestureTapCancelCallback? onTertiaryTapCancel, GestureTapDownCallback? onDoubleTapDown, GestureTapCallback? onDoubleTap, GestureTapCancelCallback? onDoubleTapCancel, GestureLongPressCallback? onLongPress, GestureLongPressStartCallback? onLongPressStart, GestureLongPressMoveUpdateCallback? onLongPressMoveUpdate, GestureLongPressUpCallback? onLongPressUp, GestureLongPressEndCallback? onLongPressEnd, GestureLongPressCallback? onSecondaryLongPress, GestureLongPressStartCallback? onSecondaryLongPressStart, GestureLongPressMoveUpdateCallback? onSecondaryLongPressMoveUpdate, GestureLongPressUpCallback? onSecondaryLongPressUp, GestureLongPressEndCallback? onSecondaryLongPressEnd, GestureDragDownCallback? onVerticalDragDown, GestureDragStartCallback? onVerticalDragStart, GestureDragUpdateCallback? onVerticalDragUpdate, GestureDragEndCallback? onVerticalDragEnd, GestureDragCancelCallback? onVerticalDragCancel, GestureDragDownCallback? onHorizontalDragDown, GestureDragStartCallback? onHorizontalDragStart, GestureDragUpdateCallback? onHorizontalDragUpdate, GestureDragEndCallback? onHorizontalDragEnd, GestureDragCancelCallback? onHorizontalDragCancel, GestureForcePressStartCallback? onForcePressStart, GestureForcePressPeakCallback? onForcePressPeak, GestureForcePressUpdateCallback? onForcePressUpdate, GestureForcePressEndCallback? onForcePressEnd, GestureDragDownCallback? onPanDown, GestureDragStartCallback? onPanStart, GestureDragUpdateCallback? onPanUpdate, GestureDragEndCallback? onPanEnd, GestureDragCancelCallback? onPanCancel, GestureScaleStartCallback? onScaleStart, GestureScaleUpdateCallback? onScaleUpdate, GestureScaleEndCallback? onScaleEnd, HitTestBehavior? behavior, bool excludeFromSemantics, DragStartBehavior dragStartBehavior})"
     },
     {
-        "title":"LongPressDraggable",
-        "introductionEN":"Makes its child draggable starting from long press.",
-        "introductionCN":"从长按开始使其孩子可以拖拽。",
-        "routeName":"",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/widgets/LongPressDraggable-class.html"
+        "title": "IgnorePointer",
+        "introductionEN": "A widget that is invisible during hit testing. When ignoring is true, this widget (and its subtree) is invisible to hit testing. It still consumes space during layout and paints its child as usual. It just cannot be the target of located events, because it returns false from RenderBox.hitTest.",
+        "introductionCN": "在命中测试期间不可见的小部件。 如果忽略为true，则此窗口小部件（及其子树）对于命中测试是不可见的。 它仍然会在布局过程中消耗空间并像往常一样对孩子进行绘画。 它只是不能成为定位事件的目标，因为它从RenderBox.hitTest返回false。",
+        "routeName": "Widget/Interaction/IgnorePointer",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/IgnorePointer-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>RenderObjectWidget>SingleChildRenderObjectWidget>IgnorePointer",
+        "constructors": "IgnorePointer({Key? key, bool ignoring, bool? ignoringSemantics, Widget? child})"
     },
     {
-        "title":"Scrollable",
-        "introductionEN":"Scrollable implements the interaction model for a scrollable widget, including gesture recognition, but does not have an opinion about how the viewport, which actually displays the children, is constructed.",
-        "introductionCN":"Scrollable实现可滚动窗口小部件的交互模型，包括手势识别，但没有关于如何构造实际显示子窗口的视口的意见。",
-        "routeName":"",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/widgets/Scrollable-class.html"
+        "title": "LongPressDraggable",
+        "introductionEN": "Makes its child draggable starting from long press.",
+        "introductionCN": "从长按开始使其孩子可以拖拽。",
+        "routeName": "Widget/Interaction/LongPressDraggable",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/LongPressDraggable-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>Draggable<T>>LongPressDraggable",
+        "constructors": "LongPressDraggable({Key? key, required Widget child, required Widget feedback, T? data, Axis? axis, Widget? childWhenDragging, Offset feedbackOffset = Offset.zero, @Deprecated('Use dragAnchorStrategy instead.' 'This feature was deprecated after v2.1.0-10.0.pre.') DragAnchor dragAnchor = DragAnchor.child, DragAnchorStrategy? dragAnchorStrategy, int? maxSimultaneousDrags, VoidCallback? onDragStarted, DragUpdateCallback? onDragUpdate, DraggableCanceledCallback? onDraggableCanceled, DragEndCallback? onDragEnd, VoidCallback? onDragCompleted, bool hapticFeedbackOnStart, bool ignoringFeedbackSemantics = true, Duration delay})"
     },
     {
-        "title":"Hero",
-        "introductionEN":"A widget that marks its child as being a candidate for hero animations.",
-        "introductionCN":"一个小部件，标记其子级为英雄动画的候选者。",
-        "routeName":"",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/widgets/Hero-class.html"
+        "title": "Scrollable",
+        "introductionEN": "Scrollable implements the interaction model for a scrollable widget, including gesture recognition, but does not have an opinion about how the viewport, which actually displays the children, is constructed.",
+        "introductionCN": "Scrollable实现可滚动窗口小部件的交互模型，包括手势识别，但没有关于如何构造实际显示子窗口的视口的意见。",
+        "routeName": "Widget/Interaction/Scrollable",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/Scrollable-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>Scrollable",
+        "constructors": "Scrollable({Key? key, AxisDirection axisDirection, ScrollController? controller, ScrollPhysics? physics, required ViewportBuilder viewportBuilder, ScrollIncrementCalculator? incrementCalculator, bool excludeFromSemantics, int? semanticChildCount, DragStartBehavior dragStartBehavior, String? restorationId, ScrollBehavior? scrollBehavior})"
     },
     {
-        "title":"Navigator",
-        "introductionEN":"A widget that manages a set of child widgets with a stack discipline. Many apps have a navigator near the top of their widget hierarchy in order to display their logical history using an Overlay with the most recently visited pages visually on top of the older pages. Using this pattern lets the navigator visually transition from one page to another by moving the widgets around in the overlay. Similarly, the navigator can be used to show a dialog by positioning the dialog widget above the current page.",
-        "introductionCN":"一个小部件，用于管理具有堆栈规则的一组子小部件。 许多应用程序在其窗口小部件层次结构的顶部附近有一个导航器，以便使用叠加显示其逻辑历史记录，最近访问过的页面可视化地显示在旧页面之上。 使用此模式，导航器可以通过在叠加层中移动小部件来直观地从一个页面转换到另一个页面。 类似地，导航器可用于通过将对话框小部件定位在当前页面上方来显示对话框。",
-        "routeName":"",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/widgets/Navigator-class.html"
+        "title": "Hero",
+        "introductionEN": "A widget that marks its child as being a candidate for hero animations.",
+        "introductionCN": "一个小部件，标记其子级为英雄动画的候选者。",
+        "routeName": "Widget/Interaction/Hero",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/Hero-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>Hero",
+        "constructors": "Hero({Key? key, required Object tag, CreateRectTween? createRectTween, HeroFlightShuttleBuilder? flightShuttleBuilder, HeroPlaceholderBuilder? placeholderBuilder, bool transitionOnUserGestures, required Widget child})"
+    },
+    {
+        "title": "Navigator",
+        "introductionEN": "A widget that manages a set of child widgets with a stack discipline. Many apps have a navigator near the top of their widget hierarchy in order to display their logical history using an Overlay with the most recently visited pages visually on top of the older pages. Using this pattern lets the navigator visually transition from one page to another by moving the widgets around in the overlay. Similarly, the navigator can be used to show a dialog by positioning the dialog widget above the current page.",
+        "introductionCN": "一个小部件，用于管理具有堆栈规则的一组子小部件。 许多应用程序在其窗口小部件层次结构的顶部附近有一个导航器，以便使用叠加显示其逻辑历史记录，最近访问过的页面可视化地显示在旧页面之上。 使用此模式，导航器可以通过在叠加层中移动小部件来直观地从一个页面转换到另一个页面。 类似地，导航器可用于通过将对话框小部件定位在当前页面上方来显示对话框。",
+        "routeName": "Widget/Interaction/Navigator",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/Navigator-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>Navigator",
+        "constructors": "Navigator({Key? key, List<Page> pages, PopPageCallback? onPopPage, String? initialRoute, RouteListFactory onGenerateInitialRoutes, RouteFactory? onGenerateRoute, RouteFactory? onUnknownRoute, TransitionDelegate transitionDelegate, bool reportsRouteUpdateToEngine, List<NavigatorObserver> observers, String? restorationScopeId})"
     }
 ]
