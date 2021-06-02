@@ -7,6 +7,7 @@ class GestureDetectorPage extends StatefulWidget {
 }
 
 class _GestureDetectorPageState extends State<GestureDetectorPage> {
+  bool _lights = false;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -32,7 +33,7 @@ class _GestureDetectorPageState extends State<GestureDetectorPage> {
                 ),
               ),
               Text(
-                '',
+                '检测屏幕手势的Widget，如果我们想在一个Widget上添加点击事件，就可以使用GestureDetector。还包含其他各种手势，如单击、双击、长按、一定力度按等操作。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -55,7 +56,37 @@ class _GestureDetectorPageState extends State<GestureDetectorPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: Container(
+              alignment: FractionalOffset.center,
+              color: Colors.white,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Padding(
+                    padding: EdgeInsets.all(8.0),
+                    child: Icon(
+                      Icons.lightbulb_outline,
+                      color: _lights ? Colors.yellow.shade600 : Colors.black,
+                      size: 60,
+                    ),
+                  ),
+                  GestureDetector(
+                    onTap: () {
+                      setState(() {
+                        _lights = !_lights;
+                      });
+                    },
+                    child: Container(
+                      color: Colors.yellow.shade600,
+                      padding: EdgeInsets.all(8),
+                      child: Text('GestureDetector'),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
         ),
       ],
     );

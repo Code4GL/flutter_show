@@ -32,7 +32,7 @@ class _HeroPageState extends State<HeroPage> {
                 ),
               ),
               Text(
-                '',
+                'Hero指的是可以在路由(页面)之间“飞行”的widget，简单来说Hero动画就是在路由切换时，有一个共享的widget可以在新旧路由间切换。由于共享的widget在新旧路由页面上的位置、外观可能有所差异，所以在路由切换时会从旧路逐渐过渡到新路由中的指定位置，这样就会产生一个Hero动画。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -55,9 +55,64 @@ class _HeroPageState extends State<HeroPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: <Widget>[
+                SizedBox(
+                  height: 20.0,
+                ),
+                ListTile(
+                  leading: Hero(
+                    tag: 'hero-rectangle',
+                    child: _blueRectangle(Size(50, 50)),
+                  ),
+                  onTap: () => _gotoDetailsPage(context),
+                  title: Text(
+                      'Tap on the icon to view hero animation transition.'),
+                ),
+                Container(
+                  margin: EdgeInsets.only(top: 30),
+                  child: Image(
+                      image:
+                          AssetImage('assets/images/interaction/heroes.png')),
+                ),
+              ],
+            ),
+          ),
         ),
       ],
+    );
+  }
+
+  Widget _blueRectangle(Size size) {
+    return Container(
+      width: size.width,
+      height: size.height,
+      color: Colors.blue,
+    );
+  }
+
+  void _gotoDetailsPage(BuildContext context) {
+    Navigator.of(context).push(
+      MaterialPageRoute<void>(
+        builder: (BuildContext context) => Scaffold(
+          appBar: AppBar(
+            title: Text('second Page'),
+          ),
+          body: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Hero(
+                  tag: 'hero-rectangle',
+                  child: _blueRectangle(Size(200, 200)),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
     );
   }
 }

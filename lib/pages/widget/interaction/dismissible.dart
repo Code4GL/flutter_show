@@ -69,8 +69,8 @@ class _DismissiblePageState extends State<DismissiblePage> {
                 groupValue: _crossAxisEndOffset,
                 items: [
                   {
-                    'name': '100.0',
-                    'value': 100.0,
+                    'name': '10.0',
+                    'value': 10.0,
                     'onChangedCb': (value) {
                       setState(() {
                         _crossAxisEndOffset = value;
@@ -78,8 +78,8 @@ class _DismissiblePageState extends State<DismissiblePage> {
                     },
                   },
                   {
-                    'name': '200.0',
-                    'value': 200.0,
+                    'name': '20.0',
+                    'value': 20.0,
                     'onChangedCb': (value) {
                       setState(() {
                         _crossAxisEndOffset = value;
@@ -87,8 +87,8 @@ class _DismissiblePageState extends State<DismissiblePage> {
                     },
                   },
                   {
-                    'name': '300.0',
-                    'value': 300.0,
+                    'name': '30.0',
+                    'value': 30.0,
                     'onChangedCb': (value) {
                       setState(() {
                         _crossAxisEndOffset = value;
@@ -155,7 +155,7 @@ class _DismissiblePageState extends State<DismissiblePage> {
               padding: EdgeInsets.symmetric(vertical: 16),
               itemBuilder: (BuildContext context, int index) {
                 return Dismissible(
-                  crossAxisEndOffset: _crossAxisEndOffset,
+                  crossAxisEndOffset: 10.0,
                   direction: _direction,
                   child: ListTile(
                     title: Text(

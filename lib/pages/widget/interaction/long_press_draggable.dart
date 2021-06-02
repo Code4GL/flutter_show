@@ -32,7 +32,7 @@ class _LongPressDraggablePageState extends State<LongPressDraggablePage> {
                 ),
               ),
               Text(
-                '',
+                '这是一个长按后可拖动Widget,使用方式和Draggable类似。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -43,6 +43,7 @@ class _LongPressDraggablePageState extends State<LongPressDraggablePage> {
         ),
         // 展示区域
         Container(
+          height: 200,
           margin: EdgeInsets.only(top: 10),
           decoration: BoxDecoration(
             color: Colors.white,
@@ -55,7 +56,22 @@ class _LongPressDraggablePageState extends State<LongPressDraggablePage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: LongPressDraggable(
+              child: Container(
+                height: 100,
+                width: 100,
+                color: Colors.blue,
+                child: Center(child: Text('LongPress and Draggable')),
+              ),
+              feedback: Container(
+                height: 100,
+                width: 100,
+                color: Colors.blue[100],
+                child: Text('feedback'),
+              ),
+            ),
+          ),
         ),
       ],
     );

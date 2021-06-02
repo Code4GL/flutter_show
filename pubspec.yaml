@@ -110,6 +110,8 @@ flutter:
     - assets/images/cupertino/cupertino-textfield.png
     - assets/images/cupertino/cupertino-timer-picker.png
 
+    - assets/images/interaction/heroes.png
+
     - assets/images/layout/align.png
     - assets/images/layout/aspect-ratio.png
     - assets/images/layout/baseline.png

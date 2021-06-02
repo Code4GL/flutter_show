@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter_show/common/my_style.dart';
 
 class ScrollablePage extends StatefulWidget {
@@ -32,7 +33,7 @@ class _ScrollablePageState extends State<ScrollablePage> {
                 ),
               ),
               Text(
-                '',
+                '通常我们不直接使用Scrollable，而是使用ListView或GridView来构建长列表。如果想要实现组合布局，请考虑使用CustomScrollView。同时还可以使用ScrollController来控制滚动。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -40,22 +41,6 @@ class _ScrollablePageState extends State<ScrollablePage> {
               )
             ],
           ),
-        ),
-        // 展示区域
-        Container(
-          margin: EdgeInsets.only(top: 10),
-          decoration: BoxDecoration(
-            color: Colors.white,
-            boxShadow: [
-              BoxShadow(
-                color: MyStyle.displayAreaShadowColor, //投影颜色
-                blurRadius: MyStyle.displayAreaBlurRadius, //投影距离，有模糊效果
-                spreadRadius: MyStyle.displayAreaSpreadRadius, // 扩展距离，无模糊效果
-              )
-            ],
-            borderRadius: MyStyle.borderRadius,
-          ),
-          child: Center(),
         ),
       ],
     );
