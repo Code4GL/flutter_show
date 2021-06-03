@@ -36,6 +36,16 @@ import 'interaction/ignore_pointer.dart';
 import 'interaction/long_press_draggable.dart';
 import 'interaction/navigator.dart';
 import 'interaction/scrollable.dart';
+import 'painting/backdrop_filter.dart';
+import 'painting/clip_oval.dart';
+import 'painting/clip_path.dart';
+import 'painting/clip_rect.dart';
+import 'painting/custom_paint.dart';
+import 'painting/decorated_box.dart';
+import 'painting/fractional_translation.dart';
+import 'painting/opacity.dart';
+import 'painting/rotated_box.dart';
+import 'painting/transform.dart';
 import 'styling/media_query.dart';
 import 'styling/padding.dart';
 import 'styling/theme.dart';
@@ -109,6 +119,17 @@ class ThreeLevelWidgetPage extends StatelessWidget {
     'Widget/Interaction/Scrollable': ScrollablePage(),
     'Widget/Interaction/Hero': HeroPage(),
     'Widget/Interaction/Navigator': NavigatorPage(),
+    // Painting
+    'Widget/Painting/BackdropFilter': BackdropFilterPage(),
+    'Widget/Painting/ClipOval': ClipOvalPage(),
+    'Widget/Painting/ClipPath': ClipPathPage(),
+    'Widget/Painting/ClipRect': ClipRectPage(),
+    'Widget/Painting/CustomPaint': CustomPaintPage(),
+    'Widget/Painting/DecoratedBox': DecoratedBoxPage(),
+    'Widget/Painting/FractionalTranslation': FractionalTranslationPage(),
+    'Widget/Painting/Opacity': OpacityPage(),
+    'Widget/Painting/RotatedBox': RotatedBoxPage(),
+    'Widget/Painting/Transform': TransformPage(),
     // Styling
     'Widget/Styling/MediaQuery': MediaQueryPage(),
     'Widget/Styling/Padding': PaddingPage(),
