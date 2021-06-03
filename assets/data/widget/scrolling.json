@@ -1,90 +1,132 @@
 [
     {
-        "title":"CustomScrollView",
-        "introductionEN":"A ScrollView that creates custom scroll effects using slivers.",
-        "introductionCN":"ScrollView使用条子创建自定义滚动效果。",
-        "routeName":"",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/widgets/CustomScrollView-class.html"
+        "title": "CustomScrollView",
+        "introductionEN": "A ScrollView that creates custom scroll effects using slivers.",
+        "introductionCN": "ScrollView使用条子创建自定义滚动效果。",
+        "routeName": "Widget/Scrolling/CustomScrollView",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/CustomScrollView-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatelessWidget>ScrollView>CustomScrollView",
+        "constructors": "CustomScrollView({Key? key, Axis scrollDirection = Axis.vertical, bool reverse = false, ScrollController? controller, bool? primary, ScrollPhysics? physics, ScrollBehavior? scrollBehavior, bool shrinkWrap = false, Key? center, double anchor = 0.0, double? cacheExtent, List<Widget> slivers, int? semanticChildCount, DragStartBehavior dragStartBehavior = DragStartBehavior.start, ScrollViewKeyboardDismissBehavior keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual, String? restorationId, Clip clipBehavior = Clip.hardEdge})"
     },
     {
-        "title":"GridView",
-        "introductionEN":"A grid list consists of a repeated pattern of cells arrayed in a vertical and horizontal layout. The GridView widget implements this component.",
-        "introductionCN":"网格列表由以垂直和水平布局排列的重复单元格图案组成。 GridView小部件实现此组件。",
-        "routeName":"",
-        "imagePath":"assets/images/layout/components-grid-lists.png",
-        "docPath":"https://api.flutter.dev/flutter/widgets/GridView-class.html"
+        "title": "DraggableScrollableSheet",
+        "introductionEN": "A container for a Scrollable that responds to drag gestures by resizing the scrollable until a limit is reached, and then scrolling.",
+        "introductionCN": "一个Scrollable的容器，它通过调整可滚动对象的大小直到达到限制，然后滚动来响应拖动手势。",
+        "routeName": "Widget/Scrolling/DraggableScrollableSheet",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/DraggableScrollableSheet-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>DraggableScrollableSheet",
+        "constructors": "DraggableScrollableSheet({Key? key, double initialChildSize, double minChildSize, double maxChildSize, bool expand, required ScrollableWidgetBuilder builder})"
     },
     {
-        "title":"ListView",
-        "introductionEN":"A scrollable, linear list of widgets. ListView is the most commonly used scrolling widget. It displays its children one after another in the scroll direction. In the cross axis, the children are required to fill the ListView.",
-        "introductionCN":"可滚动的线性小部件列表。 ListView是最常用的滚动小部件。它在滚动方向上一个接一个地显示它的子项。在横轴中，子项需要填充ListView。",
-        "routeName":"",
-        "imagePath":"assets/images/layout/material-list-tile.png",
-        "docPath":"https://api.flutter.dev/flutter/widgets/ListView-class.html"
+        "title": "GridView",
+        "introductionEN": "A grid list consists of a repeated pattern of cells arrayed in a vertical and horizontal layout. The GridView widget implements this component.",
+        "introductionCN": "网格列表由以垂直和水平布局排列的重复单元格图案组成。 GridView小部件实现此组件。",
+        "routeName": "Widget/Scrolling/GridView",
+        "imagePath": "assets/images/layout/components-grid-lists.png",
+        "docPath": "https://api.flutter.dev/flutter/widgets/GridView-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatelessWidget>ScrollView>BoxScrollView>GridView",
+        "constructors": "GridView({Key? key, Axis scrollDirection = Axis.vertical, bool reverse = false, ScrollController? controller, bool? primary, ScrollPhysics? physics, bool shrinkWrap = false, EdgeInsetsGeometry? padding, required SliverGridDelegate gridDelegate, bool addAutomaticKeepAlives = true, bool addRepaintBoundaries = true, bool addSemanticIndexes = true, double? cacheExtent, List<Widget> children = const <Widget>[], int? semanticChildCount, DragStartBehavior dragStartBehavior = DragStartBehavior.start, Clip clipBehavior = Clip.hardEdge, ScrollViewKeyboardDismissBehavior keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual, String? restorationId})"
     },
     {
-        "title":"NestedScrollView",
-        "introductionEN":"A scrolling view inside of which can be nested other scrolling views, with their scroll positions being intrinsically linked.",
-        "introductionCN":"其中的滚动视图可以嵌套其他滚动视图，其滚动位置本质上是链接的。",
-        "routeName":"",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/widgets/NestedScrollView-class.html"
+        "title": "ListView",
+        "introductionEN": "A scrollable, linear list of widgets. ListView is the most commonly used scrolling widget. It displays its children one after another in the scroll direction. In the cross axis, the children are required to fill the ListView.",
+        "introductionCN": "可滚动的线性小部件列表。 ListView是最常用的滚动小部件。它在滚动方向上一个接一个地显示它的子项。在横轴中，子项需要填充ListView。",
+        "routeName": "Widget/Scrolling/ListView",
+        "imagePath": "assets/images/layout/material-list-tile.png",
+        "docPath": "https://api.flutter.dev/flutter/widgets/ListView-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatelessWidget>ScrollView>BoxScrollView>ListView",
+        "constructors": "ListView({Key? key, Axis scrollDirection = Axis.vertical, bool reverse = false, ScrollController? controller, bool? primary, ScrollPhysics? physics, bool shrinkWrap = false, EdgeInsetsGeometry? padding, double? itemExtent, bool addAutomaticKeepAlives = true, bool addRepaintBoundaries = true, bool addSemanticIndexes = true, double? cacheExtent, List<Widget> children = const <Widget>[], int? semanticChildCount, DragStartBehavior dragStartBehavior = DragStartBehavior.start, ScrollViewKeyboardDismissBehavior keyboardDismissBehavior = ScrollViewKeyboardDismissBehavior.manual, String? restorationId, Clip clipBehavior = Clip.hardEdge})"
     },
     {
-        "title":"NotificationListener",
-        "introductionEN":"A widget that listens for Notifications bubbling up the tree.",
-        "introductionCN":"一个小部件，用于侦听冒泡树的通知。",
-        "routeName":"",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/widgets/NotificationListener-class.html"
+        "title": "NestedScrollView",
+        "introductionEN": "A scrolling view inside of which can be nested other scrolling views, with their scroll positions being intrinsically linked.",
+        "introductionCN": "其中的滚动视图可以嵌套其他滚动视图，其滚动位置本质上是链接的。",
+        "routeName": "Widget/Scrolling/NestedScrollView",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/NestedScrollView-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>NestedScrollView",
+        "constructors": "NestedScrollView({Key? key, ScrollController? controller, Axis scrollDirection, bool reverse, ScrollPhysics? physics, required NestedScrollViewHeaderSliversBuilder headerSliverBuilder, required Widget body, DragStartBehavior dragStartBehavior, bool floatHeaderSlivers, Clip clipBehavior, String? restorationId, ScrollBehavior? scrollBehavior})"
     },
     {
-        "title":"PageView",
-        "introductionEN":"A scrollable list that works page by page.",
-        "introductionCN":"可逐页工作的可滚动列表。",
-        "routeName":"",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/widgets/PageView-class.html"
+        "title": "NotificationListener",
+        "introductionEN": "A widget that listens for Notifications bubbling up the tree.",
+        "introductionCN": "一个小部件，用于侦听冒泡树的通知。",
+        "routeName": "Widget/Scrolling/NotificationListener",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/NotificationListener-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatelessWidget>NotificationListener",
+        "constructors": "NotificationListener({Key? key, required Widget child, NotificationListenerCallback<T>? onNotification})"
     },
     {
-        "title":"RefreshIndicator",
-        "introductionEN":"A Material Design pull-to-refresh wrapper for scrollables.",
-        "introductionCN":"用于滚动的Material Design pull-to-refresh包装器。",
-        "routeName":"",
-        "imagePath":"assets/images/scrolling/patterns-swipe-to-refresh.png",
-        "docPath":"https://api.flutter.dev/flutter/widgets/RefreshIndicator-class.html"
+        "title": "PageView",
+        "introductionEN": "A scrollable list that works page by page.",
+        "introductionCN": "可逐页工作的可滚动列表。",
+        "routeName": "Widget/Scrolling/PageView",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/PageView-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>PageView",
+        "constructors": "PageView({Key? key, Axis scrollDirection, bool reverse, PageController? controller, ScrollPhysics? physics, bool pageSnapping, ValueChanged<int>? onPageChanged, List<Widget> children = const <Widget>[], DragStartBehavior dragStartBehavior, bool allowImplicitScrolling, String? restorationId, Clip clipBehavior, ScrollBehavior? scrollBehavior})"
     },
     {
-        "title":"ScrollConfiguration",
-        "introductionEN":"Controls how Scrollable widgets behave in a subtree.",
-        "introductionCN":"控制可滚动窗口小部件在子树中的行为方式。",
-        "routeName":"",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/widgets/ScrollConfiguration-class.html"
+        "title": "RefreshIndicator",
+        "introductionEN": "A Material Design pull-to-refresh wrapper for scrollables.",
+        "introductionCN": "用于滚动的Material Design pull-to-refresh包装器。",
+        "routeName": "Widget/Scrolling/RefreshIndicator",
+        "imagePath": "assets/images/scrolling/patterns-swipe-to-refresh.png",
+        "docPath": "https://api.flutter.dev/flutter/widgets/RefreshIndicator-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>RefreshIndicator",
+        "constructors": "RefreshIndicator({Key? key, required Widget child, double displacement, double edgeOffset, required RefreshCallback onRefresh, Color? color, Color? backgroundColor, ScrollNotificationPredicate notificationPredicate, String? semanticsLabel, String? semanticsValue, double strokeWidth, RefreshIndicatorTriggerMode triggerMode})"
     },
     {
-        "title":"Scrollable",
-        "introductionEN":"Scrollable implements the interaction model for a scrollable widget, including gesture recognition, but does not have an opinion about how the viewport, which actually displays the children, is constructed.",
-        "introductionCN":"Scrollable实现可滚动窗口小部件的交互模型，包括手势识别，但没有关于如何构造实际显示子窗口的视口的意见。",
-        "routeName":"",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/widgets/Scrollable-class.html"
+        "title": "ReorderableListView",
+        "introductionEN": "A list whose items the user can interactively reorder by dragging.",
+        "introductionCN": "用户可以通过拖动以交互方式重新排序其项目的列表。",
+        "routeName": "Widget/Scrolling/ReorderableListView",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/ReorderableListView-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>ReorderableListView",
+        "constructors": "ReorderableListView({Key? key, required List<Widget> children, required ReorderCallback onReorder, ReorderItemProxyDecorator? proxyDecorator, bool buildDefaultDragHandles, EdgeInsets? padding, Widget? header, Axis scrollDirection, bool reverse, ScrollController? scrollController, bool? primary, ScrollPhysics? physics, bool shrinkWrap, double anchor, double? cacheExtent, DragStartBehavior dragStartBehavior, ScrollViewKeyboardDismissBehavior keyboardDismissBehavior, String? restorationId, Clip clipBehavior})"
     },
     {
-        "title":"Scrollbar",
-        "introductionEN":"A Material Design scrollbar. A scrollbar indicates which portion of a Scrollable widget is actually visible.",
-        "introductionCN":"“材质设计”滚动条。滚动条指示Scrollable小部件的哪个部分实际可见。",
-        "routeName":"",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/widgets/Scrollbar-class.html"
+        "title": "ScrollConfiguration",
+        "introductionEN": "Controls how Scrollable widgets behave in a subtree.",
+        "introductionCN": "控制可滚动窗口小部件在子树中的行为方式。",
+        "routeName": "Widget/Scrolling/ScrollConfiguration",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/ScrollConfiguration-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>ProxyWidget>InheritedWidget>ScrollConfiguration",
+        "constructors": "ScrollConfiguration({Key? key, required ScrollBehavior behavior, required Widget child})"
     },
     {
-        "title":"SingleChildScrollView",
-        "introductionEN":"A box in which a single widget can be scrolled. This widget is useful when you have a single box that will normally be entirely visible, for example a clock face in a time picker, but you need to make sure it can be scrolled if the container gets too small in one axis (the scroll direction).",
-        "introductionCN":"可以滚动单个窗口小部件的框。 当您有一个通常完全可见的单个框时，此小部件非常有用，例如时间选择器中的时钟面，但如果容器在一个轴上太小（滚动方向），则需要确保它可以滚动）。",
-        "routeName":"",
-        "imagePath":"",
-        "docPath":"https://api.flutter.dev/flutter/widgets/SingleChildScrollView-class.html"
+        "title": "Scrollable",
+        "introductionEN": "Scrollable implements the interaction model for a scrollable widget, including gesture recognition, but does not have an opinion about how the viewport, which actually displays the children, is constructed.",
+        "introductionCN": "Scrollable实现可滚动窗口小部件的交互模型，包括手势识别，但没有关于如何构造实际显示子窗口的视口的意见。",
+        "routeName": "Widget/Scrolling/Scrollable",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/Scrollable-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>Scrollable",
+        "constructors": "Scrollable({Key? key, AxisDirection axisDirection, ScrollController? controller, ScrollPhysics? physics, required ViewportBuilder viewportBuilder, ScrollIncrementCalculator? incrementCalculator, bool excludeFromSemantics, int? semanticChildCount, DragStartBehavior dragStartBehavior, String? restorationId, ScrollBehavior? scrollBehavior})"
+    },
+    {
+        "title": "Scrollbar",
+        "introductionEN": "A Material Design scrollbar. A scrollbar indicates which portion of a Scrollable widget is actually visible.",
+        "introductionCN": "“材质设计”滚动条。滚动条指示Scrollable小部件的哪个部分实际可见。",
+        "routeName": "Widget/Scrolling/Scrollbar",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/Scrollbar-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>Scrollbar",
+        "constructors": "Scrollbar({Key? key, required Widget child, ScrollController? controller, bool? isAlwaysShown, bool? showTrackOnHover, double? hoverThickness, double? thickness, Radius? radius, ScrollNotificationPredicate? notificationPredicate, bool? interactive})"
+    },
+    {
+        "title": "SingleChildScrollView",
+        "introductionEN": "A box in which a single widget can be scrolled. This widget is useful when you have a single box that will normally be entirely visible, for example a clock face in a time picker, but you need to make sure it can be scrolled if the container gets too small in one axis (the scroll direction).",
+        "introductionCN": "可以滚动单个窗口小部件的框。 当您有一个通常完全可见的单个框时，此小部件非常有用，例如时间选择器中的时钟面，但如果容器在一个轴上太小（滚动方向），则需要确保它可以滚动）。",
+        "routeName": "Widget/Scrolling/SingleChildScrollView",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/SingleChildScrollView-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatelessWidget>SingleChildScrollView",
+        "constructors": "SingleChildScrollView({Key? key, Axis scrollDirection, bool reverse, EdgeInsetsGeometry? padding, bool? primary, ScrollPhysics? physics, ScrollController? controller, Widget? child, DragStartBehavior dragStartBehavior, Clip clipBehavior, String? restorationId, ScrollViewKeyboardDismissBehavior keyboardDismissBehavior})"
     }
 ]
