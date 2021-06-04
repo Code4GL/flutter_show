@@ -33,7 +33,7 @@ class _NotificationListenerPageState extends State<NotificationListenerPage> {
                 ),
               ),
               Text(
-                '',
+                '通知是Flutter中一个重要的机制，在widget树中，每一个节点都可以分发通知，通知会沿着当前节点向上传递，所有父节点都可以通过NotificationListener来监听通知。Flutter中将这种由子向父的传递通知的机制称为通知冒泡。通知冒泡和用户触摸事件冒泡是相似的，但有一点不同：通知冒泡可以中止，但用户触摸事件不行。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -42,63 +42,9 @@ class _NotificationListenerPageState extends State<NotificationListenerPage> {
             ],
           ),
         ),
-        // 参数配置
-        // Container(
-        //   width: double.infinity,
-        //   padding: EdgeInsets.all(5),
-        //   decoration: BoxDecoration(
-        //     color: MyStyle.paramBgColor,
-        //     borderRadius: MyStyle.borderRadius,
-        //   ),
-        //   child: Column(
-        //     crossAxisAlignment: CrossAxisAlignment.start,
-        //     children: [
-        //       Text(
-        //         '参数配置',
-        //         style: TextStyle(
-        //           color: MyStyle.titleColor,
-        //           fontWeight: MyStyle.titleFontWeight,
-        //         ),
-        //       ),
-        //       RadioParam(
-        //         paramKey: 'opacity:',
-        //         paramValue: '$_opacity',
-        //         groupValue: _opacity,
-        //         items: [
-        //           {
-        //             'name': '0.0',
-        //             'value': 0.0,
-        //             'onChangedCb': (value) {
-        //               setState(() {
-        //                 _opacity = value;
-        //               });
-        //             },
-        //           },
-        //           {
-        //             'name': '0.5',
-        //             'value': 0.5,
-        //             'onChangedCb': (value) {
-        //               setState(() {
-        //                 _opacity = value;
-        //               });
-        //             },
-        //           },
-        //           {
-        //             'name': '1.0',
-        //             'value': 1.0,
-        //             'onChangedCb': (value) {
-        //               setState(() {
-        //                 _opacity = value;
-        //               });
-        //             },
-        //           },
-        //         ],
-        //       ),
-        //     ],
-        //   ),
-        // ),
         // 展示区域
         Container(
+          height: 300,
           margin: EdgeInsets.only(top: 10),
           decoration: BoxDecoration(
             color: Colors.white,
@@ -111,7 +57,34 @@ class _NotificationListenerPageState extends State<NotificationListenerPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: NotificationListener(
+              onNotification: (notification) {
+                switch (notification.runtimeType) {
+                  case ScrollStartNotification:
+                    print("开始滚动");
+                    break;
+                  case ScrollUpdateNotification:
+                    print("正在滚动");
+                    break;
+                  case ScrollEndNotification:
+                    print("滚动停止");
+                    break;
+                  case OverscrollNotification:
+                    print("滚动到边界");
+                    break;
+                }
+                return false;
+              },
+              child: ListView.builder(
+                  itemCount: 100,
+                  itemBuilder: (context, index) {
+                    return ListTile(
+                      title: Text("$index"),
+                    );
+                  }),
+            ),
+          ),
         ),
       ],
     );
