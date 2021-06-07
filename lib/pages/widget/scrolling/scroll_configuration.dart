@@ -33,7 +33,7 @@ class _ScrollConfigurationPageState extends State<ScrollConfigurationPage> {
                 ),
               ),
               Text(
-                '',
+                '顾名思义，这是一个控制滚动行为的一个Widget，通过ScrollBehavior来给子Widget添加具体的行为。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -42,61 +42,6 @@ class _ScrollConfigurationPageState extends State<ScrollConfigurationPage> {
             ],
           ),
         ),
-        // 参数配置
-        // Container(
-        //   width: double.infinity,
-        //   padding: EdgeInsets.all(5),
-        //   decoration: BoxDecoration(
-        //     color: MyStyle.paramBgColor,
-        //     borderRadius: MyStyle.borderRadius,
-        //   ),
-        //   child: Column(
-        //     crossAxisAlignment: CrossAxisAlignment.start,
-        //     children: [
-        //       Text(
-        //         '参数配置',
-        //         style: TextStyle(
-        //           color: MyStyle.titleColor,
-        //           fontWeight: MyStyle.titleFontWeight,
-        //         ),
-        //       ),
-        //       RadioParam(
-        //         paramKey: 'opacity:',
-        //         paramValue: '$_opacity',
-        //         groupValue: _opacity,
-        //         items: [
-        //           {
-        //             'name': '0.0',
-        //             'value': 0.0,
-        //             'onChangedCb': (value) {
-        //               setState(() {
-        //                 _opacity = value;
-        //               });
-        //             },
-        //           },
-        //           {
-        //             'name': '0.5',
-        //             'value': 0.5,
-        //             'onChangedCb': (value) {
-        //               setState(() {
-        //                 _opacity = value;
-        //               });
-        //             },
-        //           },
-        //           {
-        //             'name': '1.0',
-        //             'value': 1.0,
-        //             'onChangedCb': (value) {
-        //               setState(() {
-        //                 _opacity = value;
-        //               });
-        //             },
-        //           },
-        //         ],
-        //       ),
-        //     ],
-        //   ),
-        // ),
         // 展示区域
         Container(
           margin: EdgeInsets.only(top: 10),
