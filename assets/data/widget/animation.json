@@ -6,8 +6,8 @@
         "routeName": "Widget/Animation/AnimatedAlign",
         "imagePath": "",
         "docPath": "https://api.flutter.dev/flutter/widgets/AnimatedAlign-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>ImplicitlyAnimatedWidget>AnimatedAlign",
+        "constructors": "AnimatedAlign({Key? key, required AlignmentGeometry alignment, Widget? child, double? heightFactor, double? widthFactor, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd})"
     },
     {
         "title": "AnimatedBuilder",
@@ -16,8 +16,8 @@
         "routeName": "Widget/Animation/AnimatedBuilder",
         "imagePath": "",
         "docPath": "https://api.flutter.dev/flutter/widgets/AnimatedBuilder-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>AnimatedWidget>AnimatedBuilder",
+        "constructors": "AnimatedBuilder({Key? key, required Listenable animation, required TransitionBuilder builder, Widget? child})"
     },
     {
         "title": "AnimatedContainer",
@@ -26,8 +26,8 @@
         "routeName": "Widget/Animation/AnimatedContainer",
         "imagePath": "",
         "docPath": "https://api.flutter.dev/flutter/widgets/AnimatedContainer-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>ImplicitlyAnimatedWidget>AnimatedContainer",
+        "constructors": "AnimatedContainer({Key? key, AlignmentGeometry? alignment, EdgeInsetsGeometry? padding, Color? color, Decoration? decoration, Decoration? foregroundDecoration, double? width, double? height, BoxConstraints? constraints, EdgeInsetsGeometry? margin, Matrix4? transform, AlignmentGeometry? transformAlignment, Widget? child, Clip clipBehavior, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd})"
     },
     {
         "title": "AnimatedCrossFade",
@@ -36,8 +36,8 @@
         "routeName": "Widget/Animation/AnimatedCrossFade",
         "imagePath": "",
         "docPath": "https://api.flutter.dev/flutter/widgets/AnimatedCrossFade-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>AnimatedCrossFade",
+        "constructors": "AnimatedCrossFade({Key? key, required Widget firstChild, required Widget secondChild, Curve firstCurve, Curve secondCurve, Curve sizeCurve, AlignmentGeometry alignment, required CrossFadeState crossFadeState, required Duration duration, Duration? reverseDuration, AnimatedCrossFadeBuilder layoutBuilder})"
     },
     {
         "title": "AnimatedDefaultTextStyle",
@@ -46,8 +46,8 @@
         "routeName": "Widget/Animation/AnimatedDefaultTextStyle",
         "imagePath": "",
         "docPath": "https://api.flutter.dev/flutter/widgets/AnimatedDefaultTextStyle-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>ImplicitlyAnimatedWidget>AnimatedDefaultTextStyle",
+        "constructors": "AnimatedDefaultTextStyle({Key? key, required Widget child, required TextStyle style, TextAlign? textAlign, bool softWrap, TextOverflow overflow, int? maxLines, TextWidthBasis textWidthBasis, TextHeightBehavior? textHeightBehavior, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd})"
     },
     {
         "title": "AnimatedListState",
@@ -56,8 +56,8 @@
         "routeName": "Widget/Animation/AnimatedListState",
         "imagePath": "",
         "docPath": "https://api.flutter.dev/flutter/widgets/AnimatedListState-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>State<AnimatedList>>AnimatedListState",
+        "constructors": "AnimatedListState()"
     },
     {
         "title": "AnimatedModalBarrier",
@@ -66,8 +66,8 @@
         "routeName": "Widget/Animation/AnimatedModalBarrier",
         "imagePath": "",
         "docPath": "https://api.flutter.dev/flutter/widgets/AnimatedModalBarrier-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>AnimatedWidget>AnimatedModalBarrier",
+        "constructors": "AnimatedModalBarrier({Key? key, required Animation<Color?> color, bool dismissible, String? semanticsLabel, bool? barrierSemanticsDismissible})"
     },
     {
         "title": "AnimatedOpacity",
@@ -76,8 +76,8 @@
         "routeName": "Widget/Animation/AnimatedOpacity",
         "imagePath": "",
         "docPath": "https://api.flutter.dev/flutter/widgets/AnimatedOpacity-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>ImplicitlyAnimatedWidget>AnimatedOpacity",
+        "constructors": "AnimatedOpacity({Key? key, Widget? child, required double opacity, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd, bool alwaysIncludeSemantics})"
     },
     {
         "title": "AnimatedPhysicalModel",
@@ -86,8 +86,8 @@
         "routeName": "Widget/Animation/AnimatedPhysicalModel",
         "imagePath": "",
         "docPath": "https://api.flutter.dev/flutter/widgets/AnimatedPhysicalModel-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>ImplicitlyAnimatedWidget>AnimatedPhysicalModel",
+        "constructors": "AnimatedPhysicalModel({Key? key, required Widget child, required BoxShape shape, Clip clipBehavior, BorderRadius borderRadius, required double elevation, required Color color, bool animateColor, required Color shadowColor, bool animateShadowColor, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd})"
     },
     {
         "title": "AnimatedPositioned",
@@ -96,8 +96,8 @@
         "routeName": "Widget/Animation/AnimatedPositioned",
         "imagePath": "",
         "docPath": "https://api.flutter.dev/flutter/widgets/AnimatedPositioned-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>ImplicitlyAnimatedWidget>AnimatedPositioned",
+        "constructors": "AnimatedPositioned({Key? key, required Widget child, double? left, double? top, double? right, double? bottom, double? width, double? height, Curve curve = Curves.linear, required Duration duration, VoidCallback? onEnd})"
     },
     {
         "title": "AnimatedSize",
@@ -106,8 +106,8 @@
         "routeName": "Widget/Animation/AnimatedSize",
         "imagePath": "",
         "docPath": "https://api.flutter.dev/flutter/widgets/AnimatedSize-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>RenderObjectWidget>SingleChildRenderObjectWidget>AnimatedSize",
+        "constructors": "AnimatedSize({Key? key, Widget? child, AlignmentGeometry alignment, Curve curve, required Duration duration, Duration? reverseDuration, required TickerProvider vsync, Clip clipBehavior})"
     },
     {
         "title": "AnimatedWidget",
@@ -116,8 +116,8 @@
         "routeName": "Widget/Animation/AnimatedWidget",
         "imagePath": "",
         "docPath": "https://api.flutter.dev/flutter/widgets/AnimatedWidget-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>AnimatedWidget",
+        "constructors": "AnimatedWidget({Key? key, required Listenable listenable})"
     },
     {
         "title": "AnimatedWidgetBaseState",
@@ -126,8 +126,8 @@
         "routeName": "Widget/Animation/AnimatedWidgetBaseState",
         "imagePath": "",
         "docPath": "https://api.flutter.dev/flutter/widgets/AnimatedWidgetBaseState-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>State<T>>ImplicitlyAnimatedWidgetState<T>>AnimatedWidgetBaseState",
+        "constructors": "AnimatedWidgetBaseState()"
     },
     {
         "title": "DecoratedBoxTransition",
@@ -136,8 +136,8 @@
         "routeName": "Widget/Animation/DecoratedBoxTransition",
         "imagePath": "",
         "docPath": "https://api.flutter.dev/flutter/widgets/DecoratedBoxTransition-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>AnimatedWidget>DecoratedBoxTransition",
+        "constructors": "DecoratedBoxTransition({Key? key, required Animation<Decoration> decoration, DecorationPosition position, required Widget child})"
     },
     {
         "title": "FadeTransition",
@@ -146,8 +146,8 @@
         "routeName": "Widget/Animation/FadeTransition",
         "imagePath": "",
         "docPath": "https://api.flutter.dev/flutter/widgets/FadeTransition-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>RenderObjectWidget>SingleChildRenderObjectWidget>FadeTransition",
+        "constructors": "FadeTransition({Key? key, required Animation<double> opacity, bool alwaysIncludeSemantics, Widget? child})"
     },
     {
         "title": "Hero",
@@ -156,8 +156,8 @@
         "routeName": "Widget/Animation/Hero",
         "imagePath": "",
         "docPath": "https://api.flutter.dev/flutter/widgets/Hero-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>Hero",
+        "constructors": "Hero({Key? key, required Object tag, CreateRectTween? createRectTween, HeroFlightShuttleBuilder? flightShuttleBuilder, HeroPlaceholderBuilder? placeholderBuilder, bool transitionOnUserGestures, required Widget child})"
     },
     {
         "title": "PositionedTransition",
@@ -166,8 +166,8 @@
         "routeName": "Widget/Animation/PositionedTransition",
         "imagePath": "",
         "docPath": "https://api.flutter.dev/flutter/widgets/PositionedTransition-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>AnimatedWidget>PositionedTransition",
+        "constructors": "PositionedTransition({Key? key, required Animation<RelativeRect> rect, required Widget child})"
     },
     {
         "title": "RotationTransition",
@@ -176,8 +176,8 @@
         "routeName": "Widget/Animation/AnimatedContainer",
         "imagePath": "",
         "docPath": "https://api.flutter.dev/flutter/widgets/RotationTransition-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>AnimatedWidget>RotationTransition",
+        "constructors": "RotationTransition({Key? key, required Animation<double> turns, Alignment alignment, Widget? child})"
     },
     {
         "title": "ScaleTransition",
@@ -186,8 +186,8 @@
         "routeName": "Widget/Animation/RotationTransition",
         "imagePath": "",
         "docPath": "https://api.flutter.dev/flutter/widgets/ScaleTransition-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>AnimatedWidget>ScaleTransition",
+        "constructors": "ScaleTransition({Key? key, required Animation<double> scale, Alignment alignment, Widget? child})"
     },
     {
         "title": "SizeTransition",
@@ -196,8 +196,8 @@
         "routeName": "Widget/Animation/SizeTransition",
         "imagePath": "",
         "docPath": "https://api.flutter.dev/flutter/widgets/SizeTransition-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>AnimatedWidget>SizeTransition",
+        "constructors": "SizeTransition({Key? key, Axis axis, required Animation<double> sizeFactor, double axisAlignment, Widget? child})"
     },
     {
         "title": "SlideTransition",
@@ -206,7 +206,7 @@
         "introductionCN": "动画小部件相对于其正常位置的位置。",
         "imagePath": "",
         "docPath": "https://api.flutter.dev/flutter/widgets/SlideTransition-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>AnimatedWidget>SlideTransition",
+        "constructors": "SlideTransition({Key? key, required Animation<Offset> position, bool transformHitTests, TextDirection? textDirection, Widget? child})"
     }
 ]

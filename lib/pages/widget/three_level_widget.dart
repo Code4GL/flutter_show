@@ -7,6 +7,27 @@ import 'package:provider/provider.dart';
 import 'accessibility/exclude_semantics.dart';
 import 'accessibility/merge_semantics.dart';
 import 'accessibility/semantics.dart';
+import 'animation/animated_align.dart';
+import 'animation/animated_builder.dart';
+import 'animation/animated_container.dart';
+import 'animation/animated_cross_fade.dart';
+import 'animation/animated_default_text_style.dart';
+import 'animation/animated_list_state.dart';
+import 'animation/animated_modal_barrier.dart';
+import 'animation/animated_opacity.dart';
+import 'animation/animated_physical_model.dart';
+import 'animation/animated_positioned.dart';
+import 'animation/animated_size.dart';
+import 'animation/animated_widget.dart';
+import 'animation/animated_widget_base_state.dart';
+import 'animation/decorated_box_transition.dart';
+import 'animation/fade_transition.dart';
+import 'animation/hero.dart';
+import 'animation/positioned_transition.dart';
+import 'animation/rotation_transition.dart';
+import 'animation/scale_transition.dart';
+import 'animation/size_transition.dart';
+import 'animation/slide_transition.dart';
 import 'assets_widget/asset_bundle.dart';
 import 'assets_widget/icon.dart';
 import 'assets_widget/image.dart';
@@ -31,7 +52,6 @@ import 'interaction/drag_target.dart';
 import 'interaction/draggable.dart';
 import 'interaction/draggable_scrollable_sheet.dart';
 import 'interaction/gesture_detector.dart';
-import 'interaction/hero.dart';
 import 'interaction/ignore_pointer.dart';
 import 'interaction/long_press_draggable.dart';
 import 'interaction/navigator.dart';
@@ -92,6 +112,28 @@ class ThreeLevelWidgetPage extends StatelessWidget {
     'Widget/Accessibility/ExcludeSemantics': ExcludeSemanticsPage(),
     'Widget/Accessibility/MergeSemantics': MergeSemanticsPage(),
     'Widget/Accessibility/Semantics': SemanticsPage(),
+    // Animation
+    'Widget/Animation/AnimatedAlign': AnimatedAlignPage(),
+    'Widget/Animation/AnimatedBuilder': AnimatedBuilderPage(),
+    'Widget/Animation/AnimatedContainer': AnimatedContainerPage(),
+    'Widget/Animation/AnimatedCrossFade': AnimatedCrossFadePage(),
+    'Widget/Animation/AnimatedDefaultTextStyle': AnimatedDefaultTextStylePage(),
+    'Widget/Animation/AnimatedListState': AnimatedListStatePage(),
+    'Widget/Animation/AnimatedModalBarrier': AnimatedModalBarrierPage(),
+    'Widget/Animation/AnimatedOpacity': AnimatedOpacityPage(),
+    'Widget/Animation/AnimatedPhysicalModel': AnimatedPhysicalModelPage(),
+    'Widget/Animation/AnimatedPositioned': AnimatedPositionedPage(),
+    'Widget/Animation/AnimatedSize': AnimatedSizePage(),
+    'Widget/Animation/AnimatedWidget': AnimatedWidgetPage(),
+    'Widget/Animation/AnimatedWidgetBaseState': AnimatedWidgetBaseStatePage(),
+    'Widget/Animation/DecoratedBoxTransition': DecoratedBoxTransitionPage(),
+    'Widget/Animation/FadeTransition': FadeTransitionPage(),
+    'Widget/Animation/Hero': HeroPage(),
+    'Widget/Animation/PositionedTransition': PositionedTransitionPage(),
+    'Widget/Animation/RotationTransition': RotationTransitionPage(),
+    'Widget/Animation/ScaleTransition': ScaleTransitionPage(),
+    'Widget/Animation/SizeTransition': SizeTransitionPage(),
+    'Widget/Animation/SlideTransition': SlideTransitionPage(),
     // Assets
     'Widget/Assets/AssetBundle': AssetBundlePage(),
     'Widget/Assets/Icon': IconPage(),

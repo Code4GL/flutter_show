@@ -15,7 +15,9 @@
         "introductionCN": "iOS风格的活动指示器。显示圆形'微调器'。",
         "routeName": "",
         "imagePath": "assets/images/cupertino/cupertino-activity-indicator.png",
-        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoActivityIndicator-class.html"
+        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoActivityIndicator-class.html",
+        "inheritance": "",
+        "constructors": ""
     },
     {
         "title": "CupertinoAlertDialog",
@@ -23,7 +25,9 @@
         "introductionCN": "iOS风格的警报对话框。",
         "routeName": "",
         "imagePath": "assets/images/cupertino/cupertino-alert-dialog.png",
-        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoAlertDialog-class.html"
+        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoAlertDialog-class.html",
+        "inheritance": "",
+        "constructors": ""
     },
     {
         "title": "CupertinoButton",
@@ -31,7 +35,9 @@
         "introductionCN": "iOS风格的按钮。",
         "routeName": "",
         "imagePath": "assets/images/cupertino/cupertino-button.png",
-        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoButton-class.html"
+        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoButton-class.html",
+        "inheritance": "",
+        "constructors": ""
     },
     {
         "title": "CupertinoDatePicker",
@@ -39,7 +45,9 @@
         "introductionCN": "iOS风格的日期或日期和时间选择器。",
         "routeName": "",
         "imagePath": "assets/images/cupertino/cupertino-date-picker.png",
-        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoDatePicker-class.html"
+        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoDatePicker-class.html",
+        "inheritance": "",
+        "constructors": ""
     },
     {
         "title": "CupertinoDialog",
@@ -47,7 +55,9 @@
         "introductionCN": "iOS风格的对话框。",
         "routeName": "",
         "imagePath": "assets/images/cupertino/cupertino-dialog.png",
-        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoDialog-class.html"
+        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoDialog-class.html",
+        "inheritance": "",
+        "constructors": ""
     },
     {
         "title": "CupertinoDialogAction",
@@ -55,7 +65,9 @@
         "introductionCN": "通常用于CupertinoAlertDialog的按钮。",
         "routeName": "",
         "imagePath": "assets/images/cupertino/cupertino-dialog-action.png",
-        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoDialogAction-class.html"
+        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoDialogAction-class.html",
+        "inheritance": "",
+        "constructors": ""
     },
     {
         "title": "CupertinoFullscreenDialogTransition",
@@ -63,7 +75,9 @@
         "introductionCN": "用于召唤全屏对话框的iOS风格转换。",
         "routeName": "",
         "imagePath": "assets/images/cupertino/cupertino-fullscreen-dialog-transition.png",
-        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoFullscreenDialogTransition-class.html"
+        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoFullscreenDialogTransition-class.html",
+        "inheritance": "",
+        "constructors": ""
     },
     {
         "title": "CupertinoNavigationBar",
@@ -71,7 +85,9 @@
         "introductionCN": "iOS风格的顶部导航栏。通常与CupertinoPageScaffold一起使用。",
         "routeName": "",
         "imagePath": "assets/images/cupertino/cupertino-nav-bar.png",
-        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoNavigationBar-class.html"
+        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoNavigationBar-class.html",
+        "inheritance": "",
+        "constructors": ""
     },
     {
         "title": "CupertinoPageScaffold",
@@ -79,7 +95,9 @@
         "introductionCN": "基本的iOS样式页面布局结构。在背景上定位导航栏和内容。",
         "routeName": "",
         "imagePath": "assets/images/cupertino/cupertino-page-scaffold.png",
-        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoPageScaffold-class.html"
+        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoPageScaffold-class.html",
+        "inheritance": "",
+        "constructors": ""
     },
     {
         "title": "CupertinoPageTransition",
@@ -87,7 +105,9 @@
         "introductionCN": "提供iOS样式的页面过渡动画。",
         "routeName": "",
         "imagePath": "assets/images/cupertino/cupertino-page-transition.png",
-        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoPageTransition-class.html"
+        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoPageTransition-class.html",
+        "inheritance": "",
+        "constructors": ""
     },
     {
         "title": "CupertinoPicker",
@@ -95,7 +115,9 @@
         "introductionCN": "iOS风格的选择器控件。用于选择短列表中的项目。",
         "routeName": "",
         "imagePath": "assets/images/cupertino/cupertino-picker.png",
-        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoPicker-class.html"
+        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoPicker-class.html",
+        "inheritance": "",
+        "constructors": ""
     },
     {
         "title": "CupertinoPopupSurface",
@@ -103,7 +125,9 @@
         "introductionCN": "圆角矩形表面，看起来像iOS弹出表面，例如警报对话框或操作表。",
         "routeName": "",
         "imagePath": "",
-        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoPopupSurface-class.html"
+        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoPopupSurface-class.html",
+        "inheritance": "",
+        "constructors": ""
     },
     {
         "title": "CupertinoScrollbar",
@@ -111,7 +135,9 @@
         "introductionCN": "iOS风格的滚动条，指示可滚动窗口小部件的哪个部分当前可见。",
         "routeName": "",
         "imagePath": "assets/images/cupertino/cupertino-scrollbar.png",
-        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoScrollbar-class.html"
+        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoScrollbar-class.html",
+        "inheritance": "",
+        "constructors": ""
     },
     {
         "title": "CupertinoSegmentedControl",
@@ -119,7 +145,9 @@
         "introductionCN": "iOS风格的分段控件。用于在水平列表中选择互斥选项。",
         "routeName": "",
         "imagePath": "assets/images/cupertino/cupertino-segmented-control.png",
-        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoSegmentedControl-class.html"
+        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoSegmentedControl-class.html",
+        "inheritance": "",
+        "constructors": ""
     },
     {
         "title": "CupertinoSlider",
@@ -127,7 +155,9 @@
         "introductionCN": "用于从一系列值中进行选择。",
         "routeName": "",
         "imagePath": "assets/images/cupertino/cupertino-slider.png",
-        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoSlider-class.html"
+        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoSlider-class.html",
+        "inheritance": "",
+        "constructors": ""
     },
     {
         "title": "CupertinoSwitch",
@@ -135,7 +165,9 @@
         "introductionCN": "iOS风格的开关。用于切换单个设置的开/关状态。",
         "routeName": "",
         "imagePath": "assets/images/cupertino/cupertino-switch.png",
-        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoSwitch-class.html"
+        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoSwitch-class.html",
+        "inheritance": "",
+        "constructors": ""
     },
     {
         "title": "CupertinoTabBar",
@@ -143,7 +175,9 @@
         "introductionCN": "iOS风格的底部标签栏。通常与CupertinoTabScaffold一起使用。",
         "routeName": "",
         "imagePath": "assets/images/cupertino/cupertino-tab-bar.png",
-        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoTabBar-class.html"
+        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoTabBar-class.html",
+        "inheritance": "",
+        "constructors": ""
     },
     {
         "title": "CupertinoTabScaffold",
@@ -151,7 +185,9 @@
         "introductionCN": "选项卡式iOS应用程序结构。将标签栏放在内容标签的顶部。",
         "routeName": "",
         "imagePath": "assets/images/cupertino/cupertino-tab-scaffold.png",
-        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoTabScaffold-class.html"
+        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoTabScaffold-class.html",
+        "inheritance": "",
+        "constructors": ""
     },
     {
         "title": "CupertinoTabView",
@@ -159,7 +195,9 @@
         "introductionCN": "支持选项卡之间并行导航的选项卡的根内容。通常与CupertinoTabScaffold一起使用。",
         "routeName": "",
         "imagePath": "assets/images/cupertino/cupertino-tab-view.png",
-        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoTabView-class.html"
+        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoTabView-class.html",
+        "inheritance": "",
+        "constructors": ""
     },
     {
         "title": "CupertinoTextField",
@@ -167,7 +205,9 @@
         "introductionCN": "iOS风格的文本字段。",
         "routeName": "",
         "imagePath": "assets/images/cupertino/cupertino-textfield.png",
-        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoTextField-class.html"
+        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoTextField-class.html",
+        "inheritance": "",
+        "constructors": ""
     },
     {
         "title": "CupertinoTimerPicker",
@@ -175,6 +215,8 @@
         "introductionCN": "iOS风格的倒数计时器选择器。",
         "routeName": "",
         "imagePath": "assets/images/cupertino/cupertino-timer-picker.png",
-        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoTimerPicker-class.html"
+        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoTimerPicker-class.html",
+        "inheritance": "",
+        "constructors": ""
     }
 ]
