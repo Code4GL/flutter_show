@@ -7,7 +7,29 @@ class AnimatedModalBarrierPage extends StatefulWidget {
       _AnimatedModalBarrierPageState();
 }
 
-class _AnimatedModalBarrierPageState extends State<AnimatedModalBarrierPage> {
+class _AnimatedModalBarrierPageState extends State<AnimatedModalBarrierPage>
+    with SingleTickerProviderStateMixin {
+  AnimationController _controller;
+  Animation<Color> _animation;
+
+  @override
+  initState() {
+    super.initState();
+    _controller =
+        AnimationController(duration: Duration(seconds: 2), vsync: this);
+    _animation = ColorTween(
+      begin: Color.fromRGBO(225, 225, 225, 0.5),
+      end: Color.fromRGBO(0, 0, 0, 0.5),
+    ).animate(_controller);
+    _controller.forward();
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -33,7 +55,7 @@ class _AnimatedModalBarrierPageState extends State<AnimatedModalBarrierPage> {
                 ),
               ),
               Text(
-                '',
+                'ModalBarrier的动画版本，模态层可以实现颜色渐变的动画。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -44,6 +66,7 @@ class _AnimatedModalBarrierPageState extends State<AnimatedModalBarrierPage> {
         ),
         // 展示区域
         Container(
+          height: 300,
           margin: EdgeInsets.only(top: 10),
           decoration: BoxDecoration(
             color: Colors.white,
@@ -56,7 +79,12 @@ class _AnimatedModalBarrierPageState extends State<AnimatedModalBarrierPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: AnimatedModalBarrier(
+              dismissible: false,
+              color: _animation,
+            ),
+          ),
         ),
       ],
     );

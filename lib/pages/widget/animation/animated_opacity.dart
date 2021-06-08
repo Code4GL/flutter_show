@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_show/common/my_style.dart';
+import 'package:flutter_show/components/radio_param.dart';
 
 class AnimatedOpacityPage extends StatefulWidget {
   @override
@@ -7,6 +8,9 @@ class AnimatedOpacityPage extends StatefulWidget {
 }
 
 class _AnimatedOpacityPageState extends State<AnimatedOpacityPage> {
+  Duration _duration = Duration(seconds: 1);
+  Curve _curve = Curves.fastOutSlowIn;
+  double _opacityLevel = 1.0;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -32,12 +36,135 @@ class _AnimatedOpacityPageState extends State<AnimatedOpacityPage> {
                 ),
               ),
               Text(
-                '',
+                'Opacity的动画版本，透明度改变时产生动画效果。动画不透明度相对昂贵，因为它需要将子对象绘制到中间缓冲区中。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
                 ),
               )
+            ],
+          ),
+        ),
+        // 参数配置
+        Container(
+          width: double.infinity,
+          padding: EdgeInsets.all(5),
+          decoration: BoxDecoration(
+            color: MyStyle.paramBgColor,
+            borderRadius: MyStyle.borderRadius,
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                '参数配置',
+                style: TextStyle(
+                  color: MyStyle.titleColor,
+                  fontWeight: MyStyle.titleFontWeight,
+                ),
+              ),
+              RadioParam(
+                paramKey: 'duration:',
+                paramValue: '$_duration',
+                groupValue: _duration,
+                items: [
+                  {
+                    'name': '1',
+                    'value': Duration(seconds: 1),
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _duration = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': '2',
+                    'value': Duration(seconds: 2),
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _duration = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': '3',
+                    'value': Duration(seconds: 3),
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _duration = value;
+                      });
+                    },
+                  },
+                ],
+              ),
+              RadioParam(
+                paramKey: 'curve:',
+                paramValue: '',
+                groupValue: _curve,
+                items: [
+                  {
+                    'name': 'fastOutSlowIn',
+                    'value': Curves.fastOutSlowIn,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _curve = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'bounceInOut',
+                    'value': Curves.bounceInOut,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _curve = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'easeInCirc',
+                    'value': Curves.easeInCirc,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _curve = value;
+                      });
+                    },
+                  },
+                ],
+              ),
+              RadioParam(
+                paramKey: 'opacityLevel:',
+                paramValue: '$_opacityLevel',
+                groupValue: _opacityLevel,
+                items: [
+                  {
+                    'name': '1.0',
+                    'value': 1.0,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _opacityLevel = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': '0.5',
+                    'value': 0.5,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _opacityLevel = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': '0.0',
+                    'value': 0.0,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _opacityLevel = value;
+                      });
+                    },
+                  },
+                ],
+              ),
             ],
           ),
         ),
@@ -55,7 +182,14 @@ class _AnimatedOpacityPageState extends State<AnimatedOpacityPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: AnimatedOpacity(
+              opacity: _opacityLevel,
+              duration: _duration,
+              curve: _curve,
+              child: FlutterLogo(size: 100),
+            ),
+          ),
         ),
       ],
     );
