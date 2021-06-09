@@ -34,7 +34,7 @@ class _CustomSingleChildLayoutPageState
                 ),
               ),
               Text(
-                '',
+                '当要求布局时，CustomSingleChildLayout首先调用getSize及其传入的约束来确定其大小。然后它调用getConstraintsForChild来确定要应用于子级的约束。在孩子完成其布局后，RenderCustomSingleChildLayoutBox调用getPositionForChild来确定孩子的位置。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,

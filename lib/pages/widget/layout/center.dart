@@ -32,7 +32,7 @@ class _CenterPageState extends State<CenterPage> {
                 ),
               ),
               Text(
-                '',
+                '一个将子组件居中的Widget。当widthFactor和heightFactor为空时，且具有父约束时，它的大小由父约束控制，无父约束时，它的大小由子组件控制；当widthFactor和heightFactor为不空时，它的大小则是子组件和大小因子的乘积。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -43,6 +43,7 @@ class _CenterPageState extends State<CenterPage> {
         ),
         // 展示区域
         Container(
+          height: 200,
           margin: EdgeInsets.only(top: 10),
           decoration: BoxDecoration(
             color: Colors.white,
@@ -55,7 +56,13 @@ class _CenterPageState extends State<CenterPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: Container(
+              height: 80.0,
+              width: 80.0,
+              color: Colors.blue,
+            ),
+          ),
         ),
       ],
     );

@@ -32,7 +32,7 @@ class _ConstrainedBoxPageState extends State<ConstrainedBoxPage> {
                 ),
               ),
               Text(
-                '',
+                'ConstrainedBox用于对子组件添加额外的约束。通常由BoxConstraints来控制，可以设置最大最小宽高等，子组件如果不满足BoxConstraints的约束，则不能生效。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -43,6 +43,7 @@ class _ConstrainedBoxPageState extends State<ConstrainedBoxPage> {
         ),
         // 展示区域
         Container(
+          height: 100,
           margin: EdgeInsets.only(top: 10),
           decoration: BoxDecoration(
             color: Colors.white,
@@ -55,7 +56,14 @@ class _ConstrainedBoxPageState extends State<ConstrainedBoxPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: ConstrainedBox(
+              constraints: BoxConstraints.expand(),
+              child: Card(
+                child: Text('Hello World!'),
+              ),
+            ),
+          ),
         ),
       ],
     );
