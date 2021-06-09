@@ -7,9 +7,28 @@ class PositionedTransitionPage extends StatefulWidget {
       _PositionedTransitionPageState();
 }
 
-class _PositionedTransitionPageState extends State<PositionedTransitionPage> {
+class _PositionedTransitionPageState extends State<PositionedTransitionPage>
+    with TickerProviderStateMixin {
+  AnimationController _controller;
+  @override
+  initState() {
+    super.initState();
+    _controller = AnimationController(
+      duration: const Duration(seconds: 2),
+      vsync: this,
+    )..repeat(reverse: true);
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
+    const double smallLogo = 100;
+    const double bigLogo = 200;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
@@ -33,7 +52,7 @@ class _PositionedTransitionPageState extends State<PositionedTransitionPage> {
                 ),
               ),
               Text(
-                '',
+                'Positioned的动画版本,仅当是Stack的child时生效。与AnimatedPositioned不同得是，PositionedTransition采用显示传入Animation参数来控制动画。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -44,6 +63,7 @@ class _PositionedTransitionPageState extends State<PositionedTransitionPage> {
         ),
         // 展示区域
         Container(
+          height: 300,
           margin: EdgeInsets.only(top: 10),
           decoration: BoxDecoration(
             color: Colors.white,
@@ -56,7 +76,33 @@ class _PositionedTransitionPageState extends State<PositionedTransitionPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: LayoutBuilder(
+              builder: (BuildContext context, BoxConstraints constraints) {
+                final Size biggest = constraints.biggest;
+                return Stack(
+                  children: <Widget>[
+                    PositionedTransition(
+                      rect: RelativeRectTween(
+                        begin: RelativeRect.fromSize(
+                            const Rect.fromLTWH(0, 0, smallLogo, smallLogo),
+                            biggest),
+                        end: RelativeRect.fromSize(
+                            Rect.fromLTWH(biggest.width - bigLogo,
+                                biggest.height - bigLogo, bigLogo, bigLogo),
+                            biggest),
+                      ).animate(CurvedAnimation(
+                        parent: _controller,
+                        curve: Curves.elasticInOut,
+                      )),
+                      child: const Padding(
+                          padding: EdgeInsets.all(8), child: FlutterLogo()),
+                    ),
+                  ],
+                );
+              },
+            ),
+          ),
         ),
       ],
     );

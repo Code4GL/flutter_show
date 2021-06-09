@@ -6,7 +6,30 @@ class FadeTransitionPage extends StatefulWidget {
   _FadeTransitionPageState createState() => _FadeTransitionPageState();
 }
 
-class _FadeTransitionPageState extends State<FadeTransitionPage> {
+class _FadeTransitionPageState extends State<FadeTransitionPage>
+    with TickerProviderStateMixin {
+  AnimationController _controller;
+  Animation<double> _animation;
+
+  @override
+  initState() {
+    super.initState();
+    _controller = AnimationController(
+      duration: const Duration(seconds: 2),
+      vsync: this,
+    )..repeat(reverse: true);
+    _animation = CurvedAnimation(
+      parent: _controller,
+      curve: Curves.easeIn,
+    );
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -32,7 +55,7 @@ class _FadeTransitionPageState extends State<FadeTransitionPage> {
                 ),
               ),
               Text(
-                '',
+                '有关透明度的动画widget，可以实现淡入淡出的效果。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -55,7 +78,15 @@ class _FadeTransitionPageState extends State<FadeTransitionPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: FadeTransition(
+              opacity: _animation,
+              child: const Padding(
+                padding: EdgeInsets.all(8),
+                child: FlutterLogo(size: 100),
+              ),
+            ),
+          ),
         ),
       ],
     );

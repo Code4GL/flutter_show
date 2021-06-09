@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_show/common/my_style.dart';
 
@@ -6,7 +8,25 @@ class AnimatedWidgetPage extends StatefulWidget {
   _AnimatedWidgetPageState createState() => _AnimatedWidgetPageState();
 }
 
-class _AnimatedWidgetPageState extends State<AnimatedWidgetPage> {
+class _AnimatedWidgetPageState extends State<AnimatedWidgetPage>
+    with TickerProviderStateMixin {
+  AnimationController _controller;
+
+  @override
+  initState() {
+    super.initState();
+    _controller = AnimationController(
+      duration: Duration(seconds: 10),
+      vsync: this,
+    )..repeat();
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -32,7 +52,7 @@ class _AnimatedWidgetPageState extends State<AnimatedWidgetPage> {
                 ),
               ),
               Text(
-                '',
+                'AnimatedWidget 对于无状态的小部件最有用。要使用AnimatedWidget，只需将其子类化并实现构建功能，就不需要给动画addListener(...)和setState((){})了，AnimatedWidget自己会使用当前Animation的value来绘制自己。当然，这里Animation我们是以构造参数的方式传递进去的。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -55,9 +75,28 @@ class _AnimatedWidgetPageState extends State<AnimatedWidgetPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: SpinningContainer(controller: _controller),
+          ),
         ),
       ],
+    );
+  }
+}
+
+class SpinningContainer extends AnimatedWidget {
+  const SpinningContainer({
+    Key key,
+    @required AnimationController controller,
+  }) : super(key: key, listenable: controller);
+
+  Animation<double> get _progress => listenable as Animation<double>;
+
+  @override
+  Widget build(BuildContext context) {
+    return Transform.rotate(
+      angle: _progress.value * 2.0 * pi,
+      child: Container(width: 200.0, height: 200.0, color: Colors.green),
     );
   }
 }

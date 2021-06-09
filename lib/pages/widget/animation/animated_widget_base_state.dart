@@ -34,7 +34,7 @@ class _AnimatedWidgetBaseStatePageState
                 ),
               ),
               Text(
-                '',
+                '隐式动画的基础状态类，在动画运行是重构小部件。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -45,6 +45,7 @@ class _AnimatedWidgetBaseStatePageState
         ),
         // 展示区域
         Container(
+          height: 300,
           margin: EdgeInsets.only(top: 10),
           decoration: BoxDecoration(
             color: Colors.white,

@@ -6,7 +6,29 @@ class SizeTransitionPage extends StatefulWidget {
   _SizeTransitionPageState createState() => _SizeTransitionPageState();
 }
 
-class _SizeTransitionPageState extends State<SizeTransitionPage> {
+class _SizeTransitionPageState extends State<SizeTransitionPage>
+    with TickerProviderStateMixin {
+  AnimationController _controller;
+  Animation<double> _animation;
+  @override
+  initState() {
+    super.initState();
+    _controller = AnimationController(
+      duration: const Duration(seconds: 3),
+      vsync: this,
+    )..repeat();
+    _animation = CurvedAnimation(
+      parent: _controller,
+      curve: Curves.fastOutSlowIn,
+    );
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -32,7 +54,7 @@ class _SizeTransitionPageState extends State<SizeTransitionPage> {
                 ),
               ),
               Text(
-                '',
+                'SizeTransition充当ClipRect，根据轴的值为其宽度或高度设置动画。子项沿轴的对齐方式由axisAlignment指定。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -55,7 +77,16 @@ class _SizeTransitionPageState extends State<SizeTransitionPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: SizeTransition(
+              sizeFactor: _animation,
+              axis: Axis.horizontal,
+              axisAlignment: -1,
+              child: const Center(
+                child: FlutterLogo(size: 200.0),
+              ),
+            ),
+          ),
         ),
       ],
     );

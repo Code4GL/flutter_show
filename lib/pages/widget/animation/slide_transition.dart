@@ -6,7 +6,32 @@ class SlideTransitionPage extends StatefulWidget {
   _SlideTransitionPageState createState() => _SlideTransitionPageState();
 }
 
-class _SlideTransitionPageState extends State<SlideTransitionPage> {
+class _SlideTransitionPageState extends State<SlideTransitionPage>
+    with SingleTickerProviderStateMixin {
+  AnimationController _controller;
+  Animation<Offset> _offsetAnimation;
+  @override
+  initState() {
+    super.initState();
+    _controller = AnimationController(
+      duration: const Duration(seconds: 2),
+      vsync: this,
+    )..repeat(reverse: true);
+    _offsetAnimation = Tween<Offset>(
+      begin: Offset.zero,
+      end: const Offset(1.5, 0.0),
+    ).animate(CurvedAnimation(
+      parent: _controller,
+      curve: Curves.elasticIn,
+    ));
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -32,7 +57,7 @@ class _SlideTransitionPageState extends State<SlideTransitionPage> {
                 ),
               ),
               Text(
-                '',
+                '位置移动动画小部件。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -55,7 +80,15 @@ class _SlideTransitionPageState extends State<SlideTransitionPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: SlideTransition(
+              position: _offsetAnimation,
+              child: const Padding(
+                padding: EdgeInsets.all(8.0),
+                child: FlutterLogo(size: 150.0),
+              ),
+            ),
+          ),
         ),
       ],
     );

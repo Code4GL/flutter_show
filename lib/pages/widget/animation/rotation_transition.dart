@@ -6,7 +6,29 @@ class RotationTransitionPage extends StatefulWidget {
   _RotationTransitionPageState createState() => _RotationTransitionPageState();
 }
 
-class _RotationTransitionPageState extends State<RotationTransitionPage> {
+class _RotationTransitionPageState extends State<RotationTransitionPage>
+    with TickerProviderStateMixin {
+  AnimationController _controller;
+  Animation<double> _animation;
+  @override
+  initState() {
+    super.initState();
+    _controller = AnimationController(
+      duration: const Duration(seconds: 2),
+      vsync: this,
+    )..repeat(reverse: true);
+    _animation = CurvedAnimation(
+      parent: _controller,
+      curve: Curves.elasticOut,
+    );
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -32,7 +54,7 @@ class _RotationTransitionPageState extends State<RotationTransitionPage> {
                 ),
               ),
               Text(
-                '',
+                '旋转动画小部件。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -55,7 +77,15 @@ class _RotationTransitionPageState extends State<RotationTransitionPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: RotationTransition(
+              turns: _animation,
+              child: const Padding(
+                padding: EdgeInsets.all(8.0),
+                child: FlutterLogo(size: 150.0),
+              ),
+            ),
+          ),
         ),
       ],
     );

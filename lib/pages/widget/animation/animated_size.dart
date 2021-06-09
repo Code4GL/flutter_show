@@ -6,7 +6,18 @@ class AnimatedSizePage extends StatefulWidget {
   _AnimatedSizePageState createState() => _AnimatedSizePageState();
 }
 
-class _AnimatedSizePageState extends State<AnimatedSizePage> {
+class _AnimatedSizePageState extends State<AnimatedSizePage>
+    with SingleTickerProviderStateMixin {
+  double _size = 50.0;
+  bool _large = false;
+
+  void _updateSize() {
+    setState(() {
+      _size = _large ? 250.0 : 100.0;
+      _large = !_large;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -32,7 +43,7 @@ class _AnimatedSizePageState extends State<AnimatedSizePage> {
                 ),
               ),
               Text(
-                '',
+                '子组件的大小发生变化时，会产生动画来转换大小。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -55,7 +66,20 @@ class _AnimatedSizePageState extends State<AnimatedSizePage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: GestureDetector(
+              onTap: () => _updateSize(),
+              child: Container(
+                color: Colors.amberAccent,
+                child: AnimatedSize(
+                  curve: Curves.easeIn,
+                  duration: const Duration(seconds: 1),
+                  vsync: this,
+                  child: FlutterLogo(size: _size),
+                ),
+              ),
+            ),
+          ),
         ),
       ],
     );

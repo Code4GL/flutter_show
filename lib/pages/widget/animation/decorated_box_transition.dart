@@ -7,8 +7,50 @@ class DecoratedBoxTransitionPage extends StatefulWidget {
       _DecoratedBoxTransitionPageState();
 }
 
-class _DecoratedBoxTransitionPageState
-    extends State<DecoratedBoxTransitionPage> {
+class _DecoratedBoxTransitionPageState extends State<DecoratedBoxTransitionPage>
+    with TickerProviderStateMixin {
+  final DecorationTween decorationTween = DecorationTween(
+    begin: BoxDecoration(
+      color: const Color(0xFFFFFFFF),
+      border: Border.all(style: BorderStyle.none),
+      borderRadius: BorderRadius.circular(60.0),
+      shape: BoxShape.rectangle,
+      boxShadow: const <BoxShadow>[
+        BoxShadow(
+          color: Color(0x66666666),
+          blurRadius: 10.0,
+          spreadRadius: 3.0,
+          offset: Offset(0, 6.0),
+        )
+      ],
+    ),
+    end: BoxDecoration(
+      color: const Color(0xFFFFFFFF),
+      border: Border.all(
+        style: BorderStyle.none,
+      ),
+      borderRadius: BorderRadius.zero,
+      // No shadow.
+    ),
+  );
+
+  AnimationController _controller;
+
+  @override
+  initState() {
+    super.initState();
+    _controller = AnimationController(
+      vsync: this,
+      duration: const Duration(seconds: 3),
+    )..repeat(reverse: true);
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -34,7 +76,7 @@ class _DecoratedBoxTransitionPageState
                 ),
               ),
               Text(
-                '',
+                'DecoratedBox的动画版本,为装饰器提供动画。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -45,6 +87,7 @@ class _DecoratedBoxTransitionPageState
         ),
         // 展示区域
         Container(
+          height: 300,
           margin: EdgeInsets.only(top: 10),
           decoration: BoxDecoration(
             color: Colors.white,
@@ -57,7 +100,18 @@ class _DecoratedBoxTransitionPageState
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: DecoratedBoxTransition(
+              position: DecorationPosition.background,
+              decoration: decorationTween.animate(_controller),
+              child: Container(
+                width: 200,
+                height: 200,
+                padding: const EdgeInsets.all(10),
+                child: const FlutterLogo(),
+              ),
+            ),
+          ),
         ),
       ],
     );
