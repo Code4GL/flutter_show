@@ -32,7 +32,7 @@ class _LimitedBoxPageState extends State<LimitedBoxPage> {
                 ),
               ),
               Text(
-                '',
+                '当LimitedBox组件的宽高不受限制时，它将其子组件的宽高限制为maxWidth和maxHeight；当LimitedBox组件的宽高受限于指定的宽高时，其子组件将遵循它的父约束，即LimitedBox无实际效果。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -43,6 +43,7 @@ class _LimitedBoxPageState extends State<LimitedBoxPage> {
         ),
         // 展示区域
         Container(
+          height: 300,
           margin: EdgeInsets.only(top: 10),
           decoration: BoxDecoration(
             color: Colors.white,
@@ -55,7 +56,24 @@ class _LimitedBoxPageState extends State<LimitedBoxPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: ListView(
+              children: <Widget>[
+                LimitedBox(
+                  maxHeight: 100,
+                  child: Container(
+                    color: Colors.green,
+                  ),
+                ),
+                LimitedBox(
+                  maxHeight: 100,
+                  child: Container(
+                    color: Colors.red,
+                  ),
+                ),
+              ],
+            ),
+          ),
         ),
       ],
     );

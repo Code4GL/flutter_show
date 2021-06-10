@@ -32,7 +32,7 @@ class _SizedBoxPageState extends State<SizedBoxPage> {
                 ),
               ),
               Text(
-                '',
+                'SizedBox用于给子元素指定固定的宽高。如果宽度或高度为空，则此小部件将尝试调整自身大小以匹配该维度中孩子的大小。如果孩子的尺寸取决于其父母的尺寸，则必须提供高度和宽度。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -55,7 +55,13 @@ class _SizedBoxPageState extends State<SizedBoxPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: SizedBox(
+              width: 200.0,
+              height: 200.0,
+              child: Card(child: Text('Hello World!')),
+            ),
+          ),
         ),
       ],
     );

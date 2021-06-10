@@ -32,7 +32,7 @@ class _SliverToBoxAdapterPageState extends State<SliverToBoxAdapterPage> {
                 ),
               ),
               Text(
-                '',
+                'Slivers是特殊用途的小部件，可以使用CustomScrollView进行组合以创建自定义滚动效果。SliverToBoxAdapter是一个基本的sliver，它创建了一个返回到一个通常的基于框的小部件的桥梁。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,

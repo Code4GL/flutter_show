@@ -34,7 +34,7 @@ class _CustomMultiChildLayoutPageState
                 ),
               ),
               Text(
-                '',
+                '当多个小部件的大小和位置之间存在复杂关系时，CustomMultiChildLayout是合适的。控制单个孩子的布局，CustomSingleChildLayout更合适。每个子项都必须包装在LayoutId小部件中以标识委托的小部件。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,

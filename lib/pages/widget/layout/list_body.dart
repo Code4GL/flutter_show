@@ -32,7 +32,7 @@ class _ListBodyPageState extends State<ListBodyPage> {
                 ),
               ),
               Text(
-                '',
+                'ListBody的作用是按给定的轴方向，按照顺序排列子节点。这个小部件很少直接使用。相反，请考虑使用ListView，它结合了类似的布局算法和滚动行为，或Column，它使您可以更灵活地控制一组垂直框的布局。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,

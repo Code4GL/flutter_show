@@ -33,7 +33,7 @@ class _SliverFixedExtentListPageState extends State<SliverFixedExtentListPage> {
                 ),
               ),
               Text(
-                '',
+                'SliverFixedExtentList比SliverList更高效，因为SliverFixedExtentList不需要对其子项执行布局来获取它们在主轴上的范围。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -44,6 +44,7 @@ class _SliverFixedExtentListPageState extends State<SliverFixedExtentListPage> {
         ),
         // 展示区域
         Container(
+          height: 300,
           margin: EdgeInsets.only(top: 10),
           decoration: BoxDecoration(
             color: Colors.white,
@@ -56,7 +57,24 @@ class _SliverFixedExtentListPageState extends State<SliverFixedExtentListPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: CustomScrollView(
+              slivers: [
+                SliverFixedExtentList(
+                  itemExtent: 50.0,
+                  delegate: SliverChildBuilderDelegate(
+                    (BuildContext context, int index) {
+                      return Container(
+                        alignment: Alignment.center,
+                        color: Colors.lightBlue[100 * (index % 9)],
+                        child: Text('list item $index'),
+                      );
+                    },
+                  ),
+                ),
+              ],
+            ),
+          ),
         ),
       ],
     );

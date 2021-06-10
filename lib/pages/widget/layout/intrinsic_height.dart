@@ -32,7 +32,7 @@ class _IntrinsicHeightPageState extends State<IntrinsicHeightPage> {
                 ),
               ),
               Text(
-                '',
+                'IntrinsicHeight是将可能高度不受限制的child，调整到一个合适并且合理的尺寸。通常用于给子组件设置统一的高度，但是性能消耗很重，谨慎使用。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -55,7 +55,22 @@ class _IntrinsicHeightPageState extends State<IntrinsicHeightPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: IntrinsicHeight(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  Container(color: Colors.blue, width: 100.0),
+                  Container(
+                    color: Colors.red,
+                    width: 50.0,
+                    height: 50.0,
+                  ),
+                  Container(color: Colors.yellow, width: 150.0),
+                ],
+              ),
+            ),
+          ),
         ),
       ],
     );

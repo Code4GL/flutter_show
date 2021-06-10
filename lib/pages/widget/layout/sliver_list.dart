@@ -32,7 +32,7 @@ class _SliverListPageState extends State<SliverListPage> {
                 ),
               ),
               Text(
-                '',
+                'SliverList通过“航位推算”确定其滚动偏移量，因为条子可见部分之外的子项未具体化，这意味着SliverList无法了解其主轴范围。取而代之的是，新实现的子项与现有子项相邻放置。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -43,6 +43,7 @@ class _SliverListPageState extends State<SliverListPage> {
         ),
         // 展示区域
         Container(
+          height: 300,
           margin: EdgeInsets.only(top: 10),
           decoration: BoxDecoration(
             color: Colors.white,
@@ -55,7 +56,44 @@ class _SliverListPageState extends State<SliverListPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: CustomScrollView(
+              slivers: [
+                SliverList(
+                  delegate: SliverChildListDelegate([
+                    Container(
+                      height: 80,
+                      color: Colors.primaries[0],
+                    ),
+                    Container(
+                      height: 80,
+                      color: Colors.primaries[1],
+                    ),
+                    Container(
+                      height: 80,
+                      color: Colors.primaries[2],
+                    ),
+                    Container(
+                      height: 80,
+                      color: Colors.primaries[3],
+                    ),
+                    Container(
+                      height: 80,
+                      color: Colors.primaries[4],
+                    ),
+                    Container(
+                      height: 80,
+                      color: Colors.primaries[5],
+                    ),
+                    Container(
+                      height: 80,
+                      color: Colors.primaries[6],
+                    ),
+                  ]),
+                )
+              ],
+            ),
+          ),
         ),
       ],
     );

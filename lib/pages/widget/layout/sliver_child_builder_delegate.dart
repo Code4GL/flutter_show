@@ -34,7 +34,7 @@ class _SliverChildBuilderDelegatePageState
                 ),
               ),
               Text(
-                '',
+                '许多条子懒惰地构建他们的盒子孩子，以避免创建更多的孩子，而不是通过视口可见。此委托使用NullableIndexedWidgetBuilder回调提供子项，因此在显示子项之前甚至不必构建子项。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,

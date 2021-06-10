@@ -32,7 +32,7 @@ class _StackPageState extends State<StackPage> {
                 ),
               ),
               Text(
-                '',
+                'Stack是一个允许子组件进行层叠布局的widget，常常和Positioned这个组件来配合实现绝对定位。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -43,6 +43,7 @@ class _StackPageState extends State<StackPage> {
         ),
         // 展示区域
         Container(
+          height: 100,
           margin: EdgeInsets.only(top: 10),
           decoration: BoxDecoration(
             color: Colors.white,
@@ -55,7 +56,36 @@ class _StackPageState extends State<StackPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: Stack(
+              children: <Widget>[
+                Container(
+                  width: 250,
+                  height: 250,
+                  color: Colors.white,
+                ),
+                Container(
+                  padding: const EdgeInsets.all(5.0),
+                  alignment: Alignment.bottomCenter,
+                  decoration: BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topCenter,
+                      end: Alignment.bottomCenter,
+                      colors: <Color>[
+                        Colors.black.withAlpha(0),
+                        Colors.black12,
+                        Colors.black45
+                      ],
+                    ),
+                  ),
+                  child: const Text(
+                    'Foreground Text',
+                    style: TextStyle(color: Colors.white, fontSize: 20.0),
+                  ),
+                ),
+              ],
+            ),
+          ),
         ),
       ],
     );

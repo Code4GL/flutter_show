@@ -34,7 +34,7 @@ class _SliverChildListDelegatePageState
                 ),
               ),
               Text(
-                '',
+                '一般来说，提前构建所有小部件效率不高。最好使用SliverChildBuilderDelegate或直接子类化SliverChildDelegate来创建一个按需构建它们的委托。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,

@@ -32,7 +32,7 @@ class _IntrinsicWidthPageState extends State<IntrinsicWidthPage> {
                 ),
               ),
               Text(
-                '',
+                'IntrinsicWidth是将可能宽度不受限制的child，调整到一个合适并且合理的尺寸。通常用于给子组件设置统一的宽度，但是性能消耗很重，谨慎使用。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -55,7 +55,27 @@ class _IntrinsicWidthPageState extends State<IntrinsicWidthPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: IntrinsicWidth(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: <Widget>[
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: Text('Short'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: Text('A bit Longer'),
+                  ),
+                  ElevatedButton(
+                    onPressed: () {},
+                    child: Text('The Longest text button'),
+                  ),
+                ],
+              ),
+            ),
+          ),
         ),
       ],
     );
