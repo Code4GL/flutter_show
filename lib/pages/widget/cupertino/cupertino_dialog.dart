@@ -32,33 +32,12 @@ class _CupertinoDialogPageState extends State<CupertinoDialogPage> {
                 ),
               ),
               Text(
-                '',
+                '官网地址不可访问（2021年6月）。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
                 ),
               )
-            ],
-          ),
-        ),
-        // 参数配置
-        Container(
-          width: double.infinity,
-          padding: EdgeInsets.all(5),
-          decoration: BoxDecoration(
-            color: MyStyle.paramBgColor,
-            borderRadius: MyStyle.borderRadius,
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                '参数配置',
-                style: TextStyle(
-                  color: MyStyle.titleColor,
-                  fontWeight: MyStyle.titleFontWeight,
-                ),
-              ),
             ],
           ),
         ),

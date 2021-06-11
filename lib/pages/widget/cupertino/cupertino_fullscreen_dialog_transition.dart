@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_show/common/my_style.dart';
 
@@ -8,7 +9,25 @@ class CupertinoFullscreenDialogTransitionPage extends StatefulWidget {
 }
 
 class _CupertinoFullscreenDialogTransitionPageState
-    extends State<CupertinoFullscreenDialogTransitionPage> {
+    extends State<CupertinoFullscreenDialogTransitionPage>
+    with SingleTickerProviderStateMixin {
+  AnimationController _controller;
+
+  @override
+  initState() {
+    super.initState();
+    _controller = AnimationController(
+      duration: Duration(seconds: 1),
+      vsync: this,
+    );
+  }
+
+  @override
+  void dispose() {
+    _controller.dispose();
+    super.dispose();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -34,7 +53,7 @@ class _CupertinoFullscreenDialogTransitionPageState
                 ),
               ),
               Text(
-                '',
+                '目前还未找到比较好的使用案例。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -43,25 +62,25 @@ class _CupertinoFullscreenDialogTransitionPageState
             ],
           ),
         ),
-        // 参数配置
+        // 运行按钮
         Container(
-          width: double.infinity,
-          padding: EdgeInsets.all(5),
-          decoration: BoxDecoration(
-            color: MyStyle.paramBgColor,
-            borderRadius: MyStyle.borderRadius,
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                '参数配置',
-                style: TextStyle(
-                  color: MyStyle.titleColor,
-                  fontWeight: MyStyle.titleFontWeight,
-                ),
-              ),
-            ],
+          alignment: Alignment.centerRight,
+          child: ElevatedButton(
+            onPressed: () {
+              if (_controller.isDismissed) {
+                _controller.forward();
+              } else {
+                _controller.reverse();
+              }
+            },
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(Icons.play_arrow),
+                Text('Run'),
+              ],
+            ),
           ),
         ),
         // 展示区域
@@ -78,7 +97,14 @@ class _CupertinoFullscreenDialogTransitionPageState
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: CupertinoFullscreenDialogTransition(
+              primaryRouteAnimation: _controller,
+              secondaryRouteAnimation: _controller,
+              linearTransition: true,
+              child: Text('CupertinoFullscreenDialogTransition'),
+            ),
+          ),
         ),
       ],
     );

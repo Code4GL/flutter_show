@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_show/common/my_style.dart';
 
@@ -33,33 +34,12 @@ class _CupertinoContextMenuPageState extends State<CupertinoContextMenuPage> {
                 ),
               ),
               Text(
-                '',
+                '全屏预览模态widget，通过长按可以将目标在全屏中展示，同时还可以通过actions附带许多操作。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
                 ),
               )
-            ],
-          ),
-        ),
-        // 参数配置
-        Container(
-          width: double.infinity,
-          padding: EdgeInsets.all(5),
-          decoration: BoxDecoration(
-            color: MyStyle.paramBgColor,
-            borderRadius: MyStyle.borderRadius,
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                '参数配置',
-                style: TextStyle(
-                  color: MyStyle.titleColor,
-                  fontWeight: MyStyle.titleFontWeight,
-                ),
-              ),
             ],
           ),
         ),
@@ -77,7 +57,33 @@ class _CupertinoContextMenuPageState extends State<CupertinoContextMenuPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: SizedBox(
+              width: 100,
+              height: 100,
+              child: CupertinoContextMenu(
+                child: Container(
+                  alignment: Alignment.center,
+                  color: Colors.blue,
+                  child: Text('Long Press'),
+                ),
+                actions: <Widget>[
+                  CupertinoContextMenuAction(
+                    child: const Text('Action one'),
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                  ),
+                  CupertinoContextMenuAction(
+                    child: const Text('Action two'),
+                    onPressed: () {
+                      Navigator.pop(context);
+                    },
+                  ),
+                ],
+              ),
+            ),
+          ),
         ),
       ],
     );

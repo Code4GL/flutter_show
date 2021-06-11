@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_show/common/my_style.dart';
 
@@ -33,33 +34,12 @@ class _CupertinoAlertDialogPageState extends State<CupertinoAlertDialogPage> {
                 ),
               ),
               Text(
-                '',
+                'IOS风格Dialog弹窗,通常结合showCupertinoDialog()方法实现弹框。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
                 ),
               )
-            ],
-          ),
-        ),
-        // 参数配置
-        Container(
-          width: double.infinity,
-          padding: EdgeInsets.all(5),
-          decoration: BoxDecoration(
-            color: MyStyle.paramBgColor,
-            borderRadius: MyStyle.borderRadius,
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                '参数配置',
-                style: TextStyle(
-                  color: MyStyle.titleColor,
-                  fontWeight: MyStyle.titleFontWeight,
-                ),
-              ),
             ],
           ),
         ),
@@ -77,7 +57,35 @@ class _CupertinoAlertDialogPageState extends State<CupertinoAlertDialogPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: CupertinoButton(
+              onPressed: () {
+                showCupertinoDialog<void>(
+                  context: context,
+                  builder: (BuildContext context) => CupertinoAlertDialog(
+                    title: const Text('Title'),
+                    content: const Text('Content'),
+                    actions: <CupertinoDialogAction>[
+                      CupertinoDialogAction(
+                        child: Text('取消'),
+                        isDestructiveAction: true,
+                        onPressed: () {
+                          Navigator.of(context).pop();
+                        },
+                      ),
+                      CupertinoDialogAction(
+                        child: Text('确认'),
+                        onPressed: () {
+                          Navigator.of(context).pop();
+                        },
+                      ),
+                    ],
+                  ),
+                );
+              },
+              child: const Text('CupertinoAlertDialog'),
+            ),
+          ),
         ),
       ],
     );

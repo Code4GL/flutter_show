@@ -1,5 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_show/common/my_style.dart';
+import 'package:flutter_show/components/boolean_param.dart';
 
 class CupertinoDialogActionPage extends StatefulWidget {
   @override
@@ -8,6 +10,8 @@ class CupertinoDialogActionPage extends StatefulWidget {
 }
 
 class _CupertinoDialogActionPageState extends State<CupertinoDialogActionPage> {
+  bool _isDefaultAction = false;
+  bool _isDestructiveAction = false;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -33,7 +37,7 @@ class _CupertinoDialogActionPageState extends State<CupertinoDialogActionPage> {
                 ),
               ),
               Text(
-                '',
+                'CupertinoAlertDialog中的按钮类。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -60,6 +64,26 @@ class _CupertinoDialogActionPageState extends State<CupertinoDialogActionPage> {
                   fontWeight: MyStyle.titleFontWeight,
                 ),
               ),
+              BooleanParam(
+                paramKey: 'isDefaultAction:',
+                paramValue: '$_isDefaultAction',
+                value: _isDefaultAction,
+                onChangedCb: (bool value) {
+                  setState(() {
+                    _isDefaultAction = value;
+                  });
+                },
+              ),
+              BooleanParam(
+                paramKey: 'isDestructiveAction:',
+                paramValue: '$_isDestructiveAction',
+                value: _isDestructiveAction,
+                onChangedCb: (bool value) {
+                  setState(() {
+                    _isDestructiveAction = value;
+                  });
+                },
+              ),
             ],
           ),
         ),
@@ -77,7 +101,20 @@ class _CupertinoDialogActionPageState extends State<CupertinoDialogActionPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: CupertinoAlertDialog(
+              title: const Text('Title'),
+              content: const Text('Content'),
+              actions: <CupertinoDialogAction>[
+                CupertinoDialogAction(
+                  child: Text('确认'),
+                  isDefaultAction: _isDefaultAction,
+                  isDestructiveAction: _isDestructiveAction,
+                  onPressed: () {},
+                ),
+              ],
+            ),
+          ),
         ),
       ],
     );

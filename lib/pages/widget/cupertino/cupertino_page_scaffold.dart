@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_show/common/my_style.dart';
 
@@ -8,6 +9,7 @@ class CupertinoPageScaffoldPage extends StatefulWidget {
 }
 
 class _CupertinoPageScaffoldPageState extends State<CupertinoPageScaffoldPage> {
+  int _count = 0;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -33,7 +35,7 @@ class _CupertinoPageScaffoldPageState extends State<CupertinoPageScaffoldPage> {
                 ),
               ),
               Text(
-                '',
+                'CupertinoPageScaffold是一个IOS样式的骨架Widget，它包含了导航栏及页面的相关内容。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -65,6 +67,7 @@ class _CupertinoPageScaffoldPageState extends State<CupertinoPageScaffoldPage> {
         ),
         // 展示区域
         Container(
+          height: 300,
           margin: EdgeInsets.only(top: 10),
           decoration: BoxDecoration(
             color: Colors.white,
@@ -77,7 +80,25 @@ class _CupertinoPageScaffoldPageState extends State<CupertinoPageScaffoldPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: CupertinoPageScaffold(
+              backgroundColor: CupertinoColors.white,
+              navigationBar: CupertinoNavigationBar(
+                middle: Text('CupertinoPageScaffold'),
+              ),
+              child: ListView(
+                children: <Widget>[
+                  CupertinoButton(
+                    onPressed: () => setState(() => _count++),
+                    child: Icon(CupertinoIcons.add),
+                  ),
+                  Center(
+                    child: Text('You have pressed the button $_count times.'),
+                  ),
+                ],
+              ),
+            ),
+          ),
         ),
       ],
     );

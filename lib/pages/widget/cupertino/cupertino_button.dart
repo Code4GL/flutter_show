@@ -1,5 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_show/common/my_style.dart';
+import 'package:flutter_show/components/radio_param.dart';
 
 class CupertinoButtonPage extends StatefulWidget {
   @override
@@ -7,6 +9,11 @@ class CupertinoButtonPage extends StatefulWidget {
 }
 
 class _CupertinoButtonPageState extends State<CupertinoButtonPage> {
+  static Function press = () => {};
+  Function _onPressed;
+  EdgeInsetsGeometry _padding = EdgeInsets.zero;
+  Color _color;
+  Color _disabledColor = Colors.grey;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -32,7 +39,7 @@ class _CupertinoButtonPageState extends State<CupertinoButtonPage> {
                 ),
               ),
               Text(
-                '',
+                'IOS样式的按钮，通常使用SizedBox限制其宽高。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -59,6 +66,134 @@ class _CupertinoButtonPageState extends State<CupertinoButtonPage> {
                   fontWeight: MyStyle.titleFontWeight,
                 ),
               ),
+              RadioParam(
+                paramKey: 'onPressed:',
+                paramValue: '',
+                groupValue: _onPressed,
+                items: [
+                  {
+                    'name': 'null',
+                    'value': null,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _onPressed = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'function',
+                    'value': press,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _onPressed = value;
+                      });
+                    },
+                  },
+                ],
+              ),
+              RadioParam(
+                paramKey: 'padding:',
+                paramValue: '$_padding',
+                groupValue: _padding,
+                items: [
+                  {
+                    'name': 'zero',
+                    'value': EdgeInsets.zero,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _padding = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': '20',
+                    'value': EdgeInsets.all(20),
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _padding = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': '30',
+                    'value': EdgeInsets.all(30),
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _padding = value;
+                      });
+                    },
+                  },
+                ],
+              ),
+              RadioParam(
+                paramKey: 'color:',
+                paramValue: '',
+                groupValue: _color,
+                items: [
+                  {
+                    'name': 'null',
+                    'value': null,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _color = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'blue',
+                    'value': Colors.blue,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _color = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'purple',
+                    'value': Colors.purple,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _color = value;
+                      });
+                    },
+                  },
+                ],
+              ),
+              RadioParam(
+                paramKey: 'disabledColor:',
+                paramValue:
+                    '#${_disabledColor.value.toRadixString(16).toUpperCase()}',
+                groupValue: _disabledColor,
+                items: [
+                  {
+                    'name': 'grey',
+                    'value': Colors.grey,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _disabledColor = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'black54',
+                    'value': Colors.black54,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _disabledColor = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'purple',
+                    'value': Colors.purple[100],
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _disabledColor = value;
+                      });
+                    },
+                  },
+                ],
+              ),
             ],
           ),
         ),
@@ -76,7 +211,15 @@ class _CupertinoButtonPageState extends State<CupertinoButtonPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: CupertinoButton(
+              child: Text('CupertinoButton'),
+              padding: _padding,
+              color: _color,
+              disabledColor: _disabledColor,
+              onPressed: _onPressed,
+            ),
+          ),
         ),
       ],
     );

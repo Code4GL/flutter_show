@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_show/common/my_style.dart';
 
@@ -33,33 +34,12 @@ class _CupertinoActionSheetPageState extends State<CupertinoActionSheetPage> {
                 ),
               ),
               Text(
-                '',
+                '这是一个操作列表展示widget，通常结合showCupertinoModalPopup()方法实现从屏幕底部向上滑动来显示操作表。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
                 ),
               )
-            ],
-          ),
-        ),
-        // 参数配置
-        Container(
-          width: double.infinity,
-          padding: EdgeInsets.all(5),
-          decoration: BoxDecoration(
-            color: MyStyle.paramBgColor,
-            borderRadius: MyStyle.borderRadius,
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                '参数配置',
-                style: TextStyle(
-                  color: MyStyle.titleColor,
-                  fontWeight: MyStyle.titleFontWeight,
-                ),
-              ),
             ],
           ),
         ),
@@ -77,7 +57,34 @@ class _CupertinoActionSheetPageState extends State<CupertinoActionSheetPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: CupertinoButton(
+              onPressed: () {
+                showCupertinoModalPopup<void>(
+                  context: context,
+                  builder: (BuildContext context) => CupertinoActionSheet(
+                    title: const Text('Title'),
+                    message: const Text('Message'),
+                    actions: <CupertinoActionSheetAction>[
+                      CupertinoActionSheetAction(
+                        child: const Text('Action One'),
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                      ),
+                      CupertinoActionSheetAction(
+                        child: const Text('Action Two'),
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                      )
+                    ],
+                  ),
+                );
+              },
+              child: const Text('CupertinoActionSheet'),
+            ),
+          ),
         ),
       ],
     );
