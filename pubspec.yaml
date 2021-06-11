@@ -92,6 +92,7 @@ flutter:
     - assets/images/cupertino/cupertino-activity-indicator.png
     - assets/images/cupertino/cupertino-alert-dialog.png
     - assets/images/cupertino/cupertino-button.png
+    - assets/images/cupertino/cupertino-context-menu.png
     - assets/images/cupertino/cupertino-date-picker.png
     - assets/images/cupertino/cupertino-dialog-action.png
     - assets/images/cupertino/cupertino-dialog.png
@@ -101,8 +102,11 @@ flutter:
     - assets/images/cupertino/cupertino-page-transition.png
     - assets/images/cupertino/cupertino-picker.png
     - assets/images/cupertino/cupertino-scrollbar.png
+    - assets/images/cupertino/cupertino-search-field.png
     - assets/images/cupertino/cupertino-segmented-control.png
     - assets/images/cupertino/cupertino-slider.png
+    - assets/images/cupertino/cupertino-sliding-segmented-control.png
+    - assets/images/cupertino/cupertino-sliver-navigation-bar.png
     - assets/images/cupertino/cupertino-switch.png
     - assets/images/cupertino/cupertino-tab-bar.png
     - assets/images/cupertino/cupertino-tab-scaffold.png

@@ -3,57 +3,67 @@
         "title": "CupertinoActionSheet",
         "introductionEN": "An iOS-style modal bottom action sheet to choose an option among many.",
         "introductionCN": "iOS风格的模式底部操作表，可在众多选项中选择一个选项。",
-        "routeName": "",
+        "routeName": "Widget/Cupertino/CupertinoActionSheet",
         "imagePath": "assets/images/cupertino/cupertino-action-sheet.png",
         "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoActionSheet-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatelessWidget>CupertinoActionSheet",
+        "constructors": "CupertinoActionSheet({Key? key, Widget? title, Widget? message, List<Widget>? actions, ScrollController? messageScrollController, ScrollController? actionScrollController, Widget? cancelButton})"
     },
     {
         "title": "CupertinoActivityIndicator",
         "introductionEN": "An iOS-style activity indicator. Displays a circular 'spinner'.",
         "introductionCN": "iOS风格的活动指示器。显示圆形'微调器'。",
-        "routeName": "",
+        "routeName": "Widget/Cupertino/CupertinoActivityIndicator",
         "imagePath": "assets/images/cupertino/cupertino-activity-indicator.png",
         "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoActivityIndicator-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>CupertinoActivityIndicator",
+        "constructors": "CupertinoActivityIndicator({Key? key, bool animating, double radius})"
     },
     {
         "title": "CupertinoAlertDialog",
         "introductionEN": "An iOS-style alert dialog.",
         "introductionCN": "iOS风格的警报对话框。",
-        "routeName": "",
+        "routeName": "Widget/Cupertino/CupertinoAlertDialog",
         "imagePath": "assets/images/cupertino/cupertino-alert-dialog.png",
         "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoAlertDialog-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatelessWidget>CupertinoAlertDialog",
+        "constructors": "CupertinoAlertDialog({Key? key, Widget? title, Widget? content, List<Widget> actions, ScrollController? scrollController, ScrollController? actionScrollController, Duration insetAnimationDuration, Curve insetAnimationCurve})"
     },
     {
         "title": "CupertinoButton",
         "introductionEN": "An iOS-style button.",
         "introductionCN": "iOS风格的按钮。",
-        "routeName": "",
+        "routeName": "Widget/Cupertino/CupertinoButton",
         "imagePath": "assets/images/cupertino/cupertino-button.png",
         "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoButton-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>CupertinoButton",
+        "constructors": "CupertinoButton({Key? key, required Widget child, EdgeInsetsGeometry? padding, Color? color, Color disabledColor, double? minSize, double? pressedOpacity, BorderRadius? borderRadius, AlignmentGeometry alignment, required VoidCallback? onPressed})"
+    },
+    {
+        "title": "CupertinoContextMenu",
+        "introductionEN": "An iOS-style full-screen modal route that opens when the child is long-pressed. Used to display relevant actions for your content.",
+        "introductionCN": "一个iOS风格的全屏模态路由，当孩子长按时打开。用于显示与您的内容相关的操作。",
+        "routeName": "Widget/Cupertino/CupertinoContextMenu",
+        "imagePath": "assets/images/cupertino/cupertino-context-menu.png",
+        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoContextMenu-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>CupertinoContextMenu",
+        "constructors": "CupertinoContextMenu({Key? key, required List<Widget> actions, required Widget child, ContextMenuPreviewBuilder? previewBuilder})"
     },
     {
         "title": "CupertinoDatePicker",
         "introductionEN": "An iOS-style date or date and time picker.",
         "introductionCN": "iOS风格的日期或日期和时间选择器。",
-        "routeName": "",
+        "routeName": "Widget/Cupertino/CupertinoDatePicker",
         "imagePath": "assets/images/cupertino/cupertino-date-picker.png",
         "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoDatePicker-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>CupertinoDatePicker",
+        "constructors": "CupertinoDatePicker({Key? key, CupertinoDatePickerMode mode, required ValueChanged<DateTime> onDateTimeChanged, DateTime? initialDateTime, DateTime? minimumDate, DateTime? maximumDate, int minimumYear, int? maximumYear, int minuteInterval, bool use24hFormat, Color? backgroundColor})"
     },
     {
         "title": "CupertinoDialog",
         "introductionEN": "An iOS-style dialog.",
         "introductionCN": "iOS风格的对话框。",
-        "routeName": "",
+        "routeName": "Widget/Cupertino/CupertinoDialog",
         "imagePath": "assets/images/cupertino/cupertino-dialog.png",
         "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoDialog-class.html",
         "inheritance": "",
@@ -63,160 +73,190 @@
         "title": "CupertinoDialogAction",
         "introductionEN": "A button typically used in a CupertinoAlertDialog.",
         "introductionCN": "通常用于CupertinoAlertDialog的按钮。",
-        "routeName": "",
+        "routeName": "Widget/Cupertino/CupertinoDialogAction",
         "imagePath": "assets/images/cupertino/cupertino-dialog-action.png",
         "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoDialogAction-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatelessWidget>CupertinoDialogAction",
+        "constructors": "CupertinoDialogAction({Key? key, VoidCallback? onPressed, bool isDefaultAction, bool isDestructiveAction, TextStyle? textStyle, required Widget child})"
     },
     {
         "title": "CupertinoFullscreenDialogTransition",
         "introductionEN": "An iOS-style transition used for summoning fullscreen dialogs.",
         "introductionCN": "用于召唤全屏对话框的iOS风格转换。",
-        "routeName": "",
+        "routeName": "Widget/Cupertino/CupertinoFullscreenDialogTransition",
         "imagePath": "assets/images/cupertino/cupertino-fullscreen-dialog-transition.png",
         "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoFullscreenDialogTransition-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatelessWidget>CupertinoFullscreenDialogTransition",
+        "constructors": "CupertinoFullscreenDialogTransition({Key? key, required Animation<double> primaryRouteAnimation, required Animation<double> secondaryRouteAnimation, required Widget child, required bool linearTransition})"
     },
     {
         "title": "CupertinoNavigationBar",
         "introductionEN": "An iOS-style top navigation bar. Typically used with CupertinoPageScaffold.",
         "introductionCN": "iOS风格的顶部导航栏。通常与CupertinoPageScaffold一起使用。",
-        "routeName": "",
+        "routeName": "Widget/Cupertino/CupertinoNavigationBar",
         "imagePath": "assets/images/cupertino/cupertino-nav-bar.png",
         "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoNavigationBar-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>CupertinoNavigationBar",
+        "constructors": "CupertinoNavigationBar({Key? key, Widget? leading, bool automaticallyImplyLeading, bool automaticallyImplyMiddle, String? previousPageTitle, Widget? middle, Widget? trailing, Border? border, Color? backgroundColor, Brightness? brightness, EdgeInsetsDirectional? padding, bool transitionBetweenRoutes, Object heroTag})"
     },
     {
         "title": "CupertinoPageScaffold",
         "introductionEN": "Basic iOS style page layout structure. Positions a navigation bar and content on a background.",
         "introductionCN": "基本的iOS样式页面布局结构。在背景上定位导航栏和内容。",
-        "routeName": "",
+        "routeName": "Widget/Cupertino/CupertinoPageScaffold",
         "imagePath": "assets/images/cupertino/cupertino-page-scaffold.png",
         "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoPageScaffold-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>CupertinoPageScaffold",
+        "constructors": "CupertinoPageScaffold({Key? key, ObstructingPreferredSizeWidget? navigationBar, Color? backgroundColor, bool resizeToAvoidBottomInset, required Widget child})"
     },
     {
         "title": "CupertinoPageTransition",
         "introductionEN": "Provides an iOS-style page transition animation.",
         "introductionCN": "提供iOS样式的页面过渡动画。",
-        "routeName": "",
+        "routeName": "Widget/Cupertino/CupertinoPageTransition",
         "imagePath": "assets/images/cupertino/cupertino-page-transition.png",
         "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoPageTransition-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatelessWidget>CupertinoPageTransition",
+        "constructors": "CupertinoPageTransition({Key? key, required Animation<double> primaryRouteAnimation, required Animation<double> secondaryRouteAnimation, required Widget child, required bool linearTransition})"
     },
     {
         "title": "CupertinoPicker",
         "introductionEN": "An iOS-style picker control. Used to select an item in a short list.",
         "introductionCN": "iOS风格的选择器控件。用于选择短列表中的项目。",
-        "routeName": "",
+        "routeName": "Widget/Cupertino/CupertinoPicker",
         "imagePath": "assets/images/cupertino/cupertino-picker.png",
         "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoPicker-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>CupertinoPicker",
+        "constructors": "CupertinoPicker({Key? key, double diameterRatio, Color? backgroundColor, double offAxisFraction, bool useMagnifier, double magnification, FixedExtentScrollController? scrollController, double squeeze, required double itemExtent, required ValueChanged<int>? onSelectedItemChanged, required List<Widget> children, Widget? selectionOverlay, bool looping = false})"
     },
     {
         "title": "CupertinoPopupSurface",
         "introductionEN": "Rounded rectangle surface that looks like an iOS popup surface, such as an alert dialog or action sheet.",
         "introductionCN": "圆角矩形表面，看起来像iOS弹出表面，例如警报对话框或操作表。",
-        "routeName": "",
+        "routeName": "Widget/Cupertino/CupertinoPopupSurface",
         "imagePath": "",
         "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoPopupSurface-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatelessWidget>CupertinoPopupSurface",
+        "constructors": "CupertinoPopupSurface({Key? key, bool isSurfacePainted, Widget? child})"
     },
     {
         "title": "CupertinoScrollbar",
         "introductionEN": "An iOS-style scrollbar that indicates which portion of a scrollable widget is currently visible.",
         "introductionCN": "iOS风格的滚动条，指示可滚动窗口小部件的哪个部分当前可见。",
-        "routeName": "",
+        "routeName": "Widget/Cupertino/CupertinoScrollbar",
         "imagePath": "assets/images/cupertino/cupertino-scrollbar.png",
         "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoScrollbar-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>RawScrollbar>CupertinoScrollbar",
+        "constructors": "CupertinoScrollbar({Key? key, required Widget child, ScrollController? controller, bool isAlwaysShown = false, double thickness = defaultThickness, double thicknessWhileDragging, Radius radius = defaultRadius, Radius radiusWhileDragging, ScrollNotificationPredicate? notificationPredicate})"
+    },
+    {
+        "title": "CupertinoSearchTextField",
+        "introductionEN": "An iOS-style search field.",
+        "introductionCN": "一个 iOS 风格的搜索字段。",
+        "routeName": "Widget/Cupertino/CupertinoSearchTextField",
+        "imagePath": "assets/images/cupertino/cupertino-search-field.png",
+        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoSearchTextField-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>CupertinoSearchTextField",
+        "constructors": "CupertinoSearchTextField({Key? key, TextEditingController? controller, ValueChanged<String>? onChanged, ValueChanged<String>? onSubmitted, TextStyle? style, String? placeholder, TextStyle? placeholderStyle, BoxDecoration? decoration, Color? backgroundColor, BorderRadius? borderRadius, EdgeInsetsGeometry padding, Color itemColor, double itemSize, EdgeInsetsGeometry prefixInsets, EdgeInsetsGeometry suffixInsets, Icon suffixIcon, OverlayVisibilityMode suffixMode, VoidCallback? onSuffixTap, String? restorationId, FocusNode? focusNode})"
     },
     {
         "title": "CupertinoSegmentedControl",
         "introductionEN": "An iOS-style segmented control. Used to select mutually exclusive options in a horizontal list.",
         "introductionCN": "iOS风格的分段控件。用于在水平列表中选择互斥选项。",
-        "routeName": "",
+        "routeName": "Widget/Cupertino/CupertinoSegmentedControl",
         "imagePath": "assets/images/cupertino/cupertino-segmented-control.png",
         "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoSegmentedControl-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>CupertinoSegmentedControl",
+        "constructors": "CupertinoSegmentedControl({Key? key, required Map<T, Widget> children, required ValueChanged<T> onValueChanged, T? groupValue, Color? unselectedColor, Color? selectedColor, Color? borderColor, Color? pressedColor, EdgeInsetsGeometry? padding})"
     },
     {
         "title": "CupertinoSlider",
         "introductionEN": "Used to select from a range of values.",
         "introductionCN": "用于从一系列值中进行选择。",
-        "routeName": "",
+        "routeName": "Widget/Cupertino/CupertinoSlider",
         "imagePath": "assets/images/cupertino/cupertino-slider.png",
         "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoSlider-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>CupertinoSlider",
+        "constructors": "CupertinoSlider({Key? key, required double value, required ValueChanged<double>? onChanged, ValueChanged<double>? onChangeStart, ValueChanged<double>? onChangeEnd, double min, double max, int? divisions, Color? activeColor, Color thumbColor})"
+    },
+    {
+        "title": "CupertinoSlidingSegmentedControl",
+        "introductionEN": "An iOS-13-style segmented control. Used to select mutually exclusive options in a horizontal list.",
+        "introductionCN": "一个 iOS-13 风格的分段控件。用于在水平列表中选择互斥选项。",
+        "routeName": "Widget/Cupertino/CupertinoSlidingSegmentedControl",
+        "imagePath": "assets/images/cupertino/cupertino-sliding-segmented-control.png",
+        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoSlidingSegmentedControl-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>CupertinoSlidingSegmentedControl",
+        "constructors": "CupertinoSlidingSegmentedControl({Key? key, required Map<T, Widget> children, required ValueChanged<T?> onValueChanged, T? groupValue, Color thumbColor, EdgeInsetsGeometry padding, Color backgroundColor})"
+    },
+    {
+        "title": "CupertinoSliverNavigationBar",
+        "introductionEN": "An iOS-styled navigation bar with iOS-11-style large titles using slivers.",
+        "introductionCN": "一个 iOS 风格的导航栏，带有使用条子的 iOS-11 风格的大标题。",
+        "routeName": "Widget/Cupertino/CupertinoSliverNavigationBar",
+        "imagePath": "assets/images/cupertino/cupertino-sliver-navigation-bar.png",
+        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoSliverNavigationBar-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>CupertinoSliverNavigationBar",
+        "constructors": "CupertinoSliverNavigationBar({Key? key, Widget? largeTitle, Widget? leading, bool automaticallyImplyLeading, bool automaticallyImplyTitle, String? previousPageTitle, Widget? middle, Widget? trailing, Border? border, Color? backgroundColor, Brightness? brightness, EdgeInsetsDirectional? padding, bool transitionBetweenRoutes, Object heroTag, bool stretch})"
     },
     {
         "title": "CupertinoSwitch",
         "introductionEN": "An iOS-style switch. Used to toggle the on/off state of a single setting.",
         "introductionCN": "iOS风格的开关。用于切换单个设置的开/关状态。",
-        "routeName": "",
+        "routeName": "Widget/Cupertino/CupertinoSwitch",
         "imagePath": "assets/images/cupertino/cupertino-switch.png",
         "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoSwitch-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>CupertinoSwitch",
+        "constructors": "CupertinoSwitch({Key? key, required bool value, required ValueChanged<bool>? onChanged, Color? activeColor, Color? trackColor, DragStartBehavior dragStartBehavior})"
     },
     {
         "title": "CupertinoTabBar",
         "introductionEN": "An iOS-style bottom tab bar. Typically used with CupertinoTabScaffold.",
         "introductionCN": "iOS风格的底部标签栏。通常与CupertinoTabScaffold一起使用。",
-        "routeName": "",
+        "routeName": "Widget/Cupertino/CupertinoTabBar",
         "imagePath": "assets/images/cupertino/cupertino-tab-bar.png",
         "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoTabBar-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatelessWidget>CupertinoTabBar",
+        "constructors": "CupertinoTabBar({Key? key, required List<BottomNavigationBarItem> items, ValueChanged<int>? onTap, int currentIndex, Color? backgroundColor, Color? activeColor, Color inactiveColor, double iconSize, Border? border})"
     },
     {
         "title": "CupertinoTabScaffold",
         "introductionEN": "Tabbed iOS app structure. Positions a tab bar on top of tabs of content.",
         "introductionCN": "选项卡式iOS应用程序结构。将标签栏放在内容标签的顶部。",
-        "routeName": "",
+        "routeName": "Widget/Cupertino/CupertinoTabScaffold",
         "imagePath": "assets/images/cupertino/cupertino-tab-scaffold.png",
         "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoTabScaffold-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>CupertinoTabScaffold",
+        "constructors": "CupertinoTabScaffold({Key? key, required CupertinoTabBar tabBar, required IndexedWidgetBuilder tabBuilder, CupertinoTabController? controller, Color? backgroundColor, bool resizeToAvoidBottomInset, String? restorationId})"
     },
     {
         "title": "CupertinoTabView",
         "introductionEN": "Root content of a tab that supports parallel navigation between tabs. Typically used with CupertinoTabScaffold.",
         "introductionCN": "支持选项卡之间并行导航的选项卡的根内容。通常与CupertinoTabScaffold一起使用。",
-        "routeName": "",
+        "routeName": "Widget/Cupertino/CupertinoTabView",
         "imagePath": "assets/images/cupertino/cupertino-tab-view.png",
         "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoTabView-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>CupertinoTabView",
+        "constructors": "CupertinoTabView({Key? key, WidgetBuilder? builder, GlobalKey<NavigatorState>? navigatorKey, String? defaultTitle, Map<String, WidgetBuilder>? routes, RouteFactory? onGenerateRoute, RouteFactory? onUnknownRoute, List<NavigatorObserver> navigatorObservers, String? restorationScopeId})"
     },
     {
         "title": "CupertinoTextField",
         "introductionEN": "An iOS-style text field.",
         "introductionCN": "iOS风格的文本字段。",
-        "routeName": "",
+        "routeName": "Widget/Cupertino/CupertinoTextField",
         "imagePath": "assets/images/cupertino/cupertino-textfield.png",
         "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoTextField-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>CupertinoTextField",
+        "constructors": "CupertinoTextField({Key? key, TextEditingController? controller, FocusNode? focusNode, BoxDecoration? decoration, EdgeInsetsGeometry padding, String? placeholder, TextStyle? placeholderStyle, Widget? prefix, OverlayVisibilityMode prefixMode, Widget? suffix, OverlayVisibilityMode suffixMode, OverlayVisibilityMode clearButtonMode, TextInputType? keyboardType, TextInputAction? textInputAction, TextCapitalization textCapitalization, TextStyle? style, StrutStyle? strutStyle, TextAlign textAlign, TextAlignVertical? textAlignVertical, bool readOnly, ToolbarOptions? toolbarOptions, bool? showCursor, bool autofocus, String obscuringCharacter, bool obscureText, bool autocorrect, SmartDashesType? smartDashesType, SmartQuotesType? smartQuotesType, bool enableSuggestions, int? maxLines, int? minLines, bool expands, int? maxLength, @Deprecated('Use maxLengthEnforcement parameter which provides more specific ' 'behavior related to the maxLength limit. ' 'This feature was deprecated after v1.25.0-5.0.pre.') bool maxLengthEnforced, MaxLengthEnforcement? maxLengthEnforcement, ValueChanged<String>? onChanged, VoidCallback? onEditingComplete, ValueChanged<String>? onSubmitted, List<TextInputFormatter>? inputFormatters, bool? enabled, double cursorWidth, double? cursorHeight, Radius cursorRadius, Color? cursorColor, BoxHeightStyle selectionHeightStyle, BoxWidthStyle selectionWidthStyle, Brightness? keyboardAppearance, EdgeInsets scrollPadding, DragStartBehavior dragStartBehavior, bool enableInteractiveSelection, TextSelectionControls? selectionControls, GestureTapCallback? onTap, ScrollController? scrollController, ScrollPhysics? scrollPhysics, Iterable<String>? autofillHints, String? restorationId})"
     },
     {
         "title": "CupertinoTimerPicker",
         "introductionEN": "An iOS-style countdown timer picker.",
         "introductionCN": "iOS风格的倒数计时器选择器。",
-        "routeName": "",
+        "routeName": "Widget/Cupertino/CupertinoTimerPicker",
         "imagePath": "assets/images/cupertino/cupertino-timer-picker.png",
         "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoTimerPicker-class.html",
-        "inheritance": "",
-        "constructors": ""
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>CupertinoTimerPicker",
+        "constructors": "CupertinoTimerPicker({Key? key, CupertinoTimerPickerMode mode, Duration initialTimerDuration, int minuteInterval, int secondInterval, AlignmentGeometry alignment, Color? backgroundColor, required ValueChanged<Duration> onTimerDurationChanged})"
     }
 ]
