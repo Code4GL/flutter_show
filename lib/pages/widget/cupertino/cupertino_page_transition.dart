@@ -34,33 +34,12 @@ class _CupertinoPageTransitionPageState
                 ),
               ),
               Text(
-                '',
+                '页面从右侧滑入，反向退出。当另一页进入以覆盖它时，它也会以视差运动向左移动。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
                 ),
               )
-            ],
-          ),
-        ),
-        // 参数配置
-        Container(
-          width: double.infinity,
-          padding: EdgeInsets.all(5),
-          decoration: BoxDecoration(
-            color: MyStyle.paramBgColor,
-            borderRadius: MyStyle.borderRadius,
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                '参数配置',
-                style: TextStyle(
-                  color: MyStyle.titleColor,
-                  fontWeight: MyStyle.titleFontWeight,
-                ),
-              ),
             ],
           ),
         ),

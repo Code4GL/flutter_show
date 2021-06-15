@@ -1,5 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_show/common/my_style.dart';
+import 'package:flutter_show/components/radio_param.dart';
 
 class CupertinoSwitchPage extends StatefulWidget {
   @override
@@ -7,6 +9,9 @@ class CupertinoSwitchPage extends StatefulWidget {
 }
 
 class _CupertinoSwitchPageState extends State<CupertinoSwitchPage> {
+  bool _lights = false;
+  Color _activeColor = Colors.green;
+  Color _trackColor = Colors.grey;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -32,7 +37,7 @@ class _CupertinoSwitchPageState extends State<CupertinoSwitchPage> {
                 ),
               ),
               Text(
-                '',
+                'IOS风格的开关widget。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -59,6 +64,76 @@ class _CupertinoSwitchPageState extends State<CupertinoSwitchPage> {
                   fontWeight: MyStyle.titleFontWeight,
                 ),
               ),
+              RadioParam(
+                paramKey: 'activeColor:',
+                paramValue:
+                    '#${_activeColor.value.toRadixString(16).toUpperCase()}',
+                groupValue: _activeColor,
+                items: [
+                  {
+                    'name': 'green',
+                    'value': Colors.green,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _activeColor = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'blue',
+                    'value': Colors.blue,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _activeColor = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'orange',
+                    'value': Colors.orange,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _activeColor = value;
+                      });
+                    },
+                  },
+                ],
+              ),
+              RadioParam(
+                paramKey: 'trackColor:',
+                paramValue:
+                    '#${_trackColor.value.toRadixString(16).toUpperCase()}',
+                groupValue: _trackColor,
+                items: [
+                  {
+                    'name': 'grey',
+                    'value': Colors.grey,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _trackColor = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'lime',
+                    'value': Colors.lime,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _trackColor = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'teal',
+                    'value': Colors.teal,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _trackColor = value;
+                      });
+                    },
+                  },
+                ],
+              ),
             ],
           ),
         ),
@@ -76,7 +151,28 @@ class _CupertinoSwitchPageState extends State<CupertinoSwitchPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: MergeSemantics(
+              child: ListTile(
+                title: const Text('Lights'),
+                trailing: CupertinoSwitch(
+                  value: _lights,
+                  activeColor: _activeColor,
+                  trackColor: _trackColor,
+                  onChanged: (bool value) {
+                    setState(() {
+                      _lights = value;
+                    });
+                  },
+                ),
+                onTap: () {
+                  setState(() {
+                    _lights = !_lights;
+                  });
+                },
+              ),
+            ),
+          ),
         ),
       ],
     );

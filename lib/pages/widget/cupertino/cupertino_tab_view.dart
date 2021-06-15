@@ -32,33 +32,12 @@ class _CupertinoTabViewPageState extends State<CupertinoTabViewPage> {
                 ),
               ),
               Text(
-                '',
+                'CupertinoTabView这个和iOS中的View有很大的区别，它其实并不能理解为View。相比于一个视图，它更像是一个控制器，在CupertinoTabView中提供了路由，导航等功能，同时他也可以根据不同选项卡的下标提供不同的页面。这些导航属性不与任何同级CupertinoTabView或任何祖先或后代Navigator实例共享。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
                 ),
               )
-            ],
-          ),
-        ),
-        // 参数配置
-        Container(
-          width: double.infinity,
-          padding: EdgeInsets.all(5),
-          decoration: BoxDecoration(
-            color: MyStyle.paramBgColor,
-            borderRadius: MyStyle.borderRadius,
-          ),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                '参数配置',
-                style: TextStyle(
-                  color: MyStyle.titleColor,
-                  fontWeight: MyStyle.titleFontWeight,
-                ),
-              ),
             ],
           ),
         ),
