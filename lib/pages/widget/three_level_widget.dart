@@ -115,6 +115,40 @@ import 'layout/sliver_to_box_adapter.dart';
 import 'layout/stack.dart';
 import 'layout/table.dart';
 import 'layout/wrap.dart';
+import 'material/alert_dialog.dart';
+import 'material/bottom_navigation_bar.dart';
+import 'material/bottom_sheet.dart';
+import 'material/card.dart';
+import 'material/checkbox.dart';
+import 'material/chip.dart';
+import 'material/circular_progress_indicator.dart';
+import 'material/data_table.dart';
+import 'material/date_picker.dart';
+import 'material/divider.dart';
+import 'material/drawer.dart';
+import 'material/dropdown_button.dart';
+import 'material/expansion_panel.dart';
+import 'material/floating_action_button.dart';
+import 'material/icon_button.dart';
+import 'material/linear_progress_indicator.dart';
+import 'material/list_tile.dart';
+import 'material/material_app.dart';
+import 'material/outlined_button.dart';
+import 'material/popup_menu_button.dart';
+import 'material/radio.dart';
+import 'material/simple_dialog.dart';
+import 'material/slider.dart';
+import 'material/snack_bar.dart';
+import 'material/stepper.dart';
+import 'material/switch.dart';
+import 'material/tab_bar.dart';
+import 'material/tab_bar_view.dart';
+import 'material/tab_controller.dart';
+import 'material/tab_page_selector.dart';
+import 'material/text_button.dart';
+import 'material/text_field.dart';
+import 'material/tooltip.dart';
+import 'material/widgets_app.dart';
 import 'painting/backdrop_filter.dart';
 import 'painting/clip_oval.dart';
 import 'painting/clip_path.dart';
@@ -308,6 +342,49 @@ class ThreeLevelWidgetPage extends StatelessWidget {
     'Widget/Layout/SliverPadding': SliverPaddingPage(),
     'Widget/Layout/SliverPersistentHeader': SliverPersistentHeaderPage(),
     'Widget/Layout/SliverToBoxAdapter': SliverToBoxAdapterPage(),
+    // Material
+    'Widget/Material/Appbar': AppbarPage(),
+    'Widget/Material/BottomNavigationBar': BottomNavigationBarPage(),
+    'Widget/Material/Drawer': DrawerPage(),
+    'Widget/Material/MaterialApp': MaterialAppPage(),
+    'Widget/Material/Scaffold': ScaffoldPage(),
+    'Widget/Material/SliverAppBar': SliverAppBarPage(),
+    'Widget/Material/TabBar': TabBarPage(),
+    'Widget/Material/TabBarView': TabBarViewPage(),
+    'Widget/Material/TabController': TabControllerPage(),
+    'Widget/Material/TabPageSelector': TabPageSelectorPage(),
+    'Widget/Material/WidgetsApp': WidgetsAppPage(),
+    'Widget/Material/DropdownButton': DropdownButtonPage(),
+    'Widget/Material/ElevatedButton': ElevatedButtonPage(),
+    'Widget/Material/FloatingActionButton': FloatingActionButtonPage(),
+    'Widget/Material/IconButton': IconButtonPage(),
+    'Widget/Material/OutlinedButton': OutlinedButtonPage(),
+    'Widget/Material/PopupMenuButton': PopupMenuButtonPage(),
+    'Widget/Material/TextButton': TextButtonPage(),
+    'Widget/Material/Checkbox': CheckboxPage(),
+    'Widget/Material/DatePicker': DatePickerPage(),
+    'Widget/Material/Radio': RadioPage(),
+    'Widget/Material/Slider': SliderPage(),
+    'Widget/Material/Switch': SwitchPage(),
+    'Widget/Material/TextField': TextFieldPage(),
+    'Widget/Material/AlertDialog': AlertDialogPage(),
+    'Widget/Material/BottomSheet': BottomSheetPage(),
+    'Widget/Material/ExpansionPanel': ExpansionPanelPage(),
+    'Widget/Material/SimpleDialog': SimpleDialogPage(),
+    'Widget/Material/SnackBar': SnackBarPage(),
+    'Widget/Material/Card': CardPage(),
+    'Widget/Material/Chip': ChipPage(),
+    'Widget/Material/CircularProgressIndicator':
+        CircularProgressIndicatorPage(),
+    'Widget/Material/DataTable': DataTablePage(),
+    'Widget/Material/GridView': GridViewPage(),
+    'Widget/Material/Icon': IconPage(),
+    'Widget/Material/Image': ImagePage(),
+    'Widget/Material/LinearProgressIndicator': LinearProgressIndicatorPage(),
+    'Widget/Material/Tooltip': TooltipPage(),
+    'Widget/Material/Divider': DividerPage(),
+    'Widget/Material/ListTile': ListTilePage(),
+    'Widget/Material/Stepper': StepperPage(),
     // Painting
     'Widget/Painting/BackdropFilter': BackdropFilterPage(),
     'Widget/Painting/ClipOval': ClipOvalPage(),

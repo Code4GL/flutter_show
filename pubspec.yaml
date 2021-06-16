@@ -148,9 +148,11 @@ flutter:
     - assets/images/material/material-data-table.png
     - assets/images/material/material-divider.png
     - assets/images/material/material-drawer.png
+    - assets/images/material/material-elevated-button.png
     - assets/images/material/material-floating-action-button.png
     - assets/images/material/material-linear-progress-indicator.png
     - assets/images/material/material-list-tile.png
+    - assets/images/material/material-outlined-button.png
     - assets/images/material/material-popup-menu-button.png
     - assets/images/material/material-radio.png
     - assets/images/material/material-raised-button.png
