@@ -32,7 +32,7 @@ class _DrawerPageState extends State<DrawerPage> {
                 ),
               ),
               Text(
-                '',
+                '抽屉通常与Scaffold.drawer属性一起使用。 drawer的孩子通常是一个ListView，它的第一个孩子是一个DrawerHeader，显示当前用户的状态信息。当Scaffold中的Drawer可用时，AppBar会自动显示适当的IconButton以显示Drawer。 Scaffold会自动处理边缘滑动手势以显示抽屉。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -43,6 +43,7 @@ class _DrawerPageState extends State<DrawerPage> {
         ),
         // 展示区域
         Container(
+          height: 300,
           margin: EdgeInsets.only(top: 10),
           decoration: BoxDecoration(
             color: Colors.white,
@@ -55,7 +56,44 @@ class _DrawerPageState extends State<DrawerPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: Scaffold(
+              appBar: AppBar(
+                title: const Text('Drawer Demo'),
+              ),
+              drawer: Drawer(
+                child: ListView(
+                  padding: EdgeInsets.zero,
+                  children: const <Widget>[
+                    DrawerHeader(
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                      ),
+                      child: Text(
+                        'Drawer Header',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 24,
+                        ),
+                      ),
+                    ),
+                    ListTile(
+                      leading: Icon(Icons.message),
+                      title: Text('Messages'),
+                    ),
+                    ListTile(
+                      leading: Icon(Icons.account_circle),
+                      title: Text('Profile'),
+                    ),
+                    ListTile(
+                      leading: Icon(Icons.settings),
+                      title: Text('Settings'),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
         ),
       ],
     );

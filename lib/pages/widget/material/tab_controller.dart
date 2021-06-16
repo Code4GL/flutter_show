@@ -6,7 +6,21 @@ class TabControllerPage extends StatefulWidget {
   _TabControllerPageState createState() => _TabControllerPageState();
 }
 
-class _TabControllerPageState extends State<TabControllerPage> {
+class _TabControllerPageState extends State<TabControllerPage>
+    with SingleTickerProviderStateMixin {
+  static const List<Tab> myTabs = <Tab>[
+    Tab(text: 'LEFT'),
+    Tab(text: 'RIGHT'),
+  ];
+
+  TabController _tabController;
+
+  @override
+  void initState() {
+    super.initState();
+    _tabController = TabController(vsync: this, length: myTabs.length);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -32,7 +46,7 @@ class _TabControllerPageState extends State<TabControllerPage> {
                 ),
               ),
               Text(
-                '',
+                '构建TabBar或TabBarView比共享它们的状态。当TabBar和TabBarView没有方便的有状态祖先时，可以通过提供DefaultTabController继承的小部件来共享TabController。index属性是所选标签的索引，动画表示标签栏和标签栏视图的当前滚动位置。可以使用animateTo更改所选选项卡的索引。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -43,6 +57,7 @@ class _TabControllerPageState extends State<TabControllerPage> {
         ),
         // 展示区域
         Container(
+          height: 300,
           margin: EdgeInsets.only(top: 10),
           decoration: BoxDecoration(
             color: Colors.white,
@@ -55,7 +70,29 @@ class _TabControllerPageState extends State<TabControllerPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: Scaffold(
+              appBar: AppBar(
+                title: Text('TabController'),
+                bottom: TabBar(
+                  controller: _tabController,
+                  tabs: myTabs,
+                ),
+              ),
+              body: TabBarView(
+                controller: _tabController,
+                children: myTabs.map((Tab tab) {
+                  final String label = tab.text.toLowerCase();
+                  return Center(
+                    child: Text(
+                      'This is the $label tab',
+                      style: const TextStyle(fontSize: 36),
+                    ),
+                  );
+                }).toList(),
+              ),
+            ),
+          ),
         ),
       ],
     );

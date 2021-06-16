@@ -32,7 +32,7 @@ class _TabBarViewPageState extends State<TabBarViewPage> {
                 ),
               ),
               Text(
-                '',
+                '此小部件通常与TabBar结合使用，用于呈现每一个选项卡的具体内容。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
