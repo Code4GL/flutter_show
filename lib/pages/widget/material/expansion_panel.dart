@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_show/common/my_style.dart';
+import 'package:flutter_show/components/boolean_param.dart';
+import 'package:flutter_show/components/radio_param.dart';
 
 class ExpansionPanelPage extends StatefulWidget {
   @override
@@ -7,6 +9,9 @@ class ExpansionPanelPage extends StatefulWidget {
 }
 
 class _ExpansionPanelPageState extends State<ExpansionPanelPage> {
+  final List<Item> _data = generateItems(8);
+  bool _canTapOnHeader = true;
+  Color _backgroundColor = Colors.white;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -41,8 +46,74 @@ class _ExpansionPanelPageState extends State<ExpansionPanelPage> {
             ],
           ),
         ),
+        // 参数配置
+        Container(
+          width: double.infinity,
+          padding: EdgeInsets.all(5),
+          decoration: BoxDecoration(
+            color: MyStyle.paramBgColor,
+            borderRadius: MyStyle.borderRadius,
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                '参数配置',
+                style: TextStyle(
+                  color: MyStyle.titleColor,
+                  fontWeight: MyStyle.titleFontWeight,
+                ),
+              ),
+              BooleanParam(
+                paramKey: 'canTapOnHeader:',
+                paramValue: '$_canTapOnHeader',
+                value: _canTapOnHeader,
+                onChangedCb: (bool value) {
+                  setState(() {
+                    _canTapOnHeader = value;
+                  });
+                },
+              ),
+              RadioParam(
+                paramKey: 'backgroundColor:',
+                paramValue: '',
+                groupValue: _backgroundColor,
+                items: [
+                  {
+                    'name': 'white',
+                    'value': Colors.white,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _backgroundColor = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'yellow',
+                    'value': Colors.yellow,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _backgroundColor = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'amber',
+                    'value': Colors.amber,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _backgroundColor = value;
+                      });
+                    },
+                  },
+                ],
+              ),
+            ],
+          ),
+        ),
         // 展示区域
         Container(
+          height: 300,
           margin: EdgeInsets.only(top: 10),
           decoration: BoxDecoration(
             color: Colors.white,
@@ -55,9 +126,64 @@ class _ExpansionPanelPageState extends State<ExpansionPanelPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: SingleChildScrollView(
+              child: ExpansionPanelList(
+                expansionCallback: (int index, bool isExpanded) {
+                  setState(() {
+                    _data[index].isExpanded = !isExpanded;
+                  });
+                },
+                children: _data.map<ExpansionPanel>((Item item) {
+                  return ExpansionPanel(
+                    canTapOnHeader: _canTapOnHeader,
+                    backgroundColor: _backgroundColor,
+                    isExpanded: item.isExpanded,
+                    headerBuilder: (BuildContext context, bool isExpanded) {
+                      return ListTile(
+                        title: Text(item.headerValue),
+                      );
+                    },
+                    body: ListTile(
+                      title: Text(item.expandedValue),
+                      subtitle: const Text(
+                          'To delete this panel, tap the trash can icon'),
+                      trailing: const Icon(Icons.delete),
+                      onTap: () {
+                        setState(() {
+                          _data.removeWhere(
+                              (Item currentItem) => item == currentItem);
+                        });
+                      },
+                    ),
+                  );
+                }).toList(),
+              ),
+            ),
+          ),
         ),
       ],
     );
   }
+}
+
+class Item {
+  Item({
+    @required this.expandedValue,
+    @required this.headerValue,
+    this.isExpanded = false,
+  });
+
+  String expandedValue;
+  String headerValue;
+  bool isExpanded;
+}
+
+List<Item> generateItems(int numberOfItems) {
+  return List<Item>.generate(numberOfItems, (int index) {
+    return Item(
+      headerValue: 'Panel $index',
+      expandedValue: 'This is item number $index',
+    );
+  });
 }

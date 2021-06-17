@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_show/common/my_style.dart';
+import 'package:flutter_show/components/radio_param.dart';
 
 class OutlinedButtonPage extends StatefulWidget {
   @override
@@ -7,6 +8,8 @@ class OutlinedButtonPage extends StatefulWidget {
 }
 
 class _OutlinedButtonPageState extends State<OutlinedButtonPage> {
+  static Function press = () => {};
+  Function _onPressed;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -32,12 +35,58 @@ class _OutlinedButtonPageState extends State<OutlinedButtonPage> {
                 ),
               ),
               Text(
-                '',
+                'OutlinedButton本质上是一个带有轮廓边框的TextButton。轮廓按钮是中等重点按钮。它们包含重要的操作，但它们不是应用程序中的主要操作。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
                 ),
               )
+            ],
+          ),
+        ),
+        // 参数配置
+        Container(
+          width: double.infinity,
+          padding: EdgeInsets.all(5),
+          decoration: BoxDecoration(
+            color: MyStyle.paramBgColor,
+            borderRadius: MyStyle.borderRadius,
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                '参数配置',
+                style: TextStyle(
+                  color: MyStyle.titleColor,
+                  fontWeight: MyStyle.titleFontWeight,
+                ),
+              ),
+              RadioParam(
+                paramKey: 'onPressed:',
+                paramValue: '',
+                groupValue: _onPressed,
+                items: [
+                  {
+                    'name': 'null',
+                    'value': null,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _onPressed = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'function',
+                    'value': press,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _onPressed = value;
+                      });
+                    },
+                  },
+                ],
+              ),
             ],
           ),
         ),
@@ -55,7 +104,12 @@ class _OutlinedButtonPageState extends State<OutlinedButtonPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: OutlinedButton(
+              onPressed: _onPressed,
+              child: const Text('Click Me'),
+            ),
+          ),
         ),
       ],
     );

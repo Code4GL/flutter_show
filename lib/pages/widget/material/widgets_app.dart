@@ -36,7 +36,7 @@ class _WidgetsAppPageState extends State<WidgetsAppPage> {
                 ),
               ),
               Text(
-                'WidgetsApp是一个App的顶级入口，MaterialApp和CupertinoApp都使用它来实现应用程序的基本功能。也就是说，WidgetsApp具备二者的公共功能，包含路由、物理键位响应处理、主页和Debug功能等，除过主题风格等类似深层定制的功能。',
+                'WidgetsApp是一个App的顶级入口，MaterialApp和CupertinoApp都使用它来实现应用程序的基本功能。也就是说，WidgetsApp具备二者的公共功能，包含路由、物理键位响应处理、主页和Debug功能等，除过主题风格等类似深度定制的功能。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,

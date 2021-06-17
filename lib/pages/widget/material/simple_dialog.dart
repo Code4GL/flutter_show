@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_show/common/my_style.dart';
+import 'package:flutter_show/components/radio_param.dart';
 
 class SimpleDialogPage extends StatefulWidget {
   @override
@@ -7,6 +8,7 @@ class SimpleDialogPage extends StatefulWidget {
 }
 
 class _SimpleDialogPageState extends State<SimpleDialogPage> {
+  Color _backgroundColor = Colors.white;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -32,12 +34,67 @@ class _SimpleDialogPageState extends State<SimpleDialogPage> {
                 ),
               ),
               Text(
-                '',
+                '一个简单的对话框为用户提供了几个选项之间的选择。一个简单的对话框有一个可选的标题，显示在选项上方。通常作为子小部件传递给showDialog，后者显示对话框。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
                 ),
               )
+            ],
+          ),
+        ),
+        // 参数配置
+        Container(
+          width: double.infinity,
+          padding: EdgeInsets.all(5),
+          decoration: BoxDecoration(
+            color: MyStyle.paramBgColor,
+            borderRadius: MyStyle.borderRadius,
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                '参数配置',
+                style: TextStyle(
+                  color: MyStyle.titleColor,
+                  fontWeight: MyStyle.titleFontWeight,
+                ),
+              ),
+              RadioParam(
+                paramKey: 'backgroundColor:',
+                paramValue: '',
+                groupValue: _backgroundColor,
+                items: [
+                  {
+                    'name': 'white',
+                    'value': Colors.white,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _backgroundColor = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'brown',
+                    'value': Colors.brown,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _backgroundColor = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'amber',
+                    'value': Colors.amber,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _backgroundColor = value;
+                      });
+                    },
+                  },
+                ],
+              ),
             ],
           ),
         ),
@@ -55,7 +112,32 @@ class _SimpleDialogPageState extends State<SimpleDialogPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: TextButton(
+              onPressed: () => showDialog<String>(
+                context: context,
+                builder: (BuildContext context) => SimpleDialog(
+                  backgroundColor: _backgroundColor,
+                  title: const Text('Select assignment'),
+                  children: <Widget>[
+                    SimpleDialogOption(
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                      child: const Text('Treasury department'),
+                    ),
+                    SimpleDialogOption(
+                      onPressed: () {
+                        Navigator.pop(context);
+                      },
+                      child: const Text('State department'),
+                    ),
+                  ],
+                ),
+              ),
+              child: const Text('SimpleDialog'),
+            ),
+          ),
         ),
       ],
     );

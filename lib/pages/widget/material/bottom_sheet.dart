@@ -32,7 +32,7 @@ class _BottomSheetPageState extends State<BottomSheetPage> {
                 ),
               ),
               Text(
-                '',
+                'BottomSheet小部件本身很少直接使用。相反，更喜欢使用ScaffoldState.showBottomSheet或Scaffold.bottomSheet创建一个持久的底部工作表，以及使用showModalBottomSheet的模式底部工作表。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -55,7 +55,35 @@ class _BottomSheetPageState extends State<BottomSheetPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: ElevatedButton(
+              child: const Text('showModalBottomSheet'),
+              onPressed: () {
+                showModalBottomSheet<void>(
+                  context: context,
+                  builder: (BuildContext context) {
+                    return Container(
+                      height: 200,
+                      color: Colors.amber,
+                      child: Center(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          mainAxisSize: MainAxisSize.min,
+                          children: <Widget>[
+                            const Text('Modal BottomSheet'),
+                            ElevatedButton(
+                              child: const Text('Close BottomSheet'),
+                              onPressed: () => Navigator.pop(context),
+                            )
+                          ],
+                        ),
+                      ),
+                    );
+                  },
+                );
+              },
+            ),
+          ),
         ),
       ],
     );

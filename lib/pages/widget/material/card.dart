@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_show/common/my_style.dart';
+import 'package:flutter_show/components/radio_param.dart';
 
 class CardPage extends StatefulWidget {
   @override
@@ -7,6 +8,8 @@ class CardPage extends StatefulWidget {
 }
 
 class _CardPageState extends State<CardPage> {
+  Color _color = Colors.white;
+  Color _shadowColor = Colors.grey;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -32,12 +35,101 @@ class _CardPageState extends State<CardPage> {
                 ),
               ),
               Text(
-                '',
+                'Card接受单个widget，但该widget可以是Row，Column或其他包含子级列表的widget。Card内容不能滚动。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
                 ),
               )
+            ],
+          ),
+        ),
+        // 参数配置
+        Container(
+          width: double.infinity,
+          padding: EdgeInsets.all(5),
+          decoration: BoxDecoration(
+            color: MyStyle.paramBgColor,
+            borderRadius: MyStyle.borderRadius,
+          ),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                '参数配置',
+                style: TextStyle(
+                  color: MyStyle.titleColor,
+                  fontWeight: MyStyle.titleFontWeight,
+                ),
+              ),
+              RadioParam(
+                paramKey: 'color:',
+                paramValue: '',
+                groupValue: _color,
+                items: [
+                  {
+                    'name': 'white',
+                    'value': Colors.white,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _color = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'brown',
+                    'value': Colors.brown,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _color = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'amber',
+                    'value': Colors.amber,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _color = value;
+                      });
+                    },
+                  },
+                ],
+              ),
+              RadioParam(
+                paramKey: 'shadowColor:',
+                paramValue: '',
+                groupValue: _shadowColor,
+                items: [
+                  {
+                    'name': 'grey',
+                    'value': Colors.grey,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _shadowColor = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'purple',
+                    'value': Colors.purple,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _shadowColor = value;
+                      });
+                    },
+                  },
+                  {
+                    'name': 'amber',
+                    'value': Colors.amber,
+                    'onChangedCb': (value) {
+                      setState(() {
+                        _shadowColor = value;
+                      });
+                    },
+                  },
+                ],
+              ),
             ],
           ),
         ),
@@ -55,7 +147,38 @@ class _CardPageState extends State<CardPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: Card(
+              color: _color,
+              shadowColor: _shadowColor,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: <Widget>[
+                  const ListTile(
+                    leading: Icon(Icons.album),
+                    title: Text('The Enchanted Nightingale'),
+                    subtitle:
+                        Text('Music by Julie Gable. Lyrics by Sidney Stein.'),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.end,
+                    children: <Widget>[
+                      TextButton(
+                        child: const Text('BUY TICKETS'),
+                        onPressed: () {/* ... */},
+                      ),
+                      const SizedBox(width: 8),
+                      TextButton(
+                        child: const Text('LISTEN'),
+                        onPressed: () {/* ... */},
+                      ),
+                      const SizedBox(width: 8),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
         ),
       ],
     );

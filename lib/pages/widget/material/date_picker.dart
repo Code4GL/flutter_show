@@ -32,7 +32,7 @@ class _DatePickerPageState extends State<DatePickerPage> {
                 ),
               ),
               Text(
-                '',
+                'firstDate是最早的允许日期。lastDate是允许的最晚日期。initialDate必须介于这些日期之间，或者等于其中之一。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -55,7 +55,19 @@ class _DatePickerPageState extends State<DatePickerPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: OutlinedButton(
+              onPressed: () {
+                showDatePicker(
+                  context: context,
+                  firstDate: DateTime(1900, 1, 1, 0, 0),
+                  initialDate: DateTime.now(),
+                  lastDate: DateTime(2050, 12, 31, 60, 60),
+                );
+              },
+              child: const Text('DatePicker'),
+            ),
+          ),
         ),
       ],
     );
