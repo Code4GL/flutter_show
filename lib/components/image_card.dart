@@ -49,8 +49,8 @@ class ImageCard extends StatelessWidget {
         );
       },
       child: Card(
-        margin: EdgeInsets.fromLTRB(10, 5, 10, 5),
-        elevation: 3, //设置阴影
+        margin: EdgeInsets.fromLTRB(10, 10, 10, 5),
+        elevation: 4, //设置阴影
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(10)),
         ), //设置圆角

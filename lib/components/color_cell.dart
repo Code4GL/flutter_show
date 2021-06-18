@@ -10,14 +10,12 @@ class ColorCell extends StatelessWidget {
     this.introductionEN,
     this.introductionCN,
     this.routeName,
-    this.randomColor,
     this.fileName,
   }) : super(key: key);
   final String title;
   final String introductionEN;
   final String introductionCN;
   final String routeName;
-  final Color randomColor;
   final String fileName;
 
   @override
@@ -37,40 +35,34 @@ class ColorCell extends StatelessWidget {
         );
       },
       child: Container(
-        margin: EdgeInsets.fromLTRB(10, 5, 10, 5),
+        padding: EdgeInsets.all(10),
+        margin: EdgeInsets.fromLTRB(10, 10, 10, 5),
         alignment: AlignmentDirectional.centerStart,
         decoration: BoxDecoration(
-          color: randomColor,
-          borderRadius: BorderRadius.all(
-            Radius.circular(10),
-          ),
+          color: Colors.white,
+          borderRadius: BorderRadius.all(Radius.circular(10)),
           boxShadow: [
             BoxShadow(
-              color: randomColor,
-              offset: Offset(0, 0),
-              blurRadius: 5,
-              spreadRadius: 0,
+              offset: Offset(3, 5),
+              blurRadius: 3,
+              spreadRadius: 3,
+              color: Colors.grey[300],
             ),
           ],
         ),
         child: Column(
           children: <Widget>[
             Container(
-              margin: EdgeInsets.fromLTRB(10, 5, 0, 0),
               alignment: AlignmentDirectional.centerStart,
               child: Text(
                 "$title",
                 style: TextStyle(
-                  fontSize: 25,
                   fontWeight: FontWeight.bold,
-                  color: randomColor.computeLuminance() < 0.1
-                      ? Colors.white70
-                      : Colors.black54,
+                  color: Colors.blue,
                 ),
               ),
             ),
             Container(
-              margin: EdgeInsets.fromLTRB(10, 0, 0, 5),
               alignment: AlignmentDirectional.centerStart,
               child: Consumer<LanguageProvider>(
                 builder: (context, LanguageProvider languageProvider, _) =>
@@ -78,11 +70,7 @@ class ColorCell extends StatelessWidget {
                   languageProvider.lang == "zh"
                       ? "$introductionCN"
                       : "$introductionEN",
-                  style: TextStyle(
-                    color: randomColor.computeLuminance() < 0.1
-                        ? Colors.white70
-                        : Colors.black54,
-                  ),
+                  style: TextStyle(color: Colors.black45),
                 ),
               ),
             ),
