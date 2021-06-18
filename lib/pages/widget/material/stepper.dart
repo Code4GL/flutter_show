@@ -7,6 +7,7 @@ class StepperPage extends StatefulWidget {
 }
 
 class _StepperPageState extends State<StepperPage> {
+  int _index = 0;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -32,7 +33,7 @@ class _StepperPageState extends State<StepperPage> {
                 ),
               ),
               Text(
-                '',
+                '小部件是一个灵活的包装器。父类应该根据由它提供的三个回调触发的一些逻辑将currentStep传递给这个小部件。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -55,7 +56,42 @@ class _StepperPageState extends State<StepperPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: Stepper(
+              currentStep: _index,
+              onStepCancel: () {
+                if (_index > 0) {
+                  setState(() {
+                    _index -= 1;
+                  });
+                }
+              },
+              onStepContinue: () {
+                if (_index <= 0) {
+                  setState(() {
+                    _index += 1;
+                  });
+                }
+              },
+              onStepTapped: (int index) {
+                setState(() {
+                  _index = index;
+                });
+              },
+              steps: <Step>[
+                Step(
+                  title: const Text('Step 1 title'),
+                  content: Container(
+                      alignment: Alignment.centerLeft,
+                      child: const Text('Content for Step 1')),
+                ),
+                const Step(
+                  title: Text('Step 2 title'),
+                  content: Text('Content for Step 2'),
+                ),
+              ],
+            ),
+          ),
         ),
       ],
     );

@@ -37,7 +37,7 @@ class _ExpansionPanelPageState extends State<ExpansionPanelPage> {
                 ),
               ),
               Text(
-                '',
+                'ExpansionPanel只能用作ExpansionPanelList的子项。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
