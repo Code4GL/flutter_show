@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:convert' show json;
 
 import 'package:flutter_show/components/language_change.dart';
-import 'package:flutter_show/components/image_card.dart';
+import 'package:flutter_show/components/image_cell.dart';
 
 class SecondaryWidgetPage extends StatelessWidget {
   SecondaryWidgetPage({
@@ -34,7 +34,7 @@ class SecondaryWidgetPage extends StatelessWidget {
               return ListView.builder(
                 itemCount: data.length,
                 itemBuilder: (BuildContext context, int index) {
-                  return ImageCard(
+                  return ImageCell(
                     title: "${data[index]['title']}",
                     introductionEN: "${data[index]['introductionEN']}",
                     introductionCN: "${data[index]['introductionCN']}",

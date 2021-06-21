@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:convert' show json;
 
 import 'package:flutter_show/components/language_change.dart';
-import 'package:flutter_show/components/color_cell.dart';
+import 'package:flutter_show/components/widget_cell.dart';
 
 class WidgetPage extends StatefulWidget {
   WidgetPage({Key key}) : super(key: key);
@@ -38,7 +38,7 @@ class WidgetPageState extends State<WidgetPage> {
               return ListView.builder(
                 itemCount: data.length,
                 itemBuilder: (BuildContext context, int index) {
-                  return ColorCell(
+                  return WidgetCell(
                     title: "${data[index]['title']}",
                     introductionEN: "${data[index]['introductionEN']}",
                     introductionCN: "${data[index]['introductionCN']}",

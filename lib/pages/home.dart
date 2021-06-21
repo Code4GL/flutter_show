@@ -5,7 +5,7 @@ import 'package:flutter_show/provider/theme_provider.dart';
 import 'widget/widget.dart';
 import 'material/material.dart';
 import 'cupertino/cupertino.dart';
-import 'favorites/favorites.dart';
+import 'package/package.dart';
 import 'about/about.dart';
 import 'package:provider/provider.dart';
 
@@ -22,7 +22,7 @@ class _HomeState extends State<Home> {
     WidgetPage(),
     MyMaterialPage(),
     CupertinoPage(),
-    FavouritesPage(),
+    PackagePage(),
   ];
   @override
   void initState() {
@@ -70,8 +70,8 @@ class _HomeState extends State<Home> {
               label: 'Cupertino',
             ),
             BottomNavigationBarItem(
-              icon: Icon(Icons.favorite),
-              label: 'Favorites',
+              icon: Icon(Icons.view_in_ar),
+              label: 'Package',
             ),
           ],
         ),

@@ -4,8 +4,8 @@ import 'package:flutter_show/pages/widget/three_level_widget.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_show/provider/language_provider.dart';
 
-class ImageCard extends StatelessWidget {
-  ImageCard({
+class ImageCell extends StatelessWidget {
+  ImageCell({
     Key key,
     this.title,
     this.introductionEN,
@@ -48,12 +48,21 @@ class ImageCard extends StatelessWidget {
           ),
         );
       },
-      child: Card(
+      child: Container(
         margin: EdgeInsets.fromLTRB(10, 10, 10, 5),
-        elevation: 4, //设置阴影
-        shape: RoundedRectangleBorder(
+        alignment: AlignmentDirectional.centerStart,
+        decoration: BoxDecoration(
+          color: Colors.white,
           borderRadius: BorderRadius.all(Radius.circular(10)),
-        ), //设置圆角
+          boxShadow: [
+            BoxShadow(
+              offset: Offset(3, 3),
+              blurRadius: 3,
+              spreadRadius: 3,
+              color: Colors.grey[300],
+            ),
+          ],
+        ),
         child: Column(
           children: <Widget>[
             Stack(
@@ -82,8 +91,7 @@ class ImageCard extends StatelessWidget {
                   child: Text(
                     "$title",
                     style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.w800,
+                      fontWeight: FontWeight.bold,
                       color: Colors.black54,
                     ),
                   ),

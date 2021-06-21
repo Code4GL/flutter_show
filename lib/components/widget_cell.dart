@@ -3,8 +3,8 @@ import 'package:provider/provider.dart';
 import 'package:flutter_show/provider/language_provider.dart';
 import 'package:flutter_show/pages/widget/secondary_widget.dart';
 
-class ColorCell extends StatelessWidget {
-  ColorCell({
+class WidgetCell extends StatelessWidget {
+  WidgetCell({
     Key key,
     this.title,
     this.introductionEN,

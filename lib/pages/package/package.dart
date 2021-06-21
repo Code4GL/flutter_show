@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
-class FavouritesPage extends StatelessWidget {
+class PackagePage extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('FavouritesPage'),
+        title: Text('Package'),
         centerTitle: true,
         leading: IconButton(
             icon: Icon(Icons.dehaze),
@@ -15,7 +15,7 @@ class FavouritesPage extends StatelessWidget {
             }),
       ),
       body: Center(
-        child: Text('FavouritesPage'),
+        child: Text('PackagePage'),
       ),
     );
   }
