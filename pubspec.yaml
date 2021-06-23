@@ -78,7 +78,7 @@ flutter:
 
     - assets/images/assets/icon.png
     - assets/images/assets/image.png
-
+    # widget
     - assets/images/basics/column.png
     - assets/images/basics/container.png
     - assets/images/basics/layout-structure-regions-mobile.png
@@ -189,3 +189,11 @@ flutter:
     - assets/data/widget/scrolling.json
     - assets/data/widget/styling.json
     - assets/data/widget/text.json
+
+    # package
+    - assets/images/package/hero-bg-static.png
+    - assets/images/package/pub-dev-logo.png
+    - assets/images/package/verified-publisher-icon.png
+
+    - assets/data/package/basics.json
+    - assets/data/package/ui.json

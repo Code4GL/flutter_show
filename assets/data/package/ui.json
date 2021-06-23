@@ -1,0 +1,42 @@
+[
+    {
+        "title": "",
+        "introductionEN": "",
+        "introductionCN": "",
+        "routeName": "",
+        "isNullSafety": true,
+        "isFavourite": true,
+        "owner": "",
+        "ownerPath": "",
+        "detailPath": "",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "LINUX",
+            "MACOS",
+            "WEB",
+            "WINDOWS"
+        ],
+        "dart": []
+    },
+    {
+        "title": "",
+        "introductionEN": "",
+        "introductionCN": "",
+        "routeName": "",
+        "isNullSafety": true,
+        "isFavourite": true,
+        "owner": "",
+        "ownerPath": "",
+        "detailPath": "",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "LINUX",
+            "MACOS",
+            "WEB",
+            "WINDOWS"
+        ],
+        "dart": []
+    }
+]
