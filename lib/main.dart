@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_show/provider/common_provider.dart';
 import 'package:flutter_show/provider/theme_provider.dart';
@@ -27,6 +28,6 @@ class App extends StatefulWidget {
 class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
-    return Home();
+    return GetMaterialApp(home: Home());
   }
 }

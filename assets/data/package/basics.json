@@ -2,7 +2,7 @@
     {
         "title": "cupertino_icons",
         "introductionEN": "Default icons asset for Cupertino widgets based on Apple styled icons",
-        "introductionCN": "基于 Apple 风格图标的 Cupertino 小部件的默认图标资产。",
+        "introductionCN": "基于Apple风格图标的Cupertino小部件的默认图标资产。",
         "routeName": "package/basics/cupertino_icons",
         "isNullSafety": true,
         "isFavourite": false,
@@ -21,6 +21,27 @@
             "NATIVE",
             "JS"
         ],
+        "apiResult": ""
+    },
+    {
+        "title": "get",
+        "introductionEN": "Open screens/snackbars/dialogs without context, manage states and inject dependencies easily with GetX.",
+        "introductionCN": "无需上下文即可打开屏幕/小吃店/对话框，使用GetX轻松管理状态和注入依赖项。",
+        "routeName": "package/basics/get",
+        "isNullSafety": true,
+        "isFavourite": false,
+        "owner": "getx.site",
+        "ownerPath": "https://pub.flutter-io.cn/publishers/getx.site/packages",
+        "detailPath": "https://pub.flutter-io.cn/packages/get",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "LINUX",
+            "MACOS",
+            "WEB",
+            "WINDOWS"
+        ],
+        "dart": [],
         "apiResult": ""
     },
     {

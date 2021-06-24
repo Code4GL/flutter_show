@@ -5,6 +5,7 @@ import 'package:flutter_show/provider/language_provider.dart';
 import 'package:provider/provider.dart';
 
 import 'basics/cupertino_icons.dart';
+import 'basics/get.dart';
 import 'basics/provider.dart';
 import 'basics/webview_flutter.dart';
 
@@ -41,6 +42,7 @@ class PackageDetailPage extends StatelessWidget {
   // routeName路由映射
   final _routes = {
     "package/basics/cupertino_icons": CupertinoIconsPage(),
+    "package/basics/get": GetPage(),
     "package/basics/provider": ProviderPage(),
     "package/basics/webview_flutter": WebviewFlutterPage(),
   };
