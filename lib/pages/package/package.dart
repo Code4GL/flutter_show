@@ -102,6 +102,7 @@ class _PackagePageState extends State<PackagePage>
                                   detailPath: item['detailPath'],
                                   flutter: item['flutter'],
                                   dart: item['dart'],
+                                  apiResult: item['apiResult'],
                                 ),
                               )
                               .toList(),
@@ -111,7 +112,38 @@ class _PackagePageState extends State<PackagePage>
                     return CircularProgressIndicator();
                   },
                 ),
-                Center(child: Text('Content of UI')),
+                FutureBuilder(
+                  future: DefaultAssetBundle.of(context)
+                      .loadString("assets/data/package/ui.json"),
+                  builder: (context, snapshot) {
+                    if (snapshot.hasData) {
+                      List<dynamic> data = json.decode(snapshot.data);
+                      return SingleChildScrollView(
+                        child: Column(
+                          children: data
+                              .map(
+                                (item) => PackageCell(
+                                  title: item['title'],
+                                  introductionEN: item['introductionEN'],
+                                  introductionCN: item['introductionCN'],
+                                  routeName: item['routeName'],
+                                  isNullSafety: item['isNullSafety'],
+                                  isFavourite: item['isFavourite'],
+                                  owner: item['owner'],
+                                  ownerPath: item['ownerPath'],
+                                  detailPath: item['detailPath'],
+                                  flutter: item['flutter'],
+                                  dart: item['dart'],
+                                  apiResult: item['apiResult'],
+                                ),
+                              )
+                              .toList(),
+                        ),
+                      );
+                    }
+                    return CircularProgressIndicator();
+                  },
+                ),
               ],
             ),
           ),

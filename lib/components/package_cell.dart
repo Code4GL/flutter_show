@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_show/pages/package/package_detail.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_show/provider/language_provider.dart';
 
@@ -16,6 +17,7 @@ class PackageCell extends StatelessWidget {
     this.detailPath,
     this.flutter,
     this.dart,
+    this.apiResult,
   }) : super(key: key);
   final String title;
   final String introductionEN;
@@ -28,22 +30,33 @@ class PackageCell extends StatelessWidget {
   final String detailPath;
   final List flutter;
   final List dart;
+  final String apiResult;
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        // Navigator.push(
-        //   context,
-        //   MaterialPageRoute(
-        //     builder: (BuildContext context) {
-        //       return SecondaryWidgetPage(
-        //         title: this.title,
-        //         fileName: this.fileName,
-        //       );
-        //     },
-        //   ),
-        // );
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (BuildContext context) {
+              return PackageDetailPage(
+                title: title,
+                introductionEN: introductionEN,
+                introductionCN: introductionCN,
+                routeName: routeName,
+                isNullSafety: isNullSafety,
+                isFavourite: isFavourite,
+                owner: owner,
+                ownerPath: ownerPath,
+                detailPath: detailPath,
+                flutter: flutter,
+                dart: dart,
+                apiResult: apiResult,
+              );
+            },
+          ),
+        );
       },
       child: Container(
         padding: EdgeInsets.all(10),
@@ -245,6 +258,31 @@ class PackageCell extends StatelessWidget {
                               )
                               .toList(),
                         )
+                      ],
+                    ),
+                  )
+                : Container(),
+            apiResult.length > 0
+                ? Container(
+                    margin: EdgeInsets.only(top: 5),
+                    child: Row(
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Text(
+                          'API Result:',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 11,
+                          ),
+                        ),
+                        Text(
+                          "${apiResult.split('/')[apiResult.split('/').length - 1]}",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 11,
+                            color: Colors.blue[800],
+                          ),
+                        ),
                       ],
                     ),
                   )

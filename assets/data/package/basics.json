@@ -1,30 +1,9 @@
 [
     {
-        "title": "provider",
-        "introductionEN": "A wrapper around InheritedWidget to make them easier to use and more reusable.",
-        "introductionCN": "InheritedWidget的包装器，使它们更易于使用和更可重用。",
-        "routeName": "",
-        "isNullSafety": true,
-        "isFavourite": true,
-        "owner": "dash-overflow.net",
-        "ownerPath": "https://pub.flutter-io.cn/publishers/dash-overflow.net/packages",
-        "detailPath": "https://pub.flutter-io.cn/packages/provider",
-        "flutter": [
-            "ANDROID",
-            "IOS",
-            "LINUX",
-            "MACOS",
-            "WEB",
-            "WINDOWS"
-        ],
-        "dart": [],
-        "apiPath": ""
-    },
-    {
         "title": "cupertino_icons",
         "introductionEN": "Default icons asset for Cupertino widgets based on Apple styled icons",
         "introductionCN": "基于 Apple 风格图标的 Cupertino 小部件的默认图标资产。",
-        "routeName": "",
+        "routeName": "package/basics/cupertino_icons",
         "isNullSafety": true,
         "isFavourite": false,
         "owner": "flutter.dev",
@@ -42,13 +21,34 @@
             "NATIVE",
             "JS"
         ],
-        "apiPath": "https://pub.flutter-io.cn/documentation/webview_flutter/latest/webview_flutter/webview_flutter-library.html"
+        "apiResult": ""
+    },
+    {
+        "title": "provider",
+        "introductionEN": "A wrapper around InheritedWidget to make them easier to use and more reusable.",
+        "introductionCN": "InheritedWidget的包装器，使它们更易于使用和更可重用。",
+        "routeName": "package/basics/provider",
+        "isNullSafety": true,
+        "isFavourite": true,
+        "owner": "dash-overflow.net",
+        "ownerPath": "https://pub.flutter-io.cn/publishers/dash-overflow.net/packages",
+        "detailPath": "https://pub.flutter-io.cn/packages/provider",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "LINUX",
+            "MACOS",
+            "WEB",
+            "WINDOWS"
+        ],
+        "dart": [],
+        "apiResult": ""
     },
     {
         "title": "webview_flutter",
         "introductionEN": "A Flutter plugin that provides a WebView widget on Android and iOS.",
         "introductionCN": "在Android和iOS上提供WebView小部件的Flutter插件。",
-        "routeName": "",
+        "routeName": "package/basics/webview_flutter",
         "isNullSafety": true,
         "isFavourite": false,
         "owner": "flutter.dev",
@@ -59,6 +59,6 @@
             "IOS"
         ],
         "dart": [],
-        "apiPath": ""
+        "apiResult": "https://pub.flutter-io.cn/documentation/webview_flutter/latest/webview_flutter/webview_flutter-library.html"
     }
 ]
