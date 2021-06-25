@@ -66,6 +66,27 @@
         "apiResult": ""
     },
     {
+        "title": "shared_preferences",
+        "introductionEN": "Flutter plugin for reading and writing simple key-value pairs. Wraps NSUserDefaults on iOS and SharedPreferences on Android.",
+        "introductionCN": "Flutter插件，用于读写简单的键值对。在iOS上包装NSUserDefaults，在Android上包装SharedPreferences。",
+        "routeName": "package/basics/shared_preferences",
+        "isNullSafety": true,
+        "isFavourite": true,
+        "owner": "flutter.dev",
+        "ownerPath": "https://pub.flutter-io.cn/publishers/flutter.dev/packages",
+        "detailPath": "https://pub.flutter-io.cn/packages/shared_preferences",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "LINUX",
+            "MACOS",
+            "WEB",
+            "WINDOWS"
+        ],
+        "dart": [],
+        "apiResult": ""
+    },
+    {
         "title": "webview_flutter",
         "introductionEN": "A Flutter plugin that provides a WebView widget on Android and iOS.",
         "introductionCN": "在Android和iOS上提供WebView小部件的Flutter插件。",
