@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:flutter_show/components/language_change.dart';
+import 'package:flutter_show/components/internal_webview.dart';
 import 'package:flutter_show/provider/language_provider.dart';
 import 'package:provider/provider.dart';
 
@@ -68,12 +69,29 @@ class PackageDetailPage extends StatelessWidget {
             Container(
               alignment: Alignment.centerLeft,
               padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
-              child: Text(
-                title,
-                style: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.bold,
-                ),
+              child: Row(
+                children: [
+                  Text(
+                    title,
+                    style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  IconButton(
+                    icon: Icon(Icons.description, color: Colors.blue),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (BuildContext context) {
+                            return InternalWebViewPage(key, title, detailPath);
+                          },
+                        ),
+                      );
+                    },
+                  ),
+                ],
               ),
             ),
             Container(
@@ -98,26 +116,42 @@ class PackageDetailPage extends StatelessWidget {
                   margin: EdgeInsets.only(top: 5, bottom: 5),
                   child: Row(
                     children: [
-                      Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
-                          Image(
-                            height: 12,
-                            width: 12,
-                            color: Colors.grey[600],
-                            image: AssetImage(
-                              'assets/images/package/verified-publisher-icon.png',
+                      GestureDetector(
+                        child: Row(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Image(
+                              height: 12,
+                              width: 12,
+                              color: Colors.grey[600],
+                              image: AssetImage(
+                                'assets/images/package/verified-publisher-icon.png',
+                              ),
                             ),
-                          ),
-                          Text(
-                            "$owner",
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              fontSize: 11,
-                              color: Colors.blue[800],
+                            Text(
+                              "$owner",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: 11,
+                                color: Colors.blue[800],
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (BuildContext context) {
+                                return InternalWebViewPage(
+                                  key,
+                                  owner,
+                                  ownerPath,
+                                );
+                              },
+                            ),
+                          );
+                        },
                       ),
                       isFavourite
                           ? Container(

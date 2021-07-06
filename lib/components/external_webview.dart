@@ -1,25 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-class WebViewPage extends StatefulWidget {
-  WebViewPage(
+/// 外部网页：即没有Navigator的网页
+class ExternalWebViewPage extends StatefulWidget {
+  ExternalWebViewPage(
     Key? key,
     this.title,
     this.url,
   ) : super(key: key);
 
-  final String url;
   final String title;
+  final String url;
 
   @override
-  State<StatefulWidget> createState() => new WebViewPageState(title, url);
+  State<StatefulWidget> createState() => _ExternalWebViewPageState(title, url);
 }
 
-class WebViewPageState extends State<WebViewPage> {
-  String url;
+class _ExternalWebViewPageState extends State<ExternalWebViewPage> {
   String title;
+  String url;
 
-  WebViewPageState(this.title, this.url);
+  _ExternalWebViewPageState(this.title, this.url);
 
   @override
   Widget build(BuildContext context) {
