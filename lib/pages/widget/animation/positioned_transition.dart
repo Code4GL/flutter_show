@@ -9,7 +9,7 @@ class PositionedTransitionPage extends StatefulWidget {
 
 class _PositionedTransitionPageState extends State<PositionedTransitionPage>
     with TickerProviderStateMixin {
-  AnimationController _controller;
+  late AnimationController _controller;
   @override
   initState() {
     super.initState();

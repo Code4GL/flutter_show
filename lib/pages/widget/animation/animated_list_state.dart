@@ -27,7 +27,7 @@ class _AnimatedListStatePageState extends State<AnimatedListStatePage> {
   void _addItem() {
     final int _index = _list.length;
     _list.insert(_index, _index);
-    _listKey.currentState.insertItem(_index);
+    _listKey.currentState!.insertItem(_index);
   }
 
   void _removeItem() {
@@ -36,7 +36,7 @@ class _AnimatedListStatePageState extends State<AnimatedListStatePage> {
     }
     final int _index = _list.length - 1;
     var item = _list[_index].toString();
-    _listKey.currentState.removeItem(
+    _listKey.currentState!.removeItem(
         _index, (context, animation) => _buildItem(item, animation));
     _list.removeAt(_index);
   }

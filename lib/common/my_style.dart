@@ -8,12 +8,12 @@ class MyStyle {
   static BorderRadius borderRadius = BorderRadius.circular(5); // 圆角
 
   // 使用场景样式
-  static Color scenesBgColor = Colors.amber[100]; // 背景颜色
+  static Color scenesBgColor = Colors.amber[100]!; // 背景颜色
   static Color scenesContentColor = Colors.black54; // 内容颜色
   static double scenesContentFontSize = 12; // 内容字号
 
   // 参数配置样式
-  static Color paramBgColor = Colors.grey[300]; // 背景颜色
+  static Color paramBgColor = Colors.grey[300]!; // 背景颜色
   static Color paramKeyColor = Colors.purple; // 内容键的颜色
   static Color paramValueColor = Colors.black54; // 内容值的颜色
   static double paramKeyFontSize = 12; // 内容键的字号

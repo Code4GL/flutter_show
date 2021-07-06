@@ -11,8 +11,8 @@ class CupertinoSearchTextFieldPage extends StatefulWidget {
 
 class _CupertinoSearchTextFieldPageState
     extends State<CupertinoSearchTextFieldPage> {
-  TextEditingController _textController;
-  Color _backgroundColor = Colors.grey[300];
+  late TextEditingController _textController;
+  Color _backgroundColor = Colors.grey[300]!;
   Color _itemColor = Colors.grey;
   BorderRadius _borderRadius = BorderRadius.all(Radius.circular(10));
   double _itemSize = 10.0;

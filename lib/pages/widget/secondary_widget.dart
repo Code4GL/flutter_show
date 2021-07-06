@@ -6,9 +6,9 @@ import 'package:flutter_show/components/image_cell.dart';
 
 class SecondaryWidgetPage extends StatelessWidget {
   SecondaryWidgetPage({
-    Key key,
-    this.title,
-    this.fileName,
+    Key? key,
+    required this.title,
+    required this.fileName,
   }) : super(key: key);
 
   final String title;
@@ -30,7 +30,7 @@ class SecondaryWidgetPage extends StatelessWidget {
               .loadString("assets/data/widget/$fileName.json"),
           builder: (context, snapshot) {
             if (snapshot.hasData) {
-              List<dynamic> data = json.decode(snapshot.data);
+              List<dynamic> data = json.decode(snapshot.data.toString());
               return ListView.builder(
                 itemCount: data.length,
                 itemBuilder: (BuildContext context, int index) {

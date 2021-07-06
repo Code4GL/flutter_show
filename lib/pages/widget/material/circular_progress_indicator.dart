@@ -10,7 +10,7 @@ class CircularProgressIndicatorPage extends StatefulWidget {
 
 class _CircularProgressIndicatorPageState
     extends State<CircularProgressIndicatorPage> with TickerProviderStateMixin {
-  AnimationController controller;
+  late AnimationController controller;
   Color _backgroundColor = Colors.white;
   double _strokeWidth = 3.0;
 

@@ -10,7 +10,7 @@ class AnimatedBuilderPage extends StatefulWidget {
 
 class _AnimatedBuilderPageState extends State<AnimatedBuilderPage>
     with TickerProviderStateMixin {
-  AnimationController _controller;
+  late AnimationController _controller;
 
   @override
   initState() {
@@ -86,7 +86,7 @@ class _AnimatedBuilderPageState extends State<AnimatedBuilderPage>
                   child: Text('Whee!'),
                 ),
               ),
-              builder: (BuildContext context, Widget child) {
+              builder: (BuildContext context, Widget? child) {
                 return Transform.rotate(
                   angle: _controller.value * 2.0 * pi,
                   child: child,

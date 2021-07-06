@@ -8,8 +8,8 @@ class FadeTransitionPage extends StatefulWidget {
 
 class _FadeTransitionPageState extends State<FadeTransitionPage>
     with TickerProviderStateMixin {
-  AnimationController _controller;
-  Animation<double> _animation;
+  late AnimationController _controller;
+  late Animation<double> _animation;
 
   @override
   initState() {

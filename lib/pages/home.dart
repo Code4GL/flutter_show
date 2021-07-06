@@ -10,7 +10,7 @@ import 'about/about.dart';
 import 'package:provider/provider.dart';
 
 class Home extends StatefulWidget {
-  Home({Key key}) : super(key: key);
+  Home({Key? key}) : super(key: key);
 
   @override
   _HomeState createState() => _HomeState();

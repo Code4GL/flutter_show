@@ -134,9 +134,9 @@ class _RadioPageState extends State<RadioPage> {
                   leading: Radio<SingingCharacter>(
                     value: SingingCharacter.lafayette,
                     groupValue: _character,
-                    onChanged: (SingingCharacter value) {
+                    onChanged: (SingingCharacter? value) {
                       setState(() {
-                        _character = value;
+                        _character = value!;
                       });
                     },
                   ),
@@ -148,9 +148,9 @@ class _RadioPageState extends State<RadioPage> {
                     activeColor: _activeColor,
                     value: SingingCharacter.jefferson,
                     groupValue: _character,
-                    onChanged: (SingingCharacter value) {
+                    onChanged: (SingingCharacter? value) {
                       setState(() {
-                        _character = value;
+                        _character = value!;
                       });
                     },
                   ),

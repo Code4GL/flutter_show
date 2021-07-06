@@ -222,9 +222,9 @@ class _DropdownButtonPageState extends State<DropdownButtonPage> {
                 height: 2,
                 color: Colors.deepPurpleAccent,
               ),
-              onChanged: (String newValue) {
+              onChanged: (String? newValue) {
                 setState(() {
-                  _dropdownValue = newValue;
+                  _dropdownValue = newValue!;
                 });
               },
               items: <String>['One', 'Two', 'Free', 'Four']

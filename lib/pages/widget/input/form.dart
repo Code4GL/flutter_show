@@ -66,7 +66,7 @@ class _FormPageState extends State<FormPage> {
                     decoration: InputDecoration(
                       hintText: 'Enter your email',
                     ),
-                    validator: (String value) {
+                    validator: (String? value) {
                       if (value == null || value.isEmpty) {
                         return 'Please enter some text';
                       }
@@ -79,7 +79,7 @@ class _FormPageState extends State<FormPage> {
                       onPressed: () {
                         // Validate will return true if the form is valid, or false if
                         // the form is invalid.
-                        if (_formKey.currentState.validate()) {
+                        if (_formKey.currentState!.validate()) {
                           // Process data.
                         }
                       },

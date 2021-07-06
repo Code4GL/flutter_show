@@ -10,7 +10,7 @@ class CupertinoTextFieldPage extends StatefulWidget {
 }
 
 class _CupertinoTextFieldPageState extends State<CupertinoTextFieldPage> {
-  TextEditingController _textController;
+  late TextEditingController _textController;
   bool _showCursor = true;
   Color _cursorColor = Colors.blue;
   double _cursorHeight = 20.0;

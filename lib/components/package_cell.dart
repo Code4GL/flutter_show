@@ -5,19 +5,19 @@ import 'package:flutter_show/provider/language_provider.dart';
 
 class PackageCell extends StatelessWidget {
   PackageCell({
-    Key key,
-    this.title,
-    this.introductionEN,
-    this.introductionCN,
-    this.routeName,
-    this.isNullSafety,
-    this.isFavourite,
-    this.owner,
-    this.ownerPath,
-    this.detailPath,
-    this.flutter,
-    this.dart,
-    this.apiResult,
+    Key? key,
+    required this.title,
+    required this.introductionEN,
+    required this.introductionCN,
+    required this.routeName,
+    required this.isNullSafety,
+    required this.isFavourite,
+    required this.owner,
+    required this.ownerPath,
+    required this.detailPath,
+    required this.flutter,
+    required this.dart,
+    required this.apiResult,
   }) : super(key: key);
   final String title;
   final String introductionEN;
@@ -70,7 +70,7 @@ class PackageCell extends StatelessWidget {
               offset: Offset(3, 5),
               blurRadius: 3,
               spreadRadius: 3,
-              color: Colors.grey[300],
+              color: Colors.grey[300]!,
             ),
           ],
         ),
@@ -129,7 +129,7 @@ class PackageCell extends StatelessWidget {
                           margin: EdgeInsets.only(left: 5),
                           padding: EdgeInsets.fromLTRB(5, 1, 5, 2),
                           decoration: BoxDecoration(
-                            border: Border.all(color: Colors.blue[800]),
+                            border: Border.all(color: Colors.blue[800]!),
                             borderRadius: BorderRadius.circular(10),
                           ),
                           child: Row(
@@ -151,7 +151,7 @@ class PackageCell extends StatelessWidget {
                           margin: EdgeInsets.only(left: 5),
                           padding: EdgeInsets.fromLTRB(5, 1, 5, 2),
                           decoration: BoxDecoration(
-                            border: Border.all(color: Colors.blue[800]),
+                            border: Border.all(color: Colors.blue[800]!),
                             borderRadius: BorderRadius.circular(10),
                           ),
                           child: Text(
@@ -178,7 +178,7 @@ class PackageCell extends StatelessWidget {
                             border: Border(
                               right: BorderSide(
                                 width: 0.5,
-                                color: Colors.blue[800],
+                                color: Colors.blue[800]!,
                               ),
                             ),
                           ),
@@ -226,7 +226,7 @@ class PackageCell extends StatelessWidget {
                             border: Border(
                               right: BorderSide(
                                 width: 0.5,
-                                color: Colors.blue[800],
+                                color: Colors.blue[800]!,
                               ),
                             ),
                           ),

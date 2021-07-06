@@ -10,7 +10,7 @@ class AnimatedWidgetPage extends StatefulWidget {
 
 class _AnimatedWidgetPageState extends State<AnimatedWidgetPage>
     with TickerProviderStateMixin {
-  AnimationController _controller;
+  late AnimationController _controller;
 
   @override
   initState() {
@@ -86,8 +86,8 @@ class _AnimatedWidgetPageState extends State<AnimatedWidgetPage>
 
 class SpinningContainer extends AnimatedWidget {
   const SpinningContainer({
-    Key key,
-    @required AnimationController controller,
+    Key? key,
+    required AnimationController controller,
   }) : super(key: key, listenable: controller);
 
   Animation<double> get _progress => listenable as Animation<double>;

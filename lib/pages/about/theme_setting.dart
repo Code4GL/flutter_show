@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:flutter_show/provider/theme_provider.dart';
 
 class ThemeSettingPage extends StatelessWidget {
-  ThemeSettingPage({Key key}) : super(key: key);
+  ThemeSettingPage({Key? key}) : super(key: key);
   final List<Color> _themes = Colors.primaries;
   @override
   Widget build(BuildContext context) {

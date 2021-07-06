@@ -16,7 +16,7 @@ class _TabBarPageState extends State<TabBarPage> with TickerProviderStateMixin {
   TabBarIndicatorSize _indicatorSize = TabBarIndicatorSize.tab;
   Color _labelColor = Colors.pink;
   Color _unselectedLabelColor = Colors.white;
-  TabController _tabController;
+  late TabController _tabController;
 
   @override
   void initState() {

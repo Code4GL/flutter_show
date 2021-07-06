@@ -168,9 +168,9 @@ class _CheckboxPageState extends State<CheckboxPage> {
               checkColor: _checkColor,
               tristate: _tristate,
               value: _isChecked,
-              onChanged: (bool value) {
+              onChanged: (bool? value) {
                 setState(() {
-                  _isChecked = value;
+                  _isChecked = value!;
                 });
               },
             ),

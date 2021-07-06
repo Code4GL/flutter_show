@@ -9,7 +9,7 @@ class OutlinedButtonPage extends StatefulWidget {
 
 class _OutlinedButtonPageState extends State<OutlinedButtonPage> {
   static Function press = () => {};
-  Function _onPressed;
+  late Function _onPressed;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -106,7 +106,7 @@ class _OutlinedButtonPageState extends State<OutlinedButtonPage> {
           ),
           child: Center(
             child: OutlinedButton(
-              onPressed: _onPressed,
+              onPressed: () => _onPressed,
               child: const Text('Click Me'),
             ),
           ),

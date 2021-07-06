@@ -270,16 +270,17 @@ class _DataTablePageState extends State<DataTablePage> {
                     if (index.isEven) {
                       return Colors.grey.withOpacity(0.3);
                     }
-                    return null; // Use default value for other states and odd rows.
+                    return Colors
+                        .white; // Use default value for other states and odd rows.
                   }),
                   cells: <DataCell>[
                     DataCell(Text('Row $index')),
                     DataCell(Text('Row $index')),
                   ],
                   selected: selected[index],
-                  onSelectChanged: (bool value) {
+                  onSelectChanged: (bool? value) {
                     setState(() {
-                      selected[index] = value;
+                      selected[index] = value!;
                     });
                   },
                 ),

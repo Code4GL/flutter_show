@@ -179,15 +179,15 @@ import 'text/text.dart';
 
 class ThreeLevelWidgetPage extends StatelessWidget {
   ThreeLevelWidgetPage({
-    Key key,
-    this.title,
-    this.introductionEN,
-    this.introductionCN,
-    this.routeName,
-    this.imagePath,
-    this.docPath,
-    this.inheritance,
-    this.constructors,
+    Key? key,
+    required this.title,
+    required this.introductionEN,
+    required this.introductionCN,
+    required this.routeName,
+    required this.imagePath,
+    required this.docPath,
+    required this.inheritance,
+    required this.constructors,
   }) : super(key: key);
 
   final String title;

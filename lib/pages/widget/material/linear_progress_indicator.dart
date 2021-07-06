@@ -10,7 +10,7 @@ class LinearProgressIndicatorPage extends StatefulWidget {
 
 class _LinearProgressIndicatorPageState
     extends State<LinearProgressIndicatorPage> with TickerProviderStateMixin {
-  AnimationController controller;
+  late AnimationController controller;
   Color _backgroundColor = Colors.white;
   double _minHeight = 3.0;
 

@@ -25,7 +25,7 @@ class MyMaterialPage extends StatelessWidget {
                 .loadString("assets/data/widget/material.json"),
             builder: (context, snapshot) {
               if (snapshot.hasData) {
-                List<dynamic> data = json.decode(snapshot.data);
+                List<dynamic> data = json.decode(snapshot.data.toString());
                 return ListView.builder(
                   itemCount: data.length,
                   itemBuilder: (BuildContext context, int index) {

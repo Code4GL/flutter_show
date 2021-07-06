@@ -169,8 +169,8 @@ class _ExpansionPanelPageState extends State<ExpansionPanelPage> {
 
 class Item {
   Item({
-    @required this.expandedValue,
-    @required this.headerValue,
+    required this.expandedValue,
+    required this.headerValue,
     this.isExpanded = false,
   });
 

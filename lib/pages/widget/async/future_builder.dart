@@ -60,7 +60,7 @@ class _FutureBuilderPageState extends State<FutureBuilderPage> {
           ),
           child: Center(
             child: DefaultTextStyle(
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headline4!,
               textAlign: TextAlign.center,
               child: FutureBuilder<String>(
                 future: _calculation,

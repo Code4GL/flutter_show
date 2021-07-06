@@ -8,8 +8,8 @@ class SlideTransitionPage extends StatefulWidget {
 
 class _SlideTransitionPageState extends State<SlideTransitionPage>
     with SingleTickerProviderStateMixin {
-  AnimationController _controller;
-  Animation<Offset> _offsetAnimation;
+  late AnimationController _controller;
+  late Animation<Offset> _offsetAnimation;
   @override
   initState() {
     super.initState();

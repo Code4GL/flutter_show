@@ -8,8 +8,8 @@ class RotationTransitionPage extends StatefulWidget {
 
 class _RotationTransitionPageState extends State<RotationTransitionPage>
     with TickerProviderStateMixin {
-  AnimationController _controller;
-  Animation<double> _animation;
+  late AnimationController _controller;
+  late Animation<double> _animation;
   @override
   initState() {
     super.initState();

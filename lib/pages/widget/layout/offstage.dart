@@ -13,7 +13,7 @@ class _OffstagePageState extends State<OffstagePage> {
 
   Size _getFlutterLogoSize() {
     final RenderBox renderLogo =
-        _key.currentContext.findRenderObject() as RenderBox;
+        _key.currentContext!.findRenderObject() as RenderBox;
     return renderLogo.size;
   }
 

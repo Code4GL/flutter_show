@@ -63,7 +63,7 @@ class _StreamBuilderPageState extends State<StreamBuilderPage> {
           ),
           child: Center(
             child: DefaultTextStyle(
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headline4!,
               textAlign: TextAlign.center,
               child: Container(
                 alignment: FractionalOffset.center,

@@ -13,7 +13,7 @@ class _TabControllerPageState extends State<TabControllerPage>
     Tab(text: 'RIGHT'),
   ];
 
-  TabController _tabController;
+  late TabController _tabController;
 
   @override
   void initState() {
@@ -82,7 +82,7 @@ class _TabControllerPageState extends State<TabControllerPage>
               body: TabBarView(
                 controller: _tabController,
                 children: myTabs.map((Tab tab) {
-                  final String label = tab.text.toLowerCase();
+                  final String label = tab.text!.toLowerCase();
                   return Center(
                     child: Text(
                       'This is the $label tab',

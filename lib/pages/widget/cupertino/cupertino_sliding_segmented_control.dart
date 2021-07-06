@@ -163,9 +163,9 @@ class _CupertinoSlidingSegmentedControlPageState
                 1: Text('Middle'),
                 2: Text('Right'),
               },
-              onValueChanged: (i) {
+              onValueChanged: (int? i) {
                 setState(() {
-                  _segmentedControlGroupValue = i;
+                  _segmentedControlGroupValue = i!;
                 });
               },
             ),

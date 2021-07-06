@@ -34,7 +34,7 @@ class _DecoratedBoxTransitionPageState extends State<DecoratedBoxTransitionPage>
     ),
   );
 
-  AnimationController _controller;
+  late AnimationController _controller;
 
   @override
   initState() {

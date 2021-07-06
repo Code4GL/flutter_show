@@ -9,7 +9,7 @@ class ElevatedButtonPage extends StatefulWidget {
 
 class _ElevatedButtonPageState extends State<ElevatedButtonPage> {
   static Function press = () => {};
-  Function _onPressed;
+  late Function _onPressed;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -107,7 +107,7 @@ class _ElevatedButtonPageState extends State<ElevatedButtonPage> {
           child: Center(
             child: ElevatedButton(
               child: Text('ElevatedButton'),
-              onPressed: _onPressed,
+              onPressed: () => _onPressed,
             ),
           ),
         ),

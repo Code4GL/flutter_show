@@ -12,7 +12,7 @@ class _TabPageSelectorPageState extends State<TabPageSelectorPage>
   Color _color = Colors.blue;
   Color _selectedColor = Colors.pink;
   double _indicatorSize = 5.0;
-  TabController _tabController;
+  late TabController _tabController;
   static const List<Tab> myTabs = <Tab>[
     Tab(text: 'LEFT'),
     Tab(text: 'RIGHT'),

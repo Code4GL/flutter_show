@@ -9,7 +9,7 @@ class SliverPersistentHeaderPage extends StatefulWidget {
 
 class _SliverPersistentHeaderPageState extends State<SliverPersistentHeaderPage>
     with SingleTickerProviderStateMixin {
-  TabController tabController;
+  late TabController tabController;
 
   @override
   void initState() {
@@ -115,7 +115,7 @@ class _SliverPersistentHeaderPageState extends State<SliverPersistentHeaderPage>
 class StickyTabBarDelegate extends SliverPersistentHeaderDelegate {
   final TabBar child;
 
-  StickyTabBarDelegate({@required this.child});
+  StickyTabBarDelegate({required this.child});
 
   @override
   Widget build(

@@ -3,11 +3,11 @@ import 'package:flutter_show/common/my_style.dart';
 
 class BooleanParam extends StatelessWidget {
   BooleanParam({
-    Key key,
-    this.paramKey,
-    this.paramValue,
-    this.value,
-    this.onChangedCb,
+    Key? key,
+    required this.paramKey,
+    required this.paramValue,
+    required this.value,
+    required this.onChangedCb,
   }) : super(key: key);
 
   final String paramKey; // 参数名称

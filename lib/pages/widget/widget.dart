@@ -5,7 +5,7 @@ import 'package:flutter_show/components/language_change.dart';
 import 'package:flutter_show/components/widget_cell.dart';
 
 class WidgetPage extends StatefulWidget {
-  WidgetPage({Key key}) : super(key: key);
+  WidgetPage({Key? key}) : super(key: key);
 
   @override
   WidgetPageState createState() => WidgetPageState();
@@ -34,7 +34,7 @@ class WidgetPageState extends State<WidgetPage> {
               .loadString("assets/data/widget/widget_list.json"),
           builder: (context, snapshot) {
             if (snapshot.hasData) {
-              List<dynamic> data = json.decode(snapshot.data);
+              List<dynamic> data = json.decode(snapshot.data.toString());
               return ListView.builder(
                 itemCount: data.length,
                 itemBuilder: (BuildContext context, int index) {

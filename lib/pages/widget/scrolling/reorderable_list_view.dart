@@ -14,7 +14,7 @@ class _ReorderableListViewPageState extends State<ReorderableListViewPage> {
   double _anchor = 0.0;
   bool _buildDefaultDragHandles = true;
   bool _reverse = false;
-  EdgeInsetsGeometry _padding = EdgeInsets.all(10);
+  EdgeInsets _padding = EdgeInsets.all(10);
   @override
   Widget build(BuildContext context) {
     final ColorScheme colorScheme = Theme.of(context).colorScheme;

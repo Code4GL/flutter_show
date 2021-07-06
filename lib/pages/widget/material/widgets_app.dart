@@ -117,7 +117,7 @@ class _WidgetsAppPageState extends State<WidgetsAppPage> {
               debugShowCheckedModeBanner: _debugShowCheckedModeBanner,
               showPerformanceOverlay: _showPerformanceOverlay,
               showSemanticsDebugger: _showSemanticsDebugger,
-              builder: (BuildContext context, Widget widget) {
+              builder: (BuildContext context, Widget? widget) {
                 return Center(child: Text('WidgetsApp'));
               },
             ),

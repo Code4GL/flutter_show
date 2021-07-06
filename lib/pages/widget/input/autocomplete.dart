@@ -90,8 +90,8 @@ class _AutocompletePageState extends State<AutocompletePage> {
 @immutable
 class User {
   const User({
-    @required this.email,
-    @required this.name,
+    required this.email,
+    required this.name,
   });
 
   final String email;

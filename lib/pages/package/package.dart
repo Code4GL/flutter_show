@@ -10,7 +10,7 @@ class PackagePage extends StatefulWidget {
 
 class _PackagePageState extends State<PackagePage>
     with SingleTickerProviderStateMixin {
-  TabController _tabController;
+  late TabController _tabController;
 
   @override
   void initState() {
@@ -85,7 +85,8 @@ class _PackagePageState extends State<PackagePage>
                       .loadString("assets/data/package/basics.json"),
                   builder: (context, snapshot) {
                     if (snapshot.hasData) {
-                      List<dynamic> data = json.decode(snapshot.data);
+                      List<dynamic> data =
+                          json.decode(snapshot.data.toString());
                       return SingleChildScrollView(
                         child: Column(
                           children: data
@@ -117,7 +118,8 @@ class _PackagePageState extends State<PackagePage>
                       .loadString("assets/data/package/ui.json"),
                   builder: (context, snapshot) {
                     if (snapshot.hasData) {
-                      List<dynamic> data = json.decode(snapshot.data);
+                      List<dynamic> data =
+                          json.decode(snapshot.data.toString());
                       return SingleChildScrollView(
                         child: Column(
                           children: data
@@ -156,7 +158,7 @@ class _PackagePageState extends State<PackagePage>
 class StickyTabBarDelegate extends SliverPersistentHeaderDelegate {
   final TabBar child;
 
-  StickyTabBarDelegate({@required this.child});
+  StickyTabBarDelegate({required this.child});
 
   @override
   Widget build(

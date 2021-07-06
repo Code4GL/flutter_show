@@ -12,9 +12,9 @@ class CupertinoSegmentedControlPage extends StatefulWidget {
 class _CupertinoSegmentedControlPageState
     extends State<CupertinoSegmentedControlPage> {
   Color _borderColor = Colors.blue;
-  Color _pressedColor = Colors.blue[100];
+  Color _pressedColor = Colors.blue[100]!;
   Color _selectedColor = Colors.blue;
-  Color _unselectedColor = Colors.blue[300];
+  Color _unselectedColor = Colors.blue[300]!;
   @override
   Widget build(BuildContext context) {
     return Column(

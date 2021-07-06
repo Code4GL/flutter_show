@@ -8,8 +8,8 @@ class SizeTransitionPage extends StatefulWidget {
 
 class _SizeTransitionPageState extends State<SizeTransitionPage>
     with TickerProviderStateMixin {
-  AnimationController _controller;
-  Animation<double> _animation;
+  late AnimationController _controller;
+  late Animation<double> _animation;
   @override
   initState() {
     super.initState();

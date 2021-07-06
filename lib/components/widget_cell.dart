@@ -5,12 +5,12 @@ import 'package:flutter_show/pages/widget/secondary_widget.dart';
 
 class WidgetCell extends StatelessWidget {
   WidgetCell({
-    Key key,
-    this.title,
-    this.introductionEN,
-    this.introductionCN,
-    this.routeName,
-    this.fileName,
+    Key? key,
+    required this.title,
+    required this.introductionEN,
+    required this.introductionCN,
+    required this.routeName,
+    required this.fileName,
   }) : super(key: key);
   final String title;
   final String introductionEN;
@@ -46,7 +46,7 @@ class WidgetCell extends StatelessWidget {
               offset: Offset(3, 5),
               blurRadius: 3,
               spreadRadius: 3,
-              color: Colors.grey[300],
+              color: Colors.grey[300]!,
             ),
           ],
         ),

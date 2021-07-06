@@ -8,7 +8,7 @@ class FlowPage extends StatefulWidget {
 
 class _FlowPageState extends State<FlowPage>
     with SingleTickerProviderStateMixin {
-  AnimationController menuAnimation;
+  late AnimationController menuAnimation;
   IconData lastTapped = Icons.notifications;
   final List<IconData> menuItems = <IconData>[
     Icons.home,
@@ -128,7 +128,7 @@ class _FlowPageState extends State<FlowPage>
 }
 
 class FlowMenuDelegate extends FlowDelegate {
-  FlowMenuDelegate({@required this.menuAnimation})
+  FlowMenuDelegate({required this.menuAnimation})
       : super(repaint: menuAnimation);
 
   final Animation<double> menuAnimation;
@@ -142,7 +142,7 @@ class FlowMenuDelegate extends FlowDelegate {
   void paintChildren(FlowPaintingContext context) {
     double dx = 0.0;
     for (int i = 0; i < context.childCount; ++i) {
-      dx = context.getChildSize(i).width * i;
+      dx = context.getChildSize(i)!.width * i;
       context.paintChild(
         i,
         transform: Matrix4.translationValues(

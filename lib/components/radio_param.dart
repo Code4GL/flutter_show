@@ -3,11 +3,11 @@ import 'package:flutter_show/common/my_style.dart';
 
 class RadioParam extends StatelessWidget {
   RadioParam({
-    Key key,
-    this.paramKey,
-    this.paramValue,
+    Key? key,
+    required this.paramKey,
+    required this.paramValue,
     this.groupValue,
-    this.items,
+    required this.items,
   }) : super(key: key);
 
   final String paramKey; // 参数名称
@@ -48,7 +48,7 @@ class RadioParam extends StatelessWidget {
                   Container(
                     width: 25,
                     margin: EdgeInsets.only(left: 5),
-                    child: Radio(
+                    child: Radio<dynamic>(
                       value: item['value'],
                       groupValue: groupValue,
                       activeColor: MyStyle.componentColor,

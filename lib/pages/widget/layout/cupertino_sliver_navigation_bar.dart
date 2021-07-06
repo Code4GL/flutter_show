@@ -12,7 +12,7 @@ class CupertinoSliverNavigationBarPage extends StatefulWidget {
 
 class _CupertinoSliverNavigationBarPageState
     extends State<CupertinoSliverNavigationBarPage> {
-  Color _backgroundColor = Colors.blue[100];
+  Color _backgroundColor = Colors.blue[100]!;
   bool _automaticallyImplyLeading = true;
   @override
   Widget build(BuildContext context) {

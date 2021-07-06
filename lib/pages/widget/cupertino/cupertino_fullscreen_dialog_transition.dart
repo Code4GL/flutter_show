@@ -11,7 +11,7 @@ class CupertinoFullscreenDialogTransitionPage extends StatefulWidget {
 class _CupertinoFullscreenDialogTransitionPageState
     extends State<CupertinoFullscreenDialogTransitionPage>
     with SingleTickerProviderStateMixin {
-  AnimationController _controller;
+  late AnimationController _controller;
 
   @override
   initState() {

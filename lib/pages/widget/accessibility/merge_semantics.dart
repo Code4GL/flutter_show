@@ -82,7 +82,7 @@ class _MergeSemanticsPageState extends State<MergeSemanticsPage> {
                 children: <Widget>[
                   Checkbox(
                     value: true,
-                    onChanged: (bool value) {},
+                    onChanged: (bool? value) {},
                   ),
                   Text('This is a MergeSemantics Widget!'),
                 ],

@@ -9,7 +9,7 @@ class TextFieldPage extends StatefulWidget {
 }
 
 class _TextFieldPageState extends State<TextFieldPage> {
-  TextEditingController _controller;
+  late TextEditingController _controller;
   bool _showCursor = true;
   Color _cursorColor = Colors.blue;
   double _cursorHeight = 20.0;

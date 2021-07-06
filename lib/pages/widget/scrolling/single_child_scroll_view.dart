@@ -59,7 +59,7 @@ class _SingleChildScrollViewPageState extends State<SingleChildScrollViewPage> {
           ),
           child: Center(
             child: DefaultTextStyle(
-              style: Theme.of(context).textTheme.bodyText2,
+              style: Theme.of(context).textTheme.bodyText2!,
               child: LayoutBuilder(
                 builder:
                     (BuildContext context, BoxConstraints viewportConstraints) {

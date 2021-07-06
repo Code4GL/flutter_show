@@ -102,7 +102,7 @@ class _DragTargetPageState extends State<DragTargetPage> {
                   top: 150,
                   left: 150,
                   child: DragTarget(
-                    builder: (BuildContext context, List<String> candidateData,
+                    builder: (BuildContext context, List<String?> candidateData,
                         List<dynamic> rejectedData) {
                       print('DragTarget builder');
                       Color c;
