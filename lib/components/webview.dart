@@ -1,28 +1,32 @@
-// import 'package:flutter/material.dart';
-// import 'package:webview_flutter/webview_flutter.dart';
+import 'package:flutter/material.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 
-// class WebViewPage extends StatefulWidget {
-//   final String url;
-//   final String title;
+class WebViewPage extends StatefulWidget {
+  WebViewPage(
+    Key? key,
+    this.title,
+    this.url,
+  ) : super(key: key);
 
-//   WebViewPage(this.title, this.url);
+  final String url;
+  final String title;
 
-//   @override
-//   State<StatefulWidget> createState() => new WebViewPageState(title, url);
-// }
+  @override
+  State<StatefulWidget> createState() => new WebViewPageState(title, url);
+}
 
-// class WebViewPageState extends State<WebViewPage> {
-//   String url;
-//   String title;
+class WebViewPageState extends State<WebViewPage> {
+  String url;
+  String title;
 
-//   WebViewPageState(this.title, this.url);
+  WebViewPageState(this.title, this.url);
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return WebView(
-//       initialUrl: this.url,
-//       //JS执行模式 是否允许JS执行
-//       javascriptMode: JavascriptMode.unrestricted,
-//     );
-//   }
-// }
+  @override
+  Widget build(BuildContext context) {
+    return WebView(
+      initialUrl: this.url,
+      //JS执行模式:是否允许JS执行
+      javascriptMode: JavascriptMode.unrestricted,
+    );
+  }
+}

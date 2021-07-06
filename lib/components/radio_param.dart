@@ -6,7 +6,7 @@ class RadioParam extends StatelessWidget {
     Key? key,
     required this.paramKey,
     required this.paramValue,
-    this.groupValue,
+    required this.groupValue,
     required this.items,
   }) : super(key: key);
 

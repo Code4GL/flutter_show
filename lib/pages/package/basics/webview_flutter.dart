@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_show/common/my_style.dart';
+import 'package:webview_flutter/webview_flutter.dart';
 
 class WebviewFlutterPage extends StatefulWidget {
   @override
@@ -32,7 +33,7 @@ class _WebviewFlutterPageState extends State<WebviewFlutterPage> {
                 ),
               ),
               Text(
-                '目前M1芯片下MacOS还有问题。',
+                '在iOS上，WebView小部件由WKWebView支持；在Android上，WebView小部件由WebView支持。在M1芯片下MacOS常常会出现fatal error: module shared_preferences not found @import shared_preferences报错，解决方法如下：1、升级Flutter版本到最新；2、在新版本下新建一个项目；3、在新项目下添加webview_flutter；4、把旧项目中ios/Podfile文件中的内容换成新项目中的；5、重新运行flutter pub get后启动项目。在这个过程中，可能需要视情况配套修改一些配置，以满足新版本使用。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -43,6 +44,7 @@ class _WebviewFlutterPageState extends State<WebviewFlutterPage> {
         ),
         // 展示区域
         Container(
+          height: 300,
           margin: EdgeInsets.only(top: 10),
           decoration: BoxDecoration(
             color: Colors.white,
@@ -55,7 +57,13 @@ class _WebviewFlutterPageState extends State<WebviewFlutterPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: WebView(
+              initialUrl: 'https://www.baidu.com/',
+              //JS执行模式:是否允许JS执行
+              javascriptMode: JavascriptMode.unrestricted,
+            ),
+          ),
         ),
       ],
     );
