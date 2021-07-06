@@ -1,0 +1,63 @@
+[
+    {
+        "title": "Flutter Favorites",
+        "introductionEN": "Some of the packages that demonstrate the highest levels of quality, selected by the Flutter Ecosystem Committee.",
+        "introductionCN": "Flutter生态系统委员会选出的一些表现出最高质量水平的软件包。",
+        "routeName": "package/rank/favorites",
+        "imagePath": "assets/images/package/flutter-favorite-logo.png",
+        "detailPath": "https://pub.flutter-io.cn/flutter/favorites",
+        "example": [
+            "mobx",
+            "package_info_plus",
+            "googleapis"
+        ]
+    },
+    {
+        "title": "Most popular packages",
+        "introductionEN": "Some of the most downloaded packages over the past 60 days.",
+        "introductionCN": "过去 60 天内下载次数最多的一些软件包。",
+        "routeName": "package/rank/popularity",
+        "imagePath": "assets/images/package/landing-01.png",
+        "detailPath": "https://pub.flutter-io.cn/packages?sort=popularity",
+        "example": [
+            "collection",
+            "logging",
+            "term_glyph",
+            "path",
+            "firebase_analytics",
+            "connectivity"
+        ]
+    },
+    {
+        "title": "Top Flutter packages",
+        "introductionEN": "Some of the top packages that extend Flutter with new features.",
+        "introductionCN": "一些使用新功能扩展 Flutter 的顶级包。",
+        "routeName": "package/rank/flutter",
+        "imagePath": "assets/images/package/landing-02.png",
+        "detailPath": "https://pub.flutter-io.cn/flutter/packages",
+        "example": [
+            "provider",
+            "native_pdf_view",
+            "liquid_swipe",
+            "flutter_sound",
+            "expandable",
+            "infinite_scroll_pagination"
+        ]
+    },
+    {
+        "title": "Top Dart packages",
+        "introductionEN": "Some of the top packages for any Dart-based app or program.",
+        "introductionCN": "任何基于 Dart 的应用程序或程序的一些顶级软件包。",
+        "routeName": "package/rank/dart",
+        "imagePath": "assets/images/package/landing-03.png",
+        "detailPath": "https://pub.flutter-io.cn/dart/packages",
+        "example": [
+            "hive_generator",
+            "built_value",
+            "version",
+            "charcode",
+            "pdf",
+            "supercharged_dart"
+        ]
+    }
+]

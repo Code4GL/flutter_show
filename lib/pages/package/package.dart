@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'dart:convert' show json;
 import 'package:flutter_show/components/language_change.dart';
 import 'package:flutter_show/components/package_cell.dart';
+import 'package:flutter_show/components/rank_cell.dart';
 
 class PackagePage extends StatefulWidget {
   @override
@@ -15,7 +16,7 @@ class _PackagePageState extends State<PackagePage>
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 2, vsync: this);
+    _tabController = TabController(length: 3, vsync: this);
   }
 
   @override
@@ -65,6 +66,11 @@ class _PackagePageState extends State<PackagePage>
                   Container(
                     width: double.infinity,
                     color: Colors.white,
+                    child: Tab(text: 'Rank'),
+                  ),
+                  Container(
+                    width: double.infinity,
+                    color: Colors.white,
                     child: Tab(text: 'Basics'),
                   ),
                   Container(
@@ -80,6 +86,34 @@ class _PackagePageState extends State<PackagePage>
             child: TabBarView(
               controller: _tabController,
               children: <Widget>[
+                FutureBuilder(
+                  future: DefaultAssetBundle.of(context)
+                      .loadString("assets/data/package/rank.json"),
+                  builder: (context, snapshot) {
+                    if (snapshot.hasData) {
+                      List<dynamic> data =
+                          json.decode(snapshot.data.toString());
+                      return SingleChildScrollView(
+                        child: Column(
+                          children: data
+                              .map(
+                                (item) => RankCell(
+                                  title: item['title'],
+                                  introductionEN: item['introductionEN'],
+                                  introductionCN: item['introductionCN'],
+                                  routeName: item['routeName'],
+                                  imagePath: item['imagePath'],
+                                  detailPath: item['detailPath'],
+                                  example: item['example'],
+                                ),
+                              )
+                              .toList(),
+                        ),
+                      );
+                    }
+                    return CircularProgressIndicator();
+                  },
+                ),
                 FutureBuilder(
                   future: DefaultAssetBundle.of(context)
                       .loadString("assets/data/package/basics.json"),

@@ -198,6 +198,11 @@ flutter:
     - assets/images/package/pub-dev-logo.png
     - assets/images/package/verified-publisher-icon.png
     - assets/images/package/get.png
+    - assets/images/package/flutter-favorite-logo.png
+    - assets/images/package/landing-01.png
+    - assets/images/package/landing-02.png
+    - assets/images/package/landing-03.png
 
+    - assets/data/package/rank.json
     - assets/data/package/basics.json
     - assets/data/package/ui.json
