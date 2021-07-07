@@ -66,6 +66,30 @@
         "apiResult": ""
     },
     {
+        "title": "dio",
+        "introductionEN": "A powerful Http client for Dart, which supports Interceptors, FormData, Request Cancellation, File Downloading, Timeout etc.",
+        "introductionCN": "Dart的强大Http客户端，支持拦截器、FormData、请求取消、文件下载、超时等。",
+        "routeName": "package/basics/dio",
+        "isNullSafety": true,
+        "isFavourite": false,
+        "owner": "flutterchina.club",
+        "ownerPath": "https://pub.flutter-io.cn/publishers/flutterchina.club/packages",
+        "detailPath": "https://pub.flutter-io.cn/packages/dio",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "LINUX",
+            "MACOS",
+            "WEB",
+            "WINDOWS"
+        ],
+        "dart": [
+            "NATIVE",
+            "JS"
+        ],
+        "apiResult": ""
+    },
+    {
         "title": "shared_preferences",
         "introductionEN": "Flutter plugin for reading and writing simple key-value pairs. Wraps NSUserDefaults on iOS and SharedPreferences on Android.",
         "introductionCN": "Flutter插件，用于读写简单的键值对。在iOS上包装NSUserDefaults，在Android上包装SharedPreferences。",

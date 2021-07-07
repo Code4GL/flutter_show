@@ -6,6 +6,7 @@ import 'package:flutter_show/provider/language_provider.dart';
 import 'package:provider/provider.dart';
 
 import 'basics/cupertino_icons.dart';
+import 'basics/dio.dart';
 import 'basics/get.dart';
 import 'basics/provider.dart';
 import 'basics/shared_preferences.dart';
@@ -47,6 +48,7 @@ class PackageDetailPage extends StatelessWidget {
     "package/basics/cupertino_icons": CupertinoIconsPage(),
     "package/basics/get": GetPage(),
     "package/basics/provider": ProviderPage(),
+    "package/basics/dio": DioPage(),
     "package/basics/shared_preferences": SharedPreferencesPage(),
     "package/basics/webview_flutter": WebviewFlutterPage(),
     "package/basics/url_launcher": UrlLauncherPage(),
@@ -87,7 +89,7 @@ class PackageDetailPage extends StatelessWidget {
                         context,
                         MaterialPageRoute(
                           builder: (BuildContext context) {
-                            return InternalWebViewPage(key, title, detailPath);
+                            return InternalWebViewPage(title, detailPath);
                           },
                         ),
                       );
@@ -146,7 +148,6 @@ class PackageDetailPage extends StatelessWidget {
                             MaterialPageRoute(
                               builder: (BuildContext context) {
                                 return InternalWebViewPage(
-                                  key,
                                   owner,
                                   ownerPath,
                                 );
@@ -294,28 +295,43 @@ class PackageDetailPage extends StatelessWidget {
                       )
                     : Container(),
                 apiResult.length > 0
-                    ? Container(
-                        margin: EdgeInsets.only(top: 5),
-                        child: Row(
-                          crossAxisAlignment: CrossAxisAlignment.center,
-                          children: [
-                            Text(
-                              'API Result:',
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontSize: 11,
+                    ? GestureDetector(
+                        child: Container(
+                          margin: EdgeInsets.only(top: 5),
+                          child: Row(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Text(
+                                'API Result:',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 11,
+                                ),
                               ),
-                            ),
-                            Text(
-                              "${apiResult.split('/')[apiResult.split('/').length - 1]}",
-                              textAlign: TextAlign.center,
-                              style: TextStyle(
-                                fontSize: 11,
-                                color: Colors.blue[800],
+                              Text(
+                                "${apiResult.split('/')[apiResult.split('/').length - 1]}",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 11,
+                                  color: Colors.blue[800],
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (BuildContext context) {
+                                return InternalWebViewPage(
+                                  "${apiResult.split('/')[apiResult.split('/').length - 1]}",
+                                  apiResult,
+                                );
+                              },
+                            ),
+                          );
+                        },
                       )
                     : Container(),
               ],

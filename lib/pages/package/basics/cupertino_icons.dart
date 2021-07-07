@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_show/common/my_style.dart';
+import 'package:flutter_show/components/internal_webview.dart';
 
 class CupertinoIconsPage extends StatefulWidget {
   @override
@@ -70,6 +71,37 @@ class _CupertinoIconsPageState extends State<CupertinoIconsPage> {
                     Text('Icons.phone：'),
                     Icon(Icons.phone),
                   ],
+                ),
+                Container(
+                  padding: EdgeInsets.all(10),
+                  child: Row(
+                    children: [
+                      Text(
+                        '查看更多:',
+                        style: TextStyle(fontSize: 10),
+                      ),
+                      GestureDetector(
+                        child: Text(
+                          'https://flutter.github.io/cupertino_icons/',
+                          style: TextStyle(
+                            fontSize: 10,
+                            color: Colors.blue,
+                          ),
+                        ),
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (BuildContext context) {
+                                return InternalWebViewPage('cupertino_icons',
+                                    'https://flutter.github.io/cupertino_icons/');
+                              },
+                            ),
+                          );
+                        },
+                      ),
+                    ],
+                  ),
                 ),
               ],
             ),

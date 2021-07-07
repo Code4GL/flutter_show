@@ -30,7 +30,7 @@ class RankCell extends StatelessWidget {
           context,
           MaterialPageRoute(
             builder: (BuildContext context) {
-              return InternalWebViewPage(key, title, detailPath);
+              return InternalWebViewPage(title, detailPath);
             },
           ),
         );

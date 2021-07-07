@@ -4,10 +4,9 @@ import 'package:webview_flutter/webview_flutter.dart';
 /// 内部网页：包含Navigator的网页
 class InternalWebViewPage extends StatefulWidget {
   InternalWebViewPage(
-    Key? key,
     this.title,
     this.url,
-  ) : super(key: key);
+  );
 
   final String title;
   final String url;
