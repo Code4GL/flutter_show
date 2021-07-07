@@ -33,6 +33,7 @@ dependencies:
   shared_preferences: ^2.0.6
   url_launcher: ^6.0.9
   dio: ^4.0.0
+  google_fonts: ^2.1.0
 
 dev_dependencies:
   flutter_test:

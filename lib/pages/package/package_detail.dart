@@ -13,6 +13,9 @@ import 'basics/shared_preferences.dart';
 import 'basics/url_launcher.dart';
 import 'basics/webview_flutter.dart';
 
+import 'ui/animated_text_kit.dart';
+import 'ui/google_fonts.dart';
+
 class PackageDetailPage extends StatelessWidget {
   PackageDetailPage({
     Key? key,
@@ -45,6 +48,7 @@ class PackageDetailPage extends StatelessWidget {
 
   // routeName路由映射
   final _routes = {
+    // basics
     "package/basics/cupertino_icons": CupertinoIconsPage(),
     "package/basics/get": GetPage(),
     "package/basics/provider": ProviderPage(),
@@ -52,6 +56,9 @@ class PackageDetailPage extends StatelessWidget {
     "package/basics/shared_preferences": SharedPreferencesPage(),
     "package/basics/webview_flutter": WebviewFlutterPage(),
     "package/basics/url_launcher": UrlLauncherPage(),
+    // ui
+    "package/ui/google_fonts": GoogleFontsPage(),
+    "package/ui/animated_text_kit": AnimatedTextKitPage(),
   };
 
   @override
