@@ -9,6 +9,7 @@ import 'basics/cupertino_icons.dart';
 import 'basics/get.dart';
 import 'basics/provider.dart';
 import 'basics/shared_preferences.dart';
+import 'basics/url_launcher.dart';
 import 'basics/webview_flutter.dart';
 
 class PackageDetailPage extends StatelessWidget {
@@ -48,6 +49,7 @@ class PackageDetailPage extends StatelessWidget {
     "package/basics/provider": ProviderPage(),
     "package/basics/shared_preferences": SharedPreferencesPage(),
     "package/basics/webview_flutter": WebviewFlutterPage(),
+    "package/basics/url_launcher": UrlLauncherPage(),
   };
 
   @override

@@ -102,5 +102,26 @@
         ],
         "dart": [],
         "apiResult": "https://pub.flutter-io.cn/documentation/webview_flutter/latest/webview_flutter/webview_flutter-library.html"
+    },
+    {
+        "title": "url_launcher",
+        "introductionEN": "Flutter plugin for launching a URL. Supports web, phone, SMS, and email schemes.",
+        "introductionCN": "用于启动 URL 的 Flutter 插件。支持网络、电话、短信和电子邮件方案。",
+        "routeName": "package/basics/url_launcher",
+        "isNullSafety": true,
+        "isFavourite": true,
+        "owner": "flutter.dev",
+        "ownerPath": "https://pub.flutter-io.cn/publishers/flutter.dev/packages",
+        "detailPath": "https://pub.flutter-io.cn/packages/url_launcher",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "LINUX",
+            "MACOS",
+            "WEB",
+            "WINDOWS"
+        ],
+        "dart": [],
+        "apiResult": ""
     }
 ]
