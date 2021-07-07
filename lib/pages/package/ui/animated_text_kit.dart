@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_show/common/my_style.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 
 class AnimatedTextKitPage extends StatefulWidget {
   @override
@@ -8,6 +9,17 @@ class AnimatedTextKitPage extends StatefulWidget {
 }
 
 class _AnimatedTextKitPageState extends State<AnimatedTextKitPage> {
+  List<Color> _colorizeColors = [
+    Colors.purple,
+    Colors.blue,
+    Colors.yellow,
+    Colors.red,
+  ];
+
+  TextStyle _colorizeTextStyle = TextStyle(
+    fontSize: 50.0,
+    fontFamily: 'Horizon',
+  );
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -33,7 +45,7 @@ class _AnimatedTextKitPageState extends State<AnimatedTextKitPage> {
                 ),
               ),
               Text(
-                '',
+                '一个flutter包，其中包含一些很酷和很棒的文本动画的集合。 Codemagic的电子书“我们喜欢的Flutter库”中的文本动画推荐包。试试我们的现场示例应用程序。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -56,7 +68,116 @@ class _AnimatedTextKitPageState extends State<AnimatedTextKitPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: Column(
+              children: [
+                AnimatedTextKit(
+                  animatedTexts: [
+                    TypewriterAnimatedText(
+                      'Hello world!',
+                      textStyle: const TextStyle(
+                        fontSize: 32.0,
+                        fontWeight: FontWeight.bold,
+                      ),
+                      speed: const Duration(milliseconds: 500),
+                    ),
+                  ],
+                  totalRepeatCount: 4,
+                  pause: const Duration(milliseconds: 1000),
+                  displayFullTextOnTap: true,
+                  stopPauseOnTap: true,
+                ),
+                AnimatedTextKit(
+                  animatedTexts: [
+                    WavyAnimatedText('Hello World'),
+                    WavyAnimatedText('Look at the waves'),
+                  ],
+                  isRepeatingAnimation: true,
+                  onTap: () {
+                    print("Tap Event");
+                  },
+                ),
+                SizedBox(
+                  height: 100.0,
+                  child: DefaultTextStyle(
+                    style: const TextStyle(
+                      fontSize: 30.0,
+                      color: Colors.black,
+                    ),
+                    child: AnimatedTextKit(
+                      animatedTexts: [
+                        TyperAnimatedText('It is not enough to do your best,'),
+                        TyperAnimatedText('you must know what to do,'),
+                        TyperAnimatedText('and then do your best'),
+                        TyperAnimatedText('- W.Edwards Deming'),
+                      ],
+                      onTap: () {
+                        print("Tap Event");
+                      },
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 100.0,
+                  child: DefaultTextStyle(
+                    style: const TextStyle(
+                      color: Colors.black,
+                      fontSize: 50.0,
+                    ),
+                    child: AnimatedTextKit(
+                      animatedTexts: [
+                        ScaleAnimatedText('Think'),
+                        ScaleAnimatedText('Build'),
+                        ScaleAnimatedText('Ship'),
+                      ],
+                      onTap: () {
+                        print("Tap Event");
+                      },
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 100.0,
+                  child: AnimatedTextKit(
+                    animatedTexts: [
+                      ColorizeAnimatedText(
+                        'Larry Page',
+                        textStyle: _colorizeTextStyle,
+                        colors: _colorizeColors,
+                      ),
+                      ColorizeAnimatedText(
+                        'Bill Gates',
+                        textStyle: _colorizeTextStyle,
+                        colors: _colorizeColors,
+                      ),
+                      ColorizeAnimatedText(
+                        'Steve Jobs',
+                        textStyle: _colorizeTextStyle,
+                        colors: _colorizeColors,
+                      ),
+                    ],
+                    isRepeatingAnimation: true,
+                    onTap: () {
+                      print("Tap Event");
+                    },
+                  ),
+                ),
+                SizedBox(
+                  height: 100,
+                  child: TextLiquidFill(
+                    text: 'LIQUIDY',
+                    waveColor: Colors.blueAccent,
+                    boxBackgroundColor: Colors.redAccent,
+                    textStyle: TextStyle(
+                      fontSize: 50.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    boxHeight: 100.0,
+                  ),
+                ),
+              ],
+            ),
+          ),
         ),
       ],
     );
