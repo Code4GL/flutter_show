@@ -17,6 +17,7 @@ import 'ui/animated_text_kit.dart';
 import 'ui/google_fonts.dart';
 
 import 'chart/fl_chart/fl_chart.dart';
+import 'chart/syncfusion_flutter_charts/syncfusion_flutter_charts.dart';
 
 class PackageDetailPage extends StatelessWidget {
   PackageDetailPage({
@@ -63,6 +64,7 @@ class PackageDetailPage extends StatelessWidget {
     "package/ui/animated_text_kit": AnimatedTextKitPage(),
     // chart
     "package/chart/fl_chart": FlChartPage(),
+    "package/chart/syncfusion_flutter_charts": SyncfusionFlutterChartsPage(),
   };
 
   @override
@@ -84,7 +86,7 @@ class PackageDetailPage extends StatelessWidget {
             Container(
               alignment: Alignment.centerLeft,
               padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
-              child: Row(
+              child: Wrap(
                 children: [
                   Text(
                     title,
