@@ -16,6 +16,8 @@ import 'basics/webview_flutter.dart';
 import 'ui/animated_text_kit.dart';
 import 'ui/google_fonts.dart';
 
+import 'chart/fl_chart/fl_chart.dart';
+
 class PackageDetailPage extends StatelessWidget {
   PackageDetailPage({
     Key? key,
@@ -59,6 +61,8 @@ class PackageDetailPage extends StatelessWidget {
     // ui
     "package/ui/google_fonts": GoogleFontsPage(),
     "package/ui/animated_text_kit": AnimatedTextKitPage(),
+    // chart
+    "package/chart/fl_chart": FlChartPage(),
   };
 
   @override

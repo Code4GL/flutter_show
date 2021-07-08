@@ -2,6 +2,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_show/common/my_style.dart';
 
+import 'example/main.dart';
+
 class FlChartPage extends StatefulWidget {
   @override
   _FlChartPageState createState() => _FlChartPageState();
@@ -33,7 +35,7 @@ class _FlChartPageState extends State<FlChartPage> {
                 ),
               ),
               Text(
-                '',
+                '在Flutter中绘制奇妙图表的库。',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -56,7 +58,21 @@ class _FlChartPageState extends State<FlChartPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (BuildContext context) {
+                      return FlChartExamplePage(title: 'FlChartExample');
+                    },
+                  ),
+                );
+              },
+              child: Text('ExamplePage'),
+            ),
+          ),
         ),
       ],
     );
