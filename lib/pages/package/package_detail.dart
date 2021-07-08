@@ -18,6 +18,7 @@ import 'ui/google_fonts.dart';
 
 import 'chart/fl_chart/fl_chart.dart';
 import 'chart/syncfusion_flutter_charts/syncfusion_flutter_charts.dart';
+import 'chart/charts_flutter/charts_flutter.dart';
 
 class PackageDetailPage extends StatelessWidget {
   PackageDetailPage({
@@ -65,6 +66,7 @@ class PackageDetailPage extends StatelessWidget {
     // chart
     "package/chart/fl_chart": FlChartPage(),
     "package/chart/syncfusion_flutter_charts": SyncfusionFlutterChartsPage(),
+    "package/chart/charts_flutter": ChartsFlutterPage(),
   };
 
   @override

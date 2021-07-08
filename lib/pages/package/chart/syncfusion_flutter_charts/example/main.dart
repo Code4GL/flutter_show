@@ -7,11 +7,11 @@ class SyncfusionFlutterChartsExamplePage extends StatefulWidget {
   SyncfusionFlutterChartsExamplePage({Key? key}) : super(key: key);
 
   @override
-  SyncfusionFlutterChartsExamplePageState createState() =>
-      SyncfusionFlutterChartsExamplePageState();
+  _SyncfusionFlutterChartsExamplePageState createState() =>
+      _SyncfusionFlutterChartsExamplePageState();
 }
 
-class SyncfusionFlutterChartsExamplePageState
+class _SyncfusionFlutterChartsExamplePageState
     extends State<SyncfusionFlutterChartsExamplePage> {
   List<_SalesData> data = [
     _SalesData('Jan', 35),
