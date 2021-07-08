@@ -16,7 +16,7 @@ class _PackagePageState extends State<PackagePage>
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 3, vsync: this);
+    _tabController = TabController(length: 5, vsync: this);
   }
 
   @override
@@ -77,6 +77,16 @@ class _PackagePageState extends State<PackagePage>
                     width: double.infinity,
                     color: Colors.white,
                     child: Tab(text: 'UI'),
+                  ),
+                  Container(
+                    width: double.infinity,
+                    color: Colors.white,
+                    child: Tab(text: 'Media'),
+                  ),
+                  Container(
+                    width: double.infinity,
+                    color: Colors.white,
+                    child: Tab(text: 'Chart'),
                   ),
                 ],
               ),
@@ -150,6 +160,72 @@ class _PackagePageState extends State<PackagePage>
                 FutureBuilder(
                   future: DefaultAssetBundle.of(context)
                       .loadString("assets/data/package/ui.json"),
+                  builder: (context, snapshot) {
+                    if (snapshot.hasData) {
+                      List<dynamic> data =
+                          json.decode(snapshot.data.toString());
+                      return SingleChildScrollView(
+                        child: Column(
+                          children: data
+                              .map(
+                                (item) => PackageCell(
+                                  title: item['title'],
+                                  introductionEN: item['introductionEN'],
+                                  introductionCN: item['introductionCN'],
+                                  routeName: item['routeName'],
+                                  isNullSafety: item['isNullSafety'],
+                                  isFavourite: item['isFavourite'],
+                                  owner: item['owner'],
+                                  ownerPath: item['ownerPath'],
+                                  detailPath: item['detailPath'],
+                                  flutter: item['flutter'],
+                                  dart: item['dart'],
+                                  apiResult: item['apiResult'],
+                                ),
+                              )
+                              .toList(),
+                        ),
+                      );
+                    }
+                    return CircularProgressIndicator();
+                  },
+                ),
+                FutureBuilder(
+                  future: DefaultAssetBundle.of(context)
+                      .loadString("assets/data/package/media.json"),
+                  builder: (context, snapshot) {
+                    if (snapshot.hasData) {
+                      List<dynamic> data =
+                          json.decode(snapshot.data.toString());
+                      return SingleChildScrollView(
+                        child: Column(
+                          children: data
+                              .map(
+                                (item) => PackageCell(
+                                  title: item['title'],
+                                  introductionEN: item['introductionEN'],
+                                  introductionCN: item['introductionCN'],
+                                  routeName: item['routeName'],
+                                  isNullSafety: item['isNullSafety'],
+                                  isFavourite: item['isFavourite'],
+                                  owner: item['owner'],
+                                  ownerPath: item['ownerPath'],
+                                  detailPath: item['detailPath'],
+                                  flutter: item['flutter'],
+                                  dart: item['dart'],
+                                  apiResult: item['apiResult'],
+                                ),
+                              )
+                              .toList(),
+                        ),
+                      );
+                    }
+                    return CircularProgressIndicator();
+                  },
+                ),
+                FutureBuilder(
+                  future: DefaultAssetBundle.of(context)
+                      .loadString("assets/data/package/chart.json"),
                   builder: (context, snapshot) {
                     if (snapshot.hasData) {
                       List<dynamic> data =

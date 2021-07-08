@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_show/components/internal_webview.dart';
 
-// import 'package:flutter_show/components/webview.dart';
 import 'package:flutter_show/pages/about/theme_setting.dart';
 
 class AboutPage extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return Drawer(
@@ -27,11 +26,17 @@ class AboutPage extends StatelessWidget {
                   image: AssetImage('assets/images/github.png'),
                 ),
                 onPressed: () {
-                  // Navigator.push(context,
-                  //     MaterialPageRoute(builder: (BuildContext context) {
-                  //   return WebViewPage(
-                  //       'flutter_show', 'https://github.com/Code4GL/flutter_show');
-                  // }));
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (BuildContext context) {
+                        return InternalWebViewPage(
+                          'Code4GL',
+                          'https://github.com/Code4GL',
+                        );
+                      },
+                    ),
+                  );
                 },
               ),
             ],

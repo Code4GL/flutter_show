@@ -1,0 +1,86 @@
+[
+    {
+        "title": "fl_chart",
+        "introductionEN": "强大的Flutter图表库，目前支持折线图、条形图和饼图。",
+        "introductionCN": "在Flutter应用程序中包含来自fonts.google.com的字体的包。",
+        "routeName": "package/chart/fl_chart",
+        "isNullSafety": true,
+        "isFavourite": false,
+        "owner": "ikhoshabi.com",
+        "ownerPath": "https://pub.flutter-io.cn/publishers/ikhoshabi.com/packages",
+        "detailPath": "https://pub.flutter-io.cn/packages/fl_chart",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "LINUX",
+            "MACOS",
+            "WEB",
+            "WINDOWS"
+        ],
+        "dart": [],
+        "apiResult": "https://pub.flutter-io.cn/documentation/fl_chart/latest/fl_chart/fl_chart-library.html"
+    },
+    {
+        "title": "syncfusion_flutter_charts",
+        "introductionEN": "A Flutter Charts library which includes data visualization widgets such as cartesian and circular charts, to create real-time, interactive, high-performance, animated charts.",
+        "introductionCN": "Flutter Charts库，其中包括数据可视化小部件，例如笛卡尔图和圆形图，用于创建实时、交互式、高性能的动画图表。",
+        "routeName": "package/chart/syncfusion_flutter_charts",
+        "isNullSafety": true,
+        "isFavourite": false,
+        "owner": "syncfusion.com",
+        "ownerPath": "https://pub.flutter-io.cn/publishers/syncfusion.com/packages",
+        "detailPath": "https://pub.flutter-io.cn/packages/syncfusion_flutter_charts",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "LINUX",
+            "MACOS",
+            "WEB",
+            "WINDOWS"
+        ],
+        "dart": [],
+        "apiResult": "https://pub.flutter-io.cn/documentation/syncfusion_flutter_charts/latest/charts/ChartAxis-class.html"
+    },
+    {
+        "title": "charts_flutter",
+        "introductionEN": "Material Design charting library for flutter.",
+        "introductionCN": "用于颤振的Material Design图表库。",
+        "routeName": "package/chart/charts_flutter",
+        "isNullSafety": true,
+        "isFavourite": false,
+        "owner": "unknown",
+        "ownerPath": "",
+        "detailPath": "https://pub.flutter-io.cn/packages/charts_flutter",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "LINUX",
+            "MACOS",
+            "WEB",
+            "WINDOWS"
+        ],
+        "dart": [],
+        "apiResult": "https://pub.flutter-io.cn/documentation/charts_flutter/latest/flutter/PieChart-class.html"
+    },
+    {
+        "title": "flutter_echarts",
+        "introductionEN": "A data visualization charts library, based on Apache ECharts, able to build advanced charts like WebGL 3D, GIS map, etc.",
+        "introductionCN": "一个数据可视化图表库，基于Apache ECharts，能够构建高级图表，如WebGL 3D、GIS地图等。",
+        "routeName": "package/chart/flutter_echarts",
+        "isNullSafety": true,
+        "isFavourite": false,
+        "owner": "unknown",
+        "ownerPath": "",
+        "detailPath": "https://pub.flutter-io.cn/packages/flutter_echarts",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "LINUX",
+            "MACOS",
+            "WEB",
+            "WINDOWS"
+        ],
+        "dart": [],
+        "apiResult": ""
+    }
+]

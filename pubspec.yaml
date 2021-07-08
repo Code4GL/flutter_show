@@ -210,3 +210,5 @@ flutter:
     - assets/data/package/rank.json
     - assets/data/package/basics.json
     - assets/data/package/ui.json
+    - assets/data/package/chart.json
+    - assets/data/package/media.json
