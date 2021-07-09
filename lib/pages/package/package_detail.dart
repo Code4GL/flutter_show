@@ -13,6 +13,10 @@ import 'basics/shared_preferences.dart';
 import 'basics/url_launcher.dart';
 import 'basics/webview_flutter.dart';
 
+import 'media/flutter_svg/flutter_svg.dart';
+import 'media/image_picker/image_picker.dart';
+
+import 'media/video_player/video_player.dart';
 import 'ui/animated_text_kit.dart';
 import 'ui/google_fonts.dart';
 
@@ -63,6 +67,10 @@ class PackageDetailPage extends StatelessWidget {
     // ui
     "package/ui/google_fonts": GoogleFontsPage(),
     "package/ui/animated_text_kit": AnimatedTextKitPage(),
+    // media
+    "package/media/image_picker": ImagePickerPage(),
+    "package/media/flutter_svg": FlutterSvgPage(),
+    "package/media/video_player": VideoPlayerPage(),
     // chart
     "package/chart/fl_chart": FlChartPage(),
     "package/chart/syncfusion_flutter_charts": SyncfusionFlutterChartsPage(),

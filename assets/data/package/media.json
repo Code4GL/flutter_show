@@ -23,7 +23,7 @@
         "introductionCN": "Flutter的SVG渲染和小部件库，允许绘制和显示可缩放矢量图形1.1文件。",
         "routeName": "package/media/flutter_svg",
         "isNullSafety": true,
-        "isFavourite": true,
+        "isFavourite": false,
         "owner": "dnfield.dev",
         "ownerPath": "https://pub.flutter-io.cn/publishers/dnfield.dev/packages",
         "detailPath": "https://pub.flutter-io.cn/packages/flutter_svg",
@@ -36,5 +36,23 @@
         ],
         "dart": [],
         "apiResult": "https://pub.flutter-io.cn/documentation/flutter_svg/latest/flutter_svg/DrawableRasterImage-class.html"
+    },
+    {
+        "title": "video_player",
+        "introductionEN": "Flutter plugin for displaying inline video with other Flutter widgets on Android, iOS, and web.",
+        "introductionCN": "Flutter插件，用于在Android、iOS和Web上与其他Flutter小部件一起显示内联视频。",
+        "routeName": "package/media/video_player",
+        "isNullSafety": true,
+        "isFavourite": false,
+        "owner": "flutter.dev",
+        "ownerPath": "https://pub.flutter-io.cn/publishers/flutter.dev/packages",
+        "detailPath": "https://pub.flutter-io.cn/packages/video_player",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "WEB"
+        ],
+        "dart": [],
+        "apiResult": "https://pub.flutter-io.cn/documentation/video_player/latest/video_player/video_player-library.html"
     }
 ]

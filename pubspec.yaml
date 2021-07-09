@@ -39,6 +39,8 @@ dependencies:
   flutter_svg: ^0.22.0
   syncfusion_flutter_charts: ^19.2.46
   charts_flutter: ^0.11.0
+  image_picker: ^0.8.1+3
+  video_player: ^2.1.10
 
 dev_dependencies:
   flutter_test:
@@ -87,139 +89,28 @@ flutter:
         - asset: assets/images/package/fl_chart/digital-7.ttf
 
   assets:
-    - assets/images/flutter.png
-    - assets/images/github.png
-    - assets/images/userImage.png
-    - assets/images/themespace.png
-
-    - assets/images/assets/icon.png
-    - assets/images/assets/image.png
+    - assets/images/
     # widget
-    - assets/images/basics/column.png
-    - assets/images/basics/container.png
-    - assets/images/basics/layout-structure-regions-mobile.png
-    - assets/images/basics/material-app-bar.png
-    - assets/images/basics/material-raised-button.png
-    - assets/images/basics/row.png
-    - assets/images/basics/text.png
-    - assets/images/basics/app_bar.png
+    - assets/images/assets/
+    - assets/images/basics/
+    - assets/images/cupertino/
+    - assets/images/interaction/
+    - assets/images/layout/
+    - assets/images/material/
+    - assets/images/painting/
+    - assets/images/scrolling/
 
-    - assets/images/cupertino/cupertino-action-sheet.png
-    - assets/images/cupertino/cupertino-activity-indicator.png
-    - assets/images/cupertino/cupertino-alert-dialog.png
-    - assets/images/cupertino/cupertino-button.png
-    - assets/images/cupertino/cupertino-context-menu.png
-    - assets/images/cupertino/cupertino-date-picker.png
-    - assets/images/cupertino/cupertino-dialog-action.png
-    - assets/images/cupertino/cupertino-dialog.png
-    - assets/images/cupertino/cupertino-fullscreen-dialog-transition.png
-    - assets/images/cupertino/cupertino-nav-bar.png
-    - assets/images/cupertino/cupertino-page-scaffold.png
-    - assets/images/cupertino/cupertino-page-transition.png
-    - assets/images/cupertino/cupertino-picker.png
-    - assets/images/cupertino/cupertino-scrollbar.png
-    - assets/images/cupertino/cupertino-search-field.png
-    - assets/images/cupertino/cupertino-segmented-control.png
-    - assets/images/cupertino/cupertino-slider.png
-    - assets/images/cupertino/cupertino-sliding-segmented-control.png
-    - assets/images/cupertino/cupertino-sliver-navigation-bar.png
-    - assets/images/cupertino/cupertino-switch.png
-    - assets/images/cupertino/cupertino-tab-bar.png
-    - assets/images/cupertino/cupertino-tab-scaffold.png
-    - assets/images/cupertino/cupertino-tab-view.png
-    - assets/images/cupertino/cupertino-textfield.png
-    - assets/images/cupertino/cupertino-timer-picker.png
-
-    - assets/images/interaction/heroes.png
-
-    - assets/images/layout/align.png
-    - assets/images/layout/aspect-ratio.png
-    - assets/images/layout/baseline.png
-    - assets/images/layout/center.png
-    - assets/images/layout/components-grid-lists.png
-    - assets/images/layout/constrained-box.png
-    - assets/images/layout/material-list-tile.png
-    - assets/images/layout/padding.png
-    - assets/images/layout/sized-box.png
-    - assets/images/layout/stack.png
-    - assets/images/layout/transform.png
-
-    - assets/images/material/components-buttons-other.png
-    - assets/images/material/components-buttons-usage.png
-    - assets/images/material/components-dialogs.png
-    - assets/images/material/components-expansion-panels.png
-    - assets/images/material/components-grid-lists.png
-    - assets/images/material/components-menus.png
-    - assets/images/material/components-pickers.png
-    - assets/images/material/components-steppers.png
-    - assets/images/material/material-alert-dialog.png
-    - assets/images/material/material-app-bar.png
-    - assets/images/material/material-bottom-navigation-bar.png
-    - assets/images/material/material-bottom-sheets.png
-    - assets/images/material/material-button-bar.png
-    - assets/images/material/material-card.png
-    - assets/images/material/material-checkbox.png
-    - assets/images/material/material-chip.png
-    - assets/images/material/material-circular-progress-indicator.png
-    - assets/images/material/material-data-table.png
-    - assets/images/material/material-divider.png
-    - assets/images/material/material-drawer.png
-    - assets/images/material/material-elevated-button.png
-    - assets/images/material/material-floating-action-button.png
-    - assets/images/material/material-linear-progress-indicator.png
-    - assets/images/material/material-list-tile.png
-    - assets/images/material/material-outlined-button.png
-    - assets/images/material/material-popup-menu-button.png
-    - assets/images/material/material-radio.png
-    - assets/images/material/material-raised-button.png
-    - assets/images/material/material-slider.png
-    - assets/images/material/material-snack-bar.png
-    - assets/images/material/material-switch.png
-    - assets/images/material/material-tab-bar.png
-    - assets/images/material/material-text-field.png
-    - assets/images/material/material-tooltip.png
-    - assets/images/material/material-widgets-app.png
-    - assets/images/material/materialdesign-introduction.png
-
-    - assets/images/painting/clip-oval.png
-    - assets/images/painting/clip-rect.png
-    - assets/images/painting/custom-paint.png
-    - assets/images/painting/decorated-box.png
-    - assets/images/painting/opacity.png
-    - assets/images/painting/transform.png
-
-    - assets/images/scrolling/patterns-swipe-to-refresh.png
-
-    - assets/data/widget/widget_list.json
-    - assets/data/widget/accessibility.json
-    - assets/data/widget/animation.json
-    - assets/data/widget/assets.json
-    - assets/data/widget/async.json
-    - assets/data/widget/basics.json
-    - assets/data/widget/cupertino.json
-    - assets/data/widget/input.json
-    - assets/data/widget/interaction.json
-    - assets/data/widget/layout.json
-    - assets/data/widget/material.json
-    - assets/data/widget/painting.json
-    - assets/data/widget/scrolling.json
-    - assets/data/widget/styling.json
-    - assets/data/widget/text.json
+    - assets/data/widget/
 
     # package
-    - assets/images/package/hero-bg-static.png
-    - assets/images/package/pub-dev-logo.png
-    - assets/images/package/verified-publisher-icon.png
-    - assets/images/package/get.png
-    - assets/images/package/flutter-favorite-logo.png
-    - assets/images/package/landing-01.png
-    - assets/images/package/landing-02.png
-    - assets/images/package/landing-03.png
-
+    - assets/images/package/
     - assets/images/package/fl_chart/
+    - assets/images/package/flutter_svg/
+    - assets/images/package/flutter_svg/w3samples/
+    - assets/images/package/flutter_svg/deborah_ufw/
+    - assets/images/package/flutter_svg/simple/
+    - assets/images/package/flutter_svg/wikimedia/
+    - assets/images/package/flutter_svg/android_vd/
+    - assets/images/package/video_player/
 
-    - assets/data/package/rank.json
-    - assets/data/package/basics.json
-    - assets/data/package/ui.json
-    - assets/data/package/chart.json
-    - assets/data/package/media.json
+    - assets/data/package/
