@@ -97,6 +97,7 @@ class PackageDetailPage extends StatelessWidget {
               alignment: Alignment.centerLeft,
               padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
               child: Wrap(
+                crossAxisAlignment: WrapCrossAlignment.center,
                 children: [
                   Text(
                     title,
