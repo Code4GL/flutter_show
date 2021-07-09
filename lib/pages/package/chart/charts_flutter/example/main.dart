@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 import 'area_and_line.dart';
-import 'auto_label.dart';
 import 'grouped.dart';
 import 'horizontal.dart';
 import 'numeric_line_bar.dart';
@@ -86,10 +85,6 @@ class _ChartsFlutterExamplePageState extends State<ChartsFlutterExamplePage> {
               height: 300,
               child: SimplePieChart.withSampleData(),
             ),
-            // Container(
-            //   height: 300,
-            //   child: DonutAutoLabelChart.withSampleData(),
-            // ),
           ],
         ),
       ),

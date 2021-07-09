@@ -61,26 +61,5 @@
         ],
         "dart": [],
         "apiResult": "https://pub.flutter-io.cn/documentation/charts_flutter/latest/flutter/PieChart-class.html"
-    },
-    {
-        "title": "flutter_echarts",
-        "introductionEN": "A data visualization charts library, based on Apache ECharts, able to build advanced charts like WebGL 3D, GIS map, etc.",
-        "introductionCN": "一个数据可视化图表库，基于Apache ECharts，能够构建高级图表，如WebGL 3D、GIS地图等。",
-        "routeName": "package/chart/flutter_echarts",
-        "isNullSafety": true,
-        "isFavourite": false,
-        "owner": "unknown",
-        "ownerPath": "",
-        "detailPath": "https://pub.flutter-io.cn/packages/flutter_echarts",
-        "flutter": [
-            "ANDROID",
-            "IOS",
-            "LINUX",
-            "MACOS",
-            "WEB",
-            "WINDOWS"
-        ],
-        "dart": [],
-        "apiResult": ""
     }
 ]
