@@ -1,44 +1,40 @@
 [
     {
-        "title": "google_fonts",
-        "introductionEN": "A package to include fonts from fonts.google.com in your Flutter app.",
-        "introductionCN": "在Flutter应用程序中包含来自fonts.google.com的字体的包。",
-        "routeName": "package/ui/google_fonts",
+        "title": "image_picker",
+        "introductionEN": "Flutter plugin for selecting images from the Android and iOS image library, and taking new pictures with the camera.",
+        "introductionCN": "Flutter插件，用于从Android和iOS图像库中选择图像，并使用相机拍摄新照片。",
+        "routeName": "package/media/image_picker",
         "isNullSafety": true,
-        "isFavourite": true,
-        "owner": "material.io",
-        "ownerPath": "https://pub.flutter-io.cn/publishers/material.io/packages",
-        "detailPath": "https://pub.flutter-io.cn/packages/google_fonts",
+        "isFavourite": false,
+        "owner": "flutter.dev",
+        "ownerPath": "https://pub.flutter-io.cn/publishers/flutter.dev/packages",
+        "detailPath": "https://pub.flutter-io.cn/packages/image_picker",
         "flutter": [
             "ANDROID",
             "IOS",
-            "LINUX",
-            "MACOS",
-            "WEB",
-            "WINDOWS"
+            "WEB"
         ],
         "dart": [],
-        "apiResult": ""
+        "apiResult": "https://pub.flutter-io.cn/documentation/flutter_launcher_icons/latest/utils/utils-library.html"
     },
     {
-        "title": "animated_text_kit",
-        "introductionEN": "A flutter package project which contains a collection of cool and beautiful text animations.",
-        "introductionCN": "一个颤振包项目，其中包含一组很酷和漂亮的文本动画。",
-        "routeName": "package/ui/animated_text_kit",
+        "title": "flutter_svg",
+        "introductionEN": "An SVG rendering and widget library for Flutter, which allows painting and displaying Scalable Vector Graphics 1.1 files.",
+        "introductionCN": "Flutter的SVG渲染和小部件库，允许绘制和显示可缩放矢量图形1.1文件。",
+        "routeName": "package/media/flutter_svg",
         "isNullSafety": true,
         "isFavourite": true,
-        "owner": "ayushagarwal.ml",
-        "ownerPath": "https://pub.flutter-io.cn/publishers/ayushagarwal.ml/packages",
-        "detailPath": "https://pub.flutter-io.cn/packages/animated_text_kit",
+        "owner": "dnfield.dev",
+        "ownerPath": "https://pub.flutter-io.cn/publishers/dnfield.dev/packages",
+        "detailPath": "https://pub.flutter-io.cn/packages/flutter_svg",
         "flutter": [
             "ANDROID",
             "IOS",
             "LINUX",
             "MACOS",
-            "WEB",
             "WINDOWS"
         ],
         "dart": [],
-        "apiResult": ""
+        "apiResult": "https://pub.flutter-io.cn/documentation/flutter_svg/latest/flutter_svg/DrawableRasterImage-class.html"
     }
 ]
