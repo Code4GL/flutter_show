@@ -13,6 +13,7 @@ import 'basics/shared_preferences.dart';
 import 'basics/url_launcher.dart';
 import 'basics/webview_flutter.dart';
 
+import 'media/chewie/chewie.dart';
 import 'media/extended_image/extended_image.dart';
 import 'media/flutter_svg/flutter_svg.dart';
 import 'media/image_cropper/image_cropper.dart';
@@ -79,6 +80,7 @@ class PackageDetailPage extends StatelessWidget {
     "package/media/image_cropper": ImageCropperPage(),
     "package/media/pdf": PdfPage(),
     "package/media/extended_image": ExtendedImagePage(),
+    "package/media/chewie": ChewiePage(),
     // chart
     "package/chart/fl_chart": FlChartPage(),
     "package/chart/syncfusion_flutter_charts": SyncfusionFlutterChartsPage(),

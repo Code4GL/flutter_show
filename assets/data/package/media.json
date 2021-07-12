@@ -137,5 +137,23 @@
         ],
         "dart": [],
         "apiResult": "https://pub.flutter-io.cn/documentation/video_player/latest/video_player/video_player-library.html"
+    },
+    {
+        "title": "chewie",
+        "introductionEN": "A video player for Flutter with Cupertino and Material play controls.",
+        "introductionCN": "带有Cupertino和Material播放控件的Flutter视频播放器。",
+        "routeName": "package/media/chewie",
+        "isNullSafety": true,
+        "isFavourite": false,
+        "owner": "Unknown",
+        "ownerPath": "",
+        "detailPath": "https://pub.flutter-io.cn/packages/chewie",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "WEB"
+        ],
+        "dart": [],
+        "apiResult": "https://pub.flutter-io.cn/documentation/chewie/latest/chewie/ChewieController-class.html"
     }
 ]
