@@ -56,7 +56,9 @@ class _PdfPageState extends State<PdfPage> {
             ],
             borderRadius: MyStyle.borderRadius,
           ),
-          child: Center(),
+          child: Center(
+            child: Text('示例待添加，可先参考依赖包主页的动图～'),
+          ),
         ),
       ],
     );
