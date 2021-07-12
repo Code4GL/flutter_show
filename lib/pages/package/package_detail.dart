@@ -16,6 +16,7 @@ import 'basics/webview_flutter.dart';
 import 'media/flutter_svg/flutter_svg.dart';
 import 'media/image_picker/image_picker.dart';
 
+import 'media/photo_view/photo_view.dart';
 import 'media/video_player/video_player.dart';
 import 'ui/animated_text_kit.dart';
 import 'ui/google_fonts.dart';
@@ -71,6 +72,7 @@ class PackageDetailPage extends StatelessWidget {
     "package/media/image_picker": ImagePickerPage(),
     "package/media/flutter_svg": FlutterSvgPage(),
     "package/media/video_player": VideoPlayerPage(),
+    "package/media/photo_view": PhotoViewPage(),
     // chart
     "package/chart/fl_chart": FlChartPage(),
     "package/chart/syncfusion_flutter_charts": SyncfusionFlutterChartsPage(),

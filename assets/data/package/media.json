@@ -18,6 +18,65 @@
         "apiResult": "https://pub.flutter-io.cn/documentation/flutter_launcher_icons/latest/utils/utils-library.html"
     },
     {
+        "title": "photo_view",
+        "introductionEN": "Photo View provides a gesture sensitive zoomable widget. Photo View is largely used to show interactive images and other stuff such as SVG.",
+        "introductionCN": "照片视图提供了一个手势敏感的可缩放小部件。照片视图主要用于显示交互式图像和其他内容，例如SVG。",
+        "routeName": "package/media/photo_view",
+        "isNullSafety": true,
+        "isFavourite": false,
+        "owner": "fireslime.xyz",
+        "ownerPath": "https://pub.flutter-io.cn/publishers/fireslime.xyz/packages",
+        "detailPath": "https://pub.flutter-io.cn/packages/photo_view",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "LINUX",
+            "MACOS",
+            "WEB",
+            "WINDOWS"
+        ],
+        "dart": [],
+        "apiResult": "https://pub.flutter-io.cn/documentation/photo_view/latest/photo_view_gallery/PhotoViewGalleryPageOptions-class.html"
+    },
+    {
+        "title": "image_cropper",
+        "introductionEN": "A Flutter plugin for Android and iOS supports cropping images.",
+        "introductionCN": "适用于Android和iOS的Flutter插件支持裁剪图像。",
+        "routeName": "package/media/image_cropper",
+        "isNullSafety": true,
+        "isFavourite": false,
+        "owner": "hunghd.dev",
+        "ownerPath": "https://pub.flutter-io.cn/publishers/hunghd.dev/packages",
+        "detailPath": "https://pub.flutter-io.cn/packages/image_cropper",
+        "flutter": [
+            "ANDROID",
+            "IOS"
+        ],
+        "dart": [],
+        "apiResult": "https://pub.flutter-io.cn/documentation/image_cropper/latest/image_cropper/image_cropper-library.html"
+    },
+    {
+        "title": "extended_image",
+        "introductionEN": "Official extension image, support placeholder(loading)/ failed state, cache network, zoom/pan, photo view, slide out page, editor(crop,rotate,flip), painting etc.",
+        "introductionCN": "官方扩展图片，支持占位符（加载）/失败状态，缓存网络，缩放/平移，照片视图，滑出页面，编辑器（裁剪，旋转，翻转），绘画等。",
+        "routeName": "package/media/extended_image",
+        "isNullSafety": true,
+        "isFavourite": false,
+        "owner": "fluttercandies.com",
+        "ownerPath": "https://pub.flutter-io.cn/publishers/fluttercandies.com/packages",
+        "detailPath": "https://pub.flutter-io.cn/packages/extended_image",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "LINUX",
+            "MACOS",
+            "WEB",
+            "WINDOWS"
+        ],
+        "dart": [],
+        "apiResult": "https://pub.flutter-io.cn/documentation/extended_image/latest/extended_image/ExtendedImageEditorState-class.html"
+    },
+    {
         "title": "flutter_svg",
         "introductionEN": "An SVG rendering and widget library for Flutter, which allows painting and displaying Scalable Vector Graphics 1.1 files.",
         "introductionCN": "Flutter的SVG渲染和小部件库，允许绘制和显示可缩放矢量图形1.1文件。",
@@ -36,6 +95,30 @@
         ],
         "dart": [],
         "apiResult": "https://pub.flutter-io.cn/documentation/flutter_svg/latest/flutter_svg/DrawableRasterImage-class.html"
+    },
+    {
+        "title": "pdf",
+        "introductionEN": "A pdf producer for Dart. It can create pdf files for both web or flutter.",
+        "introductionCN": "Dart的pdf制作人。它可以为web或flutter创建pdf文件。",
+        "routeName": "package/media/pdf",
+        "isNullSafety": true,
+        "isFavourite": false,
+        "owner": "nfet.net",
+        "ownerPath": "https://pub.flutter-io.cn/publishers/nfet.net/packages",
+        "detailPath": "https://pub.flutter-io.cn/packages/pdf",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "LINUX",
+            "MACOS",
+            "WEB",
+            "WINDOWS"
+        ],
+        "dart": [
+            "NATIVE",
+            "JS"
+        ],
+        "apiResult": "https://pub.flutter-io.cn/documentation/pdf/latest/widgets/DecorationImage-class.html"
     },
     {
         "title": "video_player",
