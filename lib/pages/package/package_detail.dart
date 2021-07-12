@@ -13,12 +13,14 @@ import 'basics/shared_preferences.dart';
 import 'basics/url_launcher.dart';
 import 'basics/webview_flutter.dart';
 
+import 'media/extended_image/extended_image.dart';
 import 'media/flutter_svg/flutter_svg.dart';
 import 'media/image_cropper/image_cropper.dart';
 import 'media/image_picker/image_picker.dart';
-
+import 'media/pdf/pdf.dart';
 import 'media/photo_view/photo_view.dart';
 import 'media/video_player/video_player.dart';
+
 import 'ui/animated_text_kit.dart';
 import 'ui/google_fonts.dart';
 
@@ -75,6 +77,8 @@ class PackageDetailPage extends StatelessWidget {
     "package/media/video_player": VideoPlayerPage(),
     "package/media/photo_view": PhotoViewPage(),
     "package/media/image_cropper": ImageCropperPage(),
+    "package/media/pdf": PdfPage(),
+    "package/media/extended_image": ExtendedImagePage(),
     // chart
     "package/chart/fl_chart": FlChartPage(),
     "package/chart/syncfusion_flutter_charts": SyncfusionFlutterChartsPage(),
