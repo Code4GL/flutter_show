@@ -15,6 +15,7 @@ import 'basics/webview_flutter.dart';
 
 import 'media/chewie/chewie.dart';
 import 'media/extended_image/extended_image.dart';
+import 'media/flick_video_player/flick_video_player.dart';
 import 'media/flutter_svg/flutter_svg.dart';
 import 'media/image_cropper/image_cropper.dart';
 import 'media/image_picker/image_picker.dart';
@@ -81,6 +82,7 @@ class PackageDetailPage extends StatelessWidget {
     "package/media/pdf": PdfPage(),
     "package/media/extended_image": ExtendedImagePage(),
     "package/media/chewie": ChewiePage(),
+    "package/media/flick_video_player": FlickVideoPlayerPage(),
     // chart
     "package/chart/fl_chart": FlChartPage(),
     "package/chart/syncfusion_flutter_charts": SyncfusionFlutterChartsPage(),

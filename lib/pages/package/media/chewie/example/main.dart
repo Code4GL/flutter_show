@@ -1,4 +1,4 @@
-import 'theme.dart';
+// import 'theme.dart';
 import 'package:flutter/material.dart';
 import 'package:chewie/chewie.dart';
 import 'package:flutter/cupertino.dart';
@@ -20,7 +20,7 @@ class ChewieExamplePage extends StatefulWidget {
 }
 
 class _ChewieExamplePageState extends State<ChewieExamplePage> {
-  TargetPlatform? _platform;
+  // TargetPlatform? _platform;
   late VideoPlayerController _videoPlayerController1;
   late VideoPlayerController _videoPlayerController2;
   ChewieController? _chewieController;
@@ -234,7 +234,7 @@ class _ChewieExamplePageState extends State<ChewieExamplePage> {
                 child: TextButton(
                   onPressed: () {
                     setState(() {
-                      _platform = TargetPlatform.android;
+                      // _platform = TargetPlatform.android;
                     });
                   },
                   child: const Padding(
@@ -247,7 +247,7 @@ class _ChewieExamplePageState extends State<ChewieExamplePage> {
                 child: TextButton(
                   onPressed: () {
                     setState(() {
-                      _platform = TargetPlatform.iOS;
+                      // _platform = TargetPlatform.iOS;
                     });
                   },
                   child: const Padding(
@@ -264,7 +264,7 @@ class _ChewieExamplePageState extends State<ChewieExamplePage> {
                 child: TextButton(
                   onPressed: () {
                     setState(() {
-                      _platform = TargetPlatform.windows;
+                      // _platform = TargetPlatform.windows;
                     });
                   },
                   child: const Padding(

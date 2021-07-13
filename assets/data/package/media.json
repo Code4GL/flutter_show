@@ -155,5 +155,23 @@
         ],
         "dart": [],
         "apiResult": "https://pub.flutter-io.cn/documentation/chewie/latest/chewie/ChewieController-class.html"
+    },
+    {
+        "title": "flick_video_player",
+        "introductionEN": "Flick Video Player is a video player for flutter. The video_player plugin gives low level access for the video playback.",
+        "introductionCN": "Flick Video Player是一款Flutter的视频播放器。 video_player插件提供视频播放的低级访问权限。",
+        "routeName": "package/media/flick_video_player",
+        "isNullSafety": true,
+        "isFavourite": false,
+        "owner": "geekyants.com",
+        "ownerPath": "https://pub.flutter-io.cn/publishers/geekyants.com/packages",
+        "detailPath": "https://pub.flutter-io.cn/packages/flick_video_player",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "WEB"
+        ],
+        "dart": [],
+        "apiResult": ""
     }
 ]
