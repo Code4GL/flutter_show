@@ -16,7 +16,7 @@ class _PackagePageState extends State<PackagePage>
   @override
   void initState() {
     super.initState();
-    _tabController = TabController(length: 5, vsync: this);
+    _tabController = TabController(length: 7, vsync: this);
   }
 
   @override
@@ -58,35 +58,46 @@ class _PackagePageState extends State<PackagePage>
             pinned: true,
             delegate: StickyTabBarDelegate(
               child: TabBar(
+                isScrollable: true,
                 labelPadding: EdgeInsets.zero,
                 labelColor: Colors.blue,
                 unselectedLabelColor: Colors.grey,
                 controller: _tabController,
                 tabs: <Widget>[
                   Container(
-                    width: double.infinity,
+                    width: 70,
                     color: Colors.white,
                     child: Tab(text: 'Rank'),
                   ),
                   Container(
-                    width: double.infinity,
+                    width: 70,
                     color: Colors.white,
                     child: Tab(text: 'Basics'),
                   ),
                   Container(
-                    width: double.infinity,
+                    width: 70,
+                    color: Colors.white,
+                    child: Tab(text: 'Theme'),
+                  ),
+                  Container(
+                    width: 70,
                     color: Colors.white,
                     child: Tab(text: 'UI'),
                   ),
                   Container(
-                    width: double.infinity,
+                    width: 70,
                     color: Colors.white,
                     child: Tab(text: 'Media'),
                   ),
                   Container(
-                    width: double.infinity,
+                    width: 70,
                     color: Colors.white,
                     child: Tab(text: 'Chart'),
+                  ),
+                  Container(
+                    width: 70,
+                    color: Colors.white,
+                    child: Tab(text: 'Publisher'),
                   ),
                 ],
               ),
@@ -127,6 +138,39 @@ class _PackagePageState extends State<PackagePage>
                 FutureBuilder(
                   future: DefaultAssetBundle.of(context)
                       .loadString("assets/data/package/basics.json"),
+                  builder: (context, snapshot) {
+                    if (snapshot.hasData) {
+                      List<dynamic> data =
+                          json.decode(snapshot.data.toString());
+                      return SingleChildScrollView(
+                        child: Column(
+                          children: data
+                              .map(
+                                (item) => PackageCell(
+                                  title: item['title'],
+                                  introductionEN: item['introductionEN'],
+                                  introductionCN: item['introductionCN'],
+                                  routeName: item['routeName'],
+                                  isNullSafety: item['isNullSafety'],
+                                  isFavourite: item['isFavourite'],
+                                  owner: item['owner'],
+                                  ownerPath: item['ownerPath'],
+                                  detailPath: item['detailPath'],
+                                  flutter: item['flutter'],
+                                  dart: item['dart'],
+                                  apiResult: item['apiResult'],
+                                ),
+                              )
+                              .toList(),
+                        ),
+                      );
+                    }
+                    return CircularProgressIndicator();
+                  },
+                ),
+                FutureBuilder(
+                  future: DefaultAssetBundle.of(context)
+                      .loadString("assets/data/package/theme.json"),
                   builder: (context, snapshot) {
                     if (snapshot.hasData) {
                       List<dynamic> data =
@@ -226,6 +270,39 @@ class _PackagePageState extends State<PackagePage>
                 FutureBuilder(
                   future: DefaultAssetBundle.of(context)
                       .loadString("assets/data/package/chart.json"),
+                  builder: (context, snapshot) {
+                    if (snapshot.hasData) {
+                      List<dynamic> data =
+                          json.decode(snapshot.data.toString());
+                      return SingleChildScrollView(
+                        child: Column(
+                          children: data
+                              .map(
+                                (item) => PackageCell(
+                                  title: item['title'],
+                                  introductionEN: item['introductionEN'],
+                                  introductionCN: item['introductionCN'],
+                                  routeName: item['routeName'],
+                                  isNullSafety: item['isNullSafety'],
+                                  isFavourite: item['isFavourite'],
+                                  owner: item['owner'],
+                                  ownerPath: item['ownerPath'],
+                                  detailPath: item['detailPath'],
+                                  flutter: item['flutter'],
+                                  dart: item['dart'],
+                                  apiResult: item['apiResult'],
+                                ),
+                              )
+                              .toList(),
+                        ),
+                      );
+                    }
+                    return CircularProgressIndicator();
+                  },
+                ),
+                FutureBuilder(
+                  future: DefaultAssetBundle.of(context)
+                      .loadString("assets/data/package/publisher.json"),
                   builder: (context, snapshot) {
                     if (snapshot.hasData) {
                       List<dynamic> data =

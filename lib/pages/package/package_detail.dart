@@ -30,6 +30,7 @@ import 'media/pdf/pdf.dart';
 import 'media/photo_view/photo_view.dart';
 import 'media/video_player/video_player.dart';
 
+import 'theme/flutter_neumorphic.dart';
 import 'ui/animated_text_kit.dart';
 import 'ui/google_fonts.dart';
 
@@ -89,6 +90,7 @@ class PackageDetailPage extends StatelessWidget {
     "package/media/audioplayers": AudioplayersPage(),
     "package/media/just_audio": JustAudioPage(),
     "package/media/file_picker": FilePickerPage(),
+    "package/theme/flutter_neumorphic": FlutterNeumorphicPage(),
     // chart
     "package/chart/fl_chart": FlChartPage(),
     "package/chart/syncfusion_flutter_charts": SyncfusionFlutterChartsPage(),

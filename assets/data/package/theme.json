@@ -1,0 +1,22 @@
+[
+    {
+        "title": "flutter_neumorphic",
+        "introductionEN": "A complete, ready to use, Neumorphic ui kit for Flutter. Dark theming compatible & fully customizable.",
+        "introductionCN": "一个完整的、随时可用的、用于Flutter的Neumorphic ui套件。深色主题兼容且完全可定制。",
+        "routeName": "package/theme/flutter_neumorphic",
+        "isNullSafety": true,
+        "isFavourite": false,
+        "owner": "Unknown",
+        "ownerPath": "",
+        "detailPath": "https://pub.flutter-io.cn/packages/flutter_neumorphic",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "LINUX",
+            "MACOS",
+            "WINDOWS"
+        ],
+        "dart": [],
+        "apiResult": ""
+    }
+]
