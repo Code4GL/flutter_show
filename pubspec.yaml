@@ -49,6 +49,7 @@ dependencies:
   visibility_detector: ^0.2.0
   audioplayers: ^0.19.1
   just_audio: ^0.8.0
+  file_picker: ^3.0.3
 
 dev_dependencies:
   flutter_test:

@@ -20,6 +20,7 @@ import 'chart/charts_flutter/charts_flutter.dart';
 import 'media/audioplayers/audioplayers.dart';
 import 'media/chewie/chewie.dart';
 import 'media/extended_image/extended_image.dart';
+import 'media/file_picker/file_picker.dart';
 import 'media/flick_video_player/flick_video_player.dart';
 import 'media/flutter_svg/flutter_svg.dart';
 import 'media/image_cropper/image_cropper.dart';
@@ -87,6 +88,7 @@ class PackageDetailPage extends StatelessWidget {
     "package/media/flick_video_player": FlickVideoPlayerPage(),
     "package/media/audioplayers": AudioplayersPage(),
     "package/media/just_audio": JustAudioPage(),
+    "package/media/file_picker": FilePickerPage(),
     // chart
     "package/chart/fl_chart": FlChartPage(),
     "package/chart/syncfusion_flutter_charts": SyncfusionFlutterChartsPage(),

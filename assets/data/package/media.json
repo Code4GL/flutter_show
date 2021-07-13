@@ -211,5 +211,23 @@
         ],
         "dart": [],
         "apiResult": "https://pub.flutter-io.cn/documentation/just_audio/latest/just_audio/just_audio-library.html"
+    },
+    {
+        "title": "file_picker",
+        "introductionEN": "A package that allows you to use a native file explorer to pick single or multiple absolute file paths, with extension filtering support.",
+        "introductionCN": "允许您使用本机文件资源管理器选择单个或多个绝对文件路径的包，并支持扩展名过滤。",
+        "routeName": "package/media/file_picker",
+        "isNullSafety": true,
+        "isFavourite": false,
+        "owner": "miguelruivo.com",
+        "ownerPath": "https://pub.flutter-io.cn/publishers/miguelruivo.com/packages",
+        "detailPath": "https://pub.flutter-io.cn/packages/file_picker",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "WEB"
+        ],
+        "dart": [],
+        "apiResult": "https://pub.flutter-io.cn/documentation/file_picker/latest/_internal_file_picker_web/_internal_file_picker_web-library.html"
     }
 ]
