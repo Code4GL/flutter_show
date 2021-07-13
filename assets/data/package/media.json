@@ -173,5 +173,24 @@
         ],
         "dart": [],
         "apiResult": ""
+    },
+    {
+        "title": "audioplayers",
+        "introductionEN": "A Flutter plugin to play multiple audio files simultaneously.",
+        "introductionCN": "一个Flutter插件，可以同时播放多个音频文件。",
+        "routeName": "package/media/audioplayers",
+        "isNullSafety": true,
+        "isFavourite": false,
+        "owner": "fireslime.xyz",
+        "ownerPath": "https://pub.flutter-io.cn/publishers/fireslime.xyz/packages",
+        "detailPath": "https://pub.flutter-io.cn/packages/audioplayers",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "MACOS",
+            "WEB"
+        ],
+        "dart": [],
+        "apiResult": "https://pub.flutter-io.cn/documentation/audioplayers/latest/audioplayers/AudioCache-class.html"
     }
 ]

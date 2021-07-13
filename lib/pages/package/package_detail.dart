@@ -13,6 +13,11 @@ import 'basics/shared_preferences.dart';
 import 'basics/url_launcher.dart';
 import 'basics/webview_flutter.dart';
 
+import 'chart/fl_chart/fl_chart.dart';
+import 'chart/syncfusion_flutter_charts/syncfusion_flutter_charts.dart';
+import 'chart/charts_flutter/charts_flutter.dart';
+
+import 'media/audioplayers/audioplayers.dart';
 import 'media/chewie/chewie.dart';
 import 'media/extended_image/extended_image.dart';
 import 'media/flick_video_player/flick_video_player.dart';
@@ -25,10 +30,6 @@ import 'media/video_player/video_player.dart';
 
 import 'ui/animated_text_kit.dart';
 import 'ui/google_fonts.dart';
-
-import 'chart/fl_chart/fl_chart.dart';
-import 'chart/syncfusion_flutter_charts/syncfusion_flutter_charts.dart';
-import 'chart/charts_flutter/charts_flutter.dart';
 
 class PackageDetailPage extends StatelessWidget {
   PackageDetailPage({
@@ -83,6 +84,7 @@ class PackageDetailPage extends StatelessWidget {
     "package/media/extended_image": ExtendedImagePage(),
     "package/media/chewie": ChewiePage(),
     "package/media/flick_video_player": FlickVideoPlayerPage(),
+    "package/media/audioplayers": AudioplayersPage(),
     // chart
     "package/chart/fl_chart": FlChartPage(),
     "package/chart/syncfusion_flutter_charts": SyncfusionFlutterChartsPage(),
