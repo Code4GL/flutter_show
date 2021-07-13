@@ -24,6 +24,7 @@ import 'media/flick_video_player/flick_video_player.dart';
 import 'media/flutter_svg/flutter_svg.dart';
 import 'media/image_cropper/image_cropper.dart';
 import 'media/image_picker/image_picker.dart';
+import 'media/just_audio/just_audio.dart';
 import 'media/pdf/pdf.dart';
 import 'media/photo_view/photo_view.dart';
 import 'media/video_player/video_player.dart';
@@ -85,6 +86,7 @@ class PackageDetailPage extends StatelessWidget {
     "package/media/chewie": ChewiePage(),
     "package/media/flick_video_player": FlickVideoPlayerPage(),
     "package/media/audioplayers": AudioplayersPage(),
+    "package/media/just_audio": JustAudioPage(),
     // chart
     "package/chart/fl_chart": FlChartPage(),
     "package/chart/syncfusion_flutter_charts": SyncfusionFlutterChartsPage(),

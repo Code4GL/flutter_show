@@ -192,5 +192,24 @@
         ],
         "dart": [],
         "apiResult": "https://pub.flutter-io.cn/documentation/audioplayers/latest/audioplayers/AudioCache-class.html"
+    },
+    {
+        "title": "just_audio",
+        "introductionEN": "A feature-rich audio player for Flutter. Loop, clip and concatenate any sound from any source (asset/file/URL/stream) in a variety of audio formats with gapless playback.",
+        "introductionCN": "Flutter的功能丰富的音频播放器。 以各种音频格式循环、剪辑和连接来自任何来源（资产/文件/URL/流）的任何声音，并进行无缝播放。",
+        "routeName": "package/media/just_audio",
+        "isNullSafety": true,
+        "isFavourite": true,
+        "owner": "ryanheise.com",
+        "ownerPath": "https://pub.flutter-io.cn/publishers/ryanheise.com/packages",
+        "detailPath": "https://pub.flutter-io.cn/packages/just_audio",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "MACOS",
+            "WEB"
+        ],
+        "dart": [],
+        "apiResult": "https://pub.flutter-io.cn/documentation/just_audio/latest/just_audio/just_audio-library.html"
     }
 ]
