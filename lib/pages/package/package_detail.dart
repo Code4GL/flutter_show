@@ -30,7 +30,8 @@ import 'media/pdf/pdf.dart';
 import 'media/photo_view/photo_view.dart';
 import 'media/video_player/video_player.dart';
 
-import 'theme/flutter_neumorphic.dart';
+import 'theme/flutter_neumorphic/flutter_neumorphic.dart';
+
 import 'ui/animated_text_kit.dart';
 import 'ui/google_fonts.dart';
 
