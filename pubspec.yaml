@@ -52,6 +52,7 @@ dependencies:
   file_picker: ^3.0.3
   flutter_neumorphic: ^3.1.0
   flutter_colorpicker: ^0.4.0
+  getwidget: ^2.0.3
 
 dev_dependencies:
   flutter_test:
@@ -132,5 +133,6 @@ flutter:
     - assets/images/package/flick_video_player/
     - assets/images/package/audioplayers/
     - assets/images/package/flutter_colorpicker/
+    - assets/images/package/getwidget/
 
     - assets/data/package/

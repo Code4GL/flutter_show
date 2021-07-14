@@ -32,6 +32,8 @@ import 'media/video_player/video_player.dart';
 
 import 'theme/flutter_neumorphic/flutter_neumorphic.dart';
 
+import 'theme/getwidget/getwidget.dart';
+
 import 'ui/animated_text_kit.dart';
 import 'ui/google_fonts.dart';
 
@@ -75,9 +77,10 @@ class PackageDetailPage extends StatelessWidget {
     "package/basics/shared_preferences": SharedPreferencesPage(),
     "package/basics/webview_flutter": WebviewFlutterPage(),
     "package/basics/url_launcher": UrlLauncherPage(),
-    // ui
-    "package/ui/google_fonts": GoogleFontsPage(),
-    "package/ui/animated_text_kit": AnimatedTextKitPage(),
+    // chart
+    "package/chart/fl_chart": FlChartPage(),
+    "package/chart/syncfusion_flutter_charts": SyncfusionFlutterChartsPage(),
+    "package/chart/charts_flutter": ChartsFlutterPage(),
     // media
     "package/media/image_picker": ImagePickerPage(),
     "package/media/flutter_svg": FlutterSvgPage(),
@@ -92,10 +95,11 @@ class PackageDetailPage extends StatelessWidget {
     "package/media/just_audio": JustAudioPage(),
     "package/media/file_picker": FilePickerPage(),
     "package/theme/flutter_neumorphic": FlutterNeumorphicPage(),
-    // chart
-    "package/chart/fl_chart": FlChartPage(),
-    "package/chart/syncfusion_flutter_charts": SyncfusionFlutterChartsPage(),
-    "package/chart/charts_flutter": ChartsFlutterPage(),
+    // theme
+    "package/theme/getwidget": GetwidgetPage(),
+    // ui
+    "package/ui/google_fonts": GoogleFontsPage(),
+    "package/ui/animated_text_kit": AnimatedTextKitPage(),
   };
 
   @override

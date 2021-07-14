@@ -18,5 +18,26 @@
         ],
         "dart": [],
         "apiResult": ""
+    },
+    {
+        "title": "getwidget",
+        "introductionEN": "GetWidget is open source library that come with pre-build 1000+ UI components. It makes development faster & more enjoyable. You can customize the component as per your need.",
+        "introductionCN": "GetWidget是一个开源库，带有预构建的1000多个UI组件。它使开发更快，更愉快。您可以根据需要自定义组件。",
+        "routeName": "package/theme/getwidget",
+        "isNullSafety": true,
+        "isFavourite": false,
+        "owner": "getwidget.dev",
+        "ownerPath": "https://pub.flutter-io.cn/publishers/getwidget.dev/packages",
+        "detailPath": "https://pub.flutter-io.cn/packages/getwidget",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "LINUX",
+            "MACOS",
+            "WEB",
+            "WINDOWS"
+        ],
+        "dart": [],
+        "apiResult": ""
     }
 ]
