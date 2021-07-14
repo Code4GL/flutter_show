@@ -34,6 +34,7 @@ import 'theme/flutter_neumorphic/flutter_neumorphic.dart';
 
 import 'theme/getwidget/getwidget.dart';
 
+import 'theme/styled_widget/styled_widget.dart';
 import 'ui/animated_text_kit.dart';
 import 'ui/google_fonts.dart';
 
@@ -94,9 +95,10 @@ class PackageDetailPage extends StatelessWidget {
     "package/media/audioplayers": AudioplayersPage(),
     "package/media/just_audio": JustAudioPage(),
     "package/media/file_picker": FilePickerPage(),
-    "package/theme/flutter_neumorphic": FlutterNeumorphicPage(),
     // theme
+    "package/theme/flutter_neumorphic": FlutterNeumorphicPage(),
     "package/theme/getwidget": GetwidgetPage(),
+    "package/theme/styled_widget": StyledWidgetPage(),
     // ui
     "package/ui/google_fonts": GoogleFontsPage(),
     "package/ui/animated_text_kit": AnimatedTextKitPage(),

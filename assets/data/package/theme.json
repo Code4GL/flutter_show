@@ -39,5 +39,26 @@
         ],
         "dart": [],
         "apiResult": ""
+    },
+    {
+        "title": "styled_widget",
+        "introductionEN": "Simplifying your widget tree structure by defining widget using methods. Taking ispiration from CSS and SwiftUI.",
+        "introductionCN": "通过使用方法定义小部件来简化小部件树结构。从CSS和SwiftUI中汲取灵感。",
+        "routeName": "package/theme/styled_widget",
+        "isNullSafety": true,
+        "isFavourite": false,
+        "owner": "Unknown",
+        "ownerPath": "",
+        "detailPath": "https://pub.flutter-io.cn/packages/styled_widget",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "LINUX",
+            "MACOS",
+            "WEB",
+            "WINDOWS"
+        ],
+        "dart": [],
+        "apiResult": ""
     }
 ]
