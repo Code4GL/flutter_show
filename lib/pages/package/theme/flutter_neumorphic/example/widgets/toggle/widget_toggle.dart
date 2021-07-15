@@ -272,7 +272,7 @@ NeumorphicToggle(
             ),
             onAnimationChangedFinished: (value) {
               if (value == 0) {
-                Scaffold.of(context)
+                ScaffoldMessenger.of(context)
                     .showSnackBar(SnackBar(content: Text('on back !')));
                 print("onAnimationChangedFinished: $_selectedIndex");
               }
