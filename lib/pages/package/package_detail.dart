@@ -5,6 +5,7 @@ import 'package:flutter_show/components/internal_webview.dart';
 import 'package:flutter_show/provider/language_provider.dart';
 import 'package:provider/provider.dart';
 
+import 'basics/connectivity_plus.dart';
 import 'basics/cupertino_icons.dart';
 import 'basics/dio.dart';
 import 'basics/get.dart';
@@ -78,6 +79,7 @@ class PackageDetailPage extends StatelessWidget {
     "package/basics/shared_preferences": SharedPreferencesPage(),
     "package/basics/webview_flutter": WebviewFlutterPage(),
     "package/basics/url_launcher": UrlLauncherPage(),
+    "package/basics/connectivity_plus": ConnectivityPlusPage(),
     // chart
     "package/chart/fl_chart": FlChartPage(),
     "package/chart/syncfusion_flutter_charts": SyncfusionFlutterChartsPage(),

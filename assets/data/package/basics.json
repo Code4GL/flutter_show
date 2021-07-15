@@ -147,5 +147,26 @@
         ],
         "dart": [],
         "apiResult": ""
+    },
+    {
+        "title": "connectivity_plus",
+        "introductionEN": "Flutter plugin for discovering the state of the network (WiFi & mobile/cellular) connectivity on Android and iOS.",
+        "introductionCN": "Flutter插件，用于发现Android和iOS上的网络（WiFi 和移动/蜂窝）连接状态。",
+        "routeName": "package/basics/connectivity_plus",
+        "isNullSafety": true,
+        "isFavourite": true,
+        "owner": "fluttercommunity.dev",
+        "ownerPath": "https://pub.flutter-io.cn/publishers/fluttercommunity.dev/packages",
+        "detailPath": "https://pub.flutter-io.cn/packages/connectivity_plus",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "LINUX",
+            "MACOS",
+            "WEB",
+            "WINDOWS"
+        ],
+        "dart": [],
+        "apiResult": ""
     }
 ]
