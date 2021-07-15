@@ -108,7 +108,7 @@ Expanded(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
         _buildWidget(context),
-        FlatButton(
+        TextButton(
             child: Text('Update'),
             onPressed: () {
               setState(() {
@@ -321,7 +321,7 @@ Expanded(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
         _buildWidget(context),
-        FlatButton(
+        TextButton(
             child: Text('Update'),
             onPressed: () {
               setState(() {
@@ -382,7 +382,7 @@ Expanded(
       crossAxisAlignment: CrossAxisAlignment.stretch,
       children: <Widget>[
         _buildWidget(context),
-        FlatButton(
+        TextButton(
             child: Text('Update'),
             onPressed: () {
               setState(() {
