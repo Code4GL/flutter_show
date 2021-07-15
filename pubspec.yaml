@@ -135,5 +135,6 @@ flutter:
     - assets/images/package/audioplayers/
     - assets/images/package/flutter_colorpicker/
     - assets/images/package/getwidget/
+    - assets/images/package/google_fonts/
 
     - assets/data/package/

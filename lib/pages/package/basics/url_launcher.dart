@@ -9,6 +9,13 @@ class UrlLauncherPage extends StatefulWidget {
 }
 
 class _UrlLauncherPageState extends State<UrlLauncherPage> {
+  String? encodeQueryParameters(Map<String, String> params) {
+    return params.entries
+        .map((e) =>
+            '${Uri.encodeComponent(e.key)}=${Uri.encodeComponent(e.value)}')
+        .join('&');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -99,12 +106,17 @@ class _UrlLauncherPageState extends State<UrlLauncherPage> {
                     style: TextStyle(fontSize: 10),
                   ),
                   onPressed: () async {
-                    const url =
-                        'mailto:guanli1991@163.com?subject=url_launcher&body=Flutter测试';
-                    if (await canLaunch(url)) {
-                      await launch(url);
+                    final Uri emailLaunchUri = Uri(
+                      scheme: 'mailto',
+                      path: 'guanli1991@163.com',
+                      query: encodeQueryParameters(<String, String>{
+                        'subject': 'Example Subject & Symbols are allowed!'
+                      }),
+                    );
+                    if (await canLaunch(emailLaunchUri.toString())) {
+                      await launch(emailLaunchUri.toString());
                     } else {
-                      throw 'Could not launch $url';
+                      throw 'Could not launch ${emailLaunchUri.toString()}';
                     }
                   },
                 ),

@@ -67,26 +67,6 @@ class _GoogleFontsPageState extends State<GoogleFontsPage> {
                     Padding(
                       padding: EdgeInsets.all(5.0),
                       child: Text(
-                        'GoogleFonts.lato:',
-                        style: TextStyle(
-                          color: Colors.purple,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 10,
-                        ),
-                      ),
-                    ),
-                    Text(
-                      'This is Google Fonts',
-                      style: GoogleFonts.lato(),
-                    ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.all(5.0),
-                      child: Text(
                         'GoogleFonts.pacifico:',
                         style: TextStyle(
                           color: Colors.purple,
@@ -127,26 +107,6 @@ class _GoogleFontsPageState extends State<GoogleFontsPage> {
                     Padding(
                       padding: EdgeInsets.all(5.0),
                       child: Text(
-                        'GoogleFonts.dancingScript:',
-                        style: TextStyle(
-                          color: Colors.purple,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 10,
-                        ),
-                      ),
-                    ),
-                    Text(
-                      'This is Google Fonts',
-                      style: GoogleFonts.dancingScript(),
-                    ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.all(5.0),
-                      child: Text(
                         'GoogleFonts.lobster:',
                         style: TextStyle(
                           color: Colors.purple,
@@ -167,7 +127,7 @@ class _GoogleFontsPageState extends State<GoogleFontsPage> {
                     Padding(
                       padding: EdgeInsets.all(5.0),
                       child: Text(
-                        'GoogleFonts.fugazOne:',
+                        'pressStart2p:',
                         style: TextStyle(
                           color: Colors.purple,
                           fontWeight: FontWeight.bold,
@@ -176,88 +136,8 @@ class _GoogleFontsPageState extends State<GoogleFontsPage> {
                       ),
                     ),
                     Text(
-                      'This is Google Fonts',
-                      style: GoogleFonts.fugazOne(),
-                    ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.all(5.0),
-                      child: Text(
-                        'GoogleFonts.indieFlower:',
-                        style: TextStyle(
-                          color: Colors.purple,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 10,
-                        ),
-                      ),
-                    ),
-                    Text(
-                      'This is Google Fonts',
-                      style: GoogleFonts.indieFlower(),
-                    ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.all(5.0),
-                      child: Text(
-                        'pacifico:',
-                        style: TextStyle(
-                          color: Colors.purple,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 10,
-                        ),
-                      ),
-                    ),
-                    Text(
-                      'This is Google Fonts',
+                      'ThisisGoogleFonts',
                       style: GoogleFonts.pressStart2p(),
-                    ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.all(5.0),
-                      child: Text(
-                        'GoogleFonts.monoton:',
-                        style: TextStyle(
-                          color: Colors.purple,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 10,
-                        ),
-                      ),
-                    ),
-                    Text(
-                      'This is Google Fonts',
-                      style: GoogleFonts.monoton(),
-                    ),
-                  ],
-                ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.all(5.0),
-                      child: Text(
-                        'GoogleFonts.monoton:',
-                        style: TextStyle(
-                          color: Colors.purple,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 10,
-                        ),
-                      ),
-                    ),
-                    Text(
-                      'This is Google Fonts',
-                      style: GoogleFonts.playball(),
                     ),
                   ],
                 ),
