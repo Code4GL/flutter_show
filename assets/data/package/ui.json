@@ -42,6 +42,27 @@
         "apiResult": ""
     },
     {
+        "title": "flutter_spinkit",
+        "introductionEN": "A collection of loading indicators animated with flutter. Heavily inspired by @tobiasahlin's SpinKit.",
+        "introductionCN": "一组带有颤动动画的加载指示器。受到@tobiasahlin的SpinKit的极大启发。",
+        "routeName": "package/ui/flutter_spinkit",
+        "isNullSafety": true,
+        "isFavourite": false,
+        "owner": "unknown",
+        "ownerPath": "",
+        "detailPath": "https://pub.flutter-io.cn/packages/flutter_spinkit",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "LINUX",
+            "MACOS",
+            "WEB",
+            "WINDOWS"
+        ],
+        "dart": [],
+        "apiResult": ""
+    },
+    {
         "title": "google_fonts",
         "introductionEN": "A package to include fonts from fonts.google.com in your Flutter app.",
         "introductionCN": "在Flutter应用程序中包含来自fonts.google.com的字体的包。",

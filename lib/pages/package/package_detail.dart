@@ -38,6 +38,7 @@ import 'theme/styled_widget/styled_widget.dart';
 import 'ui/animated_text_kit.dart';
 import 'ui/animations/animations.dart';
 import 'ui/carousel_slider/carousel_slider.dart';
+import 'ui/flutter_spinkit/flutter_spinkit.dart';
 import 'ui/google_fonts.dart';
 
 class PackageDetailPage extends StatelessWidget {
@@ -107,6 +108,7 @@ class PackageDetailPage extends StatelessWidget {
     "package/ui/animated_text_kit": AnimatedTextKitPage(),
     "package/ui/animations": AnimationsPage(),
     "package/ui/carousel_slider": CarouselSliderPage(),
+    "package/ui/flutter_spinkit": FlutterSpinkitPage(),
   };
 
   @override
