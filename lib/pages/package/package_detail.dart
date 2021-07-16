@@ -32,11 +32,11 @@ import 'media/photo_view/photo_view.dart';
 import 'media/video_player/video_player.dart';
 
 import 'theme/flutter_neumorphic/flutter_neumorphic.dart';
-
 import 'theme/getwidget/getwidget.dart';
-
 import 'theme/styled_widget/styled_widget.dart';
+
 import 'ui/animated_text_kit.dart';
+import 'ui/animations/animations.dart';
 import 'ui/google_fonts.dart';
 
 class PackageDetailPage extends StatelessWidget {
@@ -104,6 +104,7 @@ class PackageDetailPage extends StatelessWidget {
     // ui
     "package/ui/google_fonts": GoogleFontsPage(),
     "package/ui/animated_text_kit": AnimatedTextKitPage(),
+    "package/ui/animations": AnimationsPage(),
   };
 
   @override

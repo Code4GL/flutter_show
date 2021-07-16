@@ -1,5 +1,26 @@
 [
     {
+        "title": "animations",
+        "introductionEN": "Fancy pre-built animations that can easily be integrated into any Flutter application.",
+        "introductionCN": "可以轻松集成到任何Flutter应用程序中的精美预建动画。",
+        "routeName": "package/ui/animations",
+        "isNullSafety": true,
+        "isFavourite": false,
+        "owner": "flutter.dev",
+        "ownerPath": "https://pub.flutter-io.cn/publishers/flutter.dev/packages",
+        "detailPath": "https://pub.flutter-io.cn/packages/animations",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "LINUX",
+            "MACOS",
+            "WEB",
+            "WINDOWS"
+        ],
+        "dart": [],
+        "apiResult": ""
+    },
+    {
         "title": "google_fonts",
         "introductionEN": "A package to include fonts from fonts.google.com in your Flutter app.",
         "introductionCN": "在Flutter应用程序中包含来自fonts.google.com的字体的包。",

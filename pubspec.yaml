@@ -55,6 +55,7 @@ dependencies:
   getwidget: ^2.0.3
   styled_widget: ^0.3.1+2
   connectivity_plus: ^1.0.5
+  animations: ^2.0.1
 
 dev_dependencies:
   flutter_test:
@@ -137,5 +138,6 @@ flutter:
     - assets/images/package/flutter_colorpicker/
     - assets/images/package/getwidget/
     - assets/images/package/google_fonts/
+    - assets/images/package/animations/
 
     - assets/data/package/
