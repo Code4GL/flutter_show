@@ -21,6 +21,27 @@
         "apiResult": ""
     },
     {
+        "title": "animate_do",
+        "introductionEN": "Beautiful animations inspired on Animate.css, every animation is a widget that contains default but customizable values that look attractive.",
+        "introductionCN": "受Animate.css启发的美丽动画，每个动画都是一个小部件，其中包含看起来很有吸引力的默认但可自定义的值。",
+        "routeName": "package/ui/animate_do",
+        "isNullSafety": true,
+        "isFavourite": false,
+        "owner": "fernando-herrera.com",
+        "ownerPath": "https://pub.flutter-io.cn/publishers/fernando-herrera.com/packages",
+        "detailPath": "https://pub.flutter-io.cn/packages/animate_do",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "LINUX",
+            "MACOS",
+            "WEB",
+            "WINDOWS"
+        ],
+        "dart": [],
+        "apiResult": ""
+    },
+    {
         "title": "carousel_slider",
         "introductionEN": "A carousel slider widget, support infinite scroll and custom child widget.",
         "introductionCN": "一个轮播滑块小部件，支持无限滚动和自定义子小部件。",

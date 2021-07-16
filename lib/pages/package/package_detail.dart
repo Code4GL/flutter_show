@@ -35,6 +35,7 @@ import 'theme/flutter_neumorphic/flutter_neumorphic.dart';
 import 'theme/getwidget/getwidget.dart';
 import 'theme/styled_widget/styled_widget.dart';
 
+import 'ui/animate_do.dart';
 import 'ui/animated_text_kit.dart';
 import 'ui/animations/animations.dart';
 import 'ui/carousel_slider/carousel_slider.dart';
@@ -109,6 +110,7 @@ class PackageDetailPage extends StatelessWidget {
     "package/ui/animations": AnimationsPage(),
     "package/ui/carousel_slider": CarouselSliderPage(),
     "package/ui/flutter_spinkit": FlutterSpinkitPage(),
+    "package/ui/animate_do": AnimateDoPage(),
   };
 
   @override
