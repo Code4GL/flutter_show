@@ -40,6 +40,7 @@ import 'ui/animated_text_kit.dart';
 import 'ui/animations/animations.dart';
 import 'ui/carousel_slider/carousel_slider.dart';
 import 'ui/flutter_spinkit/flutter_spinkit.dart';
+import 'ui/flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'ui/google_fonts.dart';
 import 'ui/shimmer/shimmer.dart';
 
@@ -113,6 +114,7 @@ class PackageDetailPage extends StatelessWidget {
     "package/ui/flutter_spinkit": FlutterSpinkitPage(),
     "package/ui/animate_do": AnimateDoPage(),
     "package/ui/shimmer": ShimmerPage(),
+    "package/ui/flutter_staggered_grid_view": FlutterStaggeredGridViewPage(),
   };
 
   @override

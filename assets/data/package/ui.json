@@ -84,6 +84,27 @@
         "apiResult": ""
     },
     {
+        "title": "flutter_staggered_grid_view",
+        "introductionEN": "A Flutter staggered grid view (masonry tiles) which supports multiple columns with rows of varying sizes.",
+        "introductionCN": "Flutter交错网格视图（砖石瓦片），支持多列不同大小的行。",
+        "routeName": "package/ui/flutter_staggered_grid_view",
+        "isNullSafety": true,
+        "isFavourite": false,
+        "owner": "romainrastel.com",
+        "ownerPath": "https://pub.flutter-io.cn/publishers/romainrastel.com/packages",
+        "detailPath": "https://pub.flutter-io.cn/packages/flutter_staggered_grid_view",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "LINUX",
+            "MACOS",
+            "WEB",
+            "WINDOWS"
+        ],
+        "dart": [],
+        "apiResult": ""
+    },
+    {
         "title": "shimmer",
         "introductionEN": "A package provides an easy way to add shimmer effect in Flutter project.",
         "introductionCN": "一个包提供了一种在Flutter项目中添加微光效果的简单方法。",
