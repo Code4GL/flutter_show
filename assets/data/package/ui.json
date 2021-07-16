@@ -21,6 +21,27 @@
         "apiResult": ""
     },
     {
+        "title": "carousel_slider",
+        "introductionEN": "A carousel slider widget, support infinite scroll and custom child widget.",
+        "introductionCN": "一个轮播滑块小部件，支持无限滚动和自定义子小部件。",
+        "routeName": "package/ui/carousel_slider",
+        "isNullSafety": true,
+        "isFavourite": false,
+        "owner": "serenader.me",
+        "ownerPath": "https://pub.flutter-io.cn/publishers/serenader.me/packages",
+        "detailPath": "https://pub.flutter-io.cn/packages/carousel_slider",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "LINUX",
+            "MACOS",
+            "WEB",
+            "WINDOWS"
+        ],
+        "dart": [],
+        "apiResult": ""
+    },
+    {
         "title": "google_fonts",
         "introductionEN": "A package to include fonts from fonts.google.com in your Flutter app.",
         "introductionCN": "在Flutter应用程序中包含来自fonts.google.com的字体的包。",
