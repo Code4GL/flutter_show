@@ -84,6 +84,27 @@
         "apiResult": ""
     },
     {
+        "title": "shimmer",
+        "introductionEN": "A package provides an easy way to add shimmer effect in Flutter project.",
+        "introductionCN": "一个包提供了一种在Flutter项目中添加微光效果的简单方法。",
+        "routeName": "package/ui/shimmer",
+        "isNullSafety": true,
+        "isFavourite": false,
+        "owner": "hunghd.dev",
+        "ownerPath": "https://pub.flutter-io.cn/publishers/hunghd.dev/packages",
+        "detailPath": "https://pub.flutter-io.cn/packages/shimmer",
+        "flutter": [
+            "ANDROID",
+            "IOS",
+            "LINUX",
+            "MACOS",
+            "WEB",
+            "WINDOWS"
+        ],
+        "dart": [],
+        "apiResult": ""
+    },
+    {
         "title": "google_fonts",
         "introductionEN": "A package to include fonts from fonts.google.com in your Flutter app.",
         "introductionCN": "在Flutter应用程序中包含来自fonts.google.com的字体的包。",
