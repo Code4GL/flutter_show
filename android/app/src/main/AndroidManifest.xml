@@ -1,5 +1,7 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
     package="com.example.flutter_show">
+    <!--  解决webviewflutter插件minSdkVersion版本问题  -->
+    <uses-sdk tools:overrideLibrary="io.flutter.plugins.webviewflutter"/>
    <application
         android:label="flutter_show"
         android:icon="@mipmap/ic_launcher">
