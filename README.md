@@ -4,11 +4,11 @@ A new Flutter project.
 
 ## 演示
 
-![整体展示](https://github.com/Code4GL/flutter_show/blob/develop/readme/home.gif)
+![home](https://github.com/Code4GL/flutter_show/blob/develop/readme/home.gif)
 ![widget](https://github.com/Code4GL/flutter_show/blob/develop/readme/widget.gif)
 ![material](https://github.com/Code4GL/flutter_show/blob/develop/readme/material.gif)
-![cupertino](https://github.com/Code4GL/flutter_show/blob/develop/readme/cupertino.gif)
-![package](https://github.com/Code4GL/flutter_show/blob/develop/readme/package.gif)
+![cupertino](https://github.com/Code4GL/flutter_show/blob/develop/readme/home.gif)
+![package](https://github.com/Code4GL/flutter_show/blob/develop/readme/home.gif)
 
 ## 特殊处理
 
