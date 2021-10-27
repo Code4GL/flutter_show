@@ -32,9 +32,7 @@ flutter_show % flutter doctor
 
 ```terminal
 flutter pub get
-cd ios
-pod install  // M1芯片下使用arch -x86_64 pod install
-flutter run  // 提前选择好将要运行的平台
+flutter run  // 提前链接好将要运行的平台
 ```
 
 ## 特殊处理
