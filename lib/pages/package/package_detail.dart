@@ -18,6 +18,7 @@ import 'chart/fl_chart/fl_chart.dart';
 import 'chart/syncfusion_flutter_charts/syncfusion_flutter_charts.dart';
 import 'chart/charts_flutter/charts_flutter.dart';
 
+import 'media/arkit_plugin/arkit_plugin.dart';
 import 'media/audioplayers/audioplayers.dart';
 import 'media/chewie/chewie.dart';
 import 'media/extended_image/extended_image.dart';
@@ -90,6 +91,7 @@ class PackageDetailPage extends StatelessWidget {
     "package/chart/syncfusion_flutter_charts": SyncfusionFlutterChartsPage(),
     "package/chart/charts_flutter": ChartsFlutterPage(),
     // media
+    "package/media/arkit_plugin": ArkitPluginPage(),
     "package/media/image_picker": ImagePickerPage(),
     "package/media/flutter_svg": FlutterSvgPage(),
     "package/media/video_player": VideoPlayerPage(),

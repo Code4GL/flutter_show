@@ -1,5 +1,21 @@
 [
     {
+        "title": "arkit_plugin",
+        "introductionEN": "Flutter Plugin for ARKit - Apple's augmented reality (AR) development platform for iOS mobile devices.",
+        "introductionCN": "用于ARKit的Flutter插件-Apple用于iOS移动设备的增强现实(AR)开发平台。",
+        "routeName": "package/media/arkit_plugin",
+        "isNullSafety": true,
+        "isFavourite": false,
+        "owner": "",
+        "ownerPath": "",
+        "detailPath": "https://pub.flutter-io.cn/packages/arkit_plugin",
+        "flutter": [
+            "IOS"
+        ],
+        "dart": [],
+        "apiResult": ""
+    },
+    {
         "title": "image_picker",
         "introductionEN": "Flutter plugin for selecting images from the Android and iOS image library, and taking new pictures with the camera.",
         "introductionCN": "Flutter插件，用于从Android和iOS图像库中选择图像，并使用相机拍摄新照片。",
