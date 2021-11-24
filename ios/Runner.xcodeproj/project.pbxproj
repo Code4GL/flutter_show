@@ -14,6 +14,10 @@
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
 		BC37C781DAB55B11FC24B8FE /* Pods_Runner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67FFCA1AFF5FA839C75FB668 /* Pods_Runner.framework */; };
+		E2A545CD274E0D4F00CF025E /* models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = E2A545CC274E0D4F00CF025E /* models.scnassets */; };
+		E2EB5709274E09A2008C6636 /* earth.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2EB5708274E09A2008C6636 /* earth.jpg */; };
+		E2EB570B274E09B0008C6636 /* photo360.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E2EB570A274E09B0008C6636 /* photo360.jpg */; };
+		E2EB570D274E09C0008C6636 /* london.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = E2EB570C274E09C0008C6636 /* london.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +50,10 @@
 		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E25878FE98EF06BCD658C5B4 /* Pods-Runner.profile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.profile.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"; sourceTree = "<group>"; };
+		E2A545CC274E0D4F00CF025E /* models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = models.scnassets; sourceTree = "<group>"; };
+		E2EB5708274E09A2008C6636 /* earth.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = earth.jpg; path = ../../../../../Documents/GitHub/arkit_flutter_plugin/example/ios/Runner/earth.jpg; sourceTree = "<group>"; };
+		E2EB570A274E09B0008C6636 /* photo360.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = photo360.jpg; path = ../../../../../Documents/GitHub/arkit_flutter_plugin/example/ios/Runner/photo360.jpg; sourceTree = "<group>"; };
+		E2EB570C274E09C0008C6636 /* london.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = london.mp4; path = ../../../../../Documents/GitHub/arkit_flutter_plugin/example/ios/Runner/london.mp4; sourceTree = "<group>"; };
 		F2CAFDF30FA8C9F806E6EA05 /* Pods-Runner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Runner.debug.xcconfig"; path = "Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,6 +120,10 @@
 		97C146F01CF9000F007C117D /* Runner */ = {
 			isa = PBXGroup;
 			children = (
+				E2A545CC274E0D4F00CF025E /* models.scnassets */,
+				E2EB570C274E09C0008C6636 /* london.mp4 */,
+				E2EB570A274E09B0008C6636 /* photo360.jpg */,
+				E2EB5708274E09A2008C6636 /* earth.jpg */,
 				97C146FA1CF9000F007C117D /* Main.storyboard */,
 				97C146FD1CF9000F007C117D /* Assets.xcassets */,
 				97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */,
@@ -188,8 +200,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */,
+				E2A545CD274E0D4F00CF025E /* models.scnassets in Resources */,
+				E2EB5709274E09A2008C6636 /* earth.jpg in Resources */,
 				3B3967161E833CAA004F5970 /* AppFrameworkInfo.plist in Resources */,
 				97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */,
+				E2EB570B274E09B0008C6636 /* photo360.jpg in Resources */,
+				E2EB570D274E09C0008C6636 /* london.mp4 in Resources */,
 				97C146FC1CF9000F007C117D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
