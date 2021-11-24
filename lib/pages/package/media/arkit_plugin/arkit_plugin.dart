@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_show/common/my_style.dart';
@@ -59,19 +61,21 @@ class _AudioplayersPageState extends State<ArkitPluginPage> {
             borderRadius: MyStyle.borderRadius,
           ),
           child: Center(
-            child: ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (BuildContext context) {
-                      return ArkitPluginExamplePage();
+            child: Platform.isIOS
+                ? ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (BuildContext context) {
+                            return ArkitPluginExamplePage();
+                          },
+                        ),
+                      );
                     },
-                  ),
-                );
-              },
-              child: Text('ArkitPluginExamplePage'),
-            ),
+                    child: Text('ArkitPluginExamplePage'),
+                  )
+                : Text('Android平台请关注arcore_flutter_plugin'),
           ),
         ),
       ],
