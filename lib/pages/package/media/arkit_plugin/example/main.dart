@@ -11,7 +11,7 @@ import './light_estimate_page.dart';
 import './manipulation_page.dart';
 import './measure_page.dart';
 import './midas_page.dart';
-import './network_image_detection.dart';
+// import './network_image_detection.dart';
 import './occlusion_page.dart';
 import './physics_page.dart';
 import './plane_detection_page.dart';
