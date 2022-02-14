@@ -17,15 +17,18 @@ Flutter Show是根据[https://flutter.cn/docs/get-started/install](https://flutt
 ```terminal
 flutter_show % flutter doctor
 
-[✓] Flutter (Channel stable, 2.2.3, on macOS 11.6 20G165 darwin-arm, locale zh-Hans-CN)
+[✓] Flutter (Channel stable, 2.10.1, on macOS 12.1 21C52 darwin-arm, locale zh-Hans-CN)
 [✓] Android toolchain - develop for Android devices (Android SDK version 31.0.0)
-[✓] Xcode - develop for iOS and macOS
+[✓] Xcode - develop for iOS and macOS (Xcode 13.2.1)
 [✓] Chrome - develop for the web
 [✓] Android Studio (version 2020.3)
-[✓] VS Code (version 1.61.2)
-[✓] Connected device (1 available)
+[✓] VS Code (version 1.64.2)
+[!] Proxy Configuration
+    ! NO_PROXY is not set
+[✓] Connected device (2 available)
+[✓] HTTP Host Availability
 
-• No issues found!
+! Doctor found issues in 1 category.
 ```
 
 ## 使用
