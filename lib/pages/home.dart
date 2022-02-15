@@ -42,8 +42,9 @@ class _HomeState extends State<Home> {
       showSemanticsDebugger:
           context.watch<CommonProvider>().showSemanticsDebugger,
       theme: ThemeData(
-        brightness: Brightness.light,
-        primaryColor: context.watch<ThemeProvider>().theme,
+        colorScheme: ColorScheme.fromSwatch(
+          primarySwatch: context.watch<ThemeProvider>().themeColor,
+        ),
       ),
       home: Scaffold(
         drawer: Drawer(

@@ -4,7 +4,7 @@ import 'package:flutter_show/provider/theme_provider.dart';
 
 class ThemeSettingPage extends StatelessWidget {
   ThemeSettingPage({Key? key}) : super(key: key);
-  final List<Color> _themes = Colors.primaries;
+  final List<MaterialColor> _themes = Colors.primaries;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +17,7 @@ class ThemeSettingPage extends StatelessWidget {
             child: Container(
               child: Text(
                 '#${e.value.toRadixString(16).toUpperCase()}',
-                style: context.read<ThemeProvider>().theme == e
+                style: context.read<ThemeProvider>().themeColor == e
                     ? TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
