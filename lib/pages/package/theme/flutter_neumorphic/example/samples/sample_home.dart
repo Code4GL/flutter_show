@@ -5,7 +5,6 @@ import '../samples/clock/clock_sample.dart';
 import '../samples/credit_card_sample.dart';
 import '../samples/form_sample.dart';
 import '../samples/testla_sample.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 
 import 'galaxy_sample.dart';

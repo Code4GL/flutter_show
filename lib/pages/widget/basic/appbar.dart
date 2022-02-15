@@ -12,7 +12,6 @@ class _AppbarPageState extends State<AppbarPage> {
   Color _backgroundColor = Colors.pink;
   Color _foregroundColor = Colors.black;
   bool _centerTitle = true;
-  bool _backwardsCompatibility = true;
   double _leadingWidth = 50.0;
   double _titleSpacing = 10.0;
   double _toolbarHeight = 50.0;
@@ -76,16 +75,6 @@ class _AppbarPageState extends State<AppbarPage> {
                 onChangedCb: (bool value) {
                   setState(() {
                     _centerTitle = value;
-                  });
-                },
-              ),
-              BooleanParam(
-                paramKey: 'backwardsCompatibility:',
-                paramValue: '$_backwardsCompatibility',
-                value: _backwardsCompatibility,
-                onChangedCb: (bool value) {
-                  setState(() {
-                    _backwardsCompatibility = value;
                   });
                 },
               ),
@@ -320,7 +309,6 @@ class _AppbarPageState extends State<AppbarPage> {
                   backgroundColor: _backgroundColor,
                   centerTitle: _centerTitle,
                   foregroundColor: _foregroundColor,
-                  backwardsCompatibility: _backwardsCompatibility,
                   leadingWidth: _leadingWidth,
                   titleSpacing: _titleSpacing,
                   toolbarHeight: _toolbarHeight,

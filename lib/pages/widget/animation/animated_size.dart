@@ -74,7 +74,6 @@ class _AnimatedSizePageState extends State<AnimatedSizePage>
                 child: AnimatedSize(
                   curve: Curves.easeIn,
                   duration: const Duration(seconds: 1),
-                  vsync: this,
                   child: FlutterLogo(size: _size),
                 ),
               ),

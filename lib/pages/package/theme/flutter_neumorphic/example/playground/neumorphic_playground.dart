@@ -71,14 +71,14 @@ class __PageState extends State<_Page> {
               child: ElevatedButton(
                 // shape: RoundedRectangleBorder(
                 //     borderRadius: BorderRadius.circular(12)),
-                // color: Theme.of(context).accentColor,
+                // color: Theme.of(context).colorScheme.secondary,
                 style: ButtonStyle(
                   shape: MaterialStateProperty.all(
                     RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(12)),
                   ),
-                  backgroundColor:
-                      MaterialStateProperty.all(Theme.of(context).accentColor),
+                  backgroundColor: MaterialStateProperty.all(
+                      Theme.of(context).colorScheme.secondary),
                 ),
                 child: Text(
                   "back",
@@ -110,7 +110,7 @@ class __PageState extends State<_Page> {
   int selectedConfiguratorIndex = 0;
 
   Widget _configurators() {
-    final Color buttonActiveColor = Theme.of(context).accentColor;
+    final Color buttonActiveColor = Theme.of(context).colorScheme.secondary;
     // final Color buttonInnactiveColor = Colors.white;
 
     final Color textActiveColor = Colors.white;
@@ -653,7 +653,7 @@ class __PageState extends State<_Page> {
   }
 
   Widget boxshapeWidget() {
-    final Color buttonActiveColor = Theme.of(context).accentColor;
+    final Color buttonActiveColor = Theme.of(context).colorScheme.secondary;
     // final Color buttonInnactiveColor = Colors.white;
 
     final Color textActiveColor = Colors.white;
@@ -826,7 +826,7 @@ class __PageState extends State<_Page> {
   }
 
   Widget shapeWidget() {
-    final Color buttonActiveColor = Theme.of(context).accentColor;
+    final Color buttonActiveColor = Theme.of(context).colorScheme.secondary;
     // final Color buttonInnactiveColor = Colors.white;
 
     final Color iconActiveColor = Colors.white;

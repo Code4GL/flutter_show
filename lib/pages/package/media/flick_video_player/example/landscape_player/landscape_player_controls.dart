@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import '../landscape_player/play_toggle.dart';
 import 'package:flick_video_player/flick_video_player.dart';
 import 'package:flutter/material.dart';
@@ -130,7 +128,8 @@ class LandscapePlayerControls extends StatelessWidget {
           top: 10,
           child: GestureDetector(
             onTap: () {
-              SystemChrome.setEnabledSystemUIOverlays(SystemUiOverlay.values);
+              SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual,
+                  overlays: SystemUiOverlay.values);
               SystemChrome.setPreferredOrientations(
                   [DeviceOrientation.portraitUp]);
               Navigator.pop(context);

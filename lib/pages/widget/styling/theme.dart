@@ -57,7 +57,9 @@ class _ThemePageState extends State<ThemePage> {
           ),
           child: Center(
             child: Theme(
-              data: ThemeData(accentColor: Colors.pinkAccent),
+              data: ThemeData(
+                  colorScheme: ColorScheme.fromSwatch()
+                      .copyWith(secondary: Colors.pinkAccent)),
               child: ThemeDemo(),
             ),
           ),
@@ -75,7 +77,7 @@ class ThemeDemo extends StatelessWidget {
         'Partial Theme‘s accentColor!',
         style: TextStyle(
           fontSize: 20,
-          color: Theme.of(context).accentColor,
+          color: Theme.of(context).colorScheme.secondary,
         ),
       ),
     );

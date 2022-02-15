@@ -1,6 +1,5 @@
 import 'tips/tips_home.dart';
 import 'widgets/widgets_home.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 
 import 'accessibility/neumorphic_accessibility.dart';

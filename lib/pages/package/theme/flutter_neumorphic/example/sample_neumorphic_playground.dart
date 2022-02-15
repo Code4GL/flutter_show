@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter_neumorphic/flutter_neumorphic.dart';
 
 void main() => runApp(NeumorphicPlayground());
@@ -239,7 +238,7 @@ class __PageState extends State<_Page> {
   }
 
   Widget shapeWidget() {
-    final Color buttonActiveColor = Theme.of(context).accentColor;
+    final Color buttonActiveColor = Theme.of(context).colorScheme.secondary;
     // final Color buttonInnactiveColor = Colors.white;
 
     final Color iconActiveColor = Colors.white;
