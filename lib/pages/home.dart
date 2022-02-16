@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_show/pages/package/media/arkit_plugin/example/physics_page.dart';
 import 'package:flutter_show/provider/common_provider.dart';
 import 'package:flutter_show/provider/theme_provider.dart';
 
@@ -40,11 +41,15 @@ class _HomeState extends State<Home> {
     return MaterialApp(
       title: 'Flutter Show',
       showSemanticsDebugger:
-          context.watch<CommonProvider>().showSemanticsDebugger,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSwatch(
-          primarySwatch: context.watch<ThemeProvider>().themeColor,
+          Provider.of<CommonProvider>(context).showSemanticsDebugger,
+      themeMode: Provider.of<ThemeProvider>(context).themeMode,
+      theme: ThemeData.from(
+        colorScheme: ColorScheme.light(
+          primary: Provider.of<ThemeProvider>(context).themeColor,
         ),
+      ),
+      darkTheme: ThemeData.from(
+        colorScheme: ColorScheme.dark(),
       ),
       home: Scaffold(
         drawer: Drawer(

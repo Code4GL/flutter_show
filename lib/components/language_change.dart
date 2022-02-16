@@ -10,7 +10,7 @@ class LanguageChange extends StatelessWidget {
     return IconButton(
       icon: Icon(Icons.translate),
       onPressed: () {
-        context.read<LanguageProvider>().changeLanguage();
+        Provider.of<LanguageProvider>(context, listen: false).changeLanguage();
       },
     );
   }

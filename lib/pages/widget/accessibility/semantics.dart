@@ -120,7 +120,8 @@ class _SemanticsPageState extends State<SemanticsPage> {
           alignment: Alignment.centerRight,
           child: ElevatedButton(
             onPressed: () {
-              CommonProvider commonProvider = context.read<CommonProvider>();
+              CommonProvider commonProvider =
+                  Provider.of<CommonProvider>(context, listen: false);
               commonProvider
                   .changeSemantics(!commonProvider.showSemanticsDebugger);
             },

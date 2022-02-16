@@ -48,7 +48,8 @@ class _MergeSemanticsPageState extends State<MergeSemanticsPage> {
           alignment: Alignment.centerRight,
           child: ElevatedButton(
             onPressed: () {
-              CommonProvider commonProvider = context.read<CommonProvider>();
+              CommonProvider commonProvider =
+                  Provider.of<CommonProvider>(context, listen: false);
               commonProvider
                   .changeSemantics(!commonProvider.showSemanticsDebugger);
             },

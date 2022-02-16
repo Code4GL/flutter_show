@@ -82,7 +82,8 @@ class _ExcludeSemanticsPageState extends State<ExcludeSemanticsPage> {
           alignment: Alignment.centerRight,
           child: ElevatedButton(
             onPressed: () {
-              CommonProvider commonProvider = context.read<CommonProvider>();
+              CommonProvider commonProvider =
+                  Provider.of<CommonProvider>(context, listen: false);
               commonProvider
                   .changeSemantics(!commonProvider.showSemanticsDebugger);
             },
