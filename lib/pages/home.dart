@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_show/pages/package/media/arkit_plugin/example/physics_page.dart';
 import 'package:flutter_show/provider/common_provider.dart';
 import 'package:flutter_show/provider/theme_provider.dart';
 
