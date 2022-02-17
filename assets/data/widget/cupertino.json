@@ -60,16 +60,6 @@
         "constructors": "CupertinoDatePicker({Key? key, CupertinoDatePickerMode mode, required ValueChanged<DateTime> onDateTimeChanged, DateTime? initialDateTime, DateTime? minimumDate, DateTime? maximumDate, int minimumYear, int? maximumYear, int minuteInterval, bool use24hFormat, Color? backgroundColor})"
     },
     {
-        "title": "CupertinoDialog",
-        "introductionEN": "An iOS-style dialog.",
-        "introductionCN": "iOS风格的对话框。",
-        "routeName": "Widget/Cupertino/CupertinoDialog",
-        "imagePath": "assets/images/cupertino/cupertino-dialog.png",
-        "docPath": "https://api.flutter.dev/flutter/cupertino/CupertinoDialog-class.html",
-        "inheritance": "",
-        "constructors": ""
-    },
-    {
         "title": "CupertinoDialogAction",
         "introductionEN": "A button typically used in a CupertinoAlertDialog.",
         "introductionCN": "通常用于CupertinoAlertDialog的按钮。",

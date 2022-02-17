@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_show/common/my_style.dart';
 
-class CupertinoDialogPage extends StatefulWidget {
+class InteractiveViewerPage extends StatefulWidget {
   @override
-  _CupertinoDialogPageState createState() => _CupertinoDialogPageState();
+  _InteractiveViewerPageState createState() => _InteractiveViewerPageState();
 }
 
-class _CupertinoDialogPageState extends State<CupertinoDialogPage> {
+class _InteractiveViewerPageState extends State<InteractiveViewerPage> {
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -32,7 +32,7 @@ class _CupertinoDialogPageState extends State<CupertinoDialogPage> {
                 ),
               ),
               Text(
-                '官网地址不可访问（2021年6月）。',
+                '',
                 style: TextStyle(
                   fontSize: MyStyle.scenesContentFontSize,
                   color: MyStyle.scenesContentColor,
@@ -40,22 +40,6 @@ class _CupertinoDialogPageState extends State<CupertinoDialogPage> {
               )
             ],
           ),
-        ),
-        // 展示区域
-        Container(
-          margin: EdgeInsets.only(top: 10),
-          decoration: BoxDecoration(
-            color: Colors.white,
-            boxShadow: [
-              BoxShadow(
-                color: MyStyle.displayAreaShadowColor, //投影颜色
-                blurRadius: MyStyle.displayAreaBlurRadius, //投影距离，有模糊效果
-                spreadRadius: MyStyle.displayAreaSpreadRadius, // 扩展距离，无模糊效果
-              )
-            ],
-            borderRadius: MyStyle.borderRadius,
-          ),
-          child: Center(),
         ),
       ],
     );

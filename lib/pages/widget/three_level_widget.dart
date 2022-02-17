@@ -48,7 +48,6 @@ import 'cupertino/cupertino_alert_dialog.dart';
 import 'cupertino/cupertino_button.dart';
 import 'cupertino/cupertino_context_menu.dart';
 import 'cupertino/cupertino_date_picker.dart';
-import 'cupertino/cupertino_dialog.dart';
 import 'cupertino/cupertino_dialog_action.dart';
 import 'cupertino/cupertino_fullscreen_dialog_transition.dart';
 import 'cupertino/cupertino_navigation_bar.dart';
@@ -78,6 +77,7 @@ import 'interaction/draggable.dart';
 import 'interaction/draggable_scrollable_sheet.dart';
 import 'interaction/gesture_detector.dart';
 import 'interaction/ignore_pointer.dart';
+import 'interaction/interactive_viewer.dart';
 import 'interaction/long_press_draggable.dart';
 import 'interaction/navigator.dart';
 import 'interaction/scrollable.dart';
@@ -255,7 +255,6 @@ class ThreeLevelWidgetPage extends StatelessWidget {
     'Widget/Cupertino/CupertinoButton': CupertinoButtonPage(),
     'Widget/Cupertino/CupertinoContextMenu': CupertinoContextMenuPage(),
     'Widget/Cupertino/CupertinoDatePicker': CupertinoDatePickerPage(),
-    'Widget/Cupertino/CupertinoDialog': CupertinoDialogPage(),
     'Widget/Cupertino/CupertinoDialogAction': CupertinoDialogActionPage(),
     'Widget/Cupertino/CupertinoFullscreenDialogTransition':
         CupertinoFullscreenDialogTransitionPage(),
@@ -293,6 +292,7 @@ class ThreeLevelWidgetPage extends StatelessWidget {
         DraggableScrollableSheetPage(),
     'Widget/Interaction/GestureDetector': GestureDetectorPage(),
     'Widget/Interaction/IgnorePointer': IgnorePointerPage(),
+    'Widget/Interaction/InteractiveViewer': InteractiveViewerPage(),
     'Widget/Interaction/LongPressDraggable': LongPressDraggablePage(),
     'Widget/Interaction/Scrollable': ScrollablePage(),
     'Widget/Interaction/Hero': HeroPage(),

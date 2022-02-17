@@ -70,6 +70,16 @@
         "constructors": "IgnorePointer({Key? key, bool ignoring, bool? ignoringSemantics, Widget? child})"
     },
     {
+        "title": "InteractiveViewer",
+        "introductionEN": "A widget that enables pan and zoom interactions with its child.",
+        "introductionCN": "一个允许与其子级进行平移和缩放交互的小部件。",
+        "routeName": "Widget/Interaction/InteractiveViewer",
+        "imagePath": "",
+        "docPath": "https://api.flutter.dev/flutter/widgets/InteractiveViewer-class.html",
+        "inheritance": "Object>DiagnosticableTree>Widget>StatefulWidget>InteractiveViewer",
+        "constructors": "InteractiveViewer({Key? key, Clip clipBehavior = Clip.hardEdge, bool alignPanAxis = false, EdgeInsets boundaryMargin = EdgeInsets.zero, bool constrained = true, double maxScale = 2.5, double minScale = 0.8, GestureScaleEndCallback? onInteractionEnd, GestureScaleStartCallback? onInteractionStart, GestureScaleUpdateCallback? onInteractionUpdate, bool panEnabled = true, bool scaleEnabled = true, TransformationController? transformationController, required Widget child})"
+    },
+    {
         "title": "LongPressDraggable",
         "introductionEN": "Makes its child draggable starting from long press.",
         "introductionCN": "从长按开始使其孩子可以拖拽。",
