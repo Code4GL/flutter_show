@@ -10,7 +10,7 @@ class IconButtonPage extends StatefulWidget {
 
 class _IconButtonPageState extends State<IconButtonPage> {
   static Function press = () => {};
-  late Function _onPressed;
+  void Function()? _onPressed;
   bool _enableFeedback = true;
   Color _color = Colors.green;
   Color _disabledColor = Colors.grey;
@@ -264,7 +264,7 @@ class _IconButtonPageState extends State<IconButtonPage> {
               color: _color,
               disabledColor: _disabledColor,
               iconSize: _iconSize,
-              onPressed: () => _onPressed,
+              onPressed: _onPressed,
               icon: const Icon(Icons.volume_up),
               tooltip: 'Increase volume by 10',
             ),

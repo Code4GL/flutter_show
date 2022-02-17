@@ -10,9 +10,9 @@ class CupertinoButtonPage extends StatefulWidget {
 
 class _CupertinoButtonPageState extends State<CupertinoButtonPage> {
   static Function press = () => {};
-  late Function _onPressed;
+  void Function()? _onPressed;
   EdgeInsetsGeometry _padding = EdgeInsets.zero;
-  late Color _color;
+  Color? _color;
   Color _disabledColor = Colors.grey;
   @override
   Widget build(BuildContext context) {
@@ -217,7 +217,7 @@ class _CupertinoButtonPageState extends State<CupertinoButtonPage> {
               padding: _padding,
               color: _color,
               disabledColor: _disabledColor,
-              onPressed: () => _onPressed,
+              onPressed: _onPressed,
             ),
           ),
         ),

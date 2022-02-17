@@ -11,7 +11,7 @@ class FloatingActionButtonPage extends StatefulWidget {
 
 class _FloatingActionButtonPageState extends State<FloatingActionButtonPage> {
   static Function press = () => {};
-  late Function _onPressed;
+  void Function()? _onPressed;
   bool _mini = false;
   Color _backgroundColor = Colors.green;
   Color _foregroundColor = Colors.white;
@@ -230,7 +230,7 @@ class _FloatingActionButtonPageState extends State<FloatingActionButtonPage> {
               appBar: AppBar(title: Text('Floating Action Button')),
               body: Center(child: Text('Press the button below!')),
               floatingActionButton: FloatingActionButton(
-                onPressed: () => _onPressed,
+                onPressed: _onPressed,
                 mini: _mini,
                 backgroundColor: _backgroundColor,
                 foregroundColor: _foregroundColor,
