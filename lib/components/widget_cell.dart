@@ -39,14 +39,14 @@ class WidgetCell extends StatelessWidget {
         margin: EdgeInsets.fromLTRB(10, 10, 10, 5),
         alignment: AlignmentDirectional.centerStart,
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: Theme.of(context).colorScheme.surface,
           borderRadius: BorderRadius.all(Radius.circular(10)),
           boxShadow: [
             BoxShadow(
               offset: Offset(3, 5),
               blurRadius: 3,
               spreadRadius: 3,
-              color: Colors.grey[300]!,
+              color: Theme.of(context).colorScheme.shadow.withOpacity(0.2),
             ),
           ],
         ),
@@ -56,10 +56,10 @@ class WidgetCell extends StatelessWidget {
               alignment: AlignmentDirectional.centerStart,
               child: Text(
                 "$title",
-                style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  color: Colors.blue,
-                ),
+                style: Theme.of(context)
+                    .textTheme
+                    .titleLarge
+                    ?.copyWith(color: Theme.of(context).colorScheme.primary),
               ),
             ),
             Container(
@@ -70,7 +70,7 @@ class WidgetCell extends StatelessWidget {
                   languageProvider.lang == "zh"
                       ? "$introductionCN"
                       : "$introductionEN",
-                  style: TextStyle(color: Colors.black45),
+                  style: Theme.of(context).textTheme.bodySmall,
                 ),
               ),
             ),

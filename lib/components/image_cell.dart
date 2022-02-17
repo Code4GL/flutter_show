@@ -52,14 +52,14 @@ class ImageCell extends StatelessWidget {
         margin: EdgeInsets.fromLTRB(10, 10, 10, 5),
         alignment: AlignmentDirectional.centerStart,
         decoration: BoxDecoration(
-          color: Colors.white,
+          color: Theme.of(context).colorScheme.surface,
           borderRadius: BorderRadius.all(Radius.circular(10)),
           boxShadow: [
             BoxShadow(
               offset: Offset(3, 3),
               blurRadius: 3,
               spreadRadius: 3,
-              color: Colors.grey[300]!,
+              color: Theme.of(context).colorScheme.shadow.withOpacity(0.2),
             ),
           ],
         ),
@@ -90,10 +90,8 @@ class ImageCell extends StatelessWidget {
                   alignment: AlignmentDirectional.centerStart,
                   child: Text(
                     "$title",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black54,
-                    ),
+                    style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                        color: Theme.of(context).colorScheme.primary),
                   ),
                 ),
               ],
@@ -107,7 +105,7 @@ class ImageCell extends StatelessWidget {
                   languageProvider.lang == "zh"
                       ? "$introductionCN"
                       : "$introductionEN",
-                  style: TextStyle(color: Colors.black38),
+                  style: Theme.of(context).textTheme.bodySmall,
                 ),
               ),
             ),

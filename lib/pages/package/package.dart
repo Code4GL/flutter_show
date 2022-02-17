@@ -60,38 +60,39 @@ class _PackagePageState extends State<PackagePage>
               child: TabBar(
                 isScrollable: true,
                 labelPadding: EdgeInsets.zero,
-                labelColor: Colors.blue,
-                unselectedLabelColor: Colors.grey,
+                labelColor: Theme.of(context).colorScheme.primary,
+                unselectedLabelColor:
+                    Theme.of(context).colorScheme.outline.withOpacity(0.5),
                 controller: _tabController,
                 tabs: <Widget>[
                   Container(
                     width: 70,
-                    color: Colors.white,
+                    color: Theme.of(context).colorScheme.surface,
                     child: Tab(text: 'Rank'),
                   ),
                   Container(
                     width: 70,
-                    color: Colors.white,
+                    color: Theme.of(context).colorScheme.surface,
                     child: Tab(text: 'Basics'),
                   ),
                   Container(
                     width: 70,
-                    color: Colors.white,
+                    color: Theme.of(context).colorScheme.surface,
                     child: Tab(text: 'Theme'),
                   ),
                   Container(
                     width: 70,
-                    color: Colors.white,
+                    color: Theme.of(context).colorScheme.surface,
                     child: Tab(text: 'UI'),
                   ),
                   Container(
                     width: 70,
-                    color: Colors.white,
+                    color: Theme.of(context).colorScheme.surface,
                     child: Tab(text: 'Media'),
                   ),
                   Container(
                     width: 70,
-                    color: Colors.white,
+                    color: Theme.of(context).colorScheme.surface,
                     child: Tab(text: 'Chart'),
                   ),
                 ],

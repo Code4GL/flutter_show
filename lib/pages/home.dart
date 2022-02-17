@@ -48,7 +48,9 @@ class _HomeState extends State<Home> {
         ),
       ),
       darkTheme: ThemeData.from(
-        colorScheme: ColorScheme.dark(),
+        colorScheme: ColorScheme.dark(
+          primary: Provider.of<ThemeProvider>(context).themeColor,
+        ),
       ),
       home: Scaffold(
         drawer: Drawer(

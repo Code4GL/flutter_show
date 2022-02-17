@@ -441,19 +441,13 @@ class ThreeLevelWidgetPage extends StatelessWidget {
               padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
               child: Text(
                 title,
-                style: TextStyle(
-                  fontSize: 25,
-                  fontWeight: FontWeight.bold,
-                ),
+                style: Theme.of(context).textTheme.titleLarge,
               ),
             ),
             Consumer<LanguageProvider>(
               builder: (context, LanguageProvider languageProvider, _) => Text(
                 languageProvider.lang == "zh" ? introductionCN : introductionEN,
-                style: TextStyle(
-                  fontSize: 12,
-                  color: Colors.black54,
-                ),
+                style: Theme.of(context).textTheme.bodySmall,
               ),
             ),
             // 继承关系
@@ -466,10 +460,7 @@ class ThreeLevelWidgetPage extends StatelessWidget {
                     builder: (context, LanguageProvider languageProvider, _) =>
                         Text(
                       languageProvider.lang == "zh" ? '继承关系' : 'Inheritance',
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
-                      ),
+                      style: Theme.of(context).textTheme.titleSmall,
                     ),
                   ),
                 ),
@@ -480,10 +471,7 @@ class ThreeLevelWidgetPage extends StatelessWidget {
                 ),
                 Text(
                   inheritance,
-                  style: TextStyle(
-                    fontSize: 12,
-                    color: Colors.black54,
-                  ),
+                  style: Theme.of(context).textTheme.bodySmall,
                 ),
               ],
             ),
@@ -497,10 +485,7 @@ class ThreeLevelWidgetPage extends StatelessWidget {
                     builder: (context, LanguageProvider languageProvider, _) =>
                         Text(
                       languageProvider.lang == "zh" ? '构造函数' : 'Constructors',
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontWeight: FontWeight.bold,
-                      ),
+                      style: Theme.of(context).textTheme.titleSmall,
                     ),
                   ),
                 ),
@@ -511,10 +496,7 @@ class ThreeLevelWidgetPage extends StatelessWidget {
                 ),
                 Text(
                   constructors,
-                  style: TextStyle(
-                    fontSize: 12,
-                    color: Colors.black54,
-                  ),
+                  style: Theme.of(context).textTheme.bodySmall,
                 ),
               ],
             ),
@@ -525,10 +507,7 @@ class ThreeLevelWidgetPage extends StatelessWidget {
                 builder: (context, LanguageProvider languageProvider, _) =>
                     Text(
                   languageProvider.lang == "zh" ? '示例' : 'Example',
-                  style: TextStyle(
-                    fontSize: 15,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  style: Theme.of(context).textTheme.titleSmall,
                 ),
               ),
             ),

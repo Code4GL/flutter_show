@@ -29,10 +29,13 @@ class _ThemeSettingPageState extends State<ThemeSettingPage> {
               padding: EdgeInsets.all(5),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(5),
+                color: Theme.of(context).colorScheme.surface,
                 boxShadow: [
                   BoxShadow(
-                    color:
-                        Theme.of(context).primaryColor.withOpacity(0.2), //投影颜色
+                    color: Theme.of(context)
+                        .colorScheme
+                        .shadow
+                        .withOpacity(0.2), //投影颜色
                     blurRadius: 5, //投影距离，有模糊效果
                     spreadRadius: 5, // 扩展距离，无模糊效果
                   )
@@ -42,10 +45,7 @@ class _ThemeSettingPageState extends State<ThemeSettingPage> {
                 children: [
                   Text(
                     '主题模式',
-                    style: TextStyle(
-                      fontSize: 18,
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: Theme.of(context).textTheme.titleLarge,
                   ),
                   Row(
                     children: [
@@ -63,7 +63,10 @@ class _ThemeSettingPageState extends State<ThemeSettingPage> {
                               });
                             },
                           ),
-                          Text('跟随系统'),
+                          Text(
+                            '跟随系统',
+                            style: Theme.of(context).textTheme.titleSmall,
+                          ),
                         ],
                       ),
                       Row(
@@ -80,7 +83,10 @@ class _ThemeSettingPageState extends State<ThemeSettingPage> {
                               });
                             },
                           ),
-                          Text('浅色模式'),
+                          Text(
+                            '浅色模式',
+                            style: Theme.of(context).textTheme.titleSmall,
+                          ),
                         ],
                       ),
                       Row(
@@ -97,7 +103,10 @@ class _ThemeSettingPageState extends State<ThemeSettingPage> {
                               });
                             },
                           ),
-                          Text('深色模式'),
+                          Text(
+                            '深色模式',
+                            style: Theme.of(context).textTheme.titleSmall,
+                          ),
                         ],
                       ),
                     ],
@@ -105,56 +114,54 @@ class _ThemeSettingPageState extends State<ThemeSettingPage> {
                 ],
               ),
             ),
-            Theme.of(context).colorScheme.brightness == Brightness.light
-                ? Column(
-                    children: [
-                      Container(
-                        alignment: Alignment.centerLeft,
-                        padding: EdgeInsets.all(5),
-                        child: Text('主题色'),
+            Column(
+              children: [
+                Container(
+                  alignment: Alignment.centerLeft,
+                  padding: EdgeInsets.all(5),
+                  child: Text(
+                    '主题色',
+                    style: Theme.of(context).textTheme.titleMedium,
+                  ),
+                ),
+                ListView(
+                  shrinkWrap: true,
+                  physics: NeverScrollableScrollPhysics(), //禁用滑动事件
+                  children: _themes.map<Widget>((e) {
+                    return GestureDetector(
+                      child: Container(
+                        child: Text(
+                          '#${e.value.toRadixString(16).toUpperCase()}',
+                          style:
+                              Provider.of<ThemeProvider>(context).themeColor ==
+                                      e
+                                  ? TextStyle(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                    )
+                                  : TextStyle(color: Colors.black),
+                        ),
+                        alignment: Alignment.centerRight,
+                        padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
+                        height: 45,
+                        decoration: BoxDecoration(
+                          gradient: LinearGradient(
+                            begin: Alignment.topCenter,
+                            end: Alignment.bottomCenter,
+                            stops: [0.0, 1.0],
+                            colors: [e.withOpacity(0.5), e.withOpacity(1.0)],
+                          ),
+                        ),
                       ),
-                      ListView(
-                        shrinkWrap: true,
-                        physics: NeverScrollableScrollPhysics(), //禁用滑动事件
-                        children: _themes.map<Widget>((e) {
-                          return GestureDetector(
-                            child: Container(
-                              child: Text(
-                                '#${e.value.toRadixString(16).toUpperCase()}',
-                                style: Provider.of<ThemeProvider>(context)
-                                            .themeColor ==
-                                        e
-                                    ? TextStyle(
-                                        color: Colors.white,
-                                        fontWeight: FontWeight.bold,
-                                      )
-                                    : TextStyle(color: Colors.black),
-                              ),
-                              alignment: Alignment.centerRight,
-                              padding: EdgeInsets.fromLTRB(0, 0, 20, 0),
-                              height: 45,
-                              decoration: BoxDecoration(
-                                gradient: LinearGradient(
-                                  begin: Alignment.topCenter,
-                                  end: Alignment.bottomCenter,
-                                  stops: [0.0, 1.0],
-                                  colors: [
-                                    e.withOpacity(0.5),
-                                    e.withOpacity(1.0)
-                                  ],
-                                ),
-                              ),
-                            ),
-                            onTap: () {
-                              Provider.of<ThemeProvider>(context, listen: false)
-                                  .changeThemeColor(e);
-                            },
-                          );
-                        }).toList(),
-                      ),
-                    ],
-                  )
-                : Container(),
+                      onTap: () {
+                        Provider.of<ThemeProvider>(context, listen: false)
+                            .changeThemeColor(e);
+                      },
+                    );
+                  }).toList(),
+                ),
+              ],
+            ),
           ],
         ),
       ),

@@ -32,8 +32,8 @@ class _InternalWebViewPageState extends State<InternalWebViewPage> {
           child: LinearProgressIndicator(
             value: _progress,
             minHeight: 1.0,
-            color: Theme.of(context).colorScheme.secondary,
-            backgroundColor: Colors.white,
+            color: Theme.of(context).colorScheme.primary,
+            backgroundColor: Theme.of(context).colorScheme.onPrimary,
           ),
           preferredSize: Size.fromHeight(1.0),
         ),
