@@ -6,6 +6,7 @@ import 'widget/widget.dart';
 import 'material/material.dart';
 import 'cupertino/cupertino.dart';
 import 'package/package.dart';
+import 'usage/usage.dart';
 import 'about/about.dart';
 import 'package:provider/provider.dart';
 
@@ -23,6 +24,7 @@ class _HomeState extends State<Home> {
     MyMaterialPage(),
     CupertinoPage(),
     PackagePage(),
+    UsagePage()
   ];
   @override
   void initState() {
@@ -79,6 +81,10 @@ class _HomeState extends State<Home> {
             BottomNavigationBarItem(
               icon: Icon(Icons.view_in_ar),
               label: 'Package',
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.work),
+              label: 'Usage',
             ),
           ],
         ),

@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Button",
+        "introductionEN": "A summary of common buttons. Contains ElevatedButton, TextButton, OutlinedButton, CupertinoButton, IconButton, FloatingActionButton, DropdownButton, PopupMenuButton, and their disabled states.",
+        "introductionCN": "常见按钮汇总。包含ElevatedButton、TextButton、OutlinedButton、CupertinoButton、IconButton、FloatingActionButton、DropdownButton、PopupMenuButton，以及它们的禁用状态。",
+        "routeName": "Usage/Basics/Button"
+    },
+    {
+        "title": "ProgressIndicator",
+        "introductionEN": "A summary of common progress indicators. Contains CupertinoActivityIndicator, CircularProgressIndicator and LinearProgressIndicator.",
+        "introductionCN": "常见进度指示器汇总。包含CupertinoActivityIndicator、CircularProgressIndicator和LinearProgressIndicator。",
+        "routeName": "Usage/Basics/ProgressIndicator"
+    },
+    {
+        "title": "Dialog",
+        "introductionEN": "A summary of common prompt dialog boxes. Contains CupertinoAlertDialog, CupertinoDialogAction, AlertDialog, SimpleDialog, SnackBar.",
+        "introductionCN": "常见提示对话框汇总。包含CupertinoAlertDialog、CupertinoDialogAction、AlertDialog、SimpleDialog、SnackBar。",
+        "routeName": "Usage/Basics/Dialog"
+    },
+    {
+        "title": "Picker",
+        "introductionEN": "A summary of common selectors. Contains CupertinoPicker, CupertinoDatePicker, CupertinoTimerPicker, showDatePicker, showTimePicker, showDateRangePicker, InputDatePickerFormField.",
+        "introductionCN": "常见选择器汇总。包含CupertinoPicker、CupertinoDatePicker、CupertinoTimerPicker、showDatePicker、showTimePicker、showDateRangePicker、InputDatePickerFormField。",
+        "routeName": "Usage/Basics/Picker"
+    },
+    {
+        "title": "ActionSheet",
+        "introductionEN": "A summary of the list of common operations. Contains CupertinoActionSheet, showModalBottomSheet, showBottomSheet, DraggableScrollableSheet.",
+        "introductionCN": "常见操作列表汇总。包含CupertinoActionSheet、showModalBottomSheet、showBottomSheet、DraggableScrollableSheet。",
+        "routeName": "Usage/Basics/ActionSheet"
+    },
+    {
+        "title": "OptionsAction",
+        "introductionEN": "A summary of common option actions. Contains CupertinoSegmentedControl, CupertinoSlidingSegmentedControl, CupertinoSwitch, Switch, Checkbox, Radio.",
+        "introductionCN": "常见选项操作汇总。包含CupertinoSegmentedControl、CupertinoSlidingSegmentedControl、CupertinoSwitch、Switch、Checkbox、Radio。",
+        "routeName": "Usage/Basics/OptionsAction"
+    }
+]

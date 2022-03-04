@@ -149,3 +149,5 @@ flutter:
     - assets/images/package/shimmer/
 
     - assets/data/package/
+
+    - assets/data/usage/

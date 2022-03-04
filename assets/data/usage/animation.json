@@ -1,0 +1,8 @@
+[
+    {
+        "title": "Hero",
+        "introductionEN": "Hero animation scene use. Mainly used for animation before page jump.",
+        "introductionCN": "Hero动画场景使用。主要用于页面跳转之间的动画。",
+        "routeName": "Usage/Animation/Hero"
+    }
+]

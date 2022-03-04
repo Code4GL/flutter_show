@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Basics",
+        "introductionEN": "Common base components are used.",
+        "introductionCN": "常见的基础组件使用。",
+        "routeName": "Usage/Basics",
+        "fileName": "basics"
+    },
+    {
+        "title": "Animation",
+        "introductionEN": "Commonly used in animation scenes.",
+        "introductionCN": "常见的动画场景使用。",
+        "routeName": "Usage/Animation",
+        "fileName": "animation"
+    }
+]
